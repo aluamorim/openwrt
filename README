@@ -1,29 +1,99 @@
-This is the buildsystem for the OpenWrt Linux distribution.
 
-Please use "make menuconfig" to choose your preferred
-configuration for the toolchain and firmware.
+Linkit Audio Porting
 
-You need to have installed gcc, binutils, bzip2, flex, python, perl, make,
-find, grep, diff, unzip, gawk, getopt, subversion, libz-dev and libc headers.
-
-Run "./scripts/feeds update -a" to get all the latest package definitions
-defined in feeds.conf / feeds.conf.default respectively
-and "./scripts/feeds install -a" to install symlinks of all of them into
-package/feeds/.
-
-Use "make menuconfig" to configure your image.
-
-Simply running "make" will build your firmware.
-It will download all sources, build the cross-compile toolchain, 
-the kernel and all choosen applications.
-
-To build your own firmware you need to have access to a Linux, BSD or MacOSX system
-(case-sensitive filesystem required). Cygwin will not be supported because of
-the lack of case sensitiveness in the file system.
+@author: Anderson
 
 
-Sunshine!
-	Your OpenWrt Community
-	http://www.openwrt.org
+Este repositório contém contém códigos e scripts para
+o porting de suporte de áudio do Linkit 7688.
+
+Estrutura:
+
+    - linkit-files: contém os arquivos de configuração do Linkit e módulos compilados (.ko)
+    - porting:     	contém todos os arquivos alterados pelo porting, dentro da estrutura
+                    do kernel. O porting está organizado por versão do kernel
+    - scripts:     	contém scripts para cópia de arquivos e patching do código;
+
+    - lede:  		diretório de clone e compilação do openwrt(LEDE). Está
+    				organizado por versão do kernel
+
+   	- etc:			diretório auxiliar para bibliotecas e ferramentas.
+
+Modo de uso:
+
+	- Patching
+
+	O script scripts/patch.sh é responsável pela substituição do código original
+	de uma determinada versão do kernel pelo código de porting respectivo. Para
+	utilizar corretamente o script é preciso seguir o seguinte procedimento:
+
+	1 - Clone completo do repositório em uma pasta "linkit-audio" no seu ambiente.
+
+	#> git clone https://github.com/aluamorim/openwrt.git linkit-audio
+
+	2 - Mover para a pasta específica do kernel que vc deseja compilar (Ex: kernel 4.9):
+
+	#> cd linkit-audio/lede/kernel-4.9
+
+	3 - 1ra compilação do código:
+
+	#> make V=99
+
+	OBS: o Ktree armazenado no repositório já está configurado para o linkit,
+	no entanto, caso alguma biblioteca precise ser adicionada para a compilação
+	vc precisa executar o "make menuconfig" antes dessa etapa.
+
+	OBS: A primeira compilação deve falhar por ausência de alguns módulos específicos.
+	Não tem problema, pode continuar com o procedimento.
+
+	4 - Patching de código:
+
+	#> cd ../../scripts
+	#> ./patch "../lede/kernel-4.9" "4.9.77"
+
+	OBS: o script de patching recebe como parâmetro o caminho e a versão do kernel
+	a ser adaptado. Por enquanto, somente as versões 4.9.77 e 4.14.37 estão disponíveis.
+
+	5 - 2da compilação do código:
+
+	#> cd ../lede/kernel-4.9/
+	#> make V=99
+
+	OBS: neste ponto o KBuild deve perguntar ao usuário sobre a inclusão dos
+	módulos referentes ao porting de som. É preciso responder "m" para os módulos
+
+		SND_HWDEP [M/n/?] m
+		ALSA for SoC audio support (SND_SOC) [M/n/?] m
+	  	SoC Audio (I2S protocol) for Ralink SoC (SND_RALINK_SOC_I2S) [N/m/?] (NEW) m
+	  	SoC Audio for MT76XX APSoC Machine (SND_MT76XX_SOC) [N/m/?] (NEW) m
+		    Selected SoC type
+		    > 1. MT7620 (SND_MT76XX_SOC_MT7620) (NEW)
+		      2. MT7628 (SND_MT76XX_SOC_MT7628) (NEW)
+		    choice[1-2]: 1
+	    MTK SoC Audio PCM Platform (SND_MT76XX_PCM) [N/m] (NEW) m
+	    MTK SoC I2S Support (SND_MT76XX_I2S) [N/m] (NEW) m
+	    MTK SoC WM8960 Codec Support (CONFIG_SND_SOC_WM8960) [N/m] (NEW) m
 
 
+	6 - Copy de módulos e binários
+
+		O script scripts/copy.sh é responsável pela cópia dos módulos gerados para o
+		suporte de som, os arquivos de configuração do baresip e do asoundrc.
+		Para utilizá-lo basta fazer:
+
+		#> copy.sh "../lede/kernel-4.9" "4.9.77" "192.168.1.1"
+
+		O script copy.sh recebe 3 parâmetros de entrada:
+			1 - O caminho do código compilado;
+			2 - A versão do kernel utilizada;
+			3 - O endereço IP do linkit na rede local;
+
+	7 - Instalação da imagem
+		O script copy.sh também copia a imagem gerada pela compilação para
+		linkit-files/lks7688.img. Para gravá-la no Linkit utilize o método
+		que vc achar mais apropriado (pendrive, Luci, TFTP, etc.).
+
+	8 - Instalação do baresip
+
+		O script scripts/install_baresip_dep.sh instala as dependências do baresip no Linkit.
+		Ele também é copiado para o Linkit pelo script copy.sh
