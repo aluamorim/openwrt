@@ -1,0 +1,1 @@
+cmd_sound/soc/mtk/snd-soc-mt76xx-machine.ko := mipsel-openwrt-linux-musl-ld -r  -m elf32ltsmip -T ./scripts/module-common.lds -s --build-id  -o sound/soc/mtk/snd-soc-mt76xx-machine.ko sound/soc/mtk/snd-soc-mt76xx-machine.o sound/soc/mtk/snd-soc-mt76xx-machine.mod.o ;  true

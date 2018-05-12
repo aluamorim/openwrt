@@ -1,0 +1,35 @@
+	config FEED_packages
+		bool "Enable feed packages"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"packages\" feed at https://git.openwrt.org/feed/packages.git.
+
+	config FEED_luci
+		bool "Enable feed luci"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"luci\" feed at https://git.openwrt.org/project/luci.git.
+
+	config FEED_routing
+		bool "Enable feed routing"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"routing\" feed at https://git.openwrt.org/feed/routing.git.
+
+	config FEED_telephony
+		bool "Enable feed telephony"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"telephony\" feed at https://git.openwrt.org/feed/telephony.git.
+
+	config FEED_linkit
+		bool "Enable feed linkit"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"linkit\" feed at https://github.com/MediaTek-Labs/linkit-smart-7688-feed.git.
+

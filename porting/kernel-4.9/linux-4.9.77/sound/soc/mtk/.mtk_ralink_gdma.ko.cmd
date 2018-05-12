@@ -1,0 +1,1 @@
+cmd_sound/soc/mtk/mtk_ralink_gdma.ko := mipsel-openwrt-linux-musl-ld -r  -m elf32ltsmip -T ./scripts/module-common.lds -s --build-id  -o sound/soc/mtk/mtk_ralink_gdma.ko sound/soc/mtk/mtk_ralink_gdma.o sound/soc/mtk/mtk_ralink_gdma.mod.o ;  true

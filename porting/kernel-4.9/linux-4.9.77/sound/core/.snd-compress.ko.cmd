@@ -1,0 +1,1 @@
+cmd_sound/core/snd-compress.ko := mipsel-openwrt-linux-musl-ld -r  -m elf32ltsmip -T ./scripts/module-common.lds -s --build-id  -o sound/core/snd-compress.ko sound/core/snd-compress.o sound/core/snd-compress.mod.o ;  true

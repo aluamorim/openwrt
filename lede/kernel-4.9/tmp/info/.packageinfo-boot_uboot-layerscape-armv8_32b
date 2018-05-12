@@ -1,0 +1,22 @@
+Source-Makefile: package/boot/uboot-layerscape-armv8_32b/Makefile
+
+Package: uboot-layerscape-armv8_32b
+Default: y
+Version: 2017-10-24-43cb4c0fcab237f8daa39c393cc1441b76b99fcf-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape_armv8_32b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Repository: base
+Title: U-Boot for ARMv8 32-bit based Layerscape boards
+Maintainer: Yangbo Lu <yangbo.lu@nxp.com>
+Source: uboot-layerscape-armv8_32b-2017-10-24-43cb4c0fcab237f8daa39c393cc1441b76b99fcf.tar.xz
+Type: ipkg
+Hidden: 1
+Description: U-Boot for ARMv8 32-bit based Layerscape boards
+Yangbo Lu <yangbo.lu@nxp.com>
+@@
+
+

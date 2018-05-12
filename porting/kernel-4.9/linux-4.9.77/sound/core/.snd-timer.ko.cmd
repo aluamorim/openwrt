@@ -1,0 +1,1 @@
+cmd_sound/core/snd-timer.ko := mipsel-openwrt-linux-musl-ld -r  -m elf32ltsmip -T ./scripts/module-common.lds -s --build-id  -o sound/core/snd-timer.ko sound/core/snd-timer.o sound/core/snd-timer.mod.o ;  true

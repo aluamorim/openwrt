@@ -1,0 +1,37 @@
+Source-Makefile: package/firmware/layerscape/ls-mc/Makefile
+
+Package: layerscape-mc-ls1088ardb
+Version: 2014-07-04-824745fe1580b281bebb808321c3f41353a3140a-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1088ardb
+Section: firmware
+Category: Firmware
+Title: NXP LS1088ARDB MC firmware
+Maintainer: 
+Source: ls-mc-2014-07-04-824745fe1580b281bebb808321c3f41353a3140a.tar.xz
+Type: ipkg
+Description: NXP LS1088ARDB MC firmware
+
+@@
+
+Package: layerscape-mc-ls2088ardb
+Version: 2014-07-04-824745fe1580b281bebb808321c3f41353a3140a-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_layerscape
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls2088ardb
+Section: firmware
+Category: Firmware
+Title: NXP LS2088ARDB MC firmware
+Maintainer: 
+Source: ls-mc-2014-07-04-824745fe1580b281bebb808321c3f41353a3140a.tar.xz
+Type: ipkg
+Description: NXP LS2088ARDB MC firmware
+
+@@
+
+

@@ -1,0 +1,1 @@
+cmd_sound/core/oss/snd-mixer-oss.ko := mipsel-openwrt-linux-musl-ld -r  -m elf32ltsmip -T ./scripts/module-common.lds -s --build-id  -o sound/core/oss/snd-mixer-oss.ko sound/core/oss/snd-mixer-oss.o sound/core/oss/snd-mixer-oss.mod.o ;  true

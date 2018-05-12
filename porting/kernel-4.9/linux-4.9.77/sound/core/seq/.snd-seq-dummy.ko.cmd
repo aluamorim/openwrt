@@ -1,0 +1,1 @@
+cmd_sound/core/seq/snd-seq-dummy.ko := mipsel-openwrt-linux-musl-ld -r  -m elf32ltsmip -T ./scripts/module-common.lds -s --build-id  -o sound/core/seq/snd-seq-dummy.ko sound/core/seq/snd-seq-dummy.o sound/core/seq/snd-seq-dummy.mod.o ;  true

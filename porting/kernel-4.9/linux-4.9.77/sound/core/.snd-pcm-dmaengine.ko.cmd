@@ -1,0 +1,1 @@
+cmd_sound/core/snd-pcm-dmaengine.ko := mipsel-openwrt-linux-musl-ld -r  -m elf32ltsmip -T ./scripts/module-common.lds -s --build-id  -o sound/core/snd-pcm-dmaengine.ko sound/core/snd-pcm-dmaengine.o sound/core/snd-pcm-dmaengine.mod.o ;  true
