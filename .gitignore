@@ -30,5 +30,12 @@ git-src
 lede/kernel-4.9/staging_dir/
 lede/kernel-4.9/build_dir/
 lede/kernel-4.9/dl/
+lede/kernel-4.9/bin/
+lede/kernel-4.9/tmp/
+lede/kernel-4.14/staging_dir/
+lede/kernel-4.14/build_dir/
+lede/kernel-4.14/dl/
+lede/kernel-4.14/bin/
+lede/kernel-4.14/tmp/
 etc/
 

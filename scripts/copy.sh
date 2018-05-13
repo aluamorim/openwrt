@@ -23,7 +23,7 @@ cp $path/build_dir/target-mipsel_24kc_musl/linux-ramips_mt76x8/linux-$kversion/s
 cp $path/build_dir/target-mipsel_24kc_musl/linux-ramips_mt76x8/linux-$kversion/sound/soc/ralink/*.ko ../linkit-files/modules/
 
 echo "Copying image file ..."
-cp $path/bin/targets/ramips/mt76x8/*.bin ../linkit-files/lks7688.img
+cp $path/bin/targets/ramips/mt76x8/*.bin ../linkit-files/lks7688-$kversion.img
 
 
 echo "Sending files to linkit at IP=$ip_addr ..."

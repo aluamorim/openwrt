@@ -1,0 +1,41 @@
+Source-Makefile: feeds/luci/contrib/package/lucihttp/Makefile
+
+Package: liblucihttp
+Version: 2018-04-22-ccc685e5c366490fc9f50a2e211ec79b7cf5962e-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: LuCI HTTP utility library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lucihttp-2018-04-22-ccc685e5c366490fc9f50a2e211ec79b7cf5962e.tar.xz
+License: ISC
+LicenseFiles: LICENSE
+Type: ipkg
+Description: LuCI HTTP utility library
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: liblucihttp-lua
+Version: 2018-04-22-ccc685e5c366490fc9f50a2e211ec79b7cf5962e-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liblucihttp +liblua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Lua binding for the LuCI HTTP utility library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lucihttp-2018-04-22-ccc685e5c366490fc9f50a2e211ec79b7cf5962e.tar.xz
+License: ISC
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lua binding for the LuCI HTTP utility library
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
