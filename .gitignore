@@ -27,3 +27,8 @@ TAGS*~
 git-src
 .project
 .cproject
+lede/kernel-4.9/staging_dir/
+lede/kernel-4.9/build_dir/
+lede/kernel-4.9/dl/
+etc/
+
