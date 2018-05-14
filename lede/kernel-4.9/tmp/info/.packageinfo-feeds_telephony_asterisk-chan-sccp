@@ -3,7 +3,7 @@ Build-Depends: libiconv
 
 Package: asterisk13-chan-sccp
 Submenu: Telephony
-Version: v4.3.0-20180308-1
+Version: v4.3.0-20180322-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +libltdl asterisk13
 Conflicts: asterisk13-chan-skinny
 Menu-Depends: 
@@ -14,7 +14,7 @@ Category: Network
 Repository: telephony
 Title: SCCP channel support
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: chan-sccp-v4.3.0-20180308.tar.xz
+Source: chan-sccp-v4.3.0-20180322.tar.xz
 License: GPL-1.0
 LicenseFiles: COPYING LICENSE
 Type: ipkg
@@ -27,7 +27,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk15-chan-sccp
 Submenu: Telephony
-Version: v4.3.0-20180308-1
+Version: v4.3.0-20180322-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +libltdl asterisk15
 Conflicts: asterisk15-chan-skinny
 Menu-Depends: 
@@ -38,7 +38,7 @@ Category: Network
 Repository: telephony
 Title: SCCP channel support
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: chan-sccp-v4.3.0-20180308.tar.xz
+Source: chan-sccp-v4.3.0-20180322.tar.xz
 License: GPL-1.0
 LicenseFiles: COPYING LICENSE
 Type: ipkg

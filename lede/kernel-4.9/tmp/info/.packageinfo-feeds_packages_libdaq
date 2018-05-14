@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libdaq/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libdaq
-Version: 2.0.4-2
+Version: 2.0.6-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdnet +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -11,13 +11,13 @@ Section: libs
 Category: Libraries
 Repository: packages
 Title: DAQ library
-Maintainer: Luka Perkov <luka@openwrt.org>
-Source: daq-2.0.4.tar.gz
+Maintainer: W. Michael Petullo <mike@flyn.org>
+Source: daq-2.0.6.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:  Data Acquisition library for packet I/O.
 https://www.snort.org/downloads/snort/ @SF/snort
-Luka Perkov <luka@openwrt.org>
+W. Michael Petullo <mike@flyn.org>
 @@
 
 

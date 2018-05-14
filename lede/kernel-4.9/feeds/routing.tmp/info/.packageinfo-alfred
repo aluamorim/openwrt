@@ -1,7 +1,7 @@
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2018.0-0
+Version: 2018.1-0
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: A.L.F.R.E.D. - Almighty Lightweight Fact Remote Exchange Daemon
 Maintainer: 
-Source: alfred-2018.0.tar.gz
+Source: alfred-2018.1.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: alfred is a user space daemon for distributing arbitrary local information over

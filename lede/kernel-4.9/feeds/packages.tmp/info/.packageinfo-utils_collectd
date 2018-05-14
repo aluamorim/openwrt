@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/collectd/Makefile
 
 Package: collectd
 Menu: 1
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +zlib +libltdl +libip4tc
 Conflicts: 
 Menu-Depends: 
@@ -28,7 +28,7 @@ Config:
 @@
 
 Package: collectd-mod-apache
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-apache:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -46,7 +46,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-apcups
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -64,7 +64,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-ascent
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-ascent:libcurl +PACKAGE_collectd-mod-ascent:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -82,7 +82,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-bind
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-bind:libcurl +PACKAGE_collectd-mod-bind:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -100,7 +100,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-chrony
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -118,7 +118,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-conntrack
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -136,7 +136,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-contextswitch
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -154,7 +154,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-cpu
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -172,7 +172,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-cpufreq
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd @(TARGET_x86||TARGET_x86_64||TARGET_mvebu||TARGET_ipq806x||TARGET_armvirt)
 Conflicts: 
 Menu-Depends: 
@@ -190,7 +190,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-csv
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -208,7 +208,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-curl
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-curl:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -226,7 +226,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-df
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -244,7 +244,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-disk
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -262,7 +262,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-dns
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-dns:libpcap
 Conflicts: 
 Menu-Depends: 
@@ -280,7 +280,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-email
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -298,7 +298,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-entropy
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -316,7 +316,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-exec
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -334,7 +334,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-filecount
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -352,7 +352,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-fscache
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -370,7 +370,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-interface
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -388,7 +388,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-iptables
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-iptables:iptables +libiptc
 Conflicts: 
 Menu-Depends: 
@@ -406,7 +406,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-irq
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -424,7 +424,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-iwinfo
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-iwinfo:libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -442,7 +442,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-load
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -460,7 +460,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-logfile
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -478,7 +478,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-match-empty-counter
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -496,7 +496,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-match-hashed
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -514,7 +514,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-match-regex
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -532,7 +532,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-match-timediff
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -550,7 +550,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-match-value
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -567,8 +567,26 @@ https://collectd.org/
 Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
+Package: collectd-mod-mysql
+Version: 5.8.0-5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-mysql:libmysqlclient-r
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: MySQL status input plugin
+Maintainer: Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+Source: collectd-5.8.0.tar.bz2
+Type: ipkg
+Description: MySQL status input plugin
+https://collectd.org/
+Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
+@@
+
 Package: collectd-mod-memory
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -586,7 +604,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-modbus
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-modbus:libmodbus
 Conflicts: 
 Menu-Depends: 
@@ -604,7 +622,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-mqtt
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-mqtt:libmosquitto
 Conflicts: 
 Menu-Depends: 
@@ -622,7 +640,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-netlink
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-netlink:libmnl
 Conflicts: 
 Menu-Depends: 
@@ -640,7 +658,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-network
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_COLLECTD_ENCRYPTED_NETWORK:libgcrypt
 Conflicts: 
 Menu-Depends: 
@@ -658,7 +676,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-nginx
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-nginx:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -676,7 +694,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-ntpd
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -694,7 +712,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-nut
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-nut:nut-common
 Conflicts: 
 Menu-Depends: 
@@ -712,7 +730,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-olsrd
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -730,7 +748,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-onewire
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-onewire:libow-capi @BROKEN
 Conflicts: 
 Menu-Depends: 
@@ -748,7 +766,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-openvpn
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -766,7 +784,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-ping
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-ping:liboping
 Conflicts: 
 Menu-Depends: 
@@ -784,7 +802,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-postgresql
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-postgresql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -802,7 +820,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-powerdns
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -820,7 +838,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-processes
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -838,7 +856,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-protocols
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -856,7 +874,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-rrdtool
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-rrdtool:librrd1
 Conflicts: 
 Menu-Depends: 
@@ -874,7 +892,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-sensors
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-sensors:libsensors
 Conflicts: 
 Menu-Depends: 
@@ -892,7 +910,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-snmp
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-snmp:libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -910,7 +928,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-syslog
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -928,7 +946,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-tail
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -946,7 +964,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-tail-csv
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -964,7 +982,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-table
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -982,7 +1000,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-teamspeak2
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -1000,7 +1018,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-ted
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd @((!TARGET_avr32)||BROKEN)
 Conflicts: 
 Menu-Depends: 
@@ -1018,7 +1036,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-tcpconns
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -1036,7 +1054,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-thermal
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -1054,7 +1072,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-unixsock
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -1072,7 +1090,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-uptime
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -1090,7 +1108,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-users
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -1108,7 +1126,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-vmem
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -1126,7 +1144,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-wireless
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd
 Conflicts: 
 Menu-Depends: 
@@ -1144,7 +1162,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-write-graphite
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-write-graphite:libpthread
 Conflicts: 
 Menu-Depends: 
@@ -1162,7 +1180,7 @@ Jo-Philipp Wich <jo@mein.io>, Hannu Nyman <hannu.nyman@iki.fi>
 @@
 
 Package: collectd-mod-write-http
-Version: 5.8.0-4
+Version: 5.8.0-5
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread collectd +PACKAGE_collectd-mod-write-http:libcurl
 Conflicts: 
 Menu-Depends: 

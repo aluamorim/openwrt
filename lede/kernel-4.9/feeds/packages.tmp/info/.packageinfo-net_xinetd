@@ -20,7 +20,7 @@ Description: 	xinetd has access control mechanisms, extensive logging capabiliti
 	on the number of servers that can be started, and has deployable
 	defence mechanisms to protect against port scanners, among other
 	things.
-http://www.xinetd.org/
+https://github.com/xinetd-org
 
 @@
 

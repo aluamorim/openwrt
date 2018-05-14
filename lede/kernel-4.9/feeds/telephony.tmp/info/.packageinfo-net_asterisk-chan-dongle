@@ -2,7 +2,7 @@ Source-Makefile: feeds/telephony/net/asterisk-chan-dongle/Makefile
 
 Package: asterisk13-chan-dongle
 Submenu: Telephony
-Version: 1.1-20180305-1
+Version: 1.1-20180312-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +kmod-usb-acm +kmod-usb-serial +kmod-usb-serial-option +libusb-1.0 +usb-modeswitch asterisk13
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: Huawei UMTS 3G dongle support
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: asterisk-chan-dongle-1.1-20180305.tar.xz
+Source: asterisk-chan-dongle-1.1-20180312.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYRIGHT.txt LICENSE.txt
 Type: ipkg
@@ -24,7 +24,7 @@ Jiri Slachta <jiri@slachta.eu>
 
 Package: asterisk15-chan-dongle
 Submenu: Telephony
-Version: 1.1-20180305-1
+Version: 1.1-20180312-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +kmod-usb-acm +kmod-usb-serial +kmod-usb-serial-option +libusb-1.0 +usb-modeswitch asterisk15
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Network
 Repository: base
 Title: Huawei UMTS 3G dongle support
 Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: asterisk-chan-dongle-1.1-20180305.tar.xz
+Source: asterisk-chan-dongle-1.1-20180312.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYRIGHT.txt LICENSE.txt
 Type: ipkg

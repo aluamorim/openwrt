@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/gnurl/Makefile
 
 Package: gnurl
 Submenu: File Transfer
-Version: 7.57.0-1
+Version: 7.57.0-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnurl
 Conflicts: 
 Menu-Depends: 
@@ -22,8 +22,8 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libgnurl
-Version: 7.57.0-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +libidn +zlib
+Version: 7.57.0-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgnutls +libidn2 +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 

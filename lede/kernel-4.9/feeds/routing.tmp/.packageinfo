@@ -26,7 +26,7 @@ Gabriel Kerneis <gabriel@kerneis.info>
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2018.0-0
+Version: 2018.1-0
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Network
 Repository: base
 Title: A.L.F.R.E.D. - Almighty Lightweight Fact Remote Exchange Daemon
 Maintainer: 
-Source: alfred-2018.0.tar.gz
+Source: alfred-2018.1.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: alfred is a user space daemon for distributing arbitrary local information over
@@ -88,7 +88,7 @@ Source-Makefile: feeds/routing/babeld/Makefile
 
 Package: babeld
 Submenu: Routing and Redirection
-Version: 1.8.0-3
+Version: 1.8.2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6
 Conflicts: 
 Menu-Depends: 
@@ -98,7 +98,7 @@ Category: Network
 Repository: base
 Title: A loop-free distance-vector routing protocol
 Maintainer: Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetworks.org>
-Source: babeld-1.8.0.tar.gz
+Source: babeld-1.8.2.tar.gz
 License: MIT
 Type: ipkg
 Description:  Babel is a loop-avoiding distance-vector routing protocol roughly based
@@ -116,7 +116,7 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl
-Version: 2018.0-0
+Version: 2018.1-0
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-batman-adv +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -126,13 +126,13 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool batctl
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2018.0.tar.gz
+Source: batctl-2018.1.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
 It is an easier method for configuring batman-adv and provides some
 additional tools for debugging as well. This package builds
-version 2018.0 of the user space utility.
+version 2018.1 of the user space utility.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
@@ -142,7 +142,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2018.0-0
+Version: <LINUX_VERSION>+2018.1-0
 Depends: +KMOD_BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-crypto-crc32c +kmod-lib-crc32c +kmod-cfg80211
 Conflicts: 
 Menu-Depends: 
@@ -151,12 +151,12 @@ Section: kernel
 Category: Kernel modules
 Title: B.A.T.M.A.N. Adv
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batman-adv-2018.0.tar.gz
+Source: batman-adv-2018.1.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: B.A.T.M.A.N. advanced is a kernel module which allows to
 build layer 2 mesh networks. This package builds
-version 2018.0 of the kernel module.
+version 2018.1 of the kernel module.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
@@ -594,7 +594,7 @@ Source-Makefile: feeds/routing/bmx7/Makefile
 Package: bmx7
 Menu: 1
 Submenu: Routing and Redirection
-Version: r2018030903-1
+Version: r2018042501-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libmbedtls +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -604,7 +604,7 @@ Category: Network
 Repository: base
 Title: BMX7 layer 3 routing daemon
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx7-r2018030903.tar.gz
+Source: bmx7-r2018042501.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: BMX7 routing daemon supporting securely-entrusted IPv6 (and IPv4in6) routing
@@ -614,7 +614,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-uci-config
 Submenu: Routing and Redirection
-Version: r2018030903-1
+Version: r2018042501-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libuci
 Conflicts: 
 Menu-Depends: 
@@ -624,7 +624,7 @@ Category: Network
 Repository: base
 Title: configuration plugin based on uci (recommended!)
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx7-r2018030903.tar.gz
+Source: bmx7-r2018042501.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: configuration plugin based on uci (recommended!)
@@ -634,7 +634,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-iwinfo
 Submenu: Routing and Redirection
-Version: r2018030903-1
+Version: r2018042501-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -644,7 +644,7 @@ Category: Network
 Repository: base
 Title: link characteristics plugin based on libiwinfo (recommended!)
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx7-r2018030903.tar.gz
+Source: bmx7-r2018042501.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: link characteristics plugin based on libiwinfo (recommended!)
@@ -654,7 +654,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-topology
 Submenu: Routing and Redirection
-Version: r2018030903-1
+Version: r2018042501-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7
 Conflicts: 
 Menu-Depends: 
@@ -664,7 +664,7 @@ Category: Network
 Repository: base
 Title: topology plugin
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx7-r2018030903.tar.gz
+Source: bmx7-r2018042501.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: topology plugin
@@ -674,7 +674,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-json
 Submenu: Routing and Redirection
-Version: r2018030903-1
+Version: r2018042501-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -684,7 +684,7 @@ Category: Network
 Repository: base
 Title: json plugin based on json-c
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx7-r2018030903.tar.gz
+Source: bmx7-r2018042501.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: json plugin based on json-c
@@ -694,7 +694,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-sms
 Submenu: Routing and Redirection
-Version: r2018030903-1
+Version: r2018042501-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7
 Conflicts: 
 Menu-Depends: 
@@ -704,7 +704,7 @@ Category: Network
 Repository: base
 Title: sms plugin
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx7-r2018030903.tar.gz
+Source: bmx7-r2018042501.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: sms plugin
@@ -714,7 +714,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-table
 Submenu: Routing and Redirection
-Version: r2018030903-1
+Version: r2018042501-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +bmx7-tun
 Conflicts: 
 Menu-Depends: 
@@ -724,7 +724,7 @@ Category: Network
 Repository: base
 Title: plugin to announce routes from tables via tunnels
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx7-r2018030903.tar.gz
+Source: bmx7-r2018042501.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: plugin to announce routes from tables via tunnels
@@ -734,7 +734,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-tun
 Submenu: Routing and Redirection
-Version: r2018030903-1
+Version: r2018042501-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -744,7 +744,7 @@ Category: Network
 Repository: base
 Title: ipip-based tunnel plugin (recommended!)
 Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx7-r2018030903.tar.gz
+Source: bmx7-r2018042501.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: ipip-based tunnel plugin (recommended!)
@@ -757,7 +757,7 @@ Source-Makefile: feeds/routing/cjdns/Makefile
 
 Package: cjdns
 Submenu: Routing and Redirection
-Version: 20.1-1
+Version: 20.2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +kmod-tun +libnl-tiny +libpthread +librt +libuci-lua +lua-bencode +dkjson +luasocket +lua-sha2
 Conflicts: 
 Menu-Depends: 
@@ -767,7 +767,7 @@ Category: Network
 Repository: base
 Title: Encrypted near-zero-conf mesh routing protocol
 Maintainer: Lars Gierth <larsg@systemli.org>
-Source: cjdns-bd6b60d817d3126fb45f671c1c7637042a0be937.tar.bz2
+Source: cjdns-77259a49e5bc7ca7bc6dca5bd423e02be563bdc5.tar.bz2
 License: GPL-3.0
 Type: ipkg
 Description: 	Cjdns implements an encrypted IPv6 network using public-key cryptography for address allocation and a distributed hash table for routing. This provides near-zero-configuration networking, and prevents many of the security and scalability issues that plague existing networks.
@@ -777,7 +777,7 @@ Lars Gierth <larsg@systemli.org>
 
 Package: cjdns-tests
 Submenu: Routing and Redirection
-Version: 20.1-1
+Version: 20.2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -787,7 +787,7 @@ Category: Network
 Repository: base
 Title: cjdns test cases
 Maintainer: Lars Gierth <larsg@systemli.org>
-Source: cjdns-bd6b60d817d3126fb45f671c1c7637042a0be937.tar.bz2
+Source: cjdns-77259a49e5bc7ca7bc6dca5bd423e02be563bdc5.tar.bz2
 License: GPL-3.0
 Type: ipkg
 Description: cjdns test cases
@@ -1077,35 +1077,6 @@ Markus Stenberg <fingon@iki.fi>
 @@
 
 
-Source-Makefile: feeds/routing/miniupnpd/Makefile
-
-Package: miniupnpd
-Submenu: Firewall
-Version: 2.0.20170421-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libip4tc +IPV6:libip6tc +IPV6:ip6tables +libuuid
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: Lightweight UPnP IGD, NAT-PMP & PCP daemon
-Maintainer: Markus Stenberg <fingon@iki.fi>
-Source: miniupnpd-2.0.20170421.tar.gz
-License: BSD-3-Clause
-Type: ipkg
-Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon
-http://miniupnp.free.fr/
-Markus Stenberg <fingon@iki.fi>
-@@
-Config:
-config MINIUPNPD_IGDv2
-	bool
-	default n
-	prompt "Enable IGDv2"
-@@
-
-
 Source-Makefile: feeds/routing/mrd6/Makefile
 
 Package: mrd6
@@ -1247,7 +1218,7 @@ Source-Makefile: feeds/routing/nodogsplash2/Makefile
 
 Package: nodogsplash2
 Submenu: Captive Portals
-Version: 2.0.1-1
+Version: 2.1.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +iptables-mod-ipopt +libmicrohttpd-no-ssl
 Conflicts: nodogsplash
 Menu-Depends: 
@@ -1257,7 +1228,7 @@ Category: Network
 Repository: base
 Title: Open public network gateway daemon
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: nodogsplash2-2.0.1.tar.gz
+Source: nodogsplash-2.1.1.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description: 	Nodogsplash offers a simple way to open a free hotspot providing
@@ -1812,11 +1783,12 @@ Pierre Pfister <pierre.pfister@darou.fr>
 @@
 
 
-Source-Makefile: feeds/routing/poprouting/Makefile
+Source-Makefile: feeds/routing/prince/Makefile
 
 Package: prince
+Menu: 0
 Submenu: Routing and Redirection
-Version: v0.3.1-2
+Version: v0.4-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjson-c +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -1824,19 +1796,20 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: PopRouting daemon
-Maintainer: Gabriele Gemmi <gabriel@autistici.org>
-Source: prince-v0.3.1.tar.gz
+Title: Prince
+Maintainer: 
+Source: prince-v0.4.tar.xz
+License: MIT
 Type: ipkg
-Description: Prince is an open source implementation of the PopRouting Algorithm.
-It has been developed as a Google Summer of Code Project in collaboration with Freifunk and the University of Trento.
+Description: 	Prince is an open source implementation of the PopRouting Algorithm.
+	It has been developed as a Google Summer of Code Project in collaboration with Freifunk and the University of Trento.
 
-It work by fetching topology data from a Link State routing demon(OONF, OLSR, OSPF, etc),
-calculating the betweenness centrality using the topology, then using these data
-the timer's value are optimized. Finally the timers are pushed back to the routing demon.
-Currently it only supports OLSRd2 (aka OONF).
-https://github.com/gabri94/poprouting
-Gabriele Gemmi <gabriel@autistici.org>
+	Prince fetches topology data from a Link State routing daemon (OONF, OLSR, OSPF, etc),
+	calculates the betweenness centrality using the topology and then computes the
+	the timers' optimal values using these data. At the end of the computation the timers are pushed back to the routing daemon.
+	Since v0.4 it supports both OONF and OLSRd.
+https://github.com/AdvancedNetworkingSystems/prince
+
 @@
 
 

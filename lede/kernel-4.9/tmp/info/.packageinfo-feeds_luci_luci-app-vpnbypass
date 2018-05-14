@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-vpnbypass
 Submenu: 3. Applications
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci +vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -22,7 +22,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-vpnbypass-pt-br
 Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -42,7 +42,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-vpnbypass-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -62,7 +62,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-vpnbypass-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -82,7 +82,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-vpnbypass-zh-tw
 Default: LUCI_LANG_zh-tw||(ALL&&m)
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
 Conflicts: 
 Menu-Depends: 

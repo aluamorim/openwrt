@@ -3,8 +3,8 @@ Build-Depends: php7 php7-pecl-propro php7-pecl-raphf !BUILD_NLS:libiconv !BUILD_
 
 Package: php7-pecl-http
 Submenu: PHP
-Version: 3.1.0-4
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +icu +libcurl +librt +libevent2 +libidn +php7-mod-hash +php7-mod-iconv +php7-mod-session +php7-pecl-raphf +php7-pecl-propro
+Version: 3.1.0-5
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +icu +libcurl +librt +libevent2 +PACKAGE_libidn:libidn +libidn2 +php7-mod-hash +php7-mod-iconv +php7-mod-session +php7-pecl-raphf +php7-pecl-propro
 Conflicts: 
 Menu-Depends: 
 Provides: 

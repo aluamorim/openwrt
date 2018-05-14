@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/alsa-lib/Makefile
 
 Package: alsa-lib
-Version: 1.0.25-1
+Version: 1.1.6-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @AUDIO_SUPPORT +kmod-sound-core +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: ALSA (Advanced Linux Sound Architecture) library
 Maintainer: Ted Hess <thess@kitschensync.net>, Peter Wagner <tripolar@gmx.at>
-Source: alsa-lib-1.0.25.tar.bz2
+Source: alsa-lib-1.1.6.tar.bz2
 License: LGPLv2.1 GPLv2
 LicenseFiles: COPYING aserver/COPYING
 Type: ipkg

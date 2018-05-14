@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/bcp38/Makefile
 
 Package: bcp38
 Submenu: Routing and Redirection
-Version: 5-3
+Version: 5-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset
 Conflicts: 
 Menu-Depends: 

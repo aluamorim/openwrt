@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/ffmpeg/Makefile
 
 Package: ffmpeg
-Version: 3.2.10-1
+Version: 3.2.10-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffprobe
-Version: 3.2.10-1
+Version: 3.2.10-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -57,7 +57,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffserver
-Version: 3.2.10-1
+Version: 3.2.10-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -84,7 +84,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-audio-dec
-Version: 3.2.10-1
+Version: 3.2.10-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -112,8 +112,8 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-full
-Version: 3.2.10-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 +alsa-lib +PACKAGE_libopus:libopus +PACKAGE_lame-lib:lame-lib +PACKAGE_libx264:libx264
+Version: 3.2.10-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 +alsa-lib +PACKAGE_libopus:libopus +PACKAGE_lame-lib:lame-lib +PACKAGE_libx264:libx264 +PACKAGE_fdk-aac:fdk-aac
 Conflicts: 
 Menu-Depends: 
 Provides: libffmpeg
@@ -140,7 +140,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-mini
-Version: 3.2.10-1
+Version: 3.2.10-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -169,7 +169,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: libffmpeg-custom
 Menu: 1
-Version: 3.2.10-1
+Version: 3.2.10-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 @!ALL +FFMPEG_CUSTOM_SELECT_libopus:libopus +PACKAGE_libx264:libx264 +PACKAGE_lame-lib:lame-lib +FFMPEG_CUSTOM_SELECT_libshine:shine +PACKAGE_fdk-aac:fdk-aac
 Conflicts: 
 Menu-Depends: 

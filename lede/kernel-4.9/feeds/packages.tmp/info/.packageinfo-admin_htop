@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/admin/htop/Makefile
 
 Package: htop
-Version: 2.1.0-1
+Version: 2.2.0-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Administration
 Repository: base
 Title: Interactive processes viewer
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
-Source: htop-2.1.0.tar.gz
+Source: htop-2.2.0.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/mpg123/Makefile
 Build-Depends: libtool gettext libiconv
 
 Package: libmpg123
-Version: 1.25.8-1
+Version: 1.25.10-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: packages
 Title: fast console mpeg audio decoder library
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: mpg123-1.25.8.tar.bz2
+Source: mpg123-1.25.10.tar.bz2
 License: LGPL-2.1 GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -22,7 +22,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
 Package: libout123
-Version: 1.25.8-1
+Version: 1.25.10-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl
 Conflicts: 
 Menu-Depends: 
@@ -32,7 +32,7 @@ Category: Libraries
 Repository: packages
 Title: Library for continuous playback of audio streams via various platform-specific output methods
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: mpg123-1.25.8.tar.bz2
+Source: mpg123-1.25.10.tar.bz2
 License: LGPL-2.1 GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -42,7 +42,7 @@ Zoltan HERPAI <wigyori@uid0.hu>
 @@
 
 Package: mpg123
-Version: 1.25.8-1
+Version: 1.25.10-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmpg123 +alsa-lib +libout123
 Conflicts: 
 Menu-Depends: 
@@ -52,7 +52,7 @@ Category: Sound
 Repository: packages
 Title: fast console mpeg audio player
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
-Source: mpg123-1.25.8.tar.bz2
+Source: mpg123-1.25.10.tar.bz2
 License: LGPL-2.1 GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

@@ -3,7 +3,7 @@ Source-Makefile: feeds/luci/contrib/package/freifunk-common/Makefile
 Package: freifunk-common
 Submenu: 9. Freifunk
 Version: 3
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/sound/alsa-utils/Makefile
 
 Package: alsa-utils
-Version: 1.0.25-1
+Version: 1.1.6-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libncursesw +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Sound
 Repository: base
 Title: ALSA (Advanced Linux Sound Architecture) utilities
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: alsa-utils-1.0.25.tar.bz2
+Source: alsa-utils-1.1.6.tar.bz2
 Type: ipkg
 Description: ALSA (Advanced Linux Sound Architecture) utilities
 http://www.alsa-project.org/
@@ -19,7 +19,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: alsa-utils-seq
-Version: 1.0.25-1
+Version: 1.1.6-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,7 @@ Category: Sound
 Repository: base
 Title: ALSA sequencer utilities
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: alsa-utils-1.0.25.tar.bz2
+Source: alsa-utils-1.1.6.tar.bz2
 Type: ipkg
 Description: ALSA sequencer utilities
 http://www.alsa-project.org/
@@ -37,7 +37,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: alsa-utils-tests
-Version: 1.0.25-1
+Version: 1.1.6-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -47,7 +47,7 @@ Category: Sound
 Repository: base
 Title: ALSA utilities test data (adds ~1.3M to image)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: alsa-utils-1.0.25.tar.bz2
+Source: alsa-utils-1.1.6.tar.bz2
 Type: ipkg
 Description: ALSA utilities test data (adds ~1.3M to image)
 http://www.alsa-project.org/

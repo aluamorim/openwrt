@@ -746,4 +746,25 @@ http://www.lighttpd.net/
 W. Michael Petullo <mike@flyn.org>
 @@
 
+Package: lighttpd-mod-wstunnel
+Submenu: Web Servers/Proxies
+Version: 1.4.48-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lighttpd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Websocket tunneling module
+Maintainer: W. Michael Petullo <mike@flyn.org>
+Source: lighttpd-1.4.48.tar.xz
+License: BSD-3c
+LicenseFiles: COPYING
+Type: ipkg
+Description: Websocket tunneling module
+http://www.lighttpd.net/
+W. Michael Petullo <mike@flyn.org>
+@@
+
 

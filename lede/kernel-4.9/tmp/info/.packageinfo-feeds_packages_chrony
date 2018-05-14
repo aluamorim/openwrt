@@ -3,7 +3,7 @@ Build-Depends: pps-tools
 
 Package: chrony
 Submenu: Time Synchronization
-Version: 3.2-1
+Version: 3.3-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Repository: packages
 Title: A versatile NTP client and server
 Maintainer: Miroslav Lichvar <mlichvar0@gmail.com>
 Require-User: chrony=323:chrony=323
-Source: chrony-3.2.tar.gz
+Source: chrony-3.3.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

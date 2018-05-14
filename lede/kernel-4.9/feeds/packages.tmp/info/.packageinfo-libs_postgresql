@@ -4,8 +4,8 @@ Build-Types: host
 
 Package: libpq
 Submenu: database
-Version: 9.6.6-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libreadline +libpthread +libncursesw
+Version: 9.6.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Category: Libraries
 Repository: base
 Title: PostgreSQL client library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-9.6.6.tar.bz2
+Source: postgresql-9.6.8.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: PostgreSQL client library.
@@ -24,8 +24,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-cli
 Submenu: database
-Version: 9.6.6-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpq +librt
+Version: 9.6.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libpq +libreadline +librt +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Category: Utilities
 Repository: base
 Title: Command Line Interface (CLI) to PostgreSQL databases
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-9.6.6.tar.bz2
+Source: postgresql-9.6.8.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: Command Line Interface (CLI) to PostgreSQL databases.
@@ -44,8 +44,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-cli-extra
 Submenu: database
-Version: 9.6.6-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpq +librt
+Version: 9.6.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libpq +libreadline +librt +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -54,7 +54,7 @@ Category: Utilities
 Repository: base
 Title: Command Line extras for PostgreSQL databases
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-9.6.6.tar.bz2
+Source: postgresql-9.6.8.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: Command Line extras for PostgreSQL databases.
@@ -64,8 +64,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-server
 Submenu: database
-Version: 9.6.6-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpq +librt +pgsql-cli
+Version: 9.6.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +pgsql-cli
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75,7 +75,7 @@ Repository: base
 Title: PostgreSQL databases Server
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Require-User: postgres=5432:postgres=5432
-Source: postgresql-9.6.6.tar.bz2
+Source: postgresql-9.6.8.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: PostgreSQL databases Server.

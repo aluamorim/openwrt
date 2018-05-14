@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/multimedia/gphoto2/Makefile
 
 Package: gphoto2
-Version: 2.5.15-1
+Version: 2.5.17-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2 +libpopt +libpthread +libreadline +libncurses +libexif +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Multimedia
 Repository: base
 Title: Gphoto Digital Camera Control
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: gphoto2-2.5.15.tar.bz2
+Source: gphoto2-2.5.17.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

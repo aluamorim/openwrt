@@ -3,7 +3,7 @@ Source-Makefile: feeds/telephony/net/rtpproxy/Makefile
 Package: rtpproxy
 Menu: 1
 Submenu: Telephony
-Version: 2.1.0-20170914-1
+Version: 2.1.0-20170914-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -22,9 +22,9 @@ http://www.rtpproxy.org/
 Jiri Slachta <jiri@slachta.eu>
 @@
 
-Package: rtpproxy-mod-acct_csv
+Package: rtpproxy-mod-acct-csv
 Submenu: Telephony
-Version: 2.1.0-20170914-1
+Version: 2.1.0-20170914-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread rtpproxy
 Conflicts: 
 Menu-Depends: 

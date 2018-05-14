@@ -19,7 +19,7 @@ Description:   iptraf-ng is a console-based network statistics utility for Linux
   variety of figures such as TCP connection packet and byte counts, interface
   statistics and activity indicators, TCP/UDP traffic breakdowns, and LAN
   station packet and byte counts.
-https://fedorahosted.org/iptraf-ng/
+https://infrastructure.fedoraproject.org/infra/hosted-content/iptraf-ng/
 Florian Fainelli <florian@openwrt.org>
 @@
 

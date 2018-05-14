@@ -1,4 +1,6 @@
 Source-Makefile: feeds/packages/libs/protobuf-c/Makefile
+Build-Depends: protobuf-c/host
+Build-Types: host
 
 Package: libprotobuf-c
 Version: v1.2.1

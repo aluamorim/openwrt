@@ -158,7 +158,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-advanced-reboot
 Submenu: 3. Applications
-Version: x-26
+Version: x-27
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci
 Conflicts: 
 Menu-Depends: 
@@ -177,7 +177,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-advanced-reboot-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: x-26
+Version: x-27
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
 Conflicts: 
 Menu-Depends: 
@@ -197,7 +197,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-advanced-reboot-sv
 Default: LUCI_LANG_sv||(ALL&&m)
-Version: x-26
+Version: x-27
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
 Conflicts: 
 Menu-Depends: 
@@ -2616,7 +2616,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-ddns
 Submenu: 3. Applications
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full +ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -2635,7 +2635,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-ca
 Default: LUCI_LANG_ca||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2655,7 +2655,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-cs
 Default: LUCI_LANG_cs||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2675,7 +2675,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-de
 Default: LUCI_LANG_de||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2695,7 +2695,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-el
 Default: LUCI_LANG_el||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2715,7 +2715,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-es
 Default: LUCI_LANG_es||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2735,7 +2735,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-fr
 Default: LUCI_LANG_fr||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2755,7 +2755,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-he
 Default: LUCI_LANG_he||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2775,7 +2775,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-hu
 Default: LUCI_LANG_hu||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2795,7 +2795,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-it
 Default: LUCI_LANG_it||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2815,7 +2815,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-ja
 Default: LUCI_LANG_ja||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2835,7 +2835,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-no
 Default: LUCI_LANG_no||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2855,7 +2855,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-pl
 Default: LUCI_LANG_pl||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2875,7 +2875,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-pt
 Default: LUCI_LANG_pt||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2895,7 +2895,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-pt-br
 Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2915,7 +2915,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-ro
 Default: LUCI_LANG_ro||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2935,7 +2935,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2955,7 +2955,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-sv
 Default: LUCI_LANG_sv||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2975,7 +2975,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-tr
 Default: LUCI_LANG_tr||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2995,7 +2995,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-uk
 Default: LUCI_LANG_uk||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -3015,7 +3015,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-vi
 Default: LUCI_LANG_vi||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -3035,7 +3035,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -3055,7 +3055,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: luci-i18n-ddns-zh-tw
 Default: LUCI_LANG_zh-tw||(ALL&&m)
-Version: 2.4.9-1
+Version: 2.4.9-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -3577,7 +3577,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-dnscrypt-proxy
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uclient-fetch +dnscrypt-proxy
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uclient-fetch +dnscrypt-proxy +luci-lib-httpprotoutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5471,7 +5471,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-lxc
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full +lxc +lxc-create +liblxc +rpcd-mod-lxc +getopt +xz
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full +lxc +lxc-attach +lxc-console +lxc-create +liblxc +rpcd-mod-lxc +getopt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6585,7 +6585,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-mwan3
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +mwan3 +luci-mod-admin-full +luci-app-firewall +luci-lib-nixio
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +mwan3 +libuci-lua +luci-mod-admin-full +luci-app-firewall +luci-lib-nixio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6719,6 +6719,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-nlbwmon - 日本語 (Japanese)
+
+@@
+
+Package: luci-i18n-nlbwmon-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-nlbwmon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-nlbwmon - ru translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-nlbwmon - Русский (Russian)
 
 @@
 
@@ -7881,6 +7900,7 @@ Repository: base
 Title: LuCI Support for OpenVPN
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Description: LuCI Support for OpenVPN
 
@@ -7899,6 +7919,7 @@ Repository: base
 Title: luci-app-openvpn - ca translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Català (Catalan)
@@ -7918,6 +7939,7 @@ Repository: base
 Title: luci-app-openvpn - cs translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Čeština (Czech)
@@ -7937,6 +7959,7 @@ Repository: base
 Title: luci-app-openvpn - de translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Deutsch (German)
@@ -7956,6 +7979,7 @@ Repository: base
 Title: luci-app-openvpn - el translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Ελληνικά (Greek)
@@ -7975,6 +7999,7 @@ Repository: base
 Title: luci-app-openvpn - en translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - English
@@ -7994,6 +8019,7 @@ Repository: base
 Title: luci-app-openvpn - es translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Español (Spanish)
@@ -8013,6 +8039,7 @@ Repository: base
 Title: luci-app-openvpn - fr translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Français (French)
@@ -8032,6 +8059,7 @@ Repository: base
 Title: luci-app-openvpn - he translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - עִבְרִית (Hebrew)
@@ -8051,6 +8079,7 @@ Repository: base
 Title: luci-app-openvpn - hu translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Magyar (Hungarian)
@@ -8070,6 +8099,7 @@ Repository: base
 Title: luci-app-openvpn - it translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Italiano (Italian)
@@ -8089,6 +8119,7 @@ Repository: base
 Title: luci-app-openvpn - ja translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - 日本語 (Japanese)
@@ -8108,6 +8139,7 @@ Repository: base
 Title: luci-app-openvpn - ms translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Bahasa Melayu (Malay)
@@ -8127,6 +8159,7 @@ Repository: base
 Title: luci-app-openvpn - no translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Norsk (Norwegian)
@@ -8146,6 +8179,7 @@ Repository: base
 Title: luci-app-openvpn - pl translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Polski (Polish)
@@ -8165,6 +8199,7 @@ Repository: base
 Title: luci-app-openvpn - pt translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Português (Portuguese)
@@ -8184,6 +8219,7 @@ Repository: base
 Title: luci-app-openvpn - pt-br translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Português do Brasil (Brazialian Portuguese)
@@ -8203,6 +8239,7 @@ Repository: base
 Title: luci-app-openvpn - ro translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Română (Romanian)
@@ -8222,6 +8259,7 @@ Repository: base
 Title: luci-app-openvpn - ru translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Русский (Russian)
@@ -8241,6 +8279,7 @@ Repository: base
 Title: luci-app-openvpn - sk translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Slovenčina (Slovak)
@@ -8260,6 +8299,7 @@ Repository: base
 Title: luci-app-openvpn - sv translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Svenska (Swedish)
@@ -8279,6 +8319,7 @@ Repository: base
 Title: luci-app-openvpn - tr translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Türkçe (Turkish)
@@ -8298,6 +8339,7 @@ Repository: base
 Title: luci-app-openvpn - uk translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - украї́нська (Ukrainian)
@@ -8317,6 +8359,7 @@ Repository: base
 Title: luci-app-openvpn - vi translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Tiếng Việt (Vietnamese)
@@ -8336,6 +8379,7 @@ Repository: base
 Title: luci-app-openvpn - zh-cn translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - 中文 (Chinese)
@@ -8355,6 +8399,7 @@ Repository: base
 Title: luci-app-openvpn - zh-tw translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - 臺灣華語 (Taiwanese)
@@ -8856,6 +8901,47 @@ Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-p910nd - 臺灣華語 (Taiwanese)
 
+@@
+
+
+Source-Makefile: feeds/luci/applications/luci-app-pagekitec/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-pagekitec
+Submenu: 3. Applications
+Version: x-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +pagekitec
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for PageKite
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Source: 
+Type: ipkg
+Description: LuCI Support for PageKite
+Karl Palsson <karlp@tweak.net.au>
+@@
+
+Package: luci-i18n-pagekitec-ja
+Default: LUCI_LANG_ja||(ALL&&m)
+Version: x-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-pagekitec
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-pagekitec - ja translation
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-pagekitec - 日本語 (Japanese)
+Karl Palsson <karlp@tweak.net.au>
 @@
 
 
@@ -14105,7 +14191,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-vpnbypass
 Submenu: 3. Applications
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci +vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -14124,7 +14210,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-vpnbypass-pt-br
 Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -14144,7 +14230,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-vpnbypass-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -14164,7 +14250,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-vpnbypass-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -14184,7 +14270,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-vpnbypass-zh-tw
 Default: LUCI_LANG_zh-tw||(ALL&&m)
-Version: x-3
+Version: x-4
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vpnbypass
 Conflicts: 
 Menu-Depends: 
@@ -14842,7 +14928,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-wireguard
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +wireguard-tools +kmod-wireguard
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +wireguard-tools +kmod-wireguard +luci-proto-wireguard
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15566,7 +15652,7 @@ Source-Makefile: feeds/luci/contrib/package/freifunk-common/Makefile
 Package: freifunk-common
 Submenu: 9. Freifunk
 Version: 3
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15689,6 +15775,47 @@ Description:   A watchdog daemon that monitors wireless interfaces to ensure the
 @@
 
 
+Source-Makefile: feeds/luci/contrib/package/lucihttp/Makefile
+
+Package: liblucihttp
+Version: 2018-04-22-ccc685e5c366490fc9f50a2e211ec79b7cf5962e-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: LuCI HTTP utility library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lucihttp-2018-04-22-ccc685e5c366490fc9f50a2e211ec79b7cf5962e.tar.xz
+License: ISC
+LicenseFiles: LICENSE
+Type: ipkg
+Description: LuCI HTTP utility library
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: liblucihttp-lua
+Version: 2018-04-22-ccc685e5c366490fc9f50a2e211ec79b7cf5962e-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liblucihttp +liblua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Lua binding for the LuCI HTTP utility library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lucihttp-2018-04-22-ccc685e5c366490fc9f50a2e211ec79b7cf5962e.tar.xz
+License: ISC
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lua binding for the LuCI HTTP utility library
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
 Source-Makefile: feeds/luci/contrib/package/meshwizard/Makefile
 
 Package: meshwizard
@@ -15716,7 +15843,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-lib-httpclient
 Submenu: 6. Libraries
 Version: x-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-base +luci-lib-nixio
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-base +luci-lib-nixio +luci-lib-httpprotoutils
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15728,6 +15855,28 @@ Maintainer:
 Source: 
 Type: ipkg
 Description: HTTP(S) client library
+
+@@
+
+
+Source-Makefile: feeds/luci/libs/luci-lib-httpprotoutils/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-lib-httpprotoutils
+Submenu: 6. Libraries
+Version: x-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: HTTP protocol utility functions
+Maintainer: 
+Source: 
+Type: ipkg
+Description: HTTP protocol utility functions
 
 @@
 
@@ -15918,7 +16067,7 @@ Build-Types: host
 Package: luci-base
 Submenu: 2. Modules
 Version: x-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +libuci-lua +luci-lib-nixio +luci-lib-ip +rpcd +libubus-lua +luci-lib-jsonc
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +lua +luci-lib-nixio +luci-lib-ip +rpcd +libubus-lua +luci-lib-jsonc +liblucihttp-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 

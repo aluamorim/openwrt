@@ -14,6 +14,7 @@ Repository: base
 Title: LuCI Support for OpenVPN
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Description: LuCI Support for OpenVPN
 
@@ -32,6 +33,7 @@ Repository: base
 Title: luci-app-openvpn - ca translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Català (Catalan)
@@ -51,6 +53,7 @@ Repository: base
 Title: luci-app-openvpn - cs translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Čeština (Czech)
@@ -70,6 +73,7 @@ Repository: base
 Title: luci-app-openvpn - de translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Deutsch (German)
@@ -89,6 +93,7 @@ Repository: base
 Title: luci-app-openvpn - el translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Ελληνικά (Greek)
@@ -108,6 +113,7 @@ Repository: base
 Title: luci-app-openvpn - en translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - English
@@ -127,6 +133,7 @@ Repository: base
 Title: luci-app-openvpn - es translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Español (Spanish)
@@ -146,6 +153,7 @@ Repository: base
 Title: luci-app-openvpn - fr translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Français (French)
@@ -165,6 +173,7 @@ Repository: base
 Title: luci-app-openvpn - he translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - עִבְרִית (Hebrew)
@@ -184,6 +193,7 @@ Repository: base
 Title: luci-app-openvpn - hu translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Magyar (Hungarian)
@@ -203,6 +213,7 @@ Repository: base
 Title: luci-app-openvpn - it translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Italiano (Italian)
@@ -222,6 +233,7 @@ Repository: base
 Title: luci-app-openvpn - ja translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - 日本語 (Japanese)
@@ -241,6 +253,7 @@ Repository: base
 Title: luci-app-openvpn - ms translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Bahasa Melayu (Malay)
@@ -260,6 +273,7 @@ Repository: base
 Title: luci-app-openvpn - no translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Norsk (Norwegian)
@@ -279,6 +293,7 @@ Repository: base
 Title: luci-app-openvpn - pl translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Polski (Polish)
@@ -298,6 +313,7 @@ Repository: base
 Title: luci-app-openvpn - pt translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Português (Portuguese)
@@ -317,6 +333,7 @@ Repository: base
 Title: luci-app-openvpn - pt-br translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Português do Brasil (Brazialian Portuguese)
@@ -336,6 +353,7 @@ Repository: base
 Title: luci-app-openvpn - ro translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Română (Romanian)
@@ -355,6 +373,7 @@ Repository: base
 Title: luci-app-openvpn - ru translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Русский (Russian)
@@ -374,6 +393,7 @@ Repository: base
 Title: luci-app-openvpn - sk translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Slovenčina (Slovak)
@@ -393,6 +413,7 @@ Repository: base
 Title: luci-app-openvpn - sv translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Svenska (Swedish)
@@ -412,6 +433,7 @@ Repository: base
 Title: luci-app-openvpn - tr translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Türkçe (Turkish)
@@ -431,6 +453,7 @@ Repository: base
 Title: luci-app-openvpn - uk translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - украї́нська (Ukrainian)
@@ -450,6 +473,7 @@ Repository: base
 Title: luci-app-openvpn - vi translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - Tiếng Việt (Vietnamese)
@@ -469,6 +493,7 @@ Repository: base
 Title: luci-app-openvpn - zh-cn translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - 中文 (Chinese)
@@ -488,6 +513,7 @@ Repository: base
 Title: luci-app-openvpn - zh-tw translation
 Maintainer: 
 Source: 
+License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-openvpn - 臺灣華語 (Taiwanese)
