@@ -5,9 +5,9 @@ cd ../lede/kernel-4.9
 ./config_linkit.sh
 
 cd feeds/linkit
-git reset --hard 78f124d5f9d027b7dadc293b06296631f4bbf871
+git reset --hard 298a51ae07b68a2fdc42977bce74c237612e9c1c
 git stash
-git reset --hard 78f124d5f9d027b7dadc293b06296631f4bbf871
+git reset --hard 298a51ae07b68a2fdc42977bce74c237612e9c1c
 git stash pop
 
 cd ../../../
