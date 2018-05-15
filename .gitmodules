@@ -13,3 +13,18 @@
 [submodule "lede/kernel-4.9/feeds/linkit"]
 	path = lede/kernel-4.9/feeds/linkit
 	url = https://github.com/MediaTek-Labs/linkit-smart-7688-feed.git
+[submodule "lede/lede/kernel-4.9/feeds/luci"]
+	path = lede/lede/kernel-4.9/feeds/luci
+	url = https://git.openwrt.org/project/luci.git
+[submodule "lede/lede/kernel-4.9/feeds/packages"]
+	path = lede/lede/kernel-4.9/feeds/packages
+	url = https://git.openwrt.org/feed/packages.git
+[submodule "lede/lede/kernel-4.9/feeds/routing"]
+	path = lede/lede/kernel-4.9/feeds/routing
+	url = https://git.openwrt.org/feed/routing.git
+[submodule "lede/lede/kernel-4.9/feeds/telephony"]
+	path = lede/lede/kernel-4.9/feeds/telephony
+	url = https://git.openwrt.org/feed/telephony.git
+[submodule "lede/lede/kernel-4.9/feeds/linkit"]
+	path = lede/lede/kernel-4.9/feeds/linkit
+	url = https://github.com/MediaTek-Labs/linkit-smart-7688-feed.git

@@ -2856,8 +2856,10 @@ CONFIG_PACKAGE_libblobmsg-json=y
 # CONFIG_PACKAGE_libiconv-full is not set
 # CONFIG_PACKAGE_libid3tag is not set
 # CONFIG_PACKAGE_libidn is not set
+# CONFIG_PACKAGE_libidn2 is not set
 # CONFIG_PACKAGE_libiio is not set
 # CONFIG_PACKAGE_libimobiledevice is not set
+# CONFIG_PACKAGE_libinotifytools is not set
 # CONFIG_PACKAGE_libinput is not set
 # CONFIG_PACKAGE_libintl is not set
 # CONFIG_PACKAGE_libintl-full is not set
@@ -2869,10 +2871,13 @@ CONFIG_PACKAGE_libjson-c=y
 # CONFIG_PACKAGE_libldns is not set
 # CONFIG_PACKAGE_libltdl is not set
 # CONFIG_PACKAGE_liblua is not set
+# CONFIG_PACKAGE_liblucihttp is not set
+# CONFIG_PACKAGE_liblucihttp-lua is not set
 # CONFIG_PACKAGE_liblz4 is not set
 # CONFIG_PACKAGE_liblzo is not set
 # CONFIG_PACKAGE_libmad is not set
 # CONFIG_PACKAGE_libmagic is not set
+# CONFIG_PACKAGE_libmariadbclient is not set
 # CONFIG_PACKAGE_libmcrypt is not set
 # CONFIG_PACKAGE_libmicrohttpd is not set
 # CONFIG_PACKAGE_libmicrohttpd-no-ssl is not set
@@ -2888,8 +2893,6 @@ CONFIG_PACKAGE_libjson-c=y
 # CONFIG_PACKAGE_libmpeg2 is not set
 # CONFIG_PACKAGE_libmpg123 is not set
 # CONFIG_PACKAGE_libmraa is not set
-# CONFIG_PACKAGE_libmysqlclient is not set
-# CONFIG_PACKAGE_libmysqlclient-r is not set
 # CONFIG_PACKAGE_libnatpmp is not set
 # CONFIG_PACKAGE_libncurses is not set
 # CONFIG_PACKAGE_libndpi is not set
@@ -3151,6 +3154,7 @@ CONFIG_PACKAGE_libuclient=y
 # CONFIG_PACKAGE_luci-app-olsr-viz is not set
 # CONFIG_PACKAGE_luci-app-openvpn is not set
 # CONFIG_PACKAGE_luci-app-p910nd is not set
+# CONFIG_PACKAGE_luci-app-pagekitec is not set
 # CONFIG_PACKAGE_luci-app-polipo is not set
 # CONFIG_PACKAGE_luci-app-privoxy is not set
 # CONFIG_PACKAGE_luci-app-qos is not set
@@ -3205,6 +3209,7 @@ CONFIG_PACKAGE_libuclient=y
 #
 # CONFIG_PACKAGE_luci-lib-dracula is not set
 # CONFIG_PACKAGE_luci-lib-httpclient is not set
+# CONFIG_PACKAGE_luci-lib-httpprotoutils is not set
 # CONFIG_PACKAGE_luci-lib-ip is not set
 # CONFIG_PACKAGE_luci-lib-jquery-1-4 is not set
 # CONFIG_PACKAGE_luci-lib-json is not set
@@ -3419,7 +3424,6 @@ CONFIG_PACKAGE_iptables=y
 # CONFIG_PACKAGE_iptgeoip is not set
 # CONFIG_PACKAGE_miniupnpc is not set
 # CONFIG_PACKAGE_miniupnpd is not set
-# CONFIG_MINIUPNPD_IGDv2 is not set
 # CONFIG_PACKAGE_natpmpc is not set
 # CONFIG_PACKAGE_nftables is not set
 # CONFIG_PACKAGE_shorewall is not set
@@ -3470,6 +3474,7 @@ CONFIG_PACKAGE_iptables=y
 # CONFIG_PACKAGE_drill is not set
 # CONFIG_PACKAGE_hostip is not set
 # CONFIG_PACKAGE_idn is not set
+# CONFIG_PACKAGE_idn2 is not set
 # CONFIG_PACKAGE_inadyn is not set
 # CONFIG_PACKAGE_isc-dhcp-client-ipv4 is not set
 # CONFIG_PACKAGE_isc-dhcp-client-ipv6 is not set
@@ -3729,6 +3734,10 @@ CONFIG_PACKAGE_iptables=y
 # CONFIG_PACKAGE_sipp is not set
 # CONFIG_PACKAGE_siproxd is not set
 # CONFIG_PACKAGE_yate is not set
+
+#
+# Telephony Lantiq
+#
 
 #
 # Time Synchronization
@@ -4385,7 +4394,8 @@ CONFIG_PACKAGE_uboot-envtools=y
 #
 # database
 #
-# CONFIG_PACKAGE_mysql-server is not set
+# CONFIG_PACKAGE_mariadb-client is not set
+# CONFIG_PACKAGE_mariadb-server is not set
 # CONFIG_PACKAGE_pgsql-cli is not set
 # CONFIG_PACKAGE_pgsql-cli-extra is not set
 # CONFIG_PACKAGE_pgsql-server is not set
@@ -4461,6 +4471,8 @@ CONFIG_PACKAGE_uboot-envtools=y
 # CONFIG_PACKAGE_i2c-tools is not set
 # CONFIG_PACKAGE_iconv is not set
 # CONFIG_PACKAGE_iio-utils is not set
+# CONFIG_PACKAGE_inotifywait is not set
+# CONFIG_PACKAGE_inotifywatch is not set
 # CONFIG_PACKAGE_io is not set
 # CONFIG_PACKAGE_irqbalance is not set
 # CONFIG_PACKAGE_iwcap is not set
