@@ -4,7 +4,13 @@ cd ../lede/kernel-4.9
 
 ./config_linkit.sh
 
-cd ../../
+cd feeds/linkit
+git reset --hard 78f124d5f9d027b7dadc293b06296631f4bbf871
+git stash
+git reset --hard 78f124d5f9d027b7dadc293b06296631f4bbf871
+git stash pop
+
+cd ../../../
 
 git submodule add https://git.openwrt.org/project/luci.git lede/kernel-4.9/feeds/luci ;
 git submodule add https://git.openwrt.org/feed/packages.git lede/kernel-4.9/feeds/packages;
