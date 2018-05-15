@@ -50929,26 +50929,6 @@ Baptiste Jonglez <openwrt-pkg@bitsofnetworks.org>
 @@
 
 
-Source-Makefile: package/feeds/packages/bmx7-dnsupdate/Makefile
-
-Package: bmx7-dnsupdate
-Version: 0.1-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bmx7 +bmx7-json inotifywait jshn
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: bmx7-dnsupdate
-Maintainer: Paul Spooren <spooren@informatik.uni-leipzig.de>
-Source: 
-Type: ipkg
-Description: bmx7-dnsupdate
-Paul Spooren <spooren@informatik.uni-leipzig.de>
-@@
-
-
 Source-Makefile: package/feeds/packages/bogofilter/Makefile
 
 Package: bogofilter
@@ -66805,90 +66785,6 @@ http://troglobit.com/project/inadyn/
 @@
 
 
-Source-Makefile: package/feeds/packages/inotify-tools/Makefile
-
-Package: libinotifytools
-Version: 3.20.1-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: packages
-Title: libinotifytools
-Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: inotify-tools-3.20.1.tar.gz
-License: GPLv2
-LicenseFiles: COPYING
-Type: ipkg
-Description:   inotify-tools is a C library and a set of command-line programs for
-Linux providing a simple interface to inotify. These programs can be
-used to monitor and act upon filesystem events. A more detailed
-description of the programs is further down the page. The programs are
-written in C and have no dependencies other than a Linux kernel
-supporting inotify.
-
-  This package provides the libinotifytools shared library.
-https://github.com/rvoicilas/inotify-tools/wiki
-Daniel Golle <daniel@makrotopia.org>
-@@
-
-Package: inotifywait
-Version: 3.20.1-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libinotifytools
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: inotifywait tool
-Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: inotify-tools-3.20.1.tar.gz
-License: GPLv2
-LicenseFiles: COPYING
-Type: ipkg
-Description:   inotify-tools is a C library and a set of command-line programs for
-Linux providing a simple interface to inotify. These programs can be
-used to monitor and act upon filesystem events. A more detailed
-description of the programs is further down the page. The programs are
-written in C and have no dependencies other than a Linux kernel
-supporting inotify.
-
-  This package provides the inotifywait tool.
-https://github.com/rvoicilas/inotify-tools/wiki
-Daniel Golle <daniel@makrotopia.org>
-@@
-
-Package: inotifywatch
-Version: 3.20.1-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libinotifytools
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: inotifywatch tool
-Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: inotify-tools-3.20.1.tar.gz
-License: GPLv2
-LicenseFiles: COPYING
-Type: ipkg
-Description:   inotify-tools is a C library and a set of command-line programs for
-Linux providing a simple interface to inotify. These programs can be
-used to monitor and act upon filesystem events. A more detailed
-description of the programs is further down the page. The programs are
-written in C and have no dependencies other than a Linux kernel
-supporting inotify.
-
-  This package provides the inotifywatch tool.
-https://github.com/rvoicilas/inotify-tools/wiki
-Daniel Golle <daniel@makrotopia.org>
-@@
-
-
 Source-Makefile: package/feeds/packages/intltool/Makefile
 Build-Types: host
 
@@ -71711,65 +71607,6 @@ Description:   GNU Libidn is a fully documented implementation of the Stringprep
 
 http://www.gnu.org/software/libidn/
 Kevin Darbyshire-Bryant <kevin@darbyshire-bryant.me.uk>
-@@
-
-
-Source-Makefile: package/feeds/packages/libidn2/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
-
-Package: idn2
-Submenu: IP Addresses and Names
-Version: 2.0.4-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libidn2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: GNU IDN2 (Internationalized Domain Name) tool
-Maintainer: Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
-Source: libidn2-2.0.4.tar.gz
-License: GPL-2.0-or-later LGPL-3.0-or-later
-LicenseFiles: COPYING COPYINGv2 COPYING.LESSERv3
-Type: ipkg
-Description:   Libidn2 is a free software implementation of IDNA2008,
-  Punycode and TR46 in library form. It contains
-  functionality to convert internationalized domain
-  names to and from ASCII Compatible Encoding (ACE),
-  following the IDNA2008 and TR46 standards.
-
-  Command line tool using libidn2
-
-http://www.gnu.org/software/libidn/
-Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
-@@
-
-Package: libidn2
-Version: 2.0.4-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libunistring +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: libs
-Category: Libraries
-Repository: packages
-Title: International domain name library (IDNA2008, Punycode and TR46)
-Maintainer: Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
-Source: libidn2-2.0.4.tar.gz
-License: GPL-2.0-or-later LGPL-3.0-or-later
-LicenseFiles: COPYING COPYINGv2 COPYING.LESSERv3
-Type: ipkg
-Description:   Libidn2 is a free software implementation of IDNA2008,
-  Punycode and TR46 in library form. It contains
-  functionality to convert internationalized domain
-  names to and from ASCII Compatible Encoding (ACE),
-  following the IDNA2008 and TR46 standards.
-
-  Library only package
-
-https://www.gnu.org/software/libidn/
-Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
 @@
 
 
@@ -79315,1190 +79152,6 @@ Heinrich Schuchardt <xypron.glpk@gmx.de>
 @@
 
 
-Source-Makefile: package/feeds/packages/mariadb/Makefile
-Build-Depends: libevent2 mariadb/host
-Build-Depends/host: libxml2/host
-Build-Types: host
-
-Package: libmariadbclient
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libopenssl +libstdcpp +zlib
-Conflicts: 
-Menu-Depends: 
-Provides: libmysqlclient libmysqlclient-r
-Section: libs
-Category: Libraries
-Repository: packages
-Title: MariaDB database client library
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package includes the client library.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-client
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libopenssl +libstdcpp +zlib +libncursesw
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database core client binaries
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package includes the following core client binaries:
-
-mysql
-mysqlcheck
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-client-extra
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-client
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database extra client binaries
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package includes the following extra client binaries:
-
-mysql_find_rows
-mysql_waitpid
-mysqlaccess
-mysqladmin
-mysqldump
-mysqlimport
-mysqlshow
-mysqlslap
-mytop
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-extra-charsets
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database extra character sets
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-The MariaDB server packaged by OpenWrt only provides support for UTF-8.
-This package contains single Byte character sets and collations that can
-be added at run time.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server
-Menu: 1
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libopenssl +libstdcpp +zlib +!arc:libaio +liblzma +libpcre +resolveip
-Conflicts: 
-Menu-Depends: 
-Provides: mysql-server
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database core server binaries
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package includes the following core server binaries:
-
-innochecksum
-my_print_defaults
-mysql_install_db
-mysql_upgrade
-mysqld
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-extra
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database extra server binaries
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package includes the following extra server binaries:
-
-aria*
-mariabackup
-msql2mysql
-myisam_ftdump
-myisamchk
-myisamlog
-myisampack
-mysql_convert_table_format
-mysql_fix_extensions
-mysql_plugin
-mysql_secure_installation
-mysql_setpermission
-mysql_tzinfo_to_sql
-mysqlbinlog
-mysqld_multi
-mysqld_safe
-mysqld_safe_helper
-mysqldumpslow
-mysqlhotcopy
-perror
-replace
-resolve_stack_dump
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-adt-null
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the adt_null plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-auth-0x0100
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the auth_0x0100 plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-auth-ed25519
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the auth_ed25519 plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-auth-socket
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the auth_socket plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-auth-test-plugin
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the auth_test_plugin plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-client-ed25519
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the client_ed25519 plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-debug-key-management
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the debug_key_management plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-dialog-examples
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the dialog_examples plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-disks
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the disks plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-example-key-management
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the example_key_management plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-feedback
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the feedback plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-file-key-management
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the file_key_management plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-ha-archive
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the ha_archive plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-ha-blackhole
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the ha_blackhole plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-ha-connect
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-ha-connect:libxml2
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the ha_connect plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-ha-federated
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the ha_federated plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-ha-federatedx
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the ha_federatedx plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-ha-innodb
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the ha_innodb plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-ha-spider
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the ha_spider plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-ha-test-sql-discovery
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the ha_test_sql_discovery plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-handlersocket
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the handlersocket plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-libdaemon-example
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the libdaemon_example plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-locales
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the locales plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-metadata-lock-info
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the metadata_lock_info plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-mypluglib
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the mypluglib plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-qa-auth-client
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the qa_auth_client plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-qa-auth-interface
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the qa_auth_interface plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-qa-auth-server
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the qa_auth_server plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-query-cache-info
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the query_cache_info plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-query-response-time
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the query_response_time plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-semisync-master
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the semisync_master plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-semisync-slave
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the semisync_slave plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-server-audit
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the server_audit plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-simple-password-check
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the simple_password_check plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-sql-errlog
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the sql_errlog plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-Package: mariadb-server-plugin-wsrep-info
-Submenu: database
-Version: 10.1.33-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: packages
-Title: MariaDB database plugin
-Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
-Type: ipkg
-Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
-database server. SQL (Structured Query Language) is the most popular
-database query language in the world. The main goals of MariaDB are
-speed, robustness and ease of use.
-
-This package provides the wsrep_info plugin.
-
-https://mariadb.org/
-Sebastian Kemper <sebastian_ml@gmx.net>
-@@
-
-
 Source-Makefile: package/feeds/packages/mbtools/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
@@ -80870,29 +79523,6 @@ Type: ipkg
 Description: Lightweight UPnP library
 http://miniupnp.tuxfamily.org/
 Steven Barth <cyrus@openwrt.org>
-@@
-
-
-Source-Makefile: package/feeds/packages/miniupnpd/Makefile
-
-Package: miniupnpd
-Submenu: Firewall
-Version: 2.1-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libip4tc +IPV6:libip6tc +IPV6:ip6tables +libuuid
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: packages
-Title: Lightweight UPnP IGD, NAT-PMP & PCP daemon
-Maintainer: Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
-Source: miniupnpd-2.1.tar.gz
-License: BSD-3-Clause
-Type: ipkg
-Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon
-http://miniupnp.free.fr/
-Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
 @@
 
 
@@ -81924,6 +80554,68 @@ Type: ipkg
 Description:   A small xml library.
 http://www.minixml.org/
 Espen Jürgensen <espenjurgensen+openwrt@gmail.com>
+@@
+
+
+Source-Makefile: package/feeds/packages/mysql/Makefile
+Build-Depends: libtool gettext libiconv
+
+Package: mysql-server
+Submenu: database
+Version: 5.1.73-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmysqlclient +libpthread +libncurses +libreadline
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: packages
+Title: MySQL Server
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: mysql-5.1.73.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description: MySQL Server
+http://dev.mysql.com/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: libmysqlclient
+Version: 5.1.73-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: MySQL client library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: mysql-5.1.73.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description: MySQL client library
+http://dev.mysql.com/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: libmysqlclient-r
+Version: 5.1.73-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp +zlib +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: MySQL client library threadsafe
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: mysql-5.1.73.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description: MySQL client library threadsafe
+http://dev.mysql.com/
+Jo-Philipp Wich <jo@mein.io>
 @@
 
 
@@ -82991,35 +81683,6 @@ Type: ipkg
 Description:  Node.js package to access HID devices
 https://github.com/node-hid/node-hid
 John Crispin <blogic@openwrt.org>
-@@
-
-
-Source-Makefile: package/feeds/packages/node-mozilla-iot-gateway/Makefile
-Build-Depends: node/host openzwave
-
-Package: node-mozilla-iot-gateway
-Submenu: Node.js
-Version: 0.3.1-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +node +node-npm +libopenzwave +python +openssl-util
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: packages
-Title: Things Gateway by Mozilla
-Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: node-mozilla-iot-gateway-0.3.1.tar.gz
-License: MPL-2.0
-LicenseFiles: LICENSE
-Type: ipkg
-Description:   Build Your Own Web of Things Gateway. The "Web of Things" (WoT) is the
-  idea of taking the lessons learned from the World Wide Web and applying
-  them to IoT. It's about creating a decentralized Internet of Things by
-  giving Things URLs on the web to make them linkable and discoverable,
-  and defining a standard data model and APIs to make them interoperable.
-https://iot.mozilla.org/gateway/
-Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
 
@@ -117974,6 +116637,35 @@ Markus Stenberg <fingon@iki.fi>
 @@
 
 
+Source-Makefile: package/feeds/routing/miniupnpd/Makefile
+
+Package: miniupnpd
+Submenu: Firewall
+Version: 2.0.20170421-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libip4tc +IPV6:libip6tc +IPV6:ip6tables +libuuid
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: routing
+Title: Lightweight UPnP IGD, NAT-PMP & PCP daemon
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Source: miniupnpd-2.0.20170421.tar.gz
+License: BSD-3-Clause
+Type: ipkg
+Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon
+http://miniupnp.free.fr/
+Markus Stenberg <fingon@iki.fi>
+@@
+Config:
+config MINIUPNPD_IGDv2
+	bool
+	default n
+	prompt "Enable IGDv2"
+@@
+
+
 Source-Makefile: package/feeds/routing/mrd6/Makefile
 
 Package: mrd6
@@ -118680,12 +117372,11 @@ Pierre Pfister <pierre.pfister@darou.fr>
 @@
 
 
-Source-Makefile: package/feeds/routing/prince/Makefile
+Source-Makefile: package/feeds/routing/poprouting/Makefile
 
 Package: prince
-Menu: 0
 Submenu: Routing and Redirection
-Version: v0.4-1
+Version: v0.3.1-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjson-c +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -118693,20 +117384,19 @@ Provides:
 Section: net
 Category: Network
 Repository: routing
-Title: Prince
-Maintainer: 
-Source: prince-v0.4.tar.xz
-License: MIT
+Title: PopRouting daemon
+Maintainer: Gabriele Gemmi <gabriel@autistici.org>
+Source: prince-v0.3.1.tar.gz
 Type: ipkg
-Description: 	Prince is an open source implementation of the PopRouting Algorithm.
-	It has been developed as a Google Summer of Code Project in collaboration with Freifunk and the University of Trento.
+Description: Prince is an open source implementation of the PopRouting Algorithm.
+It has been developed as a Google Summer of Code Project in collaboration with Freifunk and the University of Trento.
 
-	Prince fetches topology data from a Link State routing daemon (OONF, OLSR, OSPF, etc),
-	calculates the betweenness centrality using the topology and then computes the
-	the timers' optimal values using these data. At the end of the computation the timers are pushed back to the routing daemon.
-	Since v0.4 it supports both OONF and OLSRd.
-https://github.com/AdvancedNetworkingSystems/prince
-
+It work by fetching topology data from a Link State routing demon(OONF, OLSR, OSPF, etc),
+calculating the betweenness centrality using the topology, then using these data
+the timer's value are optimized. Finally the timers are pushed back to the routing demon.
+Currently it only supports OLSRd2 (aka OONF).
+https://github.com/gabri94/poprouting
+Gabriele Gemmi <gabriel@autistici.org>
 @@
 
 
@@ -124581,28 +123271,6 @@ Jiri Slachta <jiri@slachta.eu>
 @@
 
 
-Source-Makefile: package/feeds/telephony/asterisk-13.x-chan-lantiq/Makefile
-
-Package: asterisk13-chan-lantiq
-Submenu: Telephony Lantiq
-Version: 20180215-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +asterisk13 +kmod-ltq-vmmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Title: Lantiq channel driver
-Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: asterisk13-chan-lantiq-20180215.tar.xz
-License: GPL-2.0
-Type: ipkg
-Description: An implementation of a Lantiq TAPI channel driver for Asterisk 13.
-https://github.com/kochstefan/asterisk_channel_lantiq
-Jiri Slachta <jiri@slachta.eu>
-@@
-
-
 Source-Makefile: package/feeds/telephony/asterisk-15.x/Makefile
 Build-Depends: libxml2/host
 Build-Types: host
@@ -130327,28 +128995,6 @@ Jiri Slachta <jiri@slachta.eu>
 @@
 
 
-Source-Makefile: package/feeds/telephony/asterisk-15.x-chan-lantiq/Makefile
-
-Package: asterisk15-chan-lantiq
-Submenu: Telephony Lantiq
-Version: 20180215-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +asterisk15 +kmod-ltq-vmmc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Title: Lantiq channel driver
-Maintainer: Jiri Slachta <jiri@slachta.eu>
-Source: asterisk15-chan-lantiq-20180215.tar.xz
-License: GPL-2.0
-Type: ipkg
-Description: An implementation of a Lantiq TAPI channel driver for Asterisk 15.
-https://github.com/kochstefan/asterisk_channel_lantiq
-Jiri Slachta <jiri@slachta.eu>
-@@
-
-
 Source-Makefile: package/feeds/telephony/asterisk-chan-dongle/Makefile
 
 Package: asterisk13-chan-dongle
@@ -130392,6 +129038,49 @@ LicenseFiles: COPYRIGHT.txt LICENSE.txt
 Type: ipkg
 Description:  Asterisk channel driver for Huawei UMTS 3G dongle.
 https://github.com/wdoekes/asterisk-chan-dongle
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+
+Source-Makefile: package/feeds/telephony/asterisk-chan-lantiq/Makefile
+
+Package: asterisk13-chan-lantiq
+Submenu: Telephony
+Version: 20180215-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ltq-vmmc asterisk13
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: asterisk13
+Section: net
+Category: Network
+Title: Lantiq channel driver
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: An implementation of a Lantiq TAPI channel driver for Asterisk.
+https://github.com/kochstefan/asterisk_channel_lantiq
+Jiri Slachta <jiri@slachta.eu>
+@@
+
+Package: asterisk15-chan-lantiq
+Submenu: Telephony
+Version: 20180215-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ltq-vmmc asterisk15
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: asterisk15
+Section: net
+Category: Network
+Title: Lantiq channel driver
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description: An implementation of a Lantiq TAPI channel driver for Asterisk.
+https://github.com/kochstefan/asterisk_channel_lantiq
 Jiri Slachta <jiri@slachta.eu>
 @@
 

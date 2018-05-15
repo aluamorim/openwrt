@@ -24,7 +24,7 @@ ppath="../porting/kernel-$kversion"
 rm -rf "$kpath/sound"
 rm -rf "$kpath/include/sound"
 
-
+cp -R "$ppath/base-files/" "$cpath/build_dir/target-mipsel_24kc_musl/linux-ramips_mt76x8/"
 cp -R "$ppath/linux-$kversion/sound/" "$kpath/"
 cp -R "$ppath/linux-$kversion/include/sound/" "$kpath/include/"
 cp "$ppath/linux-$kversion/include/linux/interrupt.h" "$kpath/include/linux/"
