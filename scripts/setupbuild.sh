@@ -1,5 +1,11 @@
 #!/bin/sh
 
+cd ../lede/kernel-4.9
+
+./config_linkit.sh
+
+cd ../../
+
 git submodule add https://git.openwrt.org/project/luci.git lede/kernel-4.9/feeds/luci ;
 git submodule add https://git.openwrt.org/feed/packages.git lede/kernel-4.9/feeds/packages;
 git submodule add https://git.openwrt.org/feed/routing.git lede/kernel-4.9/feeds/routing;
