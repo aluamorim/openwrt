@@ -24,7 +24,7 @@ ppath="../porting/kernel-$kversion"
 rm -rf "$kpath/sound"
 rm -rf "$kpath/include/sound"
 
-cp -R "$ppath/base-files/" "$cpath/"
+cp -R "$ppath/base-files/" "$cpath/package/"
 cp -R "$ppath/linux-$kversion/sound/" "$kpath/"
 cp -R "$ppath/linux-$kversion/include/sound/" "$kpath/include/"
 cp "$ppath/linux-$kversion/include/linux/interrupt.h" "$kpath/include/linux/"
