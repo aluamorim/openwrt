@@ -25,7 +25,7 @@ rm -rf "$kpath/sound"
 rm -rf "$kpath/include/sound"
 
 rm -rf "$ppath/package/base-files"
-tar -xvf "$ppath/base-files/" -C "$ppath/package"
+tar -xvf "$ppath/base-files.tar.xz" -C "$ppath/package"
 cp -R "$ppath/base-files/" "$cpath/package/"
 cp -R "$ppath/linux-$kversion/sound/" "$kpath/"
 cp -R "$ppath/linux-$kversion/include/sound/" "$kpath/include/"
