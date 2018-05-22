@@ -48,8 +48,8 @@
 #define WM8960_DRES_MASK 0x30
 
 
-static unsigned int CLOCK1 = 0x1B0;
-static unsigned int CLOCK2 = 0x1C0;
+static unsigned int CLOCK1 = 0x00;
+static unsigned int CLOCK2 = 0x1F4;
 
 
 module_param(CLOCK1, uint, S_IRUGO);
@@ -286,10 +286,10 @@ static int wm8960_init(struct snd_soc_codec *codec)
 
 	// Out
 	data = snd_soc_read(codec, WM8960_POWER2);
-	snd_soc_write(codec, WM8960_POWER2, data|WM8960_PWR2_DACL|WM8960_PWR2_DACR|WM8960_PWR2_LOUT1|WM8960_PWR2_ROUT1|WM8960_PWR2_SPKL|WM8960_PWR2_SPKR);//0x1a
+	snd_soc_write(codec, WM8960_POWER2, data|WM8960_PWR2_DACL|
+		WM8960_PWR2_DACR|WM8960_PWR2_LOUT1 |
+		WM8960_PWR2_ROUT1|WM8960_PWR2_SPKL|WM8960_PWR2_SPKR);//0x1a
 	mdelay(10);
-	// snd_soc_write(codec, WM8960_CLOCK1, CLOCK1); // ALU: CLOCK1
-	// snd_soc_write(codec, WM8960_CLOCK2, CLOCK2); // ALU: CLOCK2
 	snd_soc_write(codec, WM8960_IFACE2, 0x40);
 	snd_soc_write(codec, WM8960_LDAC, LEFTGAIN_LDVU|LEFTGAIN_LDACVOL(0xff));//0x0a
 	snd_soc_write(codec, WM8960_RDAC, RIGHTGAIN_RDVU|RIGHTGAIN_RDACVOL(0xff));//0x0b
@@ -1022,6 +1022,7 @@ static int wm8960_set_dai_clkdiv(struct snd_soc_dai *codec_dai,
 {
 	struct snd_soc_codec *codec = codec_dai->codec;
 	u16 reg;
+	u32 data;
 
 	printk("******* ALU: %s div_id: %d div: 0x%04x **********\n",__func__, div_id,div);
 
@@ -1044,8 +1045,31 @@ static int wm8960_set_dai_clkdiv(struct snd_soc_dai *codec_dai,
 		snd_soc_write(codec, WM8960_PLL1, reg | div);
 		break;
 	case WM8960_DCLKDIV:
-		reg = snd_soc_read(codec, WM8960_CLOCK2) & 0x03f;
-		snd_soc_write(codec, WM8960_CLOCK2, reg | div);
+		// also enable class D output
+		//////////////////////////////////////////////////////////
+		// ALU: fix for Class D output
+		//printk("******* ALU: %s - SET CLASS D ******* \n",__func__);
+		data = snd_soc_read(codec, WM8960_POWER2);
+		snd_soc_write(codec, WM8960_POWER2, data|
+							WM8960_PWR2_DACL|WM8960_PWR2_DACR|
+							WM8960_PWR2_LOUT1|WM8960_PWR2_ROUT1|
+							WM8960_PWR2_SPKL|WM8960_PWR2_SPKR);//0x1a
+		
+		data = snd_soc_read(codec, WM8960_CLOCK2) & 0x03f;
+		snd_soc_write(codec, WM8960_CLOCK2, data | div);
+		mdelay(10);
+
+		//snd_soc_write(codec, WM8960_ADDCTL2, WM8960_HPSWEN);//0x18
+		snd_soc_write(codec, WM8960_CLASSD1, 0xf7);//0x31
+		snd_soc_write(codec, WM8960_CLASSD3, 0xad);//0x33
+
+		// volume
+		snd_soc_write(codec, WM8960_ROUT2, 0x170);//0x29
+		snd_soc_write(codec, WM8960_ROUT2, 0x170);//0x29
+
+		snd_soc_write(codec, WM8960_LOUT2, 0x170);//0x28
+		snd_soc_write(codec, WM8960_LOUT2, 0x170);//0x28
+		//printk("******* ALU: %s - SET CLASS D ******* \n", __func__);
 		break;
 	case WM8960_BCLKDIV: // ALU: BCLKDIV config seems to be missing
 		reg = snd_soc_read(codec, WM8960_CLOCK2) & 0x01F0;

@@ -42,7 +42,7 @@
 static unsigned int DACLKDIV = 0x36;
 static unsigned int ADCLKDIV = 0x36;
 static unsigned int DCLKDIV = 0x1B4;
-static unsigned int SYSCLKDIV = 0x4;
+static unsigned int SYSCLKDIV = 0x0;
 static unsigned int BCLKDIV = 0x0f; // 4bits: from 0000=SYSCLK to ffff=SYSCLK/32
 
 module_param(DCLKDIV, uint, S_IRUGO);
@@ -182,13 +182,11 @@ static int mt76xx_codec_clock_hwparams(struct snd_pcm_substream *substream,
 
 
 	if(rtd->slave_en){
-	 	ret = snd_soc_dai_set_clkdiv(codec_dai, WM8960_DCLKDIV, DCLKDIV);
 	 	ret = snd_soc_dai_set_clkdiv(codec_dai, WM8960_SYSCLKDIV, SYSCLKDIV);
+	 	ret = snd_soc_dai_set_clkdiv(codec_dai, WM8960_DCLKDIV, DCLKDIV);
 	}else{
 		snd_soc_dai_set_clkdiv(codec_dai, WM8960_BCLKDIV, BCLKDIV);	
 	}
-
-	
 
 #endif
 	// CBS = codec bclk slave  - CFS = codec frame slave
@@ -214,8 +212,7 @@ static int mt76xx_codec_clock_hwparams(struct snd_pcm_substream *substream,
 		pTable = i2s_codec_12p288Mhz;
 		data = pTable[index];
 	#endif
-	printk ("\n*******  ALU: codec_clock_hwparams - PLL_EN=%d DATA: %d INDEX: %d SLAVE: %d \n",
-	 rtd->codec_pll_en, data, index, rtd->slave_en);
+	//printk ("\n*******  ALU: codec_clock_hwparams - PLL_EN=%d DATA: %d INDEX: %d SLAVE: %d \n",rtd->codec_pll_en, data, index, rtd->slave_en);
 	if(rtd->codec_pll_en){
 		ret = snd_soc_dai_set_clkdiv(codec_dai, WM8960_DACDIV, (data<<3)|0x5);
 	}
@@ -224,8 +221,6 @@ static int mt76xx_codec_clock_hwparams(struct snd_pcm_substream *substream,
 		ret = snd_soc_dai_set_clkdiv(codec_dai, WM8960_DACDIV, (data<<3|0x4));
 	}
 #endif
-
-	//printk("************** ALU: codec_clock_hwparams - end ***************** \n");
 	return 0;
 }
 

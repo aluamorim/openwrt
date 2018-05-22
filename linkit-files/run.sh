@@ -18,7 +18,7 @@ insmod "snd-soc-ralink-i2s.ko"
 insmod "snd-soc-mt76xx-pcm.ko"
 insmod "snd-soc-wm8960.ko"
 #insmod "snd-soc-mt76xx-machine.ko" "DCLKDIV=436" "SYSCLKDIV=4" "BCLKDIV=15"
-insmod "snd-soc-mt76xx-machine.ko" "ADCLKDIV=54" "DACLKDIV=54" "DCLKDIV=436" "SYSCLKDIV=4" "BCLKDIV=15"
+insmod "snd-soc-mt76xx-machine.ko" "ADCLKDIV=54" "DACLKDIV=54" "DCLKDIV=500" "SYSCLKDIV=0" "BCLKDIV=15"
 
 #insmod "snd-soc-mt76xx-machine.ko"
 

@@ -2547,7 +2547,7 @@ Build-Types: host
 
 Package: node
 Submenu: Node.js
-Version: v8.10.0-1
+Version: v8.10.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR) +libstdcpp +libopenssl +zlib +USE_UCLIBC:libpthread +USE_UCLIBC:librt +NODEJS_ICU:icu
 Conflicts: 
 Menu-Depends: 
@@ -2579,7 +2579,7 @@ Config:
 
 Package: node-npm
 Submenu: Node.js
-Version: v8.10.0-1
+Version: v8.10.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +node
 Conflicts: 
 Menu-Depends: 
@@ -6181,7 +6181,7 @@ Build-Depends: libtool gettext libiconv !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: php7
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +zlib +PHP7_LIBXML:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -6228,7 +6228,7 @@ Config:
 
 Package: php7-cgi
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -6251,7 +6251,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-cli
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -6274,7 +6274,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-fastcgi
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-cgi
 Conflicts: 
 Menu-Depends: 
@@ -6296,7 +6296,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-fpm
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-intl:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -6319,7 +6319,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-calendar
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6340,7 +6340,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-ctype
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6361,7 +6361,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-curl
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-curl:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -6382,7 +6382,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-dom
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-dom:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -6403,7 +6403,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-exif
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6424,7 +6424,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-fileinfo
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6445,7 +6445,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-ftp
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-ftp:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -6466,7 +6466,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-gd
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-gd:libjpeg +PACKAGE_php7-mod-gd:libpng +PHP7_LIBFREETYPE:libfreetype
 Conflicts: 
 Menu-Depends: 
@@ -6493,7 +6493,7 @@ Config:
 
 Package: php7-mod-gettext
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-gettext:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -6514,7 +6514,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-gmp
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-gmp:libgmp
 Conflicts: 
 Menu-Depends: 
@@ -6535,7 +6535,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-hash
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6556,7 +6556,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-iconv
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -6577,7 +6577,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-imap
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-imap:libopenssl +PACKAGE_libpam:libpam +PACKAGE_php7-mod-imap:uw-imap
 Conflicts: 
 Menu-Depends: 
@@ -6598,7 +6598,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-intl
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-intl:icu
 Conflicts: 
 Menu-Depends: 
@@ -6619,7 +6619,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-json
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6640,7 +6640,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-ldap
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-ldap:libopenldap +PACKAGE_php7-mod-ldap:libsasl2
 Conflicts: 
 Menu-Depends: 
@@ -6661,7 +6661,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-mbstring
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6682,8 +6682,8 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-mysqli
 Submenu: PHP
-Version: 7.2.5-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-mysqli:libmysqlclient
+Version: 7.2.5-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-mysqli:libmariadbclient
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6703,7 +6703,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-opcache
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6724,7 +6724,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-openssl
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-openssl:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -6745,7 +6745,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-pcntl
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6766,7 +6766,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-pdo
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6787,8 +6787,8 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-pdo-mysql
 Submenu: PHP
-Version: 7.2.5-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-mysql:libmysqlclient
+Version: 7.2.5-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-mysql:libmariadbclient
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -6808,7 +6808,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-pdo-pgsql
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -6829,7 +6829,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-pdo-sqlite
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-mod-pdo +PACKAGE_php7-mod-pdo-sqlite:libsqlite3 +PACKAGE_php7-mod-pdo-sqlite:librt
 Conflicts: 
 Menu-Depends: 
@@ -6850,7 +6850,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-pgsql
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-pgsql:libpq
 Conflicts: 
 Menu-Depends: 
@@ -6871,7 +6871,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-phar
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +php7-mod-hash
 Conflicts: 
 Menu-Depends: 
@@ -6892,7 +6892,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-session
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6913,7 +6913,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-shmop
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -6934,7 +6934,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-simplexml
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-simplexml:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -6955,7 +6955,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-snmp
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-snmp:libnetsnmp +PACKAGE_php7-mod-snmp:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -6976,7 +6976,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-soap
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-soap:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -6997,7 +6997,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-sockets
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -7018,7 +7018,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-sqlite3
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-sqlite3:libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -7039,7 +7039,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-sysvmsg
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -7060,7 +7060,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-sysvsem
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -7081,7 +7081,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-sysvshm
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -7102,7 +7102,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-tokenizer
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7
 Conflicts: 
 Menu-Depends: 
@@ -7123,7 +7123,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-xml
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PHP7_LIBXML:libxml2 +!PHP7_LIBXML:libexpat
 Conflicts: 
 Menu-Depends: 
@@ -7144,7 +7144,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-xmlreader
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-xmlreader:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -7165,7 +7165,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-xmlwriter
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +@PHP7_LIBXML +PACKAGE_php7-mod-xmlwriter:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -7186,7 +7186,7 @@ Michael Heimpold <mhei@heimpold.de>
 
 Package: php7-mod-zip
 Submenu: PHP
-Version: 7.2.5-2
+Version: 7.2.5-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread php7 +PACKAGE_php7-mod-zip:zlib
 Conflicts: 
 Menu-Depends: 
@@ -15358,7 +15358,7 @@ Build-Depends: boost/host PACKAGE_python:python PACKAGE_python3:python3
 Build-Types: host
 
 Package: boost-atomic
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system
 Conflicts: 
 Menu-Depends: 
@@ -15378,7 +15378,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-chrono
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system
 Conflicts: 
 Menu-Depends: 
@@ -15398,7 +15398,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-container
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15418,7 +15418,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-context
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-chrono +boost-system +boost-thread
 Conflicts: 
 Menu-Depends: 
@@ -15438,7 +15438,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-contract
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system
 Conflicts: 
 Menu-Depends: 
@@ -15458,7 +15458,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-coroutine
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system +boost-chrono +boost-context +boost-thread
 Conflicts: 
 Menu-Depends: 
@@ -15478,7 +15478,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-date_time
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15498,7 +15498,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-fiber
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-coroutine +boost-filesystem
 Conflicts: 
 Menu-Depends: 
@@ -15518,7 +15518,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-filesystem
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system
 Conflicts: 
 Menu-Depends: 
@@ -15538,7 +15538,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-graph
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-regex
 Conflicts: 
 Menu-Depends: 
@@ -15558,7 +15558,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-iostreams
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +zlib +liblzma +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -15578,7 +15578,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-locale
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system +BUILD_NLS:libiconv-full @BUILD_NLS
 Conflicts: 
 Menu-Depends: 
@@ -15598,7 +15598,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-log
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system +boost-chrono +boost-date_time +boost-thread +boost-filesystem +boost-regex
 Conflicts: 
 Menu-Depends: 
@@ -15618,7 +15618,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-math
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15638,7 +15638,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-program_options
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15658,7 +15658,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-python
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt @PACKAGE_python
 Conflicts: 
 Menu-Depends: 
@@ -15678,7 +15678,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-python3
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt @PACKAGE_python3
 Conflicts: 
 Menu-Depends: 
@@ -15698,7 +15698,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-random
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system
 Conflicts: 
 Menu-Depends: 
@@ -15718,7 +15718,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-regex
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15738,7 +15738,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-serialization
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15758,7 +15758,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-wserialization
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-serialization
 Conflicts: 
 Menu-Depends: 
@@ -15778,7 +15778,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-signals
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15798,7 +15798,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-stacktrace
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15818,7 +15818,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-system
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15838,7 +15838,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-thread
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system +boost-chrono +boost-atomic
 Conflicts: 
 Menu-Depends: 
@@ -15858,7 +15858,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-timer
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-chrono
 Conflicts: 
 Menu-Depends: 
@@ -15878,7 +15878,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-type_erasure
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-chrono +boost-system +boost-thread
 Conflicts: 
 Menu-Depends: 
@@ -15898,7 +15898,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-wave
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-date_time +boost-thread +boost-filesystem
 Conflicts: 
 Menu-Depends: 
@@ -15918,7 +15918,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-test
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-system +boost-timer
 Conflicts: 
 Menu-Depends: 
@@ -15938,7 +15938,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost-libs
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +boost-atomic +boost-chrono +boost-container +boost-context +boost-contract +boost-coroutine +boost-date_time +boost-fiber +boost-filesystem +boost-graph +boost-iostreams +BUILD_NLS:boost-locale +boost-log +boost-math +boost-program_options +PACKAGE_python:boost-python +PACKAGE_python3:boost-python3 +boost-random +boost-regex +boost-serialization +boost-wserialization +boost-signals +boost-stacktrace +boost-system +boost-thread +boost-timer +boost-type_erasure +boost-wave
 Conflicts: 
 Menu-Depends: 
@@ -15959,7 +15959,7 @@ Carlos M. Ferreira <carlosmf.pt@gmail.com>
 @@
 
 Package: boost
-Version: 1.67.0-1
+Version: 1.67.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -15991,6 +15991,7 @@ This package provides the following run-time libraries:
  - chrono
  - container
  - context
+ - contract (new in 1.67.0)
  - coroutine (Deprecated - use Coroutine2)
  - - coroutine2 (Requires GCC v5 and up)
  - date_time
@@ -20847,7 +20848,7 @@ Source-Makefile: feeds/packages/libs/libidn/Makefile
 
 Package: idn
 Submenu: IP Addresses and Names
-Version: 1.33-2
+Version: 1.35-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libidn
 Conflicts: 
 Menu-Depends: 
@@ -20857,7 +20858,7 @@ Category: Network
 Repository: base
 Title: GNU IDN (Internationalized Domain Name) tool
 Maintainer: Kevin Darbyshire-Bryant <kevin@darbyshire-bryant.me.uk>
-Source: libidn-1.33.tar.gz
+Source: libidn-1.35.tar.gz
 License: GPL-2.0+ GPL-3.0+ LGPL-2.1+ LGPL-3.0+ Apache-2.0
 LicenseFiles: COPYING COPYINGv2 COPYINGv3 COPYING.LESSERv2 COPYING.LESSERv3 java/LICENSE-2.0.txt
 Type: ipkg
@@ -20872,7 +20873,7 @@ Kevin Darbyshire-Bryant <kevin@darbyshire-bryant.me.uk>
 @@
 
 Package: libidn
-Version: 1.33-2
+Version: 1.35-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -20882,7 +20883,7 @@ Category: Libraries
 Repository: base
 Title: Stringprep, Punycode and IDNA implementation
 Maintainer: Kevin Darbyshire-Bryant <kevin@darbyshire-bryant.me.uk>
-Source: libidn-1.33.tar.gz
+Source: libidn-1.35.tar.gz
 License: GPL-2.0+ GPL-3.0+ LGPL-2.1+ LGPL-3.0+ Apache-2.0
 LicenseFiles: COPYING COPYINGv2 COPYINGv3 COPYING.LESSERv2 COPYING.LESSERv3 java/LICENSE-2.0.txt
 Type: ipkg
@@ -24949,7 +24950,7 @@ Source-Makefile: feeds/packages/libs/libuwsc/Makefile
 
 Package: libuwsc-nossl
 Submenu: Networking
-Version: 2.0.1-1
+Version: 2.0.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
 Conflicts: 
 Menu-Depends: 
@@ -24960,7 +24961,7 @@ Category: Libraries
 Repository: base
 Title: Lightweight WebSocket client library (NO SSL)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuwsc-2.0.1.tar.xz
+Source: libuwsc-2.0.2.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24970,7 +24971,7 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuwsc-mbedtls
 Submenu: Networking
-Version: 2.0.1-1
+Version: 2.0.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libustream-mbedtls
 Conflicts: 
 Menu-Depends: 
@@ -24981,7 +24982,7 @@ Category: Libraries
 Repository: base
 Title: Lightweight WebSocket client library (mbedtls)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuwsc-2.0.1.tar.xz
+Source: libuwsc-2.0.2.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24991,7 +24992,7 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuwsc-wolfssl
 Submenu: Networking
-Version: 2.0.1-1
+Version: 2.0.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libustream-wolfssl
 Conflicts: 
 Menu-Depends: 
@@ -25002,7 +25003,7 @@ Category: Libraries
 Repository: base
 Title: Lightweight WebSocket client library (wolfssl)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuwsc-2.0.1.tar.xz
+Source: libuwsc-2.0.2.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -25012,7 +25013,7 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuwsc-openssl
 Submenu: Networking
-Version: 2.0.1-1
+Version: 2.0.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libustream-openssl
 Conflicts: 
 Menu-Depends: 
@@ -25023,7 +25024,7 @@ Category: Libraries
 Repository: base
 Title: Lightweight WebSocket client library (openssl)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuwsc-2.0.1.tar.xz
+Source: libuwsc-2.0.2.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -25247,7 +25248,7 @@ Karl Palsson <karlp@etactica.com>
 Source-Makefile: feeds/packages/libs/libx264/Makefile
 
 Package: libx264
-Version: snapshot-20170623-2245-stable-1
+Version: snapshot-20180401-2245-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @BUILD_PATENTED
 Conflicts: 
 Menu-Depends: 
@@ -25257,7 +25258,7 @@ Category: Libraries
 Repository: base
 Title: H264/AVC free codec library.
 Maintainer: Adrian Panella <ianchi74@outlook.com>
-Source: x264-snapshot-20170623-2245-stable.tar.bz2
+Source: x264-snapshot-20180401-2245.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -32181,7 +32182,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 Source-Makefile: feeds/packages/net/adblock/Makefile
 
 Package: adblock
-Version: 3.5.1-1
+Version: 3.5.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +jsonfilter
 Conflicts: 
 Menu-Depends: 
@@ -33020,8 +33021,8 @@ Source-Makefile: feeds/packages/net/cifs-utils/Makefile
 Build-Depends: libtool gettext libiconv
 
 Package: cifsmount
-Version: 6.7-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fs-cifs +libtalloc
+Version: 6.8-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fs-cifs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -33030,7 +33031,7 @@ Category: Network
 Repository: base
 Title: CIFS mount utilities
 Maintainer: Florian Fainelli <florian@openwrt.org>
-Source: cifs-utils-6.7.tar.bz2
+Source: cifs-utils-6.8.tar.bz2
 License: GPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -33307,7 +33308,7 @@ Source-Makefile: feeds/packages/net/ddns-scripts/Makefile
 
 Package: ddns-scripts
 Submenu: IP Addresses and Names
-Version: 2.7.7-5
+Version: 2.7.7-6
 Depends:  
 Conflicts: 
 Menu-Depends: 
@@ -33333,13 +33334,13 @@ Config:
 		  - Proxy server support
 		  - log file support
 		  - support to run once
-		Version: 2.7.7-5
+		Version: 2.7.7-6
 		Info   : http://wiki.openwrt.org/doc/howto/ddns.client
 @@
 
 Package: ddns-scripts_cloudflare
 Submenu: IP Addresses and Names
-Version: 2.7.7-5
+Version: 2.7.7-6
 Depends:  ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -33358,7 +33359,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_cloudflare.com-v4
 Submenu: IP Addresses and Names
-Version: 2.7.7-5
+Version: 2.7.7-6
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -33377,7 +33378,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_godaddy.com-v1
 Submenu: IP Addresses and Names
-Version: 2.7.7-5
+Version: 2.7.7-6
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -33396,7 +33397,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_no-ip_com
 Submenu: IP Addresses and Names
-Version: 2.7.7-5
+Version: 2.7.7-6
 Depends:  ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -33415,7 +33416,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_nsupdate
 Submenu: IP Addresses and Names
-Version: 2.7.7-5
+Version: 2.7.7-6
 Depends:  ddns-scripts +bind-client
 Conflicts: 
 Menu-Depends: 
@@ -33443,7 +33444,7 @@ Config:
 
 Package: ddns-scripts_route53-v1
 Submenu: IP Addresses and Names
-Version: 2.7.7-5
+Version: 2.7.7-6
 Depends:  ddns-scripts +curl +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -36521,7 +36522,7 @@ Jean-Michel lacroix <lacroix@lepine-lacroix.info>
 Source-Makefile: feeds/packages/net/knot/Makefile
 
 Package: knot-libs
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libgnutls
 Conflicts: 
 Menu-Depends: 
@@ -36531,7 +36532,7 @@ Category: Libraries
 Repository: base
 Title: Knot DNS common DNS and DNSSEC libraries
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS common DNS and DNSSEC libraries.
@@ -36540,7 +36541,7 @@ Daniel Salzman <daniel.salzman@nic.cz>
 @@
 
 Package: knot-libzscanner
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -36550,7 +36551,7 @@ Category: Libraries
 Repository: base
 Title: Knot DNS zone parser library
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS zone parser library.
@@ -36560,7 +36561,7 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot
 Submenu: IP Addresses and Names
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
@@ -36571,7 +36572,7 @@ Repository: base
 Title: Knot DNS server with control utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
 Require-User: knot=5353:knot=5353
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	High-performance authoritative-only DNS server.
@@ -36581,7 +36582,7 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-dig
 Submenu: IP Addresses and Names
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +knot-libs
 Conflicts: 
 Menu-Depends: 
@@ -36591,7 +36592,7 @@ Category: Network
 Repository: base
 Title: Knot DNS advanced DNS lookup utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS advanced DNS lookup utility.
@@ -36601,7 +36602,7 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-host
 Submenu: IP Addresses and Names
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +knot-libs
 Conflicts: 
 Menu-Depends: 
@@ -36611,7 +36612,7 @@ Category: Network
 Repository: base
 Title: Knot DNS simple DNS lookup utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS simple DNS lookup utility.
@@ -36621,7 +36622,7 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-nsupdate
 Submenu: IP Addresses and Names
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
@@ -36631,7 +36632,7 @@ Category: Network
 Repository: base
 Title: Knot DNS dynamic DNS update utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS dynamic DNS update utility.
@@ -36641,7 +36642,7 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-zonecheck
 Submenu: IP Addresses and Names
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
@@ -36651,7 +36652,7 @@ Category: Network
 Repository: base
 Title: Knot DNS zonefile check utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS zonefile check utility.
@@ -36661,7 +36662,7 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-keymgr
 Submenu: IP Addresses and Names
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
@@ -36671,7 +36672,7 @@ Category: Network
 Repository: base
 Title: Knot DNS DNSSEC key management utility
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	Knot DNS DNSSEC key management utility.
@@ -36681,7 +36682,7 @@ Daniel Salzman <daniel.salzman@nic.cz>
 
 Package: knot-tests
 Submenu: IP Addresses and Names
-Version: 2.6.6-1
+Version: 2.6.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libedit +liburcu +knot-libs +knot-libzscanner
 Conflicts: 
 Menu-Depends: 
@@ -36691,7 +36692,7 @@ Category: Network
 Repository: base
 Title: Knot DNS tests
 Maintainer: Daniel Salzman <daniel.salzman@nic.cz>
-Source: knot-2.6.6.tar.xz
+Source: knot-2.6.7.tar.xz
 License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
 Type: ipkg
 Description: 	Unit tests for the Knot DNS server and libraries.
@@ -38085,7 +38086,7 @@ Source-Makefile: feeds/packages/net/miniupnpd/Makefile
 
 Package: miniupnpd
 Submenu: Firewall
-Version: 2.0.20180503-3
+Version: 2.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libip4tc +IPV6:libip6tc +IPV6:ip6tables +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -38095,7 +38096,7 @@ Category: Network
 Repository: base
 Title: Lightweight UPnP IGD, NAT-PMP & PCP daemon
 Maintainer: Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
-Source: miniupnpd-2.0.20180503.tar.gz
+Source: miniupnpd-2.1.tar.gz
 License: BSD-3-Clause
 Type: ipkg
 Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon
@@ -38322,7 +38323,7 @@ Source-Makefile: feeds/packages/net/mwan3/Makefile
 
 Package: mwan3
 Submenu: Routing and Redirection
-Version: 2.6.15-1
+Version: 2.6.16-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +ipset +iptables +iptables-mod-conntrack-extra +iptables-mod-ipopt +jshn
 Conflicts: 
 Menu-Depends: 
@@ -46745,7 +46746,7 @@ Source-Makefile: feeds/packages/net/wget/Makefile
 
 Package: wget
 Submenu: File Transfer
-Version: 1.19.2-2
+Version: 1.19.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +zlib +libopenssl +librt
 Conflicts: 
 Menu-Depends: 
@@ -46756,7 +46757,7 @@ Category: Network
 Repository: base
 Title: Non-interactive network downloader (with SSL support)
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: wget-1.19.2.tar.gz
+Source: wget-1.19.5.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -46773,7 +46774,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: wget-nossl
 Submenu: File Transfer
-Version: 1.19.2-2
+Version: 1.19.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +zlib
 Conflicts: 
 Menu-Depends: 
@@ -46784,7 +46785,7 @@ Category: Network
 Repository: base
 Title: Non-interactive network downloader (without SSL support)
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: wget-1.19.2.tar.gz
+Source: wget-1.19.5.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -49170,7 +49171,7 @@ Jonas Gorski <jogo@openwrt.org>
 Source-Makefile: feeds/packages/sound/alsa-utils/Makefile
 
 Package: alsa-utils
-Version: 1.1.6-1
+Version: 1.1.6-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libncursesw +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -49188,7 +49189,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: alsa-utils-seq
-Version: 1.1.6-1
+Version: 1.1.6-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -49206,7 +49207,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: alsa-utils-tests
-Version: 1.1.6-1
+Version: 1.1.6-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +alsa-lib +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -54940,7 +54941,7 @@ Daniel Dickinson <lede@daniel.thecshore.com>
 Source-Makefile: feeds/packages/utils/flashrom/Makefile
 
 Package: flashrom
-Version: 0.9.9.1-1
+Version: 1.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +(TARGET_x86||TARGET_x86_64):dmidecode +libftdi1 +libusb-1.0 +libusb-compat +pciutils
 Conflicts: 
 Menu-Depends: 
@@ -54952,7 +54953,7 @@ Category: Utilities
 Repository: base
 Title: FlashROM Utility (full)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: flashrom-0.9.9.1.tar.bz2
+Source: flashrom-1.0.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -54964,7 +54965,7 @@ http://www.flashrom.org/
 @@
 
 Package: flashrom-pci
-Version: 0.9.9.1-1
+Version: 1.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +(TARGET_x86||TARGET_x86_64):dmidecode +pciutils
 Conflicts: 
 Menu-Depends: 
@@ -54975,7 +54976,7 @@ Category: Utilities
 Repository: base
 Title: FlashROM Utility (pci)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: flashrom-0.9.9.1.tar.bz2
+Source: flashrom-1.0.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -54987,7 +54988,7 @@ http://www.flashrom.org/
 @@
 
 Package: flashrom-spi
-Version: 0.9.9.1-1
+Version: 1.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -54998,7 +54999,7 @@ Category: Utilities
 Repository: base
 Title: FlashROM Utility (spi)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: flashrom-0.9.9.1.tar.bz2
+Source: flashrom-1.0.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -55010,7 +55011,7 @@ http://www.flashrom.org/
 @@
 
 Package: flashrom-usb
-Version: 0.9.9.1-1
+Version: 1.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libftdi1 +libusb-1.0 +libusb-compat
 Conflicts: 
 Menu-Depends: 
@@ -55021,7 +55022,7 @@ Category: Utilities
 Repository: base
 Title: FlashROM Utility (usb)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: flashrom-0.9.9.1.tar.bz2
+Source: flashrom-1.0.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -58438,7 +58439,7 @@ Source-Makefile: feeds/packages/utils/nano/Makefile
 
 Package: nano
 Submenu: Editors
-Version: 2.9.6-1
+Version: 2.9.7-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -58448,7 +58449,7 @@ Category: Utilities
 Repository: base
 Title: An enhanced clone of the Pico text editor
 Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>, Hannu Nyman <hannu.nyman@iki.fi>
-Source: nano-2.9.6.tar.xz
+Source: nano-2.9.7.tar.xz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -67498,7 +67499,7 @@ Source-Makefile: feeds/packages/utils/xz/Makefile
 Package: xz-utils
 Menu: 1
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -67508,18 +67509,18 @@ Category: Utilities
 Repository: base
 Title: XZ Utils (meta)
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: XZ Utils (meta)
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: liblzma
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -67529,18 +67530,18 @@ Category: Libraries
 Repository: base
 Title: liblzma library from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: liblzma library from XZ Utils
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: lzmadec
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -67550,18 +67551,18 @@ Category: Utilities
 Repository: base
 Title: lzmadec utility from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:    Contains: lzmadec 
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: lzmainfo
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -67571,18 +67572,18 @@ Category: Utilities
 Repository: base
 Title: lzmainfo utility from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:    Contains: lzmainfo 
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: xz
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -67592,18 +67593,18 @@ Category: Utilities
 Repository: base
 Title: xz utility from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:    Contains: xz  lzcat lzma unlzma unxz xzcat
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: xzdec
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -67613,18 +67614,18 @@ Category: Utilities
 Repository: base
 Title: xzdec utility from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:    Contains: xzdec 
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: xzdiff
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +bash +xz
 Conflicts: 
 Menu-Depends: 
@@ -67634,18 +67635,18 @@ Category: Utilities
 Repository: base
 Title: xzdiff utility from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:    Contains: xzdiff  lzcmp lzdiff xzcmp
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: xzgrep
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +bash +xz
 Conflicts: 
 Menu-Depends: 
@@ -67655,18 +67656,18 @@ Category: Utilities
 Repository: base
 Title: xzgrep utility from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:    Contains: xzgrep  lzegrep lzfgrep lzgrep xzegrep xzfgrep
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: xzless
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +bash +xz
 Conflicts: 
 Menu-Depends: 
@@ -67676,18 +67677,18 @@ Category: Utilities
 Repository: base
 Title: xzless utility from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:    Contains: xzless  lzless
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 
 Package: xzmore
 Submenu: Compression
-Version: 5.2.3-1
+Version: 5.2.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread xz-utils +bash +xz
 Conflicts: 
 Menu-Depends: 
@@ -67697,12 +67698,12 @@ Category: Utilities
 Repository: base
 Title: xzmore utility from XZ Utils
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: xz-5.2.3.tar.bz2
+Source: xz-5.2.4.tar.bz2
 License: Public-Domain LGPL-2.1+ GPL-2.0+ GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:    Contains: xzmore  lzmore
-http://tukaani.org/xz
+https://tukaani.org/xz
 Nicolas Thill <nico@openwrt.org>
 @@
 

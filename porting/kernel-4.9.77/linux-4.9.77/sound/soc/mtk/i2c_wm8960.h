@@ -1,6 +1,6 @@
 /* wm8960.h  --  WM8960 Soc Audio driver */
-#ifndef _WM8960_H
-#define _WM8960_H
+#ifndef _I2C_WM8960_H
+#define _I2C_WM8960_H
 
 #define bool	unsigned char
 #define false 0
@@ -243,7 +243,7 @@
 #define CLASSDCTRL1_OP_OFF		(0<<6)
 #define CLASSDCTRL1_OP_LSPK		(1<<6)
 #define CLASSDCTRL1_OP_RSPK		(2<<6)
-#define CLASSDCTRL1_OP_LRSPK		(3<<6)
+#define CLASSDCTRL1_OP_LRSPK	(3<<6)
 
 #define CLASSDCTRL3			0x33
 
@@ -284,5 +284,7 @@ void audiohw_mute( bool mute);
 void audiohw_loopback(int fsel);
 void audiohw_codec_exlbk(void);
 void audiohw_bypass(void);
+
+void i2c_WM8960_write(u32 reg, u32 data);
 
 #endif /* _WM875x_H */

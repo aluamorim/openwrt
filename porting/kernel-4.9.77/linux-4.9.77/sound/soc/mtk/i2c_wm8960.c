@@ -298,7 +298,7 @@ int audiohw_postinit(int bSlave, int AIn, int AOut, int pll_en, int wordLen24b)
 	i2c_WM8960_write(PWRMGMT1, data|0x1c0); //FIXME:PWRMGMT1(0x19)
 	
 
-	printk("WM8960 All initial ok!\n");
+	printk("\n*******  ALU: I2C_WM8960.%s : Ain: %d Aout: %d  *******\n", __func__, AIn, AOut);
 
 	return 0;
 	
@@ -439,7 +439,7 @@ static int codec_wm8960_i2c_probe(struct i2c_client *client, const struct i2c_de
 	memset(wm_reg_data, 0 , sizeof(unsigned long)*55);
 	
 
-	printk("******* ALU: I2C_WM8960: probe addr 0x%02x: OK\n", wmio->client->addr);
+	//printk("******* ALU: I2C_WM8960: probe addr 0x%02x: OK\n", wmio->client->addr);
 	return 0;
 }
 
