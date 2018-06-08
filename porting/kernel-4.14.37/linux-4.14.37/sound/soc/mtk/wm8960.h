@@ -52,7 +52,7 @@
 #define WM8960_MONOMIX2		0x27
 #define WM8960_LOUT2		0x28
 #define WM8960_ROUT2		0x29
-#define WM8960_MONO		0x2a
+#define WM8960_MONO			0x2a
 #define WM8960_INBMIX1		0x2b
 #define WM8960_INBMIX2		0x2c
 #define WM8960_BYPASS1		0x2d
@@ -105,6 +105,9 @@
 #define WM8960_TOCLK_F19		(0 << 1)
 #define WM8960_TOCLK_F21		(1 << 1)
 
+#define WM8960_HPSWEN			(1<<6)
+#define WM8960_HPSWPOL			(1<<5)
+
 #define WM8960_OPCLK_DIV_1		(0 << 0)
 #define WM8960_OPCLK_DIV_2		(1 << 0)
 #define WM8960_OPCLK_DIV_3		(2 << 0)
@@ -129,11 +132,11 @@
 
 #define WM8960_PWR2_DACL                (1 << 8)
 #define WM8960_PWR2_DACR                (1 << 7)
-//#define WM8960_PWR2_LOUT1               (1 << 6)
-//#define WM8960_PWR2_ROUT1               (1 << 5)
+#define WM8960_PWR2_LOUT1               (1 << 6)
+#define WM8960_PWR2_ROUT1               (1 << 5)
 #define WM8960_PWR2_SPKL                (1 << 4)
 #define WM8960_PWR2_SPKR                (1 << 3)
-//#define WM8960_PWR2_OUT3                (1 << 1)
+#define WM8960_PWR2_OUT3                (1 << 1)
 #define WM8960_PWR2_PLL_EN              (1 << 0)
 
 #define WM8960_PWR3_LMIC                                (1 << 5)

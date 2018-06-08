@@ -33,7 +33,7 @@ Modo de uso:
 
 	2 - Mover para a pasta específica do kernel que vc deseja compilar (Ex: kernel 4.9):
 
-	#> cd linkit-audio/lede/kernel-4.9
+	#> cd linkit-audio/lede/kernel-4.9 	|	#> cd linkit-audio/lede/kernel-4.14
 
 	3 - 1ra compilação do código:
 
@@ -49,15 +49,14 @@ Modo de uso:
 	4 - Patching de código:
 
 	#> cd ../../scripts
-	#> ./patch "../lede/kernel-4.9" "4.9.77"
+	#> ./patch-4.9.sh   # para o porting do kernel 4.9
+	#> ./patch-4.14.sh   # para o porting do kernel 4.14
 
-	OBS: o script de patching recebe como parâmetro o caminho e a versão do kernel
-	a ser adaptado. Por enquanto, somente as versões 4.9.77 e 4.14.37 estão disponíveis.
 
 	5 - 2da compilação do código:
 
-	#> cd ../lede/kernel-4.9/
-	#> make V=99
+	#> cd ../lede/kernel-4.9/       | 		#> cd ../lede/kernel-4.14/
+	#> make V=99					| 		#> make V=99
 
 	OBS: neste ponto o KBuild deve perguntar ao usuário sobre a inclusão dos
 	módulos referentes ao porting de som. É preciso responder "m" para os módulos
@@ -81,7 +80,8 @@ Modo de uso:
 		suporte de som, os arquivos de configuração do baresip e do asoundrc.
 		Para utilizá-lo basta fazer:
 
-		#> copy.sh "../lede/kernel-4.9" "4.9.77" "192.168.1.1"
+		#> copy.sh "../lede/kernel-4.9" "4.9.77"   "192.168.1.1"
+		#> copy.sh "../lede/kernel-4.14" "4.14.37" "192.168.1.1"
 
 		O script copy.sh recebe 3 parâmetros de entrada:
 			1 - O caminho do código compilado;

@@ -34,5 +34,5 @@
 #
 #<sip:root@lan>;auth_pass=PASSWORD
 
-#linkit <sip:linkit.reconcavo@sip2sip.info;transport=tcp>;auth_pass=123456
-linkit <sip:linkit.reconcavo@sip2sip.info;transport=udp>;auth_pass=123456
+linkit <sip:linkit.reconcavo@sip2sip.info;transport=tcp>;auth_pass=123456
+#linkit <sip:linkit.reconcavo@sip2sip.info;transport=udp>;auth_pass=123456

@@ -397,7 +397,7 @@ static int mt76xx_pcm_open(struct snd_pcm_substream *substream)
 	int stream = substream->stream;
 	int ret = 0;
 
-	//printk("******* %s *******\n", __func__);
+	printk(" *** ALU: %s *******\n", __func__);
 	snd_soc_set_runtime_hwparams(substream, &mt76xx_pcm_hwparam);
 	/* ensure that buffer size is a multiple of period size */
 	ret = snd_pcm_hw_constraint_integer(runtime,

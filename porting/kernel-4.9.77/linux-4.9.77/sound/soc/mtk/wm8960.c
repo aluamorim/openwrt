@@ -48,12 +48,12 @@
 #define WM8960_DRES_MASK 0x30
 
 
-static unsigned int CLOCK1 = 0x00;
-static unsigned int CLOCK2 = 0x1F4;
+static unsigned int OUT2VOL = 0x170;
+static unsigned int INVOL = 0x60;
 
 
-module_param(CLOCK1, uint, S_IRUGO);
-module_param(CLOCK2, uint, S_IRUGO);
+module_param(OUT2VOL, uint, S_IRUGO);
+module_param(INVOL, uint, S_IRUGO);
 
 /*
  * wm8960 register cache
@@ -303,6 +303,7 @@ static int wm8960_init(struct snd_soc_codec *codec)
 	snd_soc_write(codec, WM8960_LOUT1, LOUT1_LO1VU|LOUT1_LO1ZC|LOUT1_LOUT1VOL(120));//0x02
 	snd_soc_write(codec, WM8960_ROUT1, ROUT1_RO1VU|ROUT1_RO1ZC|ROUT1_ROUT1VOL(120));//0x03
 	
+	
 	data = snd_soc_read(codec, WM8960_LINVOL);
 	data &= ~LINV_LINMUTE;
 	snd_soc_write(codec, WM8960_LINVOL, data|LINV_IPVU|LINV_LINVOL(96));//LINV(0x00)
@@ -310,6 +311,7 @@ static int wm8960_init(struct snd_soc_codec *codec)
 	data = snd_soc_read(codec, WM8960_RINVOL);
 	data &= ~RINV_RINMUTE;
 	snd_soc_write(codec, WM8960_RINVOL, data|RINV_IPVU|RINV_RINVOL(96)); //LINV(0x01)
+	
 
 	init_mtk = true;
 	return 0;
@@ -1063,12 +1065,24 @@ static int wm8960_set_dai_clkdiv(struct snd_soc_dai *codec_dai,
 		snd_soc_write(codec, WM8960_CLASSD1, 0xf7);//0x31
 		snd_soc_write(codec, WM8960_CLASSD3, 0xad);//0x33
 
+		//snd_soc_write(codec, WM8960_ALC1, 0x00); // disable ACL
 		// volume
-		snd_soc_write(codec, WM8960_ROUT2, 0x170);//0x29
-		snd_soc_write(codec, WM8960_ROUT2, 0x170);//0x29
+		snd_soc_write(codec, WM8960_ROUT2, OUT2VOL);//0x29
+		snd_soc_write(codec, WM8960_ROUT2, OUT2VOL);//0x29
 
-		snd_soc_write(codec, WM8960_LOUT2, 0x170);//0x28
-		snd_soc_write(codec, WM8960_LOUT2, 0x170);//0x28
+		snd_soc_write(codec, WM8960_LOUT2, OUT2VOL);//0x28
+		snd_soc_write(codec, WM8960_LOUT2, OUT2VOL);//0x28
+
+		/**
+		data = snd_soc_read(codec, WM8960_LINVOL);
+		data &= ~LINV_LINMUTE;
+		snd_soc_write(codec, WM8960_LINVOL, data|LINV_IPVU|LINV_LINVOL(INVOL));//LINV(0x00)
+	
+		data = snd_soc_read(codec, WM8960_RINVOL);
+		data &= ~RINV_RINMUTE;
+		snd_soc_write(codec, WM8960_RINVOL, data|RINV_IPVU|RINV_RINVOL(INVOL)); //LINV(0x01)
+		**/
+
 		//printk("******* ALU: %s - SET CLASS D ******* \n", __func__);
 		break;
 	case WM8960_BCLKDIV: // ALU: BCLKDIV config seems to be missing

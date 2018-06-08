@@ -33,7 +33,8 @@ scp ../linkit-files/install_baresip_dep.sh root@$ip_addr:/root
 scp -pr ../linkit-files/accounts root@$ip_addr:/root/.baresip/
 scp -pr ../linkit-files/config root@$ip_addr:/root/.baresip/
 scp ../linkit-files/.asoundrc root@$ip_addr:/root/
-scp ../linkit-files/stereo.wav root@192.168.1.1:/root
+scp ../linkit-files/vrau.wav root@192.168.1.1:/root
+#scp ../linkit-files/stereo.wav root@192.168.1.1:/root
 #scp male.wav root@192.168.1.1:/root
 #scp female.wav root@192.168.1.1:/root
 #scp sample16khz.wav root@192.168.1.1:/root

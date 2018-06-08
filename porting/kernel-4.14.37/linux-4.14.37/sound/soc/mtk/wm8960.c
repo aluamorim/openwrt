@@ -48,74 +48,18 @@
 #define WM8960_DRES_MASK 0x30
 
 
-static unsigned int CLOCK1 = 0x1B0;
-static unsigned int CLOCK2 = 0x1C0;
+static unsigned int OUT2VOL = 0x170;
+static unsigned int INVOL = 0x60;
 
 
-module_param(CLOCK1, uint, S_IRUGO);
-module_param(CLOCK2, uint, S_IRUGO);
+module_param(OUT2VOL, uint, S_IRUGO);
+module_param(INVOL, uint, S_IRUGO);
 
 /*
  * wm8960 register cache
  * We can't read the WM8960 register space when we are
  * using 2 wire for device control, so we cache them instead.
  */
-/*
-static const struct reg_default wm8960_reg_defaults[] = {
-	{  0x0, 0x002b },
-	{  0x1, 0x002b },
-	{  0x2, 0x00ff },
-	{  0x3, 0x00ff },
-	{  0x4, 0x0000 },
-	{  0x5, 0x0008 },
-	{  0x6, 0x0000 },
-	{  0x7, 0x000a },
-	{  0x8, 0x01c0 },
-	{  0x9, 0x0000 },
-	{  0xa, 0x00ff },
-	{  0xb, 0x00ff },
-
-	{ 0x10, 0x0000 },
-	{ 0x11, 0x007b },
-	{ 0x12, 0x0100 },
-	{ 0x13, 0x0032 },
-	{ 0x14, 0x0000 },
-	{ 0x15, 0x00c3 },
-	{ 0x16, 0x00c3 },
-	{ 0x17, 0x01c0 },
-	{ 0x18, 0x0000 },
-	{ 0x19, 0x0000 },
-	{ 0x1a, 0x0000 },
-	{ 0x1b, 0x0000 },
-	{ 0x1c, 0x0000 },
-	{ 0x1d, 0x0000 },
-
-	{ 0x20, 0x0100 },
-	{ 0x21, 0x0100 },
-	{ 0x22, 0x0050 },
-
-	{ 0x25, 0x0050 },
-	{ 0x26, 0x0000 },
-	{ 0x27, 0x0000 },
-	{ 0x28, 0x007b },
-	{ 0x29, 0x007b },
-	{ 0x2a, 0x0040 },
-	{ 0x2b, 0x0000 },
-	{ 0x2c, 0x0000 },
-	{ 0x2d, 0x0050 },
-	{ 0x2e, 0x0050 },
-	{ 0x2f, 0x0000 },
-	{ 0x30, 0x0002 },
-	{ 0x31, 0x0037 },
-
-	{ 0x33, 0x0080 },
-	{ 0x34, 0x0008 },
-	{ 0x35, 0x0031 },
-	{ 0x36, 0x0026 },
-	{ 0x37, 0x00e9 },
-};
-*/
-
 static const struct reg_default wm8960_reg_defaults[] = {
 	{  0x0, 0x00a7 },
 	{  0x1, 0x00a7 },
@@ -286,10 +230,10 @@ static int wm8960_init(struct snd_soc_codec *codec)
 
 	// Out
 	data = snd_soc_read(codec, WM8960_POWER2);
-	snd_soc_write(codec, WM8960_POWER2, data|WM8960_PWR2_DACL|WM8960_PWR2_DACR|WM8960_PWR2_LOUT1|WM8960_PWR2_ROUT1|WM8960_PWR2_SPKL|WM8960_PWR2_SPKR);//0x1a
+	snd_soc_write(codec, WM8960_POWER2, data|WM8960_PWR2_DACL|
+		WM8960_PWR2_DACR|WM8960_PWR2_LOUT1 |
+		WM8960_PWR2_ROUT1|WM8960_PWR2_SPKL|WM8960_PWR2_SPKR);//0x1a
 	mdelay(10);
-	// snd_soc_write(codec, WM8960_CLOCK1, CLOCK1); // ALU: CLOCK1
-	// snd_soc_write(codec, WM8960_CLOCK2, CLOCK2); // ALU: CLOCK2
 	snd_soc_write(codec, WM8960_IFACE2, 0x40);
 	snd_soc_write(codec, WM8960_LDAC, LEFTGAIN_LDVU|LEFTGAIN_LDACVOL(0xff));//0x0a
 	snd_soc_write(codec, WM8960_RDAC, RIGHTGAIN_RDVU|RIGHTGAIN_RDACVOL(0xff));//0x0b
@@ -303,6 +247,7 @@ static int wm8960_init(struct snd_soc_codec *codec)
 	snd_soc_write(codec, WM8960_LOUT1, LOUT1_LO1VU|LOUT1_LO1ZC|LOUT1_LOUT1VOL(120));//0x02
 	snd_soc_write(codec, WM8960_ROUT1, ROUT1_RO1VU|ROUT1_RO1ZC|ROUT1_ROUT1VOL(120));//0x03
 	
+	
 	data = snd_soc_read(codec, WM8960_LINVOL);
 	data &= ~LINV_LINMUTE;
 	snd_soc_write(codec, WM8960_LINVOL, data|LINV_IPVU|LINV_LINVOL(96));//LINV(0x00)
@@ -310,6 +255,7 @@ static int wm8960_init(struct snd_soc_codec *codec)
 	data = snd_soc_read(codec, WM8960_RINVOL);
 	data &= ~RINV_RINMUTE;
 	snd_soc_write(codec, WM8960_RINVOL, data|RINV_IPVU|RINV_RINVOL(96)); //LINV(0x01)
+	
 
 	init_mtk = true;
 	return 0;
@@ -569,10 +515,9 @@ static int wm8960_add_widgets(struct snd_soc_codec *codec)
 	
 	struct wm8960_data *pdata = codec->dev->platform_data;
 	struct wm8960_priv *wm8960 = snd_soc_codec_get_drvdata(codec);
-	struct snd_soc_dapm_context *dapm = &codec->dapm;
+	//struct snd_soc_dapm_context *dapm = &codec->dapm;
+	struct snd_soc_dapm_context *dapm = snd_soc_codec_get_dapm(codec);
 	struct snd_soc_dapm_widget *w;
-
-	
 
 	snd_soc_dapm_new_controls(dapm, wm8960_dapm_widgets,
 				  ARRAY_SIZE(wm8960_dapm_widgets));
@@ -602,7 +547,8 @@ static int wm8960_add_widgets(struct snd_soc_codec *codec)
 	 * and save the result.
 	 */
 	list_for_each_entry(w, &codec->component.card->widgets, list) {
-		if (w->dapm != &codec->dapm)
+		//if (w->dapm != &codec->dapm)
+		if (w->dapm != dapm)
 			continue;
 		if (strcmp(w->name, "LOUT1 PGA") == 0)
 			wm8960->lout1 = w;
@@ -751,7 +697,7 @@ static int wm8960_set_bias_level_out3(struct snd_soc_codec *codec,
 				      enum snd_soc_bias_level level)
 {
 	struct wm8960_priv *wm8960 = snd_soc_codec_get_drvdata(codec);
-
+	struct snd_soc_dapm_context *dapm = snd_soc_codec_get_dapm(codec);
 	
 
 	switch (level) {
@@ -809,7 +755,8 @@ static int wm8960_set_bias_level_out3(struct snd_soc_codec *codec,
 		break;
 	}
 
-	codec->dapm.bias_level = level;
+	//codec->dapm.bias_level = level;
+	dapm->bias_level = level;
 
 	return 0;
 }
@@ -818,6 +765,7 @@ static int wm8960_set_bias_level_capless(struct snd_soc_codec *codec,
 					 enum snd_soc_bias_level level)
 {
 	struct wm8960_priv *wm8960 = snd_soc_codec_get_drvdata(codec);
+	struct snd_soc_dapm_context *dapm = snd_soc_codec_get_dapm(codec);
 	int reg;
 
 	
@@ -827,7 +775,8 @@ static int wm8960_set_bias_level_capless(struct snd_soc_codec *codec,
 		break;
 
 	case SND_SOC_BIAS_PREPARE:
-		switch (codec->dapm.bias_level) {
+		//switch (codec->dapm.bias_level) {
+	switch (dapm->bias_level) {
 		case SND_SOC_BIAS_STANDBY:
 			/* Enable anti pop mode */
 			snd_soc_update_bits(codec, WM8960_APOP1,
@@ -885,7 +834,8 @@ static int wm8960_set_bias_level_capless(struct snd_soc_codec *codec,
 		break;
 
 	case SND_SOC_BIAS_STANDBY:
-		switch (codec->dapm.bias_level) {
+		//switch (codec->dapm.bias_level) {
+		switch (dapm->bias_level) {
 		case SND_SOC_BIAS_PREPARE:
 			/* Disable HP discharge */
 			snd_soc_update_bits(codec, WM8960_APOP2,
@@ -909,7 +859,8 @@ static int wm8960_set_bias_level_capless(struct snd_soc_codec *codec,
 		break;
 	}
 
-	codec->dapm.bias_level = level;
+	dapm->bias_level = level;
+	//codec->dapm.bias_level = level;
 
 	return 0;
 }
@@ -1022,6 +973,7 @@ static int wm8960_set_dai_clkdiv(struct snd_soc_dai *codec_dai,
 {
 	struct snd_soc_codec *codec = codec_dai->codec;
 	u16 reg;
+	u32 data;
 
 	printk("******* ALU: %s div_id: %d div: 0x%04x **********\n",__func__, div_id,div);
 
@@ -1044,8 +996,43 @@ static int wm8960_set_dai_clkdiv(struct snd_soc_dai *codec_dai,
 		snd_soc_write(codec, WM8960_PLL1, reg | div);
 		break;
 	case WM8960_DCLKDIV:
-		reg = snd_soc_read(codec, WM8960_CLOCK2) & 0x03f;
-		snd_soc_write(codec, WM8960_CLOCK2, reg | div);
+		// also enable class D output
+		//////////////////////////////////////////////////////////
+		// ALU: fix for Class D output
+		printk("******* ALU: %s - SET CLASS D ******* \n",__func__);
+		// data = snd_soc_read(codec, WM8960_POWER2);
+		// snd_soc_write(codec, WM8960_POWER2, data|
+		// 					WM8960_PWR2_DACL|WM8960_PWR2_DACR|
+		// 					WM8960_PWR2_LOUT1|WM8960_PWR2_ROUT1|
+		// 					WM8960_PWR2_SPKL|WM8960_PWR2_SPKR);//0x1a
+		
+		data = snd_soc_read(codec, WM8960_CLOCK2) & 0x03f;
+		snd_soc_write(codec, WM8960_CLOCK2, data | div);
+		mdelay(10);
+
+		//snd_soc_write(codec, WM8960_ADDCTL2, WM8960_HPSWEN);//0x18
+		snd_soc_write(codec, WM8960_CLASSD1, 0xf7);//0x31
+		snd_soc_write(codec, WM8960_CLASSD3, 0xad);//0x33
+
+		//snd_soc_write(codec, WM8960_ALC1, 0x00); // disable ACL
+		// volume
+		snd_soc_write(codec, WM8960_ROUT2, OUT2VOL);//0x29
+		snd_soc_write(codec, WM8960_ROUT2, OUT2VOL);//0x29
+
+		snd_soc_write(codec, WM8960_LOUT2, OUT2VOL);//0x28
+		snd_soc_write(codec, WM8960_LOUT2, OUT2VOL);//0x28
+
+		/**
+		data = snd_soc_read(codec, WM8960_LINVOL);
+		data &= ~LINV_LINMUTE;
+		snd_soc_write(codec, WM8960_LINVOL, data|LINV_IPVU|LINV_LINVOL(INVOL));//LINV(0x00)
+	
+		data = snd_soc_read(codec, WM8960_RINVOL);
+		data &= ~RINV_RINMUTE;
+		snd_soc_write(codec, WM8960_RINVOL, data|RINV_IPVU|RINV_RINVOL(INVOL)); //LINV(0x01)
+		**/
+
+		printk("******* ALU: %s - SET CLASS D ******* \n", __func__);
 		break;
 	case WM8960_BCLKDIV: // ALU: BCLKDIV config seems to be missing
 		reg = snd_soc_read(codec, WM8960_CLOCK2) & 0x01F0;

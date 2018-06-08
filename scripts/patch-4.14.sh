@@ -15,17 +15,26 @@ kpath="$cpath/build_dir/target-mipsel_24kc_musl/linux-ramips_mt76x8/linux-$kvers
 #porting path
 ppath="../porting/kernel-$kversion"
 
-rm -rf "$kpath/sound"
-rm -rf "$kpath/include/sound"
-rm -rf "$kpath/include/soc"
+# rm -rf "$kpath/sound"
+# rm -rf "$kpath/include/sound"
+# rm -rf "$kpath/include/soc"
 
 # cp -R "$ppath/base-files/" "$cpath/package/"
-cp -R "$ppath/linux-$kversion/sound/" "$kpath/"
-cp -R "$ppath/linux-$kversion/include/sound/" "$kpath/include/"
-cp -R "$ppath/linux-$kversion/include/soc/" "$kpath/include/"
-cp "$ppath/linux-$kversion/include/linux/interrupt.h" "$kpath/include/linux/"
-cp "$ppath/linux-$kversion/include/trace/events/asoc.h" "$kpath/include/trace/events/"
-cp "$ppath/linux-$kversion/include/linux/wait.h" "$kpath/include/linux/"
+#cp -R "$ppath/linux-$kversion/sound/" "$kpath/"
+#cp -R "$ppath/linux-$kversion/include/sound/" "$kpath/include/"
+#cp -R "$ppath/linux-$kversion/include/soc/" "$kpath/include/"
+#cp "$ppath/linux-$kversion/include/linux/interrupt.h" "$kpath/include/linux/"
+#cp "$ppath/linux-$kversion/include/trace/events/asoc.h" "$kpath/include/trace/events/"
+#cp "$ppath/linux-$kversion/include/linux/wait.h" "$kpath/include/linux/"
+
+cp -R "$ppath/linux-$kversion/sound/soc/mtk" "$kpath/sound/soc/"
+
+cp "$ppath/linux-$kversion/sound/soc/Kconfig" "$kpath/sound/soc/"
+cp "$ppath/linux-$kversion/sound/soc/Makefile" "$kpath/sound/soc/"
+
+cp "$ppath/linux-$kversion/sound/Kconfig" "$kpath/sound/"
+cp "$ppath/linux-$kversion/sound/Makefile" "$kpath/sound/"
+
 cp "$ppath/package/kernel/linux/modules/sound.mk" "$cpath/package/kernel/linux/modules/"
 
 

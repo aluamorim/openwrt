@@ -16,9 +16,11 @@ insmod "snd-soc-mt76xx-i2s-ctl.ko"
 insmod "snd-soc-mt76xx-i2s.ko"
 insmod "snd-soc-ralink-i2s.ko"
 insmod "snd-soc-mt76xx-pcm.ko"
-insmod "snd-soc-wm8960.ko"
-#insmod "snd-soc-mt76xx-machine.ko" "DCLKDIV=436" "SYSCLKDIV=4" "BCLKDIV=15"
-insmod "snd-soc-mt76xx-machine.ko" "ADCLKDIV=54" "DACLKDIV=54" "DCLKDIV=500" "SYSCLKDIV=0" "BCLKDIV=15"
+#insmod "snd-soc-wm8960.ko"
+#OUT2VOL = speaker volume (regs 28h e 29h) INVOL = mic volume (regs 00h e 01h)
+insmod "snd-soc-wm8960.ko" "OUT2VOL=368" "INVOL=96"
+insmod "snd-soc-mt76xx-machine.ko"
+#insmod "snd-soc-mt76xx-machine.ko" "ADCLKDIV=54" "DACLKDIV=54" "DCLKDIV=500" "SYSCLKDIV=4" "BCLKDIV=15"
 
 #insmod "snd-soc-mt76xx-machine.ko"
 

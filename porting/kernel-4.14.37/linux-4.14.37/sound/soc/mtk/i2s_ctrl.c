@@ -15,6 +15,8 @@
 #include <asm/system.h> /* cli(), *_flags */
 #endif
 #include <linux/uaccess.h> // ALU:  include linux/uaccess.h
+#include <linux/wait.h> // ALU:  include linux/uaccess.h
+
 #include <asm/uaccess.h> /* copy_from/to_user */
 #include <linux/interrupt.h>
 #include <linux/mm.h>
@@ -111,7 +113,8 @@ static inline long
 ugly_hack_sleep_on_timeout(wait_queue_head_t *q, long timeout)
 {
 	unsigned long flags;
-	wait_queue_t wait;
+	//wait_queue_t wait;
+	wait_queue_entry_t wait;
 
 	init_waitqueue_entry(&wait, current);
 

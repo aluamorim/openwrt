@@ -120,6 +120,9 @@ static int mt76xx_codec_clock_hwparams(struct snd_pcm_substream *substream,
 #else
 	mclk = 12000000;
 #endif
+	// ALÜ: uncommented this line
+	//mclk = 12288000;
+	//snd_soc_dai_set_sysclk(codec_dai,0,mclk, SND_SOC_CLOCK_IN);
 	//snd_soc_dai_set_sysclk(codec_dai,0,mclk, SND_SOC_CLOCK_IN);
 
 	switch(params_rate(params)){
@@ -267,7 +270,7 @@ static int __init mt76xx_machine_init(void)
 	struct i2c_adapter *adapter = NULL;
         struct i2c_client *client = NULL;
 
-	printk("******* ALU: 0 %s *******\n", __func__);
+	//printk("******* ALU: 0 %s *******\n", __func__);
 	adapter = i2c_get_adapter(I2C_AUDIO_DEV_ID);
 	if (!adapter)
 		return -ENODEV;
@@ -275,7 +278,7 @@ static int __init mt76xx_machine_init(void)
 	if (!client)
 		return -ENODEV;
 	i2c_get_clientdata(client);
-	printk("******* ALU: 1 %s *******\n", __func__);
+	//printk("******* ALU: 1 %s *******\n", __func__);
 	client = i2c_new_device(adapter, &i2c_board_info[1]);
 	if (!client)
 		return -ENODEV;
@@ -283,13 +286,13 @@ static int __init mt76xx_machine_init(void)
 
 	i2c_put_adapter(adapter);
 
-	printk("******* ALU: 2 %s *******\n", __func__);
+	//printk("******* ALU: 2 %s *******\n", __func__);
 	soc_mtk_i2s_dev =platform_device_register_simple("mt76xx-i2s", -1, NULL, 0);
 	//soc_mtk_i2s_dev =platform_device_register_simple("ralink-i2s", -1, NULL, 0);
 	if (IS_ERR(soc_mtk_i2s_dev))
 		return PTR_ERR(soc_mtk_i2s_dev);
 
-	printk("******* ALU: 3 %s *******\n", __func__);
+	//printk("******* ALU: 3 %s *******\n", __func__);
 
 	soc_mtk_pcm_dev =
 		platform_device_register_simple("mt76xx-pcm", -1, NULL, 0);
@@ -301,7 +304,7 @@ static int __init mt76xx_machine_init(void)
 		ret = -ENOMEM;
 		goto err_device_alloc;
 	}
-	printk("******* ALU: 4 %s *******\n", __func__);
+	//printk("******* ALU: 4 %s *******\n", __func__);
 
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,38)
 	platform_set_drvdata(mt76xx_audio_device, &mtk_audio_card);
@@ -309,30 +312,30 @@ static int __init mt76xx_machine_init(void)
 	platform_set_drvdata(mt76xx_audio_device, &mtk_audio_devdata);
 	mtk_audio_devdata.dev = &mt76xx_audio_device->dev;
 #endif
-	printk("******* ALU: 5 %s *******\n", __func__);
+	//printk("******* ALU: 5 %s *******\n", __func__);
 	/*Ralink I2S register process end*/
 	ret = platform_device_add(mt76xx_audio_device);
 	if (ret) {
 		printk("mtk audio device : platform_device_add failed (%d)\n",ret);
 		goto err_device_add;
 	}
-	printk("******* ALU: 6 %s *******\n", __func__);
+	//printk("******* ALU: 6 %s *******\n", __func__);
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,38)
 #else
 	snd_soc_register_dai(&mt76xx_i2s_dai);
 #endif
 
-	printk("******* ALU: 7 %s *******\n", __func__);
+	//printk("******* ALU: 7 %s *******\n", __func__);
 	return 0;
 
 err_device_add:
-	printk("******* ALU: 8 %s *******\n", __func__);
+	//printk("******* ALU: 8 %s *******\n", __func__);
 	if (mt76xx_audio_device!= NULL) {
 		platform_device_put(mt76xx_audio_device);
 		mt76xx_audio_device = NULL;
 	}
 err_device_alloc:
-	printk("******* ALU: 9 %s *******\n", __func__);
+	//printk("******* ALU: 9 %s *******\n", __func__);
 	return ret;
 }
 
