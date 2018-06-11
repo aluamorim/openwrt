@@ -17,7 +17,7 @@ ppath="../porting/kernel-$kversion"
 
 # rm -rf "$kpath/sound"
 # rm -rf "$kpath/include/sound"
-# rm -rf "$kpath/include/soc"
+rm -rf "$cpath/package"
 
 # cp -R "$ppath/base-files/" "$cpath/package/"
 #cp -R "$ppath/linux-$kversion/sound/" "$kpath/"
@@ -35,6 +35,6 @@ cp "$ppath/linux-$kversion/sound/soc/Makefile" "$kpath/sound/soc/"
 cp "$ppath/linux-$kversion/sound/Kconfig" "$kpath/sound/"
 cp "$ppath/linux-$kversion/sound/Makefile" "$kpath/sound/"
 
-cp "$ppath/package/kernel/linux/modules/sound.mk" "$cpath/package/kernel/linux/modules/"
+cp -R "$ppath/package/" "$cpath/"
 
 
