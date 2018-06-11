@@ -19,6 +19,7 @@ ppath="../porting/kernel-$kversion"
 # rm -rf "$kpath/include/sound"
 rm -rf "$cpath/package"
 
+tar -xvf "$ppath/package.tar.xz" "$ppath/"
 # cp -R "$ppath/base-files/" "$cpath/package/"
 #cp -R "$ppath/linux-$kversion/sound/" "$kpath/"
 #cp -R "$ppath/linux-$kversion/include/sound/" "$kpath/include/"
