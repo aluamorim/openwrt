@@ -48,7 +48,7 @@
 #define WM8960_DRES_MASK 0x30
 
 
-static unsigned int OUT2VOL = 0x170;
+static unsigned int OUT2VOL = 0x172;
 static unsigned int INVOL = 0x60;
 
 

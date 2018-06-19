@@ -2089,7 +2089,7 @@ CONFIG_PACKAGE_kmod-ac97=y
 # CONFIG_PACKAGE_kmod-sound-i8x0 is not set
 # CONFIG_PACKAGE_kmod-sound-mpu401 is not set
 # CONFIG_PACKAGE_kmod-sound-mt7620 is not set
-CONFIG_PACKAGE_kmod-sound-seq=y
+# CONFIG_PACKAGE_kmod-sound-seq is not set
 # CONFIG_PACKAGE_kmod-sound-soc-ac97 is not set
 CONFIG_PACKAGE_kmod-sound-soc-core=y
 # CONFIG_PACKAGE_kmod-sound-via82xx is not set
