@@ -132,49 +132,6 @@ https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
-Package: python-logging
-Submenu: Python
-Version: 2.7.15-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 2.7 logging module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: Python-2.7.15.tar.xz
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Type: ipkg
-Description: Python 2.7 logging module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-
-Package: python-logging-src
-Submenu: Python
-Version: 2.7.15-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 2.7 logging module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: Python-2.7.15.tar.xz
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Type: ipkg
-Description:     .
-    (Contains the Python sources for this package).
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-
 Package: python-codecs
 Submenu: Python
 Version: 2.7.15-1
@@ -347,6 +304,49 @@ https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
+Package: python-logging
+Submenu: Python
+Version: 2.7.15-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 2.7 logging module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: Python-2.7.15.tar.xz
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Type: ipkg
+Description: Python 2.7 logging module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python-logging-src
+Submenu: Python
+Version: 2.7.15-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 2.7 logging module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: Python-2.7.15.tar.xz
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Type: ipkg
+Description:     .
+    (Contains the Python sources for this package).
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
 Package: python-gdbm
 Submenu: Python
 Version: 2.7.15-1
@@ -465,49 +465,6 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Python 2.7 distutils (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: Python-2.7.15.tar.xz
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Type: ipkg
-Description:     .
-    (Contains the Python sources for this package).
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-
-Package: python-openssl
-Submenu: Python
-Version: 2.7.15-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-light +libopenssl
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 2.7 SSL module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: Python-2.7.15.tar.xz
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Type: ipkg
-Description: Python 2.7 SSL module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-
-Package: python-openssl-src
-Submenu: Python
-Version: 2.7.15-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 2.7 SSL module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: Python-2.7.15.tar.xz
 License: PSF
@@ -680,6 +637,49 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Python 2.7 db module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: Python-2.7.15.tar.xz
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Type: ipkg
+Description:     .
+    (Contains the Python sources for this package).
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python-openssl
+Submenu: Python
+Version: 2.7.15-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-light +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 2.7 SSL module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: Python-2.7.15.tar.xz
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Type: ipkg
+Description: Python 2.7 SSL module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python-openssl-src
+Submenu: Python
+Version: 2.7.15-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 2.7 SSL module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: Python-2.7.15.tar.xz
 License: PSF
@@ -914,7 +914,7 @@ Config:
 Package: python
 Submenu: Python
 Version: 2.7.15-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-light +python-ctypes +python-pydoc +python-multiprocessing +python-logging +python-codecs +python-sqlite3 +python-gdbm +python-email +python-distutils +python-openssl +python-xml +python-compiler +python-db +python-decimal +python-unittest +python-ncurses
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-light +python-ctypes +python-pydoc +python-multiprocessing +python-codecs +python-sqlite3 +python-logging +python-gdbm +python-email +python-distutils +python-xml +python-compiler +python-db +python-openssl +python-decimal +python-unittest +python-ncurses
 Conflicts: 
 Menu-Depends: 
 Provides: 

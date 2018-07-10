@@ -10,7 +10,7 @@ Section: mail
 Category: Mail
 Repository: base
 Title: Simple sendmail SMTP queueing and forwarding (msmtpq-ng wrappers)
-Maintainer: Daniel Dickinson <lede@daniel.thecshore.com>
+Maintainer: Daniel Dickinson <cshoreded@thecshore.com>
 Source: msmtp-scripts-1.0.8.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
@@ -22,7 +22,7 @@ Description:   msmtp-scripts are scripts wrappers around the msmtp SMTP client t
  wrappers around msmtp, which provide the bulk of the
  functionality.
 http://msmtp-scripts.sourceforge.net/
-Daniel Dickinson <lede@daniel.thecshore.com>
+Daniel Dickinson <cshoreded@thecshore.com>
 @@
 
 Package: msmtpq-ng-mta
@@ -35,7 +35,7 @@ Section: mail
 Category: Mail
 Repository: base
 Title: Simple sendmail SMTP queueing and forwarding (as MTA)
-Maintainer: Daniel Dickinson <lede@daniel.thecshore.com>
+Maintainer: Daniel Dickinson <cshoreded@thecshore.com>
 Require-User: msmtp=482:msmtp=482
 Source: msmtp-scripts-1.0.8.tar.gz
 License: GPL-3.0+
@@ -49,7 +49,7 @@ Description:   msmtp-scripts are scripts wrappers around the msmtp SMTP client t
  msmtpq-ng for use as the system mail transport
  agent via the sendmail command.
 http://msmtp-scripts.sourceforge.net/
-Daniel Dickinson <lede@daniel.thecshore.com>
+Daniel Dickinson <cshoreded@thecshore.com>
 @@
 
 Package: msmtpq-ng-mta-smtpd
@@ -62,14 +62,14 @@ Section: mail
 Category: Mail
 Repository: base
 Title: Simple sendmail SMTP queueing and forwarding (basic SMTP server)
-Maintainer: Daniel Dickinson <lede@daniel.thecshore.com>
+Maintainer: Daniel Dickinson <cshoreded@thecshore.com>
 Source: msmtp-scripts-1.0.8.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Simple sendmail SMTP queueing and forwarding (basic SMTP server)
 http://msmtp-scripts.sourceforge.net/
-Daniel Dickinson <lede@daniel.thecshore.com>
+Daniel Dickinson <cshoreded@thecshore.com>
 @@
 
 

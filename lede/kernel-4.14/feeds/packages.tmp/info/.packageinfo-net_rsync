@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/net/rsync/Makefile
 Package: rsync
 Menu: 1
 Submenu: File Transfer
-Version: 3.1.3-1
+Version: 3.1.3-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt +RSYNC_xattr:libattr +RSYNC_acl:libacl +RSYNC_zlib:zlib
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Config:
 
 Package: rsyncd
 Submenu: File Transfer
-Version: 3.1.3-1
+Version: 3.1.3-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +rsync
 Conflicts: 
 Menu-Depends: 

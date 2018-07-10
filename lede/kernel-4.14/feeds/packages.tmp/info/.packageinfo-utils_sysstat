@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/sysstat/Makefile
 
 Package: sysstat
-Version: 11.6.0-2
+Version: 11.6.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Sysstat performance monitoring tools
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: sysstat-11.6.0.tar.gz
+Source: sysstat-11.6.4.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:  The sysstat utilities are a collection of performance monitoring tools for

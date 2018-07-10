@@ -1,7 +1,7 @@
 config SND_MT76XX_SOC
 	tristate "SoC Audio for MT76XX APSoC Machine"
 	depends on SND_SOC && (SOC_MT7620 || SOC_MT7621)
-
+	default m
 	help
 	  Say Y or M if you want to add support for codecs attached to
 	  the MTK I2S interface.

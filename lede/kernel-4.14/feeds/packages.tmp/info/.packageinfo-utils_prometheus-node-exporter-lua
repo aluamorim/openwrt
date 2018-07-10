@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/prometheus-node-exporter-lua/Makefile
 
 Package: prometheus-node-exporter-lua
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luasocket +lua
 Conflicts: 
 Menu-Depends: 
@@ -21,7 +21,7 @@ Christian Simon <simon@swine.de>
 @@
 
 Package: prometheus-node-exporter-lua-nat_traffic
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua
 Conflicts: 
 Menu-Depends: 
@@ -39,7 +39,7 @@ Christian Simon <simon@swine.de>
 @@
 
 Package: prometheus-node-exporter-lua-netstat
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua
 Conflicts: 
 Menu-Depends: 
@@ -57,7 +57,7 @@ Christian Simon <simon@swine.de>
 @@
 
 Package: prometheus-node-exporter-lua-wifi
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
 Conflicts: 
 Menu-Depends: 
@@ -75,7 +75,7 @@ Christian Simon <simon@swine.de>
 @@
 
 Package: prometheus-node-exporter-lua-wifi_stations
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
 Conflicts: 
 Menu-Depends: 
@@ -93,7 +93,7 @@ Christian Simon <simon@swine.de>
 @@
 
 Package: prometheus-node-exporter-lua-bmx6
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua bmx6 +lua-cjson +bmx6-json
 Conflicts: 
 Menu-Depends: 
@@ -111,7 +111,7 @@ Christian Simon <simon@swine.de>
 @@
 
 Package: prometheus-node-exporter-lua-bmx7
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua bmx7 +lua-cjson +bmx7-json
 Conflicts: 
 Menu-Depends: 
@@ -129,7 +129,7 @@ Christian Simon <simon@swine.de>
 @@
 
 Package: prometheus-node-exporter-lua-textfile
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread prometheus-node-exporter-lua +luci-lib-nixio
 Conflicts: 
 Menu-Depends: 
@@ -147,7 +147,7 @@ Christian Simon <simon@swine.de>
 @@
 
 Package: prometheus-node-exporter-lua-openwrt
-Version: 2017.12.08-4
+Version: 2018.06.26-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 

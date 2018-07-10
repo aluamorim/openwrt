@@ -3,7 +3,7 @@ Build-Depends: libzdb/host
 Build-Types: host
 
 Package: libzdb
-Version: 3.1-3
+Version: 3.1-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsqlite3 +libpq +libmysqlclient +zlib +libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 

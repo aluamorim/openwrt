@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/openldap/Makefile
 
 Package: libopenldap
-Version: 2.4.45-2
+Version: 2.4.46-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libsasl2 +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: LDAP implementation (libraries)
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: openldap-2.4.45.tgz
+Source: openldap-2.4.46.tgz
 License: OLDAP-2.8
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,7 +23,7 @@ W. Michael Petullo <mike@flyn.org>
 @@
 
 Package: openldap-utils
-Version: 2.4.45-2
+Version: 2.4.46-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenldap
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Utilities
 Repository: base
 Title: LDAP implementation (utilities)
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: openldap-2.4.45.tgz
+Source: openldap-2.4.46.tgz
 License: OLDAP-2.8
 LicenseFiles: LICENSE
 Type: ipkg
@@ -45,7 +45,7 @@ W. Michael Petullo <mike@flyn.org>
 @@
 
 Package: openldap-server
-Version: 2.4.45-2
+Version: 2.4.46-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenldap +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -55,7 +55,7 @@ Category: Network
 Repository: base
 Title: LDAP implementation (server)
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: openldap-2.4.45.tgz
+Source: openldap-2.4.46.tgz
 License: OLDAP-2.8
 LicenseFiles: LICENSE
 Type: ipkg

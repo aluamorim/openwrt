@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libuv/Makefile
 
 Package: libuv
-Version: 1.19.2-1
+Version: 1.20.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Cross-platform asychronous I/O library
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: libuv-v1.19.2.tar.gz
+Source: libuv-v1.20.3.tar.gz
 LicenseFiles: LICENSE
 Type: ipkg
 Description:  libuv is a multi-platform support library with a focus on asynchronous I/O. It

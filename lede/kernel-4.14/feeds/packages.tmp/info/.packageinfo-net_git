@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/git/Makefile
 
 Package: git
 Submenu: Version Control Systems
-Version: 2.16.3-1
+Version: 2.18.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +librt +zlib
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: The fast version control system
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: git-2.16.3.tar.xz
+Source: git-2.18.0.tar.xz
 Type: ipkg
 Description:  Git is a free & open source, distributed version control system
  designed to handle everything from small to very large projects
@@ -23,7 +23,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: git-http
 Submenu: Version Control Systems
-Version: 2.16.3-1
+Version: 2.18.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +librt +zlib +git +libcurl +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Network
 Repository: base
 Title: Git HTTP commands
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: git-2.16.3.tar.xz
+Source: git-2.18.0.tar.xz
 Type: ipkg
 Description:  Git is a free & open source, distributed version control system
  designed to handle everything from small to very large projects
@@ -46,7 +46,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: git-gitweb
 Submenu: Version Control Systems
-Version: 2.16.3-1
+Version: 2.18.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +librt +zlib +git +perlbase-essential +perlbase-file +perlbase-fcntl +perlbase-encode +perlbase-digest +perlbase-time +perl-cgi
 Conflicts: 
 Menu-Depends: 
@@ -56,7 +56,7 @@ Category: Network
 Repository: base
 Title: Git repository web interface
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: git-2.16.3.tar.xz
+Source: git-2.18.0.tar.xz
 Type: ipkg
 Description:  Git is a free & open source, distributed version control system
  designed to handle everything from small to very large projects

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libyang/Makefile
 
 Package: libyang
-Version: 0.14.53-2698bd6484526facbf82b1263810b938b82a2f23
+Version: 0.15.130-d6baaf90e24af3b07649e9dda6fc0d9b272b2ebc
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: YANG data modeling language library
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: libyang-0.14.53-2698bd6484526facbf82b1263810b938b82a2f23.tar.xz
+Source: libyang-0.15.130-d6baaf90e24af3b07649e9dda6fc0d9b272b2ebc.tar.xz
 License: GPL-2.0+
 Type: ipkg
 Description:  libyang is YANG data modelling language parser and toolkit written (and providing API) in C.
@@ -21,7 +21,7 @@ Mislav Novakovic <mislav.novakovic@sartura.hr>
 @@
 
 Package: yanglint
-Version: 0.14.53-2698bd6484526facbf82b1263810b938b82a2f23
+Version: 0.15.130-d6baaf90e24af3b07649e9dda6fc0d9b272b2ebc
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Utilities
 Repository: base
 Title: YANG data modeling language utility
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: libyang-0.14.53-2698bd6484526facbf82b1263810b938b82a2f23.tar.xz
+Source: libyang-0.15.130-d6baaf90e24af3b07649e9dda6fc0d9b272b2ebc.tar.xz
 License: GPL-2.0+
 Type: ipkg
 Description: YANG data modeling language utility

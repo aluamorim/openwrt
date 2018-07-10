@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/yara/Makefile
 
 Package: yara
 Menu: 1
-Version: 3.7.0-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +YARA_module_magic:libmagic +YARA_module_cuckoo:jansson
+Version: 3.7.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +YARA_module_magic:file +YARA_module_cuckoo:jansson
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Pattern matching swiss knife for malware researchers
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: yara-3.7.0.tar.gz
+Source: yara-3.7.1.tar.gz
 License: BSD-3-Clause
 Type: ipkg
 Description:   YARA is a tool aimed at (but not limited to) helping malware researchers

@@ -1,0 +1,15 @@
+menu "Barelib"
+	tristate "Baresip userspace lib"
+	default y
+
+config BARELIB
+	tristate "Baresip userspace lib"
+	default y
+	help
+		The barelib package installs the necessary
+        .so libraries to run baresip-based applications
+        on /usr/lib directory of the image. (ALU)
+endmenu
+
+
+         

@@ -3,20 +3,20 @@ Build-Depends: libevent2 mariadb/host
 Build-Depends/host: libxml2/host
 Build-Types: host
 
-Package: libmariadbclient
-Version: 10.1.33-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libopenssl +libstdcpp +zlib
+Package: libmariadb
+Version: 10.2.16-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +libatomic +libopenssl +libstdcpp +zlib
 Conflicts: 
 Menu-Depends: 
-Provides: libmysqlclient libmysqlclient-r
+Provides: libmariadbclient libmysqlclient libmysqlclient-r
 Section: libs
 Category: Libraries
 Repository: base
 Title: MariaDB database client library
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -31,8 +31,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-client
 Submenu: database
-Version: 10.1.33-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libopenssl +libstdcpp +zlib +libncursesw
+Version: 10.2.16-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libncursesw
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -41,9 +41,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database core client binaries
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -61,7 +61,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-client-extra
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-client
 Conflicts: 
 Menu-Depends: 
@@ -71,9 +71,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database extra client binaries
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -98,7 +98,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-extra-charsets
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -108,16 +108,15 @@ Category: Utilities
 Repository: base
 Title: MariaDB database extra character sets
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
 database query language in the world. The main goals of MariaDB are
 speed, robustness and ease of use.
 
-The MariaDB server packaged by OpenWrt only provides support for UTF-8.
 This package contains single Byte character sets and collations that can
 be added at run time.
 
@@ -128,8 +127,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: mariadb-server
 Menu: 1
 Submenu: database
-Version: 10.1.33-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libopenssl +libstdcpp +zlib +!arc:libaio +liblzma +libpcre +resolveip
+Version: 10.2.16-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +!arc:libaio +liblzma +libpcre +resolveip
 Conflicts: 
 Menu-Depends: 
 Provides: mysql-server
@@ -138,9 +137,10 @@ Category: Utilities
 Repository: base
 Title: MariaDB database core server binaries
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Require-User: mariadb=376:mariadb=376
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -161,7 +161,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-extra
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -171,9 +171,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database extra server binaries
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description: MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -211,7 +211,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-adt-null
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -221,9 +221,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -238,7 +238,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-0x0100
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -248,9 +248,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -265,7 +265,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-ed25519
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -275,9 +275,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -292,7 +292,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-socket
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -302,9 +302,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -319,7 +319,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-test-plugin
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -329,9 +329,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -346,7 +346,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-client-ed25519
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -356,9 +356,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -373,7 +373,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-debug-key-management
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -383,9 +383,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -400,7 +400,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-dialog-examples
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -410,9 +410,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -427,7 +427,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-disks
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -437,9 +437,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -454,7 +454,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-example-key-management
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -464,9 +464,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -481,7 +481,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-feedback
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -491,9 +491,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -508,7 +508,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-file-key-management
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -518,9 +518,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -535,7 +535,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-archive
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -545,9 +545,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -562,7 +562,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-blackhole
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -572,9 +572,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -589,7 +589,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-connect
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-ha-connect:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -599,9 +599,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -614,9 +614,9 @@ https://mariadb.org/
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
-Package: mariadb-server-plugin-ha-federated
+Package: mariadb-server-plugin-ha-example
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -626,9 +626,36 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
+Type: ipkg
+Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
+database server. SQL (Structured Query Language) is the most popular
+database query language in the world. The main goals of MariaDB are
+speed, robustness and ease of use.
+
+This package provides the ha_example plugin.
+
+https://mariadb.org/
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: mariadb-server-plugin-ha-federated
+Submenu: database
+Version: 10.2.16-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: MariaDB database plugin
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -643,7 +670,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-federatedx
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -653,9 +680,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -668,9 +695,9 @@ https://mariadb.org/
 Sebastian Kemper <sebastian_ml@gmx.net>
 @@
 
-Package: mariadb-server-plugin-ha-innodb
+Package: mariadb-server-plugin-ha-sequence
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -680,16 +707,43 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
 database query language in the world. The main goals of MariaDB are
 speed, robustness and ease of use.
 
-This package provides the ha_innodb plugin.
+This package provides the ha_sequence plugin.
+
+https://mariadb.org/
+Sebastian Kemper <sebastian_ml@gmx.net>
+@@
+
+Package: mariadb-server-plugin-ha-sphinx
+Submenu: database
+Version: 10.2.16-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: MariaDB database plugin
+Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
+Type: ipkg
+Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
+database server. SQL (Structured Query Language) is the most popular
+database query language in the world. The main goals of MariaDB are
+speed, robustness and ease of use.
+
+This package provides the ha_sphinx plugin.
 
 https://mariadb.org/
 Sebastian Kemper <sebastian_ml@gmx.net>
@@ -697,7 +751,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-spider
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -707,9 +761,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -724,7 +778,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-test-sql-discovery
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -734,9 +788,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -751,7 +805,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-handlersocket
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -761,9 +815,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -778,7 +832,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-libdaemon-example
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -788,9 +842,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -805,7 +859,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-locales
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -815,9 +869,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -832,7 +886,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-metadata-lock-info
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -842,9 +896,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -859,7 +913,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-mypluglib
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -869,9 +923,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -886,7 +940,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-qa-auth-client
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -896,9 +950,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -913,7 +967,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-qa-auth-interface
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -923,9 +977,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -940,7 +994,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-qa-auth-server
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -950,9 +1004,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -967,7 +1021,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-query-cache-info
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -977,9 +1031,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -994,7 +1048,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-query-response-time
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1004,9 +1058,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -1021,7 +1075,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-semisync-master
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1031,9 +1085,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -1048,7 +1102,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-semisync-slave
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1058,9 +1112,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -1075,7 +1129,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-server-audit
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1085,9 +1139,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -1102,7 +1156,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-simple-password-check
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1112,9 +1166,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -1129,7 +1183,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-sql-errlog
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1139,9 +1193,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular
@@ -1156,7 +1210,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-wsrep-info
 Submenu: database
-Version: 10.1.33-1
+Version: 10.2.16-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1166,9 +1220,9 @@ Category: Utilities
 Repository: base
 Title: MariaDB database plugin
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: mariadb-10.1.33.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYING
+Source: mariadb-10.2.16.tar.gz
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING libmariadb/COPYING.LIB
 Type: ipkg
 Description:     MariaDB is a fast, stable and true multi-user, multi-threaded SQL
 database server. SQL (Structured Query Language) is the most popular

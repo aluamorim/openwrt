@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/dhcpcd/Makefile
 
 Package: dhcpcd
-Version: 6.11.5-1
+Version: 7.0.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: DHCPv4/IPv4LL/IPv6RS/DHCPv6 quad stack client
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
-Source: dhcpcd-6.11.5.tar.xz
+Source: dhcpcd-7.0.5.tar.xz
 License: BSD-2c
 Type: ipkg
 Description:   DHCPv4, IPv6RS and DHCPv6 client with IPv4LL support

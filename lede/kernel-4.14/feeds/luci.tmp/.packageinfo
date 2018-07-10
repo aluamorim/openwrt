@@ -651,7 +651,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ahcp - украї́нська (Ukrainian)
+Description:     Translation for luci-app-ahcp - Українська (Ukrainian)
 
 @@
 
@@ -1279,7 +1279,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-asterisk - украї́нська (Ukrainian)
+Description:     Translation for luci-app-asterisk - Українська (Ukrainian)
 
 @@
 
@@ -2027,7 +2027,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-commands - украї́нська (Ukrainian)
+Description:     Translation for luci-app-commands - Українська (Ukrainian)
 
 @@
 
@@ -2527,7 +2527,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-coovachilli - украї́нська (Ukrainian)
+Description:     Translation for luci-app-coovachilli - Українська (Ukrainian)
 
 @@
 
@@ -2616,7 +2616,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-ddns
 Submenu: 3. Applications
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full +ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -2625,17 +2625,17 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: LuCI Support for Dynamic DNS Client (ddns-scripts)
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Description: LuCI Support for Dynamic DNS Client (ddns-scripts)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ca
 Default: LUCI_LANG_ca||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2644,18 +2644,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ca translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Català (Catalan)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-cs
 Default: LUCI_LANG_cs||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2664,18 +2664,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - cs translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Čeština (Czech)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-de
 Default: LUCI_LANG_de||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2684,18 +2684,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - de translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Deutsch (German)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-el
 Default: LUCI_LANG_el||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2704,18 +2704,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - el translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Ελληνικά (Greek)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-es
 Default: LUCI_LANG_es||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2724,18 +2724,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - es translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Español (Spanish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-fr
 Default: LUCI_LANG_fr||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2744,18 +2744,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - fr translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Français (French)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-he
 Default: LUCI_LANG_he||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2764,18 +2764,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - he translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - עִבְרִית (Hebrew)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-hu
 Default: LUCI_LANG_hu||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2784,18 +2784,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - hu translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Magyar (Hungarian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-it
 Default: LUCI_LANG_it||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2804,18 +2804,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - it translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Italiano (Italian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ja
 Default: LUCI_LANG_ja||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2824,18 +2824,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ja translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 日本語 (Japanese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-no
 Default: LUCI_LANG_no||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2844,18 +2844,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - no translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Norsk (Norwegian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pl
 Default: LUCI_LANG_pl||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2864,18 +2864,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pl translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Polski (Polish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pt
 Default: LUCI_LANG_pt||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2884,18 +2884,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pt translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Português (Portuguese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pt-br
 Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2904,18 +2904,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pt-br translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Português do Brasil (Brazialian Portuguese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ro
 Default: LUCI_LANG_ro||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2924,18 +2924,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ro translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Română (Romanian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2944,18 +2944,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ru translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Русский (Russian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-sv
 Default: LUCI_LANG_sv||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2964,18 +2964,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - sv translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Svenska (Swedish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-tr
 Default: LUCI_LANG_tr||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -2984,18 +2984,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - tr translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Türkçe (Turkish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-uk
 Default: LUCI_LANG_uk||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -3004,18 +3004,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - uk translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ddns - украї́нська (Ukrainian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Description:     Translation for luci-app-ddns - Українська (Ukrainian)
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-vi
 Default: LUCI_LANG_vi||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -3024,18 +3024,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - vi translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Tiếng Việt (Vietnamese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-zh-cn
 Default: LUCI_LANG_zh-cn||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -3044,18 +3044,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - zh-cn translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 中文 (Chinese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-zh-tw
 Default: LUCI_LANG_zh-tw||(ALL&&m)
-Version: 2.4.9-3
+Version: 2.4.9-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ddns
 Conflicts: 
 Menu-Depends: 
@@ -3064,13 +3064,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - zh-tw translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 臺灣華語 (Taiwanese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 
@@ -3509,7 +3509,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-diag-core - украї́нська (Ukrainian)
+Description:     Translation for luci-app-diag-core - Українська (Ukrainian)
 
 @@
 
@@ -4257,7 +4257,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-firewall - украї́нська (Ukrainian)
+Description:     Translation for luci-app-firewall - Українська (Ukrainian)
 
 @@
 
@@ -4779,7 +4779,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-freifunk-policyrouting - украї́нська (Ukrainian)
+Description:     Translation for luci-app-freifunk-policyrouting - Українська (Ukrainian)
 
 @@
 
@@ -5381,7 +5381,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-hd-idle - украї́нська (Ukrainian)
+Description:     Translation for luci-app-hd-idle - Українська (Ukrainian)
 
 @@
 
@@ -5471,7 +5471,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci-app-lxc
 Submenu: 3. Applications
 Version: x-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full +lxc +lxc-attach +lxc-console +lxc-create +liblxc +rpcd-mod-lxc +getopt
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full +lxc +lxc-attach +lxc-console +lxc-create +liblxc +rpcd-mod-lxc +getopt +!LXC_BUSYBOX_OPTIONS:tar
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -5922,7 +5922,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-meshwizard - украї́нська (Ukrainian)
+Description:     Translation for luci-app-meshwizard - Українська (Ukrainian)
 
 @@
 
@@ -6419,7 +6419,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-minidlna - украї́нська (Ukrainian)
+Description:     Translation for luci-app-minidlna - Українська (Ukrainian)
 
 @@
 
@@ -7259,7 +7259,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-ntpc - украї́нська (Ukrainian)
+Description:     Translation for luci-app-ntpc - Українська (Ukrainian)
 
 @@
 
@@ -7778,7 +7778,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-olsr - украї́нська (Ukrainian)
+Description:     Translation for luci-app-olsr - Українська (Ukrainian)
 
 @@
 
@@ -8342,7 +8342,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-openvpn - украї́нська (Ukrainian)
+Description:     Translation for luci-app-openvpn - Українська (Ukrainian)
 
 @@
 
@@ -8842,7 +8842,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-p910nd - украї́нська (Ukrainian)
+Description:     Translation for luci-app-p910nd - Українська (Ukrainian)
 
 @@
 
@@ -9380,7 +9380,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-polipo - украї́нська (Ukrainian)
+Description:     Translation for luci-app-polipo - Українська (Ukrainian)
 
 @@
 
@@ -10030,7 +10030,7 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-qos - украї́нська (Ukrainian)
+Description:     Translation for luci-app-qos - Українська (Ukrainian)
 
 @@
 
@@ -10222,11 +10222,11 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: Roaring Penguing PPPoE Server
+Title: Roaring Penguin PPPoE Server
 Maintainer: 
 Source: 
 Type: ipkg
-Description: Roaring Penguing PPPoE Server
+Description: Roaring Penguin PPPoE Server
 
 @@
 
@@ -10666,7 +10666,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-samba - украї́нська (Ukrainian)
+Description:     Translation for luci-app-samba - Українська (Ukrainian)
 
 @@
 
@@ -11410,7 +11410,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-splash - украї́нська (Ukrainian)
+Description:     Translation for luci-app-splash - Українська (Ukrainian)
 
 @@
 
@@ -11930,7 +11930,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-statistics - украї́нська (Ukrainian)
+Description:     Translation for luci-app-statistics - Українська (Ukrainian)
 
 @@
 
@@ -12427,7 +12427,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-tinyproxy - украї́нська (Ukrainian)
+Description:     Translation for luci-app-tinyproxy - Українська (Ukrainian)
 
 @@
 
@@ -12924,7 +12924,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-transmission - украї́нська (Ukrainian)
+Description:     Translation for luci-app-transmission - Українська (Ukrainian)
 
 @@
 
@@ -13627,7 +13627,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-upnp - украї́нська (Ukrainian)
+Description:     Translation for luci-app-upnp - Українська (Ukrainian)
 
 @@
 
@@ -14124,7 +14124,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-vnstat - украї́нська (Ukrainian)
+Description:     Translation for luci-app-vnstat - Українська (Ukrainian)
 
 @@
 
@@ -14724,7 +14724,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-watchcat - украї́нська (Ukrainian)
+Description:     Translation for luci-app-watchcat - Українська (Ukrainian)
 
 @@
 
@@ -15474,7 +15474,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-app-wol - украї́нська (Ukrainian)
+Description:     Translation for luci-app-wol - Українська (Ukrainian)
 
 @@
 
@@ -15549,12 +15549,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+Title: LuCI interface with Uhttpd as Webserver (default)
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
-Description: Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+Description:    Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
 
 @@
 
@@ -15581,6 +15581,29 @@ Description: Minimum package set using only admin mini and the standard theme
 @@
 
 
+Source-Makefile: feeds/luci/collections/luci-nginx/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-nginx
+Submenu: 1. Collections
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx +nginx-mod-luci +luci-mod-admin-full +luci-theme-bootstrap +luci-app-firewall +luci-proto-ppp +libiwinfo-lua +IPV6:luci-proto-ipv6 +rpcd-mod-rrdns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI interface with Nginx as Webserver
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description:    Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+
+@@
+
+
 Source-Makefile: feeds/luci/collections/luci-ssl/Makefile
 Build-Depends: lua/host luci-base/host 
 
@@ -15600,6 +15623,29 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Description: LuCI with HTTPS support (mbedTLS as SSL backend)
+
+@@
+
+
+Source-Makefile: feeds/luci/collections/luci-ssl-nginx/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-ssl-nginx
+Submenu: 1. Collections
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx-ssl +nginx-mod-luci-ssl +luci-mod-admin-full +luci-theme-bootstrap +luci-app-firewall +luci-proto-ppp +libiwinfo-lua +IPV6:luci-proto-ipv6 +rpcd-mod-rrdns +libustream-openssl +openssl-util
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI with HTTPS support on Nginx (OpenSSL as SSL backend)
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description:    LuCI with OpenSSL as the SSL backend (libustream-openssl). OpenSSL cmd tools (openssl-util) are used by nginx for SSL key generation.
 
 @@
 
@@ -16076,8 +16122,8 @@ Category: LuCI
 Repository: base
 Title: LuCI core libraries
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Description: LuCI core libraries
 
@@ -16182,8 +16228,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - ca translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Català (Catalan)
@@ -16202,8 +16248,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - cs translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Čeština (Czech)
@@ -16222,8 +16268,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - de translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Deutsch (German)
@@ -16242,8 +16288,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - el translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Ελληνικά (Greek)
@@ -16262,8 +16308,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - en translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - English
@@ -16282,8 +16328,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - es translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Español (Spanish)
@@ -16302,8 +16348,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - fr translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Français (French)
@@ -16322,8 +16368,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - he translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - עִבְרִית (Hebrew)
@@ -16342,8 +16388,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - hu translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Magyar (Hungarian)
@@ -16362,8 +16408,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - it translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Italiano (Italian)
@@ -16382,8 +16428,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - ja translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - 日本語 (Japanese)
@@ -16402,8 +16448,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - ko translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - 한국어 (Korean)
@@ -16422,8 +16468,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - ms translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Bahasa Melayu (Malay)
@@ -16442,8 +16488,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - no translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Norsk (Norwegian)
@@ -16462,8 +16508,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - pl translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Polski (Polish)
@@ -16482,8 +16528,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - pt translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Português (Portuguese)
@@ -16502,8 +16548,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - pt-br translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Português do Brasil (Brazialian Portuguese)
@@ -16522,8 +16568,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - ro translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Română (Romanian)
@@ -16542,8 +16588,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - ru translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Русский (Russian)
@@ -16562,8 +16608,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - sk translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Slovenčina (Slovak)
@@ -16582,8 +16628,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - sv translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Svenska (Swedish)
@@ -16602,8 +16648,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - tr translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Türkçe (Turkish)
@@ -16622,11 +16668,11 @@ Category: LuCI
 Repository: base
 Title: luci-base - uk translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-base - украї́нська (Ukrainian)
+Description:     Translation for luci-base - Українська (Ukrainian)
 
 @@
 
@@ -16642,8 +16688,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - vi translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - Tiếng Việt (Vietnamese)
@@ -16662,8 +16708,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - zh-cn translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - 中文 (Chinese)
@@ -16682,8 +16728,8 @@ Category: LuCI
 Repository: base
 Title: luci-base - zh-tw translation
 Maintainer: 
-Source: LuaSrcDiet-0.12.1.tar.bz2
-License: Apache-2.0
+Source: v1.0.0.tar.gz
+License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - 臺灣華語 (Taiwanese)
@@ -17193,7 +17239,7 @@ Maintainer:
 Source: 
 Type: ipkg
 Hidden: 1
-Description:     Translation for luci-mod-freifunk - украї́нська (Ukrainian)
+Description:     Translation for luci-mod-freifunk - Українська (Ukrainian)
 
 @@
 
@@ -17357,12 +17403,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: Support for DHCPv6/6in4/6to4/6rd/DS-Lite/aiccu
+Title: Support for DHCPv6/6in4/6to4/6rd/DS-Lite
 Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
-Description: Support for DHCPv6/6in4/6to4/6rd/DS-Lite/aiccu
+Description: Support for DHCPv6/6in4/6to4/6rd/DS-Lite
 
 @@
 

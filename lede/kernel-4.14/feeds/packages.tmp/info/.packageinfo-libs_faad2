@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/faad2/Makefile
 
 Package: faad2
-Version: 2.8.6-1
+Version: 2.8.8-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libfaad2
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Sound
 Repository: base
 Title: Freeware Advanced Audio Decoder player
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: faad2-2.8.6.tar.gz
+Source: faad2-2.8.8.tar.gz
 Type: ipkg
 Description: 	FAAD2 is the fastest ISO AAC audio decoder available.
 	FAAD2 correctly decodes all MPEG-4 and MPEG-2 MAIN,
@@ -23,7 +23,7 @@ Ted Hess <thess@kitschensync.net>
 
 Package: libfaad2
 Menu: 1
-Version: 2.8.6-1
+Version: 2.8.8-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Libraries
 Repository: base
 Title: Freeware Advanced Audio Decoder library
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: faad2-2.8.6.tar.gz
+Source: faad2-2.8.8.tar.gz
 Type: ipkg
 Description: 	FAAD2 is the fastest ISO AAC audio decoder available.
 	FAAD2 correctly decodes all MPEG-4 and MPEG-2 MAIN,

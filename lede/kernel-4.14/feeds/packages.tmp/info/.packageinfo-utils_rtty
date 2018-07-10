@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/rtty/Makefile
 
 Package: rtty-nossl
 Submenu: Terminal
-Version: 4.1.1-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblobmsg-json +libuwsc-nossl
+Version: 5.1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libprotobuf-c +libuwsc-nossl
 Conflicts: rtty-openssl rtty-wolfssl rtty-mbedtls
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Utilities
 Repository: base
 Title: A reverse proxy WebTTY (NO SSL)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: rtty-4.1.1.tar.xz
+Source: rtty-5.1.0.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,8 +23,8 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: rtty-mbedtls
 Submenu: Terminal
-Version: 4.1.1-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblobmsg-json +libuwsc-mbedtls
+Version: 5.1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libprotobuf-c +libuwsc-mbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -34,7 +34,7 @@ Category: Utilities
 Repository: base
 Title: A reverse proxy WebTTY (mbedtls)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: rtty-4.1.1.tar.xz
+Source: rtty-5.1.0.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -44,8 +44,8 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: rtty-wolfssl
 Submenu: Terminal
-Version: 4.1.1-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblobmsg-json +libuwsc-wolfssl
+Version: 5.1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libprotobuf-c +libuwsc-wolfssl
 Conflicts: rtty-mbedtls
 Menu-Depends: 
 Provides: 
@@ -55,7 +55,7 @@ Category: Utilities
 Repository: base
 Title: A reverse proxy WebTTY (wolfssl)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: rtty-4.1.1.tar.xz
+Source: rtty-5.1.0.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -65,8 +65,8 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: rtty-openssl
 Submenu: Terminal
-Version: 4.1.1-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblobmsg-json +libuwsc-openssl
+Version: 5.1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libprotobuf-c +libuwsc-openssl
 Conflicts: rtty-wolfssl rtty-mbedtls
 Menu-Depends: 
 Provides: 
@@ -76,7 +76,7 @@ Category: Utilities
 Repository: base
 Title: A reverse proxy WebTTY (openssl)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: rtty-4.1.1.tar.xz
+Source: rtty-5.1.0.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg

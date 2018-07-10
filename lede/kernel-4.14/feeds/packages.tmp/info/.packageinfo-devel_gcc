@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/devel/gcc/Makefile
 Build-Depends: libtool gettext libiconv
 
 Package: gcc
-Version: 5.4.0-2
+Version: 5.4.0-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +binutils +libstdcpp
 Conflicts: 
 Menu-Depends: 

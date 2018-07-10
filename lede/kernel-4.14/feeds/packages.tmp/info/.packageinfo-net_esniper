@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/esniper/Makefile
 
 Package: esniper
-Version: 2.32.0-1
+Version: 2.33.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcurl +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: Simple, lightweight tool for sniping eBay auctions
 Maintainer: Thomas Weißschuh <openwrt@t-8ch.de>
-Source: esniper-2-32-0.tgz
+Source: esniper-2-33-0.tgz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg

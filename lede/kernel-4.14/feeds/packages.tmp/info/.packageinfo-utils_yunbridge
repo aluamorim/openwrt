@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/yunbridge/Makefile
 
 Package: yunbridge
-Version: 160-f2042052115e71ad2c91f77e78d21db8275fcdd6
+Version: 1.6.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Arduino YUN bridge library
 Maintainer: John Crispin <blogic@openwrt.org>
-Source: yunbridge-160-f2042052115e71ad2c91f77e78d21db8275fcdd6.tar.gz
+Source: yunbridge-1.6.0.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:   Arduino YUN bridge library

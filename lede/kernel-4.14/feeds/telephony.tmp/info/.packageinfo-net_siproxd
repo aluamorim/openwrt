@@ -3,7 +3,7 @@ Source-Makefile: feeds/telephony/net/siproxd/Makefile
 Package: siproxd
 Menu: 1
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libltdl +libpthread +libosip2
 Conflicts: 
 Menu-Depends: 
@@ -24,7 +24,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-codecfilter
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -45,7 +45,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-defaulttarget
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -66,7 +66,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-demo
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -87,7 +87,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-bogus-via
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -108,7 +108,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-DTAG
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -129,7 +129,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-fix-fbox-anoncall
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -150,7 +150,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-logcall
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -171,7 +171,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-prefix
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -192,7 +192,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-regex
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -213,7 +213,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-shortdial
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -234,7 +234,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-stripheader
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -255,7 +255,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-stun
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 
@@ -276,7 +276,7 @@ http://siproxd.sourceforge.net/
 
 Package: siproxd-mod-siptrunk
 Submenu: Telephony
-Version: 0.8.2-3
+Version: 0.8.2-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread siproxd
 Conflicts: 
 Menu-Depends: 

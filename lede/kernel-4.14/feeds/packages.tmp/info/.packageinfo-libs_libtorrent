@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libtorrent/Makefile
 
 Package: libtorrent
-Version: 0.13.6-git-1-14e793b75dac95c51ad64ff9cd2dc6772b68c625
+Version: 0.13.6-git-1-14e793b75dac95c51ad64ff9cd2dc6772b68c625.1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libsigcxx +zlib
 Conflicts: 
 Menu-Depends: 

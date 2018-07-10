@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/lvm2/Makefile
 
 Package: libdevmapper
-Version: 2.02.177-1
+Version: 2.02.177-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt
 Conflicts: 
 Menu-Depends: 
@@ -22,7 +22,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2
 Submenu: Disc
-Version: 2.02.177-1
+Version: 2.02.177-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdevmapper +libblkid +libreadline +libncurses
 Conflicts: 
 Menu-Depends: 

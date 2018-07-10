@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libx264/Makefile
 
 Package: libx264
-Version: snapshot-20180401-2245-1
+Version: snapshot-20180401-2245-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread @BUILD_PATENTED
 Conflicts: 
 Menu-Depends: 
