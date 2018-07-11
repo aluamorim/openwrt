@@ -46,12 +46,6 @@ define Package/libbaresip-1.0/install
 	$(INSTALL_DIR) $(1)/usr/lib
 	$(CP) $(PKG_INSTALL_DIR)/libbaresip.a $(1)/usr/lib/
 	$(CP) $(PKG_INSTALL_DIR)/libstdc++.so* $(1)/usr/lib/
-	$(CP) $(PKG_INSTALL_DIR)/libcrypto* $(1)/usr/lib/
-	$(CP) $(PKG_INSTALL_DIR)/libre* $(1)/usr/lib/
-	$(CP) $(PKG_INSTALL_DIR)/libssl* $(1)/usr/lib/
-	$(CP) $(PKG_INSTALL_DIR)/libre* $(1)/usr/lib/
-	$(CP) $(PKG_INSTALL_DIR)/libz* $(1)/usr/lib/
-	$(CP) $(PKG_INSTALL_DIR)/libbaresip.so $(1)/usr/lib/
 endef
 
 $(eval $(call BuildPackage,libbaresip-1.0))
@@ -60,3 +54,5 @@ $(eval $(call BuildPackage,libbaresip-1.0))
 # $(CP) $(PKG_INSTALL_DIR)/libre* $(1)/usr/lib/
 # $(CP) $(PKG_INSTALL_DIR)/libssl* $(1)/usr/lib/
 # $(CP) $(PKG_INSTALL_DIR)/libre* $(1)/usr/lib/
+# $(CP) $(PKG_INSTALL_DIR)/libz* $(1)/usr/lib/
+# $(CP) $(PKG_INSTALL_DIR)/libbaresip.so $(1)/usr/lib/
