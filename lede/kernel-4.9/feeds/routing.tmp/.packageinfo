@@ -26,7 +26,7 @@ Gabriel Kerneis <gabriel@kerneis.info>
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2018.1-0
+Version: 2018.2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Network
 Repository: base
 Title: A.L.F.R.E.D. - Almighty Lightweight Fact Remote Exchange Daemon
 Maintainer: 
-Source: alfred-2018.1.tar.gz
+Source: alfred-2018.2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: alfred is a user space daemon for distributing arbitrary local information over
@@ -116,7 +116,7 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl
-Version: 2018.1-0
+Version: 2018.2-0
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-batman-adv +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -126,13 +126,13 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool batctl
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2018.1.tar.gz
+Source: batctl-2018.2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
 It is an easier method for configuring batman-adv and provides some
 additional tools for debugging as well. This package builds
-version 2018.1 of the user space utility.
+version 2018.2 of the user space utility.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
@@ -142,7 +142,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2018.1-0
+Version: <LINUX_VERSION>+2018.2-0
 Depends: +KMOD_BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-crypto-crc32c +kmod-lib-crc32c +kmod-cfg80211
 Conflicts: 
 Menu-Depends: 
@@ -151,12 +151,12 @@ Section: kernel
 Category: Kernel modules
 Title: B.A.T.M.A.N. Adv
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batman-adv-2018.1.tar.gz
+Source: batman-adv-2018.2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: B.A.T.M.A.N. advanced is a kernel module which allows to
 build layer 2 mesh networks. This package builds
-version 2018.1 of the kernel module.
+version 2018.2 of the kernel module.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
@@ -207,28 +207,32 @@ Corinna "Elektra" Aichele <onelektra@gmx.net>
 @@
 
 
-Source-Makefile: feeds/routing/bird/Makefile
+Source-Makefile: feeds/routing/bird1/Makefile
 Build-Depends: ncurses readline
 
-Package: bird4
+Package: bird1-ipv4
 Submenu: Routing and Redirection
-Version: 1.6.3-1
+Version: 1.6.4-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts: 
+Conflicts:  bird4
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: The BIRD Internet Routing Daemon (IPv4)
+Title: The BIRD Internet Routing Daemon (v1.6) (IPv4)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bird-1.6.3.tar.gz
+Source: bird-1.6.4.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
 with support of modern routing protocols, easy to use configuration
 interface and powerful route filtering language. It is lightweight and
 efficient and therefore appropriate for small embedded routers.
+
+This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+support into separate binaries. See also the bird2 package for the newer
+branch which integrates support for both IP protocols in a single binary.
 
 This is IPv4 version of BIRD, it supports OSPFv2, RIPv2 and BGP
 protocols.
@@ -243,25 +247,29 @@ http://bird.network.cz/
 Álvaro Fernández Rojas <noltari@gmail.com>
 @@
 
-Package: birdc4
+Package: bird1c-ipv4
 Submenu: Routing and Redirection
-Version: 1.6.3-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +bird4
-Conflicts: 
+Version: 1.6.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +bird1-ipv4
+Conflicts:  birdc4
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: The BIRD command-line client (IPv4)
+Title: The BIRD command-line client (v1.6) (IPv4)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bird-1.6.3.tar.gz
+Source: bird-1.6.4.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
 with support of modern routing protocols, easy to use configuration
 interface and powerful route filtering language. It is lightweight and
 efficient and therefore appropriate for small embedded routers.
+
+This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+support into separate binaries. See also the bird2 package for the newer
+branch which integrates support for both IP protocols in a single binary.
 
 This is a BIRD command-line client. It is used to send commands to BIRD,
 commands can perform simple actions such as enabling/disabling of
@@ -275,25 +283,29 @@ http://bird.network.cz/
 Álvaro Fernández Rojas <noltari@gmail.com>
 @@
 
-Package: birdcl4
+Package: bird1cl-ipv4
 Submenu: Routing and Redirection
-Version: 1.6.3-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird4
-Conflicts: 
+Version: 1.6.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv4
+Conflicts:  birdcl4
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: The BIRD lightweight command-line client (IPv4)
+Title: The BIRD lightweight command-line client (v1.6) (IPv4)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bird-1.6.3.tar.gz
+Source: bird-1.6.4.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
 with support of modern routing protocols, easy to use configuration
 interface and powerful route filtering language. It is lightweight and
 efficient and therefore appropriate for small embedded routers.
+
+This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+support into separate binaries. See also the bird2 package for the newer
+branch which integrates support for both IP protocols in a single binary.
 
 This is a BIRD lightweight command-line client. It is used to send commands to BIRD,
 commands can perform simple actions such as enabling/disabling of
@@ -304,25 +316,29 @@ http://bird.network.cz/
 Álvaro Fernández Rojas <noltari@gmail.com>
 @@
 
-Package: bird6
+Package: bird1-ipv6
 Submenu: Routing and Redirection
-Version: 1.6.3-1
+Version: 1.6.4-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
-Conflicts: 
+Conflicts:  bird6
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: The BIRD Internet Routing Daemon (IPv6)
+Title: The BIRD Internet Routing Daemon (v1.6) (IPv6)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bird-1.6.3.tar.gz
+Source: bird-1.6.4.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
 with support of modern routing protocols, easy to use configuration
 interface and powerful route filtering language. It is lightweight and
 efficient and therefore appropriate for small embedded routers.
+
+This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+support into separate binaries. See also the bird2 package for the newer
+branch which integrates support for both IP protocols in a single binary.
 
 This is IPv6 version of BIRD, it supports OSPFv3, RIPng and BGP
 protocols.
@@ -337,25 +353,29 @@ http://bird.network.cz/
 Álvaro Fernández Rojas <noltari@gmail.com>
 @@
 
-Package: birdc6
+Package: bird1c-ipv6
 Submenu: Routing and Redirection
-Version: 1.6.3-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +bird6
-Conflicts: 
+Version: 1.6.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses +bird1-ipv6
+Conflicts:  birdc6
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: The BIRD command-line client (IPv6)
+Title: The BIRD command-line client (v1.6) (IPv6)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bird-1.6.3.tar.gz
+Source: bird-1.6.4.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
 with support of modern routing protocols, easy to use configuration
 interface and powerful route filtering language. It is lightweight and
 efficient and therefore appropriate for small embedded routers.
+
+This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+support into separate binaries. See also the bird2 package for the newer
+branch which integrates support for both IP protocols in a single binary.
 
 This is a BIRD command-line client. It is used to send commands to BIRD,
 commands can perform simple actions such as enabling/disabling of
@@ -369,25 +389,29 @@ http://bird.network.cz/
 Álvaro Fernández Rojas <noltari@gmail.com>
 @@
 
-Package: birdcl6
+Package: bird1cl-ipv6
 Submenu: Routing and Redirection
-Version: 1.6.3-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird6
-Conflicts: 
+Version: 1.6.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv6
+Conflicts:  birdcl6
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: The BIRD lightweight command-line client (IPv6)
+Title: The BIRD lightweight command-line client (v1.6) (IPv6)
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bird-1.6.3.tar.gz
+Source: bird-1.6.4.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
 with support of modern routing protocols, easy to use configuration
 interface and powerful route filtering language. It is lightweight and
 efficient and therefore appropriate for small embedded routers.
+
+This packages the legacy v1.6 branch of Bird, which splits IPv4 and IPv6
+support into separate binaries. See also the bird2 package for the newer
+branch which integrates support for both IP protocols in a single binary.
 
 This is a BIRD lightweight command-line client. It is used to send commands to BIRD,
 commands can perform simple actions such as enabling/disabling of
@@ -399,39 +423,39 @@ http://bird.network.cz/
 @@
 
 
-Source-Makefile: feeds/routing/bird-openwrt/bird4-openwrt/Makefile
+Source-Makefile: feeds/routing/bird1-openwrt/bird1-ipv4-openwrt/Makefile
 
-Package: bird4-uci
+Package: bird1-ipv4-uci
 Submenu: Routing and Redirection
 Version: 0.3-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird4 +libuci +uci
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv4 +libuci +uci
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: The BIRD UCI module
+Title: The BIRD UCI module (v1.6) (IPv4)
 Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
 Source: 
 License: GPL-3.0+
 Type: ipkg
-Description: bird4 UCI integration module
+Description: bird1-ipv4 UCI integration module
 https://github.com/eloicaso/bird-openwrt/
 Eloi Carbo <eloicaso@openmailbox.org>
 @@
 
-Package: luci-app-bird4
+Package: luci-app-bird1-ipv4
 Submenu: 3. Applications
 Version: 0.3-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird4-uci +luci-base
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv4-uci +luci-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: luci
 Category: LuCI
 Repository: base
-Title: LuCI support for bird4
+Title: LuCI support for bird1-ipv4
 Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
 Source: 
 License: GPL-3.0+
@@ -442,39 +466,39 @@ Eloi Carbo <eloicaso@openmailbox.org>
 @@
 
 
-Source-Makefile: feeds/routing/bird-openwrt/bird6-openwrt/Makefile
+Source-Makefile: feeds/routing/bird1-openwrt/bird1-ipv6-openwrt/Makefile
 
-Package: bird6-uci
+Package: bird1-ipv6-uci
 Submenu: Routing and Redirection
 Version: 0.3-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird6 +libuci +uci
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv6 +libuci +uci
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: The BIRD UCI module
+Title: The BIRD UCI module (v1.6) (IPv6)
 Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
 Source: 
 License: GPL-3.0+
 Type: ipkg
-Description: bird6 UCI integration module
+Description: bird1-ipv6 UCI integration module
 https://github.com/eloicaso/bird-openwrt/
 Eloi Carbo <eloicaso@openmailbox.org>
 @@
 
-Package: luci-app-bird6
+Package: luci-app-bird1-ipv6
 Submenu: 3. Applications
 Version: 0.3-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird6-uci +luci-base
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird1-ipv6-uci +luci-base
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: luci
 Category: LuCI
 Repository: base
-Title: LuCI support for bird6
+Title: LuCI support for bird1-ipv6
 Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
 Source: 
 License: GPL-3.0+
@@ -482,6 +506,107 @@ Type: ipkg
 Description: bird6 application for LuCI
 https://github.com/eloicaso/bird-openwrt/
 Eloi Carbo <eloicaso@openmailbox.org>
+@@
+
+
+Source-Makefile: feeds/routing/bird2/Makefile
+Build-Depends: ncurses readline
+
+Package: bird2
+Submenu: Routing and Redirection
+Version: 2.0.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: bird1-ipv4 bird1-ipv6 bird4 bird6
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: The BIRD Internet Routing Daemon (v2)
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Source: bird-2.0.2.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
+with support of modern routing protocols, easy to use configuration
+interface and powerful route filtering language. It is lightweight and
+efficient and therefore appropriate for small embedded routers.
+
+
+BIRD supports OSPFv2, RIPv2, Babel and BGP protocols for IPv4 and
+OSPFv3, RIPng, Babel and BGP protocols for IPv6.
+
+In BGP, BIRD supports communities, multiprotocol extensions, MD5
+authentication, 32bit AS numbers and could act as a route server or a
+route reflector. BIRD also supports multiple RIBs, multiple kernel
+routing tables and redistribution between the protocols with a powerful
+configuration syntax.
+
+This is the 2.0 branch of Bird which integrates support for IPv4 and IPv6
+into a single branch, and also adds support for the Babel routing protocol.
+http://bird.network.cz/
+Toke Høiland-Jørgensen <toke@toke.dk>
+@@
+
+Package: bird2c
+Submenu: Routing and Redirection
+Version: 2.0.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird2 +libreadline +libncurses
+Conflicts: bird1c-ipv4 bird1c-ipv6 birdc4 birdc6
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: The BIRD command-line client (v2)
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Source: bird-2.0.2.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
+with support of modern routing protocols, easy to use configuration
+interface and powerful route filtering language. It is lightweight and
+efficient and therefore appropriate for small embedded routers.
+
+
+This is a BIRD command-line client. It is used to send commands to BIRD,
+commands can perform simple actions such as enabling/disabling of
+protocols, telling BIRD to show various information, telling it to show
+a routing table filtered by a filter, or asking BIRD to reconfigure.
+
+Unless you can't afford dependency on ncurses and readline, you
+should install BIRD command-line client together with BIRD.
+http://bird.network.cz/
+Toke Høiland-Jørgensen <toke@toke.dk>
+@@
+
+Package: bird2cl
+Submenu: Routing and Redirection
+Version: 2.0.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bird2
+Conflicts: bird1cl-ipv4 bird1cl-ipv6 birdcl4 birdcl6
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: The BIRD lightweight command-line client (v2)
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Source: bird-2.0.2.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
+with support of modern routing protocols, easy to use configuration
+interface and powerful route filtering language. It is lightweight and
+efficient and therefore appropriate for small embedded routers.
+
+
+This is a BIRD lightweight command-line client. It is used to send commands
+to BIRD, commands can perform simple actions such as enabling/disabling of
+protocols, telling BIRD to show various information, telling it to show
+a routing table filtered by a filter, or asking BIRD to reconfigure.
+http://bird.network.cz/
+Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
 
@@ -594,7 +719,7 @@ Source-Makefile: feeds/routing/bmx7/Makefile
 Package: bmx7
 Menu: 1
 Submenu: Routing and Redirection
-Version: r2018042501-1
+Version: r2018042501-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libmbedtls +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -614,7 +739,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-uci-config
 Submenu: Routing and Redirection
-Version: r2018042501-1
+Version: r2018042501-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libuci
 Conflicts: 
 Menu-Depends: 
@@ -634,7 +759,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-iwinfo
 Submenu: Routing and Redirection
-Version: r2018042501-1
+Version: r2018042501-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -654,7 +779,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-topology
 Submenu: Routing and Redirection
-Version: r2018042501-1
+Version: r2018042501-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7
 Conflicts: 
 Menu-Depends: 
@@ -674,7 +799,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-json
 Submenu: Routing and Redirection
-Version: r2018042501-1
+Version: r2018042501-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -694,7 +819,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-sms
 Submenu: Routing and Redirection
-Version: r2018042501-1
+Version: r2018042501-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7
 Conflicts: 
 Menu-Depends: 
@@ -714,7 +839,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-table
 Submenu: Routing and Redirection
-Version: r2018042501-1
+Version: r2018042501-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +bmx7-tun
 Conflicts: 
 Menu-Depends: 
@@ -734,7 +859,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-tun
 Submenu: Routing and Redirection
-Version: r2018042501-1
+Version: r2018042501-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
 Conflicts: 
 Menu-Depends: 
@@ -1164,7 +1289,7 @@ Steven Barth <cyrus@openwrt.org>
 Source-Makefile: feeds/routing/ndppd/Makefile
 
 Package: ndppd
-Version: 0.2.3-1
+Version: 0.2.5-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -1174,7 +1299,7 @@ Category: Network
 Repository: base
 Title: NDP Proxy Daemon
 Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
-Source: 0.2.3.tar.gz
+Source: ndppd-0.2.5.tar.gz
 License: GPL-3.0+
 Type: ipkg
 Description:  ndppd, or NDP Proxy Daemon, is a daemon that proxies NDP (Neighbor Discovery
@@ -1762,7 +1887,7 @@ Config:
 Source-Makefile: feeds/routing/pimbd/Makefile
 
 Package: pimbd
-Version: 2015-08-18-68f5fc803119e4b33a88b35c096f4d6ac28b6de5-1
+Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 netifd
 Conflicts: 
 Menu-Depends: 
@@ -1772,7 +1897,7 @@ Category: Network
 Repository: base
 Title: PIM BIDIR daemon
 Maintainer: Pierre Pfister <pierre.pfister@darou.fr>
-Source: pimbd-2015-08-18-68f5fc803119e4b33a88b35c096f4d6ac28b6de5.tar.bz2
+Source: pimbd-2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21.tar.bz2
 License: Apache-2.0
 Type: ipkg
 Description: This package provides a daemon which implements the Protocol Independent

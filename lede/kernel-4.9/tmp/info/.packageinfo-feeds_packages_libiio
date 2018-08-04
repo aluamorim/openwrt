@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/libiio/Makefile
 
 Package: libiio
 Menu: 1
-Version: 0.14-2
+Version: 0.15-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +LIBIIO_USB_BACKEND:libusb-1.0 +LIBIIO_NETWORK_BACKEND:libavahi-client +LIBIIO_XML_BACKEND:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: packages
 Title: Library for interfacing with Linux IIO devices
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: libiio-0.14.tar.gz
+Source: libiio-0.15.tar.gz
 License: LGPL-2.1
 LicenseFiles: COPYING.txt
 Type: ipkg
@@ -54,7 +54,7 @@ config LIBIIO_XML_BACKEND
 @@
 
 Package: iiod
-Version: 0.14-2
+Version: 0.15-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libiio
 Conflicts: 
 Menu-Depends: 
@@ -64,7 +64,7 @@ Category: Network
 Repository: packages
 Title: Linux IIO daemon
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: libiio-0.14.tar.gz
+Source: libiio-0.15.tar.gz
 License: LGPL-2.1
 LicenseFiles: COPYING.txt
 Type: ipkg
@@ -74,7 +74,7 @@ Michael Heimpold <mhei@heimpold.de>
 @@
 
 Package: iio-utils
-Version: 0.14-2
+Version: 0.15-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libiio
 Conflicts: 
 Menu-Depends: 
@@ -84,7 +84,7 @@ Category: Utilities
 Repository: packages
 Title: Linux IIO tools
 Maintainer: Michael Heimpold <mhei@heimpold.de>
-Source: libiio-0.14.tar.gz
+Source: libiio-0.15.tar.gz
 License: LGPL-2.1
 LicenseFiles: COPYING.txt
 Type: ipkg

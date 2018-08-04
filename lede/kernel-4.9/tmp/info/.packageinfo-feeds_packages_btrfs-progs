@@ -3,7 +3,7 @@ Build-Depends: acl
 
 Package: btrfs-progs
 Submenu: Filesystem
-Version: 4.15.1-1
+Version: 4.17-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libattr +libuuid +zlib +libblkid +liblzo +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Utilities
 Repository: packages
 Title: Btrfs filesystems utilities
 Maintainer: Rosen Penev <rosenp@gmail.com>
-Source: btrfs-progs-v4.15.1.tar.xz
+Source: btrfs-progs-v4.17.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

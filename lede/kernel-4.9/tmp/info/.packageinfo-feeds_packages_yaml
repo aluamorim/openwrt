@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/yaml/Makefile
 
 Package: libyaml
 Submenu: Languages
-Version: 0.1.6-1
+Version: 0.2.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,12 +12,12 @@ Category: Libraries
 Repository: packages
 Title: Fast YAML 1.1 parser and emitter library
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: yaml-0.1.6.tar.gz
+Source: yaml-0.2.1.tar.gz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
 Description: Fast YAML 1.1 parser and emitter library
-http://pyyaml.org/wiki/LibYAML
+https://pyyaml.org/wiki/LibYAML
 Nicolas Thill <nico@openwrt.org>
 @@
 

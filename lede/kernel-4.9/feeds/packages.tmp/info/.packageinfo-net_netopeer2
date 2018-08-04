@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/netopeer2/Makefile
 
 Package: netopeer2-server
 Menu: 1
-Version: 0.4.13
+Version: 0.5.26
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libyang +libnetconf2 +netopeer2-keystored +libsysrepo +sysrepocfg +sysrepoctl +sysrepo
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: NETCONF server
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: netopeer2-0.4.13-ae560bef2e70d274f6d028b59e3cb398ea2a621d.tar.xz
+Source: netopeer2-0.5.26-3b99e99c9d507ddc89d21d7f1cbded494e6aa72e.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: NETCONF server
@@ -21,7 +21,7 @@ Mislav Novakovic <mislav.novakovic@sartura.hr>
 @@
 
 Package: netopeer2-cli
-Version: 0.4.13
+Version: 0.5.26
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libyang +libnetconf2 +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Utilities
 Repository: base
 Title: Netopeer2 cli tool
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: netopeer2-0.4.13-ae560bef2e70d274f6d028b59e3cb398ea2a621d.tar.xz
+Source: netopeer2-0.5.26-3b99e99c9d507ddc89d21d7f1cbded494e6aa72e.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Netopeer2 cli tool
@@ -41,7 +41,7 @@ Mislav Novakovic <mislav.novakovic@sartura.hr>
 
 Package: netopeer2-keystored
 Menu: 1
-Version: 0.4.13
+Version: 0.5.26
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libsysrepo +sysrepo +sysrepocfg +sysrepoctl +SSH_KEYS:openssh-keygen +SSH_KEYS:openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -51,7 +51,7 @@ Category: Utilities
 Repository: base
 Title: Netopeer2 key store management
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: netopeer2-0.4.13-ae560bef2e70d274f6d028b59e3cb398ea2a621d.tar.xz
+Source: netopeer2-0.5.26-3b99e99c9d507ddc89d21d7f1cbded494e6aa72e.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description: Netopeer2 key store management

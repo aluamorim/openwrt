@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/sound/shine/Makefile
 
 Package: shine
-Version: 3.1.0-2
+Version: 3.1.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Sound
 Repository: base
 Title: Super fast fixed-point MP3 encoder
 Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: shine-3.1.0.tar.gz
+Source: shine-3.1.1.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

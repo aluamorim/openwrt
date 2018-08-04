@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/libnetconf2/Makefile
 
 Package: libnetconf2
-Version: 0.10.17
+Version: 0.11.37
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libssh +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: NETCONF library
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: libnetconf2-0.10.17-bd93b091d6e4414283c6c764dc451aee61e09997.tar.xz
+Source: libnetconf2-0.11.37-46d56e08b161eb60f37410dae4d5e1a8a1bedd58.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description:  libnetconf2 is the NETCONF library in C intended for building NETCONF clients and servers.

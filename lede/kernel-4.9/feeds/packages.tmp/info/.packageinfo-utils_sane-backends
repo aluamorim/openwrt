@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/utils/sane-backends/Makefile
 
 Package: libsane
-Version: 1.0.27-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
+Version: 1.0.27-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-daemon
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -43,7 +43,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-abaton
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -66,7 +66,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-agfafocus
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -89,7 +89,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-apple
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -112,7 +112,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-artec
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -135,7 +135,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-artec_eplus48u
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -158,7 +158,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-as6e
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -181,7 +181,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-avision
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -204,7 +204,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-bh
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -227,7 +227,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-canon
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -250,7 +250,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-canon630u
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -273,7 +273,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-canon_dr
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -296,7 +296,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-cardscan
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -319,7 +319,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-coolscan
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -342,7 +342,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-coolscan2
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -365,7 +365,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-coolscan3
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -388,7 +388,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dc210
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -411,7 +411,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dc240
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -434,7 +434,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dc25
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -457,7 +457,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dell1600n_net
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libtiff
 Conflicts: 
 Menu-Depends: 
@@ -480,7 +480,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-dmc
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -503,7 +503,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-epjitsu
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -526,7 +526,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-epson
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -549,7 +549,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-epsonds
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -572,7 +572,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-epson2
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -595,7 +595,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-fujitsu
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -618,7 +618,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-genesys
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -641,7 +641,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-gt68xx
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -664,7 +664,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -687,7 +687,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp3500
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -710,7 +710,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp3900
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libtiff
 Conflicts: 
 Menu-Depends: 
@@ -733,7 +733,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp4200
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -756,7 +756,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp5400
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -779,7 +779,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hp5590
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -802,7 +802,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hpljm1005
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -825,7 +825,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-hs2p
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -848,7 +848,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-ibm
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -871,7 +871,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-kodak
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -894,7 +894,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-kodakaio
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -917,7 +917,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-kvs20xx
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -940,7 +940,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-kvs40xx
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -963,7 +963,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-kvs1025
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -986,7 +986,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-leo
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1009,7 +1009,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-lexmark
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1032,7 +1032,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-ma1509
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1055,7 +1055,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-magicolor
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1078,7 +1078,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-matsushita
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1101,7 +1101,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-microtek
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1124,7 +1124,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-microtek2
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1147,7 +1147,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-mustek
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1170,7 +1170,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-mustek_usb
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1193,7 +1193,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-mustek_usb2
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1216,7 +1216,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-nec
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1239,7 +1239,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-net
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1262,7 +1262,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-niash
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1285,7 +1285,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-p5
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1308,7 +1308,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-pie
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1331,7 +1331,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-pieusb
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1354,7 +1354,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-pixma
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1377,7 +1377,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-plustek
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1400,7 +1400,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-plustek_pp
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1423,7 +1423,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-qcam
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane @(TARGET_x86||TARGET_x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -1446,7 +1446,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-ricoh
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1469,7 +1469,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-rts8891
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1492,7 +1492,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-s9036
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1515,7 +1515,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sceptre
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1538,7 +1538,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sharp
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1561,7 +1561,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sm3600
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1584,7 +1584,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sm3840
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1607,7 +1607,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-snapscan
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1630,7 +1630,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-sp15c
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1653,7 +1653,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-st400
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1676,7 +1676,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-stv680
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1699,7 +1699,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-tamarack
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1722,7 +1722,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-teco1
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1745,7 +1745,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-teco2
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1768,7 +1768,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-teco3
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1791,7 +1791,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-test
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1814,7 +1814,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-u12
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1837,7 +1837,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-umax
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1860,7 +1860,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-umax1220u
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1883,7 +1883,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-umax_pp
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane
 Conflicts: 
 Menu-Depends: 
@@ -1906,7 +1906,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-v4l
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libv4l +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -1929,7 +1929,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-xerox_mfp
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg
 Conflicts: 
 Menu-Depends: 
@@ -1952,7 +1952,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-backends
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ALL:sane-backends-all
 Conflicts: 
 Menu-Depends: 
@@ -2239,7 +2239,7 @@ Config:
 @@
 
 Package: sane-backends-all
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +sane-abaton +sane-agfafocus +sane-apple +sane-artec +sane-artec_eplus48u +sane-as6e +sane-avision +sane-bh +sane-canon +sane-canon630u +sane-canon_dr +sane-cardscan +sane-coolscan +sane-coolscan2 +sane-coolscan3 +sane-dc210 +sane-dc240 +sane-dc25 +sane-dell1600n_net +sane-dmc +sane-epjitsu +sane-epson +sane-epsonds +sane-epson2 +sane-fujitsu +sane-genesys +sane-gt68xx +sane-hp +sane-hp3500 +sane-hp3900 +sane-hp4200 +sane-hp5400 +sane-hp5590 +sane-hpljm1005 +sane-hs2p +sane-ibm +sane-kodak +sane-kodakaio +sane-kvs20xx +sane-kvs40xx +sane-kvs1025 +sane-leo +sane-lexmark +sane-ma1509 +sane-magicolor +sane-matsushita +sane-microtek +sane-microtek2 +sane-mustek +sane-mustek_usb +sane-mustek_usb2 +sane-nec +sane-net +sane-niash +sane-p5 +sane-pie +sane-pieusb +sane-pixma +sane-plustek +sane-plustek_pp +((TARGET_x86||TARGET_x86_64)):sane-qcam +sane-ricoh +sane-rts8891 +sane-s9036 +sane-sceptre +sane-sharp +sane-sm3600 +sane-sm3840 +sane-snapscan +sane-sp15c +sane-st400 +sane-stv680 +sane-tamarack +sane-teco1 +sane-teco2 +sane-teco3 +sane-test +sane-u12 +sane-umax +sane-umax1220u +sane-umax_pp +sane-v4l +sane-xerox_mfp
 Conflicts: 
 Menu-Depends: 
@@ -2262,7 +2262,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 @@
 
 Package: sane-frontends
-Version: 1.0.27-1
+Version: 1.0.27-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsane +libjpeg +libpng
 Conflicts: 
 Menu-Depends: 

@@ -3,7 +3,7 @@ Source-Makefile: package/feeds/packages/gnupg/Makefile
 Package: gnupg
 Menu: 1
 Submenu: Encryption
-Version: 1.4.21-1
+Version: 1.4.23-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,8 @@ Section: utils
 Category: Utilities
 Repository: packages
 Title: GNU privacy guard - a free PGP replacement
-Maintainer: Daniel Dickinson <lede@cshore.thecshore.com>
-Source: gnupg-1.4.21.tar.bz2
+Maintainer: 
+Source: gnupg-1.4.23.tar.bz2
 License: GPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -25,12 +25,12 @@ Description:  GnuPG is GNU's tool for secure communication and data storage.
  GnuPG does not use any patented algorithms so it cannot be compatible
  with PGP2 because it uses IDEA (which is patented worldwide).
 http://www.gnupg.org/
-Daniel Dickinson <lede@cshore.thecshore.com>
+
 @@
 
 Package: gpgv
 Submenu: Encryption
-Version: 1.4.21-1
+Version: 1.4.23-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -39,8 +39,8 @@ Section: utils
 Category: Utilities
 Repository: packages
 Title: GnuPG signature verification only
-Maintainer: Daniel Dickinson <lede@cshore.thecshore.com>
-Source: gnupg-1.4.21.tar.bz2
+Maintainer: 
+Source: gnupg-1.4.23.tar.bz2
 License: GPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -49,12 +49,12 @@ Description:  GPGv is a stripped down version of GnuPG that only checks signatur
  GnuPG does not use any patented algorithms so it cannot be compatible
  with PGP2 because it uses IDEA (which is patented worldwide).
 http://www.gnupg.org/
-Daniel Dickinson <lede@cshore.thecshore.com>
+
 @@
 
 Package: gnupg-utils
 Submenu: Encryption
-Version: 1.4.21-1
+Version: 1.4.23-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnupg +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -63,15 +63,15 @@ Section: utils
 Category: Utilities
 Repository: packages
 Title: Key management utilities for GnuPG
-Maintainer: Daniel Dickinson <lede@cshore.thecshore.com>
-Source: gnupg-1.4.21.tar.bz2
+Maintainer: 
+Source: gnupg-1.4.23.tar.bz2
 License: GPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
 Description:  Key management utilies for GnuPG.
  This package is needed to import keys from a keyserver.
 http://www.gnupg.org/
-Daniel Dickinson <lede@cshore.thecshore.com>
+
 @@
 
 

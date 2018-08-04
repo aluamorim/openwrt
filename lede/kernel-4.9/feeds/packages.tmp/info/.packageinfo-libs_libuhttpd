@@ -2,9 +2,9 @@ Source-Makefile: feeds/packages/libs/libuhttpd/Makefile
 
 Package: libuhttpd-nossl
 Submenu: Networking
-Version: 2.0.3-1
+Version: 2.1.2-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +liblua
-Conflicts: 
+Conflicts: libuhttpd-openssl libuhttpd-wolfssl libuhttpd-mbedtls
 Menu-Depends: 
 Provides: 
 Build-Variant: nossl
@@ -13,7 +13,7 @@ Category: Libraries
 Repository: base
 Title: libuhttpd (NO SSL)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuhttpd-2.0.3.tar.xz
+Source: libuhttpd-2.1.2.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,7 +23,7 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuhttpd-mbedtls
 Submenu: Networking
-Version: 2.0.3-1
+Version: 2.1.2-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +liblua +libustream-mbedtls
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Libraries
 Repository: base
 Title: libuhttpd (mbedtls)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuhttpd-2.0.3.tar.xz
+Source: libuhttpd-2.1.2.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -44,9 +44,9 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuhttpd-wolfssl
 Submenu: Networking
-Version: 2.0.3-1
+Version: 2.1.2-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +liblua +libustream-wolfssl
-Conflicts: 
+Conflicts: libuhttpd-mbedtls
 Menu-Depends: 
 Provides: 
 Build-Variant: wolfssl
@@ -55,7 +55,7 @@ Category: Libraries
 Repository: base
 Title: libuhttpd (wolfssl)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuhttpd-2.0.3.tar.xz
+Source: libuhttpd-2.1.2.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -65,9 +65,9 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuhttpd-openssl
 Submenu: Networking
-Version: 2.0.3-1
+Version: 2.1.2-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +liblua +libustream-openssl
-Conflicts: 
+Conflicts: libuhttpd-wolfssl libuhttpd-mbedtls
 Menu-Depends: 
 Provides: 
 Build-Variant: openssl
@@ -76,7 +76,7 @@ Category: Libraries
 Repository: base
 Title: libuhttpd (openssl)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuhttpd-2.0.3.tar.xz
+Source: libuhttpd-2.1.2.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg

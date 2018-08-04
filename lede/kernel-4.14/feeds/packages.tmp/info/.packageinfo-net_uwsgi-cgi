@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/uwsgi-cgi/Makefile
 
 Package: uwsgi-cgi
 Submenu: Web Servers/Proxies
-Version: 2.0.17-5
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpcre +jansson +libuuid +libxml2
+Version: 2.0.17.1-4
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcap +jansson +libuuid
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,8 +12,8 @@ Category: Network
 Repository: base
 Title: The uWSGI server
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: uwsgi-cgi-2.0.17.tar.xz
-License: GPL2 + linking exception
+Source: uwsgi-cgi-2.0.17.1.tar.gz
+License: GPL-2.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
 Description: 	The uWSGI project build with cgi profile
@@ -23,7 +23,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: uwsgi-cgi-luci-support
 Submenu: Web Servers/Proxies
-Version: 2.0.17-5
+Version: 2.0.17.1-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi
 Conflicts: 
 Menu-Depends: 
@@ -33,8 +33,8 @@ Category: Network
 Repository: base
 Title: Support files for LuCI on Nginx
 Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Source: uwsgi-cgi-2.0.17.tar.xz
-License: GPL2 + linking exception
+Source: uwsgi-cgi-2.0.17.1.tar.gz
+License: GPL-2.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
 Description: Support files for LuCI on Nginx

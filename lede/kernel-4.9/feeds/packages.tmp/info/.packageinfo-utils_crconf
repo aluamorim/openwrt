@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/crconf/Makefile
 
 Package: crconf
-Version: pre2-1
+Version: pre2-8bd996400d087028ba56b724abc1f5b378eaa77f-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Linux crypto layer configuraton tool
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: crconf-pre2.tar.gz
+Source: crconf-pre2-8bd996400d087028ba56b724abc1f5b378eaa77f.tar.xz
 Type: ipkg
 Description:   Linux crypto layer configuraton tool.
   Use this to manipulate kernel Crypto API/framework stuff,

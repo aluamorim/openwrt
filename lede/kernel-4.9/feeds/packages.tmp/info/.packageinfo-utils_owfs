@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/owfs/Makefile
 
 Package: owfs
 Submenu: Filesystem
-Version: 2.9p5-1
+Version: 3.2p2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +libfuse +fuse-utils
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: OWFS - fuse file system
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: owfs-2.9p5.tar.gz
+Source: owfs-3.2p2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
@@ -30,13 +30,13 @@ Description:     OWFS is a suite of programs that designed to make the 1-wire bu
   rather than speed.
 
   This package contains the OWFS fuse filesystem.
-http://owfs.sourceforge.net/
+https://github.com/owfs/owfs
 Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: owshell
 Submenu: Filesystem
-Version: 2.9p5-1
+Version: 3.2p2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +USE_UCLIBC:librpc
 Conflicts: 
 Menu-Depends: 
@@ -46,7 +46,7 @@ Category: Utilities
 Repository: base
 Title: OWFS - shell utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: owfs-2.9p5.tar.gz
+Source: owfs-3.2p2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
@@ -64,13 +64,13 @@ Description:     OWFS is a suite of programs that designed to make the 1-wire bu
   rather than speed.
 
   This package contains the OWFS shell utilities.
-http://owfs.sourceforge.net/
+https://github.com/owfs/owfs
 Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: owserver
 Submenu: Filesystem
-Version: 2.9p5-1
+Version: 3.2p2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -80,7 +80,7 @@ Category: Network
 Repository: base
 Title: OWFS - network server
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: owfs-2.9p5.tar.gz
+Source: owfs-3.2p2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
@@ -98,13 +98,13 @@ Description:     OWFS is a suite of programs that designed to make the 1-wire bu
   rather than speed.
 
   This package contains the OWFS network server.
-http://owfs.sourceforge.net/
+https://github.com/owfs/owfs
 Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: owhttpd
 Submenu: Filesystem
-Version: 2.9p5-1
+Version: 3.2p2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -114,7 +114,7 @@ Category: Network
 Repository: base
 Title: OWFS - http server
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: owfs-2.9p5.tar.gz
+Source: owfs-3.2p2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
@@ -132,13 +132,13 @@ Description:     OWFS is a suite of programs that designed to make the 1-wire bu
   rather than speed.
 
   This package contains the OWFS http server.
-http://owfs.sourceforge.net/
+https://github.com/owfs/owfs
 Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: owftpd
 Submenu: Filesystem
-Version: 2.9p5-1
+Version: 3.2p2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -148,7 +148,7 @@ Category: Network
 Repository: base
 Title: OWFS - ftp server
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: owfs-2.9p5.tar.gz
+Source: owfs-3.2p2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
@@ -166,14 +166,14 @@ Description:     OWFS is a suite of programs that designed to make the 1-wire bu
   rather than speed.
 
   This package contains the OWFS ftp server.
-http://owfs.sourceforge.net/
+https://github.com/owfs/owfs
 Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: libow
 Submenu: Filesystem
-Version: 2.9p5-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +LIBOW_MASTER_USB:libusb-compat +LIBOW_MASTER_W1:kmod-w1
+Version: 3.2p2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +LIBOW_MASTER_USB:libusb-compat +LIBOW_MASTER_W1:kmod-w1 +libavahi-client
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -182,7 +182,7 @@ Category: Libraries
 Repository: base
 Title: OWFS - common shared library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: owfs-2.9p5.tar.gz
+Source: owfs-3.2p2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
@@ -200,7 +200,7 @@ Description:     OWFS is a suite of programs that designed to make the 1-wire bu
   rather than speed.
 
   This package contains the OWFS library.
-http://owfs.sourceforge.net/
+https://github.com/owfs/owfs
 Jo-Philipp Wich <jo@mein.io>
 @@
 Config:
@@ -209,7 +209,7 @@ Config:
 
 Package: libow-capi
 Submenu: Filesystem
-Version: 2.9p5-1
+Version: 3.2p2-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow
 Conflicts: 
 Menu-Depends: 
@@ -219,7 +219,7 @@ Category: Libraries
 Repository: base
 Title: OWFS - C-API library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: owfs-2.9p5.tar.gz
+Source: owfs-3.2p2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
@@ -237,7 +237,7 @@ Description:     OWFS is a suite of programs that designed to make the 1-wire bu
   rather than speed.
 
   This package contains the OWFS C-API library.
-http://owfs.sourceforge.net/
+https://github.com/owfs/owfs
 Jo-Philipp Wich <jo@mein.io>
 @@
 

@@ -3,8 +3,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-simple-adblock
 Submenu: 3. Applications
-Version: x-5
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci +simple-adblock
+Version: x-16
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full +simple-adblock
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-ja
 Default: LUCI_LANG_ja||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -42,7 +42,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-pt
 Default: LUCI_LANG_pt||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -62,7 +62,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-pt-br
 Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -82,7 +82,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -102,7 +102,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-sv
 Default: LUCI_LANG_sv||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 

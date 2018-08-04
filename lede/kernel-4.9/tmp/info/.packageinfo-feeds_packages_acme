@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/acme/Makefile
 
 Package: acme
-Version: 2.7.8-3
+Version: 2.7.9-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +ca-bundle +openssl-util +netcat
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: packages
 Title: ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.7.8-3.tar.xz
+Source: acme-2.7.9.tar.gz
 License: GPLv3
 Type: ipkg
 Description:  A client for issuing Letsencrypt certificates.
@@ -19,7 +19,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
 Package: acme-dnsapi
-Version: 2.7.8-3
+Version: 2.7.9-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +acme
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,7 @@ Category: Network
 Repository: packages
 Title: DNS API integration for ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.7.8-3.tar.xz
+Source: acme-2.7.9.tar.gz
 License: GPLv3
 Type: ipkg
 Description:  This package provides DNS API integration for ACME (Letsencrypt) client.
@@ -38,7 +38,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: luci-app-acme
 Submenu: 3. Applications
-Version: 2.7.8-3
+Version: 2.7.9-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lua luci-base +acme luci-app-uhttpd
 Conflicts: 
 Menu-Depends: 
@@ -48,7 +48,7 @@ Category: LuCI
 Repository: packages
 Title: ACME package - LuCI interface
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-2.7.8-3.tar.xz
+Source: acme-2.7.9.tar.gz
 License: GPLv3
 Type: ipkg
 Description: 	Control the ACME Letsencrypt certificate interface

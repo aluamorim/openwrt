@@ -12,7 +12,7 @@ Category: Network
 Repository: packages
 Title: E2Guardian
 Maintainer: Luka Perkov <luka@openwrt.org>
-Source: v3.2.0.tar.gz
+Source: e2guardian-3.2.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: E2Guardian

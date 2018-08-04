@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: node
 Submenu: Node.js
-Version: v8.10.0-1
+Version: v8.11.3-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(HAS_FPU||KERNEL_MIPS_FPU_EMULATOR) +libstdcpp +libopenssl +zlib +USE_UCLIBC:libpthread +USE_UCLIBC:librt +NODEJS_ICU:icu
 Conflicts: 
 Menu-Depends: 
@@ -15,7 +15,7 @@ Category: Languages
 Repository: packages
 Title: Node.js is a platform built on Chrome's JavaScript runtime
 Maintainer: John Crispin <blogic@openwrt.org>, Adrian Panella <ianchi74@outlook.com>
-Source: node-v8.10.0.tar.xz
+Source: node-v8.11.3.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -37,7 +37,7 @@ Config:
 
 Package: node-npm
 Submenu: Node.js
-Version: v8.10.0-1
+Version: v8.11.3-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +node
 Conflicts: 
 Menu-Depends: 
@@ -47,7 +47,7 @@ Category: Languages
 Repository: packages
 Title: NPM stands for Node Package Manager
 Maintainer: John Crispin <blogic@openwrt.org>, Adrian Panella <ianchi74@outlook.com>
-Source: node-v8.10.0.tar.xz
+Source: node-v8.11.3.tar.xz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

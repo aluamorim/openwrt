@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/mtr/Makefile
 
 Package: mtr
-Version: 0.85+newdns-dd2b75080bc5406ba0b438953b36b72204ba114b-2
+Version: 0.92-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -10,8 +10,8 @@ Section: net
 Category: Network
 Repository: base
 Title: Full screen ncurses traceroute tool
-Maintainer: 
-Source: mtr-dd2b75080bc5406ba0b438953b36b72204ba114b.tar.gz
+Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
+Source: mtr-0.92.tar.gz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -24,7 +24,7 @@ Description: 	mtr combines the functionality of the 'traceroute' and 'ping' prog
 	quality of the link to each machine. As it does this, it prints
 	running statistics about each machine.
 http://www.bitwizard.nl/mtr/
-
+Jonathan McCrohan <jmccrohan@gmail.com>
 @@
 
 

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/reaver/Makefile
 
 Package: reaver
 Submenu: wireless
-Version: 1.6.4-1
+Version: 1.6.5-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: Efficient brute force attack against Wifi Protected Setup
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: reaver-1.6.4.tar.xz
+Source: reaver-1.6.5.tar.xz
 License: GPL-2.0
 LicenseFiles: docs/LICENSE
 Type: ipkg

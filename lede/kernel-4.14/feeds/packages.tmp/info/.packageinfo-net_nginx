@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/nginx/Makefile
 
 Package: nginx
 Submenu: Web Servers/Proxies
-Version: 1.15.0-1
+Version: 1.15.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: Nginx web server
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.15.0.tar.gz
+Source: nginx-1.15.2.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. (Some module require SSL module enable to show up in config menu)
@@ -26,18 +26,18 @@ Config:
 
 Package: nginx-ssl
 Submenu: Web Servers/Proxies
-Version: 1.15.0-1
+Version: 1.15.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: nginx
 Build-Variant: ssl
 Section: net
 Category: Network
 Repository: base
 Title: Nginx web server with SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.15.0.tar.gz
+Source: nginx-1.15.2.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. (Some module require SSL module enable to show up in config menu) This varian is compiled with SSL support enabled. To enable additional module select them in the nginx default configuration menu.
@@ -50,18 +50,18 @@ Config:
 
 Package: nginx-all-module
 Submenu: Web Servers/Proxies
-Version: 1.15.0-1
+Version: 1.15.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libopenssl +zlib +liblua +libpthread
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: nginx
 Build-Variant: all-module
 Section: net
 Category: Network
 Repository: base
 Title: Nginx web server with ALL module selected
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.15.0.tar.gz
+Source: nginx-1.15.2.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. (Some module require SSL module enable to show up in config menu) This varian is compiled with ALL module selected.
@@ -71,7 +71,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci
 Submenu: Web Servers/Proxies
-Version: 1.15.0-1
+Version: 1.15.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi +uwsgi-cgi-luci-support +nginx
 Conflicts: 
 Menu-Depends: 
@@ -81,7 +81,7 @@ Category: Network
 Repository: base
 Title: Support file for Nginx
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.15.0.tar.gz
+Source: nginx-1.15.2.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  Support file for LuCI in nginx. Include custom nginx configuration, autostart script for uwsgi.
@@ -91,7 +91,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci-ssl
 Submenu: Web Servers/Proxies
-Version: 1.15.0-1
+Version: 1.15.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi +uwsgi-cgi-luci-support +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -101,7 +101,7 @@ Category: Network
 Repository: base
 Title: Support file for Nginx with HTTPS support
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
-Source: nginx-1.15.0.tar.gz
+Source: nginx-1.15.2.tar.gz
 License: 2-clause BSD-like license
 Type: ipkg
 Description:  This also include redirect from http to https and cert autogeneration.

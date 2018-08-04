@@ -1,0 +1,26 @@
+Source-Makefile: feeds/packages/utils/qemu-userspace/Makefile
+Build-Depends/host: glib2/host
+Build-Types: host
+
+Package: qemu-userspace
+Submenu: Virtualization
+Version: 3.0.0-rc2-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +zlib +libpthread @BROKEN
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: qemu 3.0.0-rc2 (Linux/BSD User space emulation)
+Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
+Source: qemu-3.0.0-rc2.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description: 	QEMU is a generic and open source machine emulator and virtualizer. 
+	(This package version is for user space emulation only, not full system.)
+https://www.qemu.org
+Andy Walsh <andy.walsh44+github@gmail.com>
+@@
+
+

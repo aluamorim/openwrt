@@ -24,7 +24,7 @@ Description:   neon is an HTTP and WebDAV client library, with a C interface. Fe
     PKCS11 wrapper interface.
   - Abstract interface to parsing XML using libxml2 or expat, and wrappers for simplifying handling XML HTTP response bodies
   - WebDAV metadata support; wrappers for PROPFIND and PROPPATCH to simplify property manipulation.
-http://www.webdav.org/neon/
+https://web.archive.org/web/20170923042221/http://webdav.org:80/neon/
 Federico Di Marco <fededim@gmail.com>
 @@
 

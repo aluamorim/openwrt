@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libshout/Makefile
 
 Package: libshout
-Version: 2.4.1-1
+Version: 2.4.1-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libvorbisidec +libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -28,7 +28,7 @@ Nicolas Thill <nico@openwrt.org>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libshout-nossl
-Version: 2.4.1-1
+Version: 2.4.1-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libvorbisidec +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -55,7 +55,7 @@ Nicolas Thill <nico@openwrt.org>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libshout-full
-Version: 2.4.1-1
+Version: 2.4.1-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libvorbisidec +libpthread +libtheora +libopenssl
 Conflicts: 
 Menu-Depends: 

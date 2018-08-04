@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/clamav/Makefile
 
 Package: clamav
 Submenu: Web Servers/Proxies
-Version: 0.100.0-1
+Version: 0.100.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +uclibcxx +zlib +libcurl +libjson-c +libopenssl +libltdl +libpcre2 +USE_MUSL:musl-fts
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: ClamAV
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr> Lucian Cristian <lucian.cristian@gmail.com>
-Source: clamav-0.100.0.tar.gz
+Source: clamav-0.100.1.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:  ClamAV is an open source antivirus engine for detecting trojans,
@@ -23,7 +23,7 @@ Marko Ratkaj <marko.ratkaj@sartura.hr> Lucian Cristian <lucian.cristian@gmail.co
 
 Package: freshclam
 Submenu: Web Servers/Proxies
-Version: 0.100.0-1
+Version: 0.100.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +uclibcxx +zlib +libcurl +libjson-c +libopenssl +libltdl +libpcre2 +USE_MUSL:musl-fts +clamav
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Network
 Repository: base
 Title: ClamAV database updater
 Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr> Lucian Cristian <lucian.cristian@gmail.com>
-Source: clamav-0.100.0.tar.gz
+Source: clamav-0.100.1.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:  Database updater for ClamAV

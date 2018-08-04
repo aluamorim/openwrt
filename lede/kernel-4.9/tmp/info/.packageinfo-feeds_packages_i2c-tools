@@ -12,7 +12,7 @@ Category: Utilities
 Repository: packages
 Title: I2C tools for Linux
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: i2c-tools-3.1.2.tar.bz2
+Source: i2c-tools-3.1.2.tar.xz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -34,7 +34,7 @@ Category: Languages
 Repository: packages
 Title: Python bindings for the SMBUS
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: i2c-tools-3.1.2.tar.bz2
+Source: i2c-tools-3.1.2.tar.xz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -55,7 +55,7 @@ Category: Languages
 Repository: packages
 Title: Python bindings for the SMBUS
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: i2c-tools-3.1.2.tar.bz2
+Source: i2c-tools-3.1.2.tar.xz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg

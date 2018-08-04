@@ -9,20 +9,24 @@ Provides:
 Section: mail
 Category: Mail
 Repository: packages
-Title: Simple sendmail SMTP queueing and forwarding (msmtpq-ng wrappers)
-Maintainer: Daniel Dickinson <lede@daniel.thecshore.com>
+Title: DEPRECATED: Simple sendmail SMTP queueing and forwarding (msmtpq-ng wrappers)
+Maintainer: 
 Source: msmtp-scripts-1.0.8.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
-Description:   msmtp-scripts are scripts wrappers around the msmtp SMTP client that
+Description:   DEPRECATED: SourceForge project is abandonded; and upstream (on GitHub)
+ has deprecated this project. See:
+ https://github.com/cshore-history/msmtp-scripts#deprecation-notice
+
+ msmtp-scripts are scripts wrappers around the msmtp SMTP client that
  add queueing, logging to syslog or file, a subset of sendmail/postfix
  mailq/postsuper/postqueue commands implemented in a compatible fashion.
  This package contains the msmtpq-ng and msmtpq-ng-queue
  wrappers around msmtp, which provide the bulk of the
  functionality.
 http://msmtp-scripts.sourceforge.net/
-Daniel Dickinson <lede@daniel.thecshore.com>
+
 @@
 
 Package: msmtpq-ng-mta
@@ -34,14 +38,18 @@ Provides:
 Section: mail
 Category: Mail
 Repository: packages
-Title: Simple sendmail SMTP queueing and forwarding (as MTA)
-Maintainer: Daniel Dickinson <lede@daniel.thecshore.com>
+Title: DEPRECATED: Simple sendmail SMTP queueing and forwarding (as MTA)
+Maintainer: 
 Require-User: msmtp=482:msmtp=482
 Source: msmtp-scripts-1.0.8.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
-Description:   msmtp-scripts are scripts wrappers around the msmtp SMTP client that
+Description:   DEPRECATED: SourceForge project is abandonded; and upstream (on GitHub)
+ has deprecated this project. See:
+ https://github.com/cshore-history/msmtp-scripts#deprecation-notice
+
+ msmtp-scripts are scripts wrappers around the msmtp SMTP client that
  add queueing, logging to syslog or file, a subset of sendmail/postfix
  mailq/postsuper/postqueue commands implemented in a compatible fashion.
  This package provides sendmail, mailq, postfix,
@@ -49,7 +57,7 @@ Description:   msmtp-scripts are scripts wrappers around the msmtp SMTP client t
  msmtpq-ng for use as the system mail transport
  agent via the sendmail command.
 http://msmtp-scripts.sourceforge.net/
-Daniel Dickinson <lede@daniel.thecshore.com>
+
 @@
 
 Package: msmtpq-ng-mta-smtpd
@@ -61,15 +69,15 @@ Provides:
 Section: mail
 Category: Mail
 Repository: packages
-Title: Simple sendmail SMTP queueing and forwarding (basic SMTP server)
-Maintainer: Daniel Dickinson <lede@daniel.thecshore.com>
+Title: DEPRECATED: Simple sendmail SMTP queueing and forwarding (basic SMTP server)
+Maintainer: 
 Source: msmtp-scripts-1.0.8.tar.gz
 License: GPL-3.0+
 LicenseFiles: COPYING
 Type: ipkg
-Description: Simple sendmail SMTP queueing and forwarding (basic SMTP server)
+Description: DEPRECATED: Simple sendmail SMTP queueing and forwarding (basic SMTP server)
 http://msmtp-scripts.sourceforge.net/
-Daniel Dickinson <lede@daniel.thecshore.com>
+
 @@
 
 

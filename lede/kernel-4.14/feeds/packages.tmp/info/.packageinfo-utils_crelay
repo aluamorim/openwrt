@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/crelay/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: crelay
-Version: 0.10.1-1
+Version: 0.12-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libftdi1 +hidapi +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: USB relay remote control daemon
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: crelay-0.10.1.tar.gz
+Source: crelay-0.12.tar.gz
 License: GPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -27,7 +27,7 @@ Description:  crelay is used to control different relay cards in a unified manne
       - Sainsmart USB 16-channel relay control module
       - Generic GPIO relays
       - HID API compatible relay card
-http://github.com/ondrej1024/crelay
+https://github.com/ondrej1024/crelay
 Ted Hess <thess@kitschensync.net>
 @@
 

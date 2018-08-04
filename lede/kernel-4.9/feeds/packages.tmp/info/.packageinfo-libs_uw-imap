@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/uw-imap/Makefile
 
 Package: uw-imap
-Version: 2007f-1
+Version: 2007f-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 

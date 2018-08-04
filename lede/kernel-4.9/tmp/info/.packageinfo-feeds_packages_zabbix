@@ -3,8 +3,8 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: zabbix-agentd
 Submenu: zabbix
-Version: 3.2.7-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full
+Version: 3.4.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Repository: packages
 Title: Zabbix agentd
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Require-User: zabbix=53:zabbix=53
-Source: zabbix-3.2.7.tar.gz
+Source: zabbix-3.4.10.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -25,7 +25,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: zabbix-extra-mac80211
 Submenu: zabbix
-Version: 3.2.7-2
+Version: 3.4.10-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zabbix-agentd @PACKAGE_MAC80211_DEBUGFS @KERNEL_DEBUG_FS
 Conflicts: 
 Menu-Depends: 
@@ -36,20 +36,20 @@ Repository: packages
 Title: Zabbix discovery/userparameters for mac80211
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Require-User: zabbix=53:zabbix=53
-Source: zabbix-3.2.7.tar.gz
+Source: zabbix-3.4.10.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: An extra package for zabbix-agentd that adds a discovery rule for mac80211 wifi phy and many userparameters.
 It contains an suid helper to allow zabbix-agentd to still run as zabbix user and not as root.
-See http://wiki.openwrt.org/doc/howto/zabbix for ready to use zabbix templates.
+See https://openwrt.org/docs/guide-user/services/network_monitoring/zabbix for ready to use zabbix templates.
 http://www.zabbix.com/
 Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: zabbix-extra-network
 Submenu: zabbix
-Version: 3.2.7-2
+Version: 3.4.10-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zabbix-agentd +libuci-lua +lua
 Conflicts: 
 Menu-Depends: 
@@ -60,20 +60,20 @@ Repository: packages
 Title: Zabbix discovery/userparameters for network
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Require-User: zabbix=53:zabbix=53
-Source: zabbix-3.2.7.tar.gz
+Source: zabbix-3.4.10.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: An extra package for zabbix-agentd that adds a discovery rule for openwrt network interfaces.
 The idea here is to discover only interfaces listed in /etc/config/network (discover br-lan and not eth0.1 and wlan0)
-See http://wiki.openwrt.org/doc/howto/zabbix for ready to use zabbix templates.
+See https://openwrt.org/docs/guide-user/services/network_monitoring/zabbix for ready to use zabbix templates.
 http://www.zabbix.com/
 Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: zabbix-extra-wifi
 Submenu: zabbix
-Version: 3.2.7-2
+Version: 3.4.10-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zabbix-agentd +libiwinfo-lua +libuci-lua +lua
 Conflicts: 
 Menu-Depends: 
@@ -84,21 +84,21 @@ Repository: packages
 Title: Zabbix discovery/userparameters for wifi
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Require-User: zabbix=53:zabbix=53
-Source: zabbix-3.2.7.tar.gz
+Source: zabbix-3.4.10.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: An extra package for zabbix-agentd that adds a discovery rule for wifi interfaces and many userparameters.
 As it uses libiwinfo, it works with all wifi devices supported by openwrt.
-See http://wiki.openwrt.org/doc/howto/zabbix for ready to use zabbix templates.
+See https://openwrt.org/docs/guide-user/services/network_monitoring/zabbix for ready to use zabbix templates.
 http://www.zabbix.com/
 Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: zabbix-sender
 Submenu: zabbix
-Version: 3.2.7-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full
+Version: 3.4.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -108,7 +108,7 @@ Repository: packages
 Title: Zabbix sender
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Require-User: zabbix=53:zabbix=53
-Source: zabbix-3.2.7.tar.gz
+Source: zabbix-3.4.10.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -119,8 +119,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: zabbix-server
 Submenu: zabbix
-Version: 3.2.7-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libsqlite3
+Version: 3.4.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +pgsql-cli +libevent2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -130,7 +130,7 @@ Repository: packages
 Title: Zabbix server
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Require-User: zabbix=53:zabbix=53
-Source: zabbix-3.2.7.tar.gz
+Source: zabbix-3.4.10.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -141,8 +141,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: zabbix-proxy
 Submenu: zabbix
-Version: 3.2.7-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libsqlite3
+Version: 3.4.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre +pgsql-cli
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -152,7 +152,7 @@ Repository: packages
 Title: Zabbix proxy
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Require-User: zabbix=53:zabbix=53
-Source: zabbix-3.2.7.tar.gz
+Source: zabbix-3.4.10.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -163,8 +163,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 
 Package: zabbix-get
 Submenu: zabbix
-Version: 3.2.7-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full
+Version: 3.4.10-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libpcre
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -174,7 +174,7 @@ Repository: packages
 Title: Zabbix get
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Require-User: zabbix=53:zabbix=53
-Source: zabbix-3.2.7.tar.gz
+Source: zabbix-3.4.10.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg

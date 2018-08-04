@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/fftw3/Makefile
 
 Package: fftw3
-Version: 3.3.7-1
+Version: 3.3.8-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!avr32 +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: base
 Title: Fast Fourier transform library
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: fftw-3.3.7.tar.gz
+Source: fftw-3.3.8.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description: 	FFTW is a collection of fast C routines for computing the
@@ -24,7 +24,7 @@ Vladimir Ulrich <admin@evl.su>
 @@
 
 Package: fftw3f
-Version: 3.3.7-1
+Version: 3.3.8-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!avr32 +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Libraries
 Repository: base
 Title: Fast Fourier transform library (single precision)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: fftw-3.3.7.tar.gz
+Source: fftw-3.3.8.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description:   	FFTW is a collection of fast C routines for computing the
@@ -49,8 +49,8 @@ Vladimir Ulrich <admin@evl.su>
 @@
 
 Package: fftw3l
-Version: 3.3.7-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @BROKEN
+Version: 3.3.8-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @!avr32 +libpthread
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -60,7 +60,7 @@ Category: Libraries
 Repository: base
 Title: Fast Fourier transform library (long-double precision)
 Maintainer: Vladimir Ulrich <admin@evl.su>
-Source: fftw-3.3.7.tar.gz
+Source: fftw-3.3.8.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description:   	FFTW is a collection of fast C routines for computing the

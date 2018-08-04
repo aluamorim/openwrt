@@ -1,0 +1,616 @@
+Package: baresip-mod-alsa
+Version: 0.5.9-1
+Depends: libc, baresip, alsa-lib
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 3476
+Filename: baresip-mod-alsa_0.5.9-1_mipsel_24kc.ipk
+Size: 4216
+SHA256sum: ec394d492a72b8f600ce08325ccccacfc436947f7672362dffd27cb65083bc3f
+Description:  ALSA audio driver
+
+Package: baresip-mod-aubridge
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2749
+Filename: baresip-mod-aubridge_0.5.9-1_mipsel_24kc.ipk
+Size: 3488
+SHA256sum: 735b70a4d930d3e65d2b2a829e93c88c6ed7df2281982a13f2e587d611dd5387
+Description:  Audio bridge module
+
+Package: baresip-mod-aufile
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2581
+Filename: baresip-mod-aufile_0.5.9-1_mipsel_24kc.ipk
+Size: 3339
+SHA256sum: f14f963d2bc40723023051362cde71216f93c6519fcd8198fd92a7d4f78aaa00
+Description:  Audio module for using a WAV-file as audio input
+
+Package: baresip-mod-cons
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2407
+Filename: baresip-mod-cons_0.5.9-1_mipsel_24kc.ipk
+Size: 3154
+SHA256sum: 4143273a76e3fd62ef6a6c9da5e3d2a02abec1bb26a13351301cb158f10870c2
+Description:  UDP/TCP console UI driver
+
+Package: baresip-mod-ctrl-tcp
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 4431
+Filename: baresip-mod-ctrl-tcp_0.5.9-1_mipsel_24kc.ipk
+Size: 5170
+SHA256sum: 6bf4e0c63a1ea90795b100ba67d8fa1cbc71dbbee27b0bb8709caca49ae48cb3
+Description:  TCP control interface
+
+Package: baresip-mod-debug-cmd
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2594
+Filename: baresip-mod-debug-cmd_0.5.9-1_mipsel_24kc.ipk
+Size: 3327
+SHA256sum: 48c1b413e9f8e13e24510569c91e2bc99276ee36e02a217abe13932af456e7e6
+Description:  Debug commands
+
+Package: baresip-mod-dtls-srtp
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 4632
+Filename: baresip-mod-dtls-srtp_0.5.9-1_mipsel_24kc.ipk
+Size: 5387
+SHA256sum: f949874130c6409297212539229c16805b94de12f7609ab072eb8e83df492012
+Description:  DTLS-SRTP end-to-end encryption
+
+Package: baresip-mod-dtmfio
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 1652
+Filename: baresip-mod-dtmfio_0.5.9-1_mipsel_24kc.ipk
+Size: 2418
+SHA256sum: 99644b802fa03dae6f3f12773c9440bf783828f882064e49e9e01969a07fb041
+Description:  DTMF input/output
+
+Package: baresip-mod-evdev
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 6423
+Filename: baresip-mod-evdev_0.5.9-1_mipsel_24kc.ipk
+Size: 7166
+SHA256sum: 32643c92a38f293f83ecc5b0e7e7a807b520c788a3369468c59865479e91a99b
+Description:  Linux input driver
+
+Package: baresip-mod-fakevideo
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2126
+Filename: baresip-mod-fakevideo_0.5.9-1_mipsel_24kc.ipk
+Size: 2906
+SHA256sum: b74b0f3d2e610129e36e4d04b3d96f7e46878c5abab293a3df72908a80b23338
+Description:  Fake video input/output driver
+
+Package: baresip-mod-g711
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 1662
+Filename: baresip-mod-g711_0.5.9-1_mipsel_24kc.ipk
+Size: 2433
+SHA256sum: 8415fef9d01e9797e8e95953ec1dce8730aaf525df6f592078709cbb218924e5
+Description:  G.711 audio codec
+
+Package: baresip-mod-g722
+Version: 0.5.9-1
+Depends: libc, baresip, libspandsp
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 1581
+Filename: baresip-mod-g722_0.5.9-1_mipsel_24kc.ipk
+Size: 2358
+SHA256sum: aa81d0854d6a07818cf49de266d3f9efc691902266d48ed056c062f14592a3ef
+Description:  G.722 audio codec
+
+Package: baresip-mod-g726
+Version: 0.5.9-1
+Depends: libc, baresip, libspandsp
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 1737
+Filename: baresip-mod-g726_0.5.9-1_mipsel_24kc.ipk
+Size: 2516
+SHA256sum: 64be6ba7b69c73646509bc63690d46661a846ffeaace62490e3a47c16867c20d
+Description:  G.726 audio codec
+
+Package: baresip-mod-httpd
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2131
+Filename: baresip-mod-httpd_0.5.9-1_mipsel_24kc.ipk
+Size: 2908
+SHA256sum: 78bc3be8b07d1359882574ddef1c3b159c84c212cef6c7beac7993e43390e359
+Description:  HTTP webserver UI-module
+
+Package: baresip-mod-mwi
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2511
+Filename: baresip-mod-mwi_0.5.9-1_mipsel_24kc.ipk
+Size: 3251
+SHA256sum: 790238b573c5f51af247448e5310aed6dee1272148634690417cd32d92653bee
+Description:  Message Waiting Indication
+
+Package: baresip-mod-natbd
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 4099
+Filename: baresip-mod-natbd_0.5.9-1_mipsel_24kc.ipk
+Size: 4845
+SHA256sum: 1cf4f2e07ec3b8a2ed81aa409077c50b31e9b8249b07bdbdf11351b2c29f292d
+Description:  NAT Behavior Discovery Module
+
+Package: baresip-mod-natpmp
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 4000
+Filename: baresip-mod-natpmp_0.5.9-1_mipsel_24kc.ipk
+Size: 4750
+SHA256sum: f9f83922a1b624f3e6efce810fadb6967e212abc7e47caf8247f0a1180bf2bce
+Description:  NAT Port Mapping Protocol module
+
+Package: baresip-mod-opus
+Version: 0.5.9-1
+Depends: libc, baresip, libopus
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 3409
+Filename: baresip-mod-opus_0.5.9-1_mipsel_24kc.ipk
+Size: 4156
+SHA256sum: 16cd467e41e471167bbf47a0291806ee06493a32845800b5314a609dc05c009d
+Description:  OPUS Interactive audio codec
+
+Package: baresip-mod-oss
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2302
+Filename: baresip-mod-oss_0.5.9-1_mipsel_24kc.ipk
+Size: 3073
+SHA256sum: 8a7ab04ad7715b1c90ba96f7a5f99881d57d4c7b24447a6d8bc26d3db45bc274
+Description:  OSS audio driver
+
+Package: baresip-mod-plc
+Version: 0.5.9-1
+Depends: libc, baresip, libspandsp
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 1612
+Filename: baresip-mod-plc_0.5.9-1_mipsel_24kc.ipk
+Size: 2402
+SHA256sum: ce0b7bac83a9a7a8780867ad4325b78de8621a0c7e877babb7b8a244c2d9d51e
+Description:  Packet Loss Concealment
+
+Package: baresip-mod-portaudio
+Version: 0.5.9-1
+Depends: libc, baresip, portaudio
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2301
+Filename: baresip-mod-portaudio_0.5.9-1_mipsel_24kc.ipk
+Size: 3038
+SHA256sum: 5ebae0339c2244b472d4fdef87d37e63276983feed8e81c744bf9c5a24fd5753
+Description:  Portaudio audio driver
+
+Package: baresip-mod-presence
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 6036
+Filename: baresip-mod-presence_0.5.9-1_mipsel_24kc.ipk
+Size: 6773
+SHA256sum: a63073207a05540ece03a32840e09119a50f65dde6d5b9d2ac3c1063e72a48b2
+Description:  Presence module
+
+Package: baresip-mod-pulse
+Version: 0.5.9-1
+Depends: libc, baresip, pulseaudio
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2738
+Filename: baresip-mod-pulse_0.5.9-1_mipsel_24kc.ipk
+Size: 3482
+SHA256sum: 93c60af01d24e0152935175ffe58d451cbb3a191c673f68584dab8804369fac6
+Description:  Pulseaudio audio driver
+
+Package: baresip-mod-selfview
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2309
+Filename: baresip-mod-selfview_0.5.9-1_mipsel_24kc.ipk
+Size: 3083
+SHA256sum: 478f4f74521a7dd7ab859fbfcf64a5a1407e00c8939f5f0897603bdf4393b628
+Description:  Video selfview module
+
+Package: baresip-mod-sndfile
+Version: 0.5.9-1
+Depends: libc, baresip, libsndfile
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2115
+Filename: baresip-mod-sndfile_0.5.9-1_mipsel_24kc.ipk
+Size: 2889
+SHA256sum: 6c163b8472963309cbc5554afaf4aa41e02c8d465a45c0bb95e87cca64b8e1a6
+Description:  Audio dumper using libsndfile
+
+Package: baresip-mod-speex-aec
+Version: 0.5.9-1
+Depends: libc, baresip, libspeex, libspeexdsp
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2011
+Filename: baresip-mod-speex-aec_0.5.9-1_mipsel_24kc.ipk
+Size: 2804
+SHA256sum: e760f9147726d0bdc6260fc35666bdbb16b98a482b3a913553f9eafdf56256cc
+Description:  Speex Acoustic Echo Canceller
+
+Package: baresip-mod-speex-pp
+Version: 0.5.9-1
+Depends: libc, baresip, libspeex, libspeexdsp
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 1806
+Filename: baresip-mod-speex-pp_0.5.9-1_mipsel_24kc.ipk
+Size: 2585
+SHA256sum: 95a71a94d31301053ba55ec09065f82218d80c31f0f6ee48cb08cf101bb2d205
+Description:  Speex preprocessor
+
+Package: baresip-mod-speex
+Version: 0.5.9-1
+Depends: libc, baresip, libspeex
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 3585
+Filename: baresip-mod-speex_0.5.9-1_mipsel_24kc.ipk
+Size: 4329
+SHA256sum: 0d6aa1d7e186af669974fef3aaeffda86c8232843022493861ec39ee855098df
+Description:  Speex audio codec
+
+Package: baresip-mod-srtp
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 3341
+Filename: baresip-mod-srtp_0.5.9-1_mipsel_24kc.ipk
+Size: 4086
+SHA256sum: 889c1d8d53bf8c04f1625ba5e825f2ae6aa753250d8e8c90d00079fa2ff79d17
+Description:  Secure RTP module using libre
+
+Package: baresip-mod-stdio
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 1984
+Filename: baresip-mod-stdio_0.5.9-1_mipsel_24kc.ipk
+Size: 2768
+SHA256sum: 46488e2bbd0ecf959e47795edf69469609df2f022f248a3bbc9a8c1cd4baaf65
+Description:  Standard input/output UI driver
+
+Package: baresip-mod-uuid
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 1777
+Filename: baresip-mod-uuid_0.5.9-1_mipsel_24kc.ipk
+Size: 2547
+SHA256sum: 1a62b657cb0122a3a2fdb7796058b517f1a10bc93c8755579f5c01c20e78511a
+Description:  UUID generator and loader
+
+Package: baresip-mod-v4l2-codec
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 3884
+Filename: baresip-mod-v4l2-codec_0.5.9-1_mipsel_24kc.ipk
+Size: 4630
+SHA256sum: e8174dc863c9dedf63345303b801c5be3bf0206431602550df12f1d6ddfa0b44
+Description:  Video4Linux2 video codec module
+
+Package: baresip-mod-v4l2
+Version: 0.5.9-1
+Depends: libc, baresip, libv4l
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 3704
+Filename: baresip-mod-v4l2_0.5.9-1_mipsel_24kc.ipk
+Size: 4439
+SHA256sum: 5b564b02c541e92c3e93b991fdbbe6c792cd9f60e299fba5b5a08c7d89d02416
+Description:  Video4Linux2 video source
+
+Package: baresip-mod-v4l
+Version: 0.5.9-1
+Depends: libc, baresip, libv4l
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2442
+Filename: baresip-mod-v4l_0.5.9-1_mipsel_24kc.ipk
+Size: 3223
+SHA256sum: 276983bd5c4f6cf00fe7a080d3ecbccda7efed621bd704ae00a863583512046c
+Description:  Video4Linux video source
+
+Package: baresip-mod-vidbridge
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2456
+Filename: baresip-mod-vidbridge_0.5.9-1_mipsel_24kc.ipk
+Size: 3188
+SHA256sum: fd5a28caab011f8eb97d0121177ca5ae09d62835d343f77e05cfd963536a9ca7
+Description:  Video bridge module
+
+Package: baresip-mod-vidloop
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 5256
+Filename: baresip-mod-vidloop_0.5.9-1_mipsel_24kc.ipk
+Size: 6025
+SHA256sum: f14f0423d1028c57b76ea3128b54af327f733b9d595813281b685eb54f96ff12
+Description:  Video-loop test module
+
+Package: baresip-mod-vumeter
+Version: 0.5.9-1
+Depends: libc, baresip
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 2114
+Filename: baresip-mod-vumeter_0.5.9-1_mipsel_24kc.ipk
+Size: 2898
+SHA256sum: 4d42febb048cee9a830ae357fd9429ac2ba7961be9cfa95e6226a745065d7a75
+Description:  Display audio levels in console
+
+Package: baresip
+Version: 0.5.9-1
+Depends: libc, libre, librem
+Source: feeds/telephony/net/baresip
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: net
+Require-User: baresip=374:baresip=374
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 275019
+Filename: baresip_0.5.9-1_mipsel_24kc.ipk
+Size: 276194
+SHA256sum: 4565a6090d3d442041c69d8c367313eba64b1ec2791fae165c78b73ae39e772e
+Description:  Portable and modular SIP User-Agent with A/V support
+
+Package: libre
+Version: 0.5.8-1
+Depends: libc, libopenssl, zlib
+Source: feeds/telephony/libs/re
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: libs
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 142455
+Filename: libre_0.5.8-1_mipsel_24kc.ipk
+Size: 143355
+SHA256sum: ae94444effd8176fe008afba4944f4b1029e598855cd2d9962cfad2ffe2bbbfb
+Description:  Generic library for real-time communications with async IO support
+
+Package: librem
+Version: 0.5.3-1
+Depends: libc, libre
+Source: feeds/telephony/libs/rem
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: libs
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 23282
+Filename: librem_0.5.3-1_mipsel_24kc.ipk
+Size: 23999
+SHA256sum: bc6b7de8ed31b380d92766b1da1098ccdfe0a2912ec9bee89684e52bb85a84c8
+Description:  Audio and video processing media library
+
+Package: libspandsp
+Version: 0.0.6-4
+Depends: libc, libtiff
+Source: feeds/telephony/libs/spandsp
+License: LGPL-2.1 GPL-2.0
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Jiri Slachta <jiri@slachta.eu>
+Architecture: mipsel_24kc
+Installed-Size: 268134
+Filename: libspandsp_0.0.6-4_mipsel_24kc.ipk
+Size: 267595
+SHA256sum: 2a812b1523531e51e6c8d1a869f271268e7eadc1989ba6c3d7b1f705a60dc2bb
+Description:  spandsp library
+

@@ -4,8 +4,8 @@ Build-Depends/host: protobuf/host
 Build-Types: host
 
 Package: ola
-Version: 0.10.5-2
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +protobuf +libusb-1.0 +libuuid +libstdcpp +libpthread +librt +zlib +libncurses +liblo
+Version: 0.10.6-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +protobuf +libusb-1.0 +libuuid +libstdcpp +libpthread +librt +zlib +libncurses +liblo +libmicrohttpd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,7 +14,7 @@ Category: Network
 Repository: base
 Title: Open Lighting Architecture Daemon
 Maintainer: Christian Beier <dontmind@freeshell.org>
-Source: ola-0.10.5-32db3c49d435398d017c6b5c0b25e02a7a831f5c.tar.gz
+Source: ola-0.10.6-6e57342c414a72cdd721e8df5bc7967e17459647.tar.gz
 License: LGPL-2.1+
 Type: ipkg
 Description:   OLA (Open Lighting Architecture) is a framework that allows applications to

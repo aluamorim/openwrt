@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/nail/Makefile
 
 Package: nail
-Version: 12.5-2
+Version: 12.5-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 

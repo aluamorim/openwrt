@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/seafile-seahub/Makefile
 
 Package: seafile-seahub
-Version: 6.2.2-120e7a299e77968f1af48ea2dcf4bd9b909c426f-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +simplejson +python +pillow +chardet +django +django-appconf +django-compressor +django-constance +django-jsonfield +django-picklefield +django-postoffice +django-restframework +django-statici18n +et_xmlfile +flup +gunicorn +jdcal +openpyxl +python-dateutil +python-mysql +pytz +rcssmin
+Version: 6.3.0-d1ab146a936a6ea1e1581bf3f194e86742f0d3cd-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +simplejson +python +pillow +chardet +django +django-appconf +django-compressor +django-constance +django-formtools +django-jsonfield +django-picklefield +django-postoffice +django-restframework +django-simple-captcha +django-statici18n +django-webpack-loader +et_xmlfile +flup +gunicorn +jdcal +openpyxl +python-dateutil +python-mysql +python-qrcode +python-requests +python-requests-oauthlib +pytz +rcssmin
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: Seafile server - seahub component
 Maintainer: Gergely Kiss <mail.gery@gmail.com>
-Source: seafile-seahub-6.2.2-120e7a299e77968f1af48ea2dcf4bd9b909c426f.tar.gz
+Source: seafile-seahub-6.3.0-d1ab146a936a6ea1e1581bf3f194e86742f0d3cd.tar.gz
 License: Apache-2.0
 Type: ipkg
 Description:    The web end of seafile server.

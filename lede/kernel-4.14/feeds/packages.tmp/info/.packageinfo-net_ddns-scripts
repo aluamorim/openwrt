@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/ddns-scripts/Makefile
 
 Package: ddns-scripts
 Submenu: IP Addresses and Names
-Version: 2.7.7-8
+Version: 2.7.8-1
 Depends:  
 Conflicts: 
 Menu-Depends: 
@@ -11,12 +11,12 @@ Section: net
 Category: Network
 Repository: base
 Title: Dynamic DNS Client scripts (with IPv6 support)
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
 Description:     Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 Config:
 	help
@@ -28,32 +28,13 @@ Config:
 		  - Proxy server support
 		  - log file support
 		  - support to run once
-		Version: 2.7.7-8
+		Version: 2.7.8-1
 		Info   : http://wiki.openwrt.org/doc/howto/ddns.client
-@@
-
-Package: ddns-scripts_cloudflare
-Submenu: IP Addresses and Names
-Version: 2.7.7-8
-Depends:  ddns-scripts
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: CloudFlare.com API v1 (deprecated)
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
-Source: 
-License: GPL-2.0
-Type: ipkg
-Description:     Dynamic DNS Client scripts extension for CloudFlare.com API-v1 (deprecated)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
 @@
 
 Package: ddns-scripts_cloudflare.com-v4
 Submenu: IP Addresses and Names
-Version: 2.7.7-8
+Version: 2.7.8-1
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -62,17 +43,17 @@ Section: net
 Category: Network
 Repository: base
 Title: CloudFlare.com API v4 (requires cURL)
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
 Description:     Dynamic DNS Client scripts extension for CloudFlare.com API-v4 (require/install cURL)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 Package: ddns-scripts_freedns_42_pl
 Submenu: IP Addresses and Names
-Version: 2.7.7-8
+Version: 2.7.8-1
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -81,17 +62,17 @@ Section: net
 Category: Network
 Repository: base
 Title: DDNS extension for FreeDNS.42.pl (requires cURL)
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
 Description:     Dynamic DNS Client scripts extension for freedns.42.pl
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 Package: ddns-scripts_godaddy.com-v1
 Submenu: IP Addresses and Names
-Version: 2.7.7-8
+Version: 2.7.8-1
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -100,17 +81,17 @@ Section: net
 Category: Network
 Repository: base
 Title: GoDaddy.com (require cURL)
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
 Description:     Dynamic DNS Client scripts extension for GoDaddy.com (require/install cURL)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 Package: ddns-scripts_no-ip_com
 Submenu: IP Addresses and Names
-Version: 2.7.7-8
+Version: 2.7.8-1
 Depends:  ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -119,17 +100,17 @@ Section: net
 Category: Network
 Repository: base
 Title: DDNS extension for No-IP.com
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
 Description:     Dynamic DNS Client scripts extension for No-IP.com
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 Package: ddns-scripts_nsupdate
 Submenu: IP Addresses and Names
-Version: 2.7.7-8
+Version: 2.7.8-1
 Depends:  ddns-scripts +bind-client
 Conflicts: 
 Menu-Depends: 
@@ -138,12 +119,12 @@ Section: net
 Category: Network
 Repository: base
 Title: DDNS extension using Bind nsupdate
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
 Description:     Dynamic DNS Client scripts extension for direct updates using Bind nsupdate
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 Config:
     help
@@ -157,7 +138,7 @@ Config:
 
 Package: ddns-scripts_route53-v1
 Submenu: IP Addresses and Names
-Version: 2.7.7-8
+Version: 2.7.8-1
 Depends:  ddns-scripts +curl +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -166,7 +147,7 @@ Section: net
 Category: Network
 Repository: base
 Title: Amazon AWS Route 53 API v1
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: GPL-2.0
 Type: ipkg
@@ -176,7 +157,7 @@ Description: 	Dynamic DNS Client scripts extension for Amazon AWS Route53. Note:
 	"option username" to be a valid AWS access key id
 	"option password" to be the matching AWS secret key id
 	"option domain" to contain the hosted zone ID
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 

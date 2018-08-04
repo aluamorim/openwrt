@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/p11-kit/Makefile
 
 Package: p11-kit
-Version: 0.23.10-1
+Version: 0.23.12-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libtasn1 +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: A library that provides a way to load and enumerate PKCS11 modules.
 Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
-Source: p11-kit-0.23.10.tar.gz
+Source: p11-kit-0.23.12.tar.gz
 Type: ipkg
 Description:   Provides a way to load and enumerate PKCS11 modules. Provides a
   standard configuration setup for installing PKCS11 modules in such a

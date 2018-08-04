@@ -3,7 +3,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: gnunet
 Menu: 1
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgcrypt +libgpg-error +libidn +libltdl +libunistring +librt +zlib +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -32,15 +32,9 @@ Description:  GNUnet is a peer-to-peer framework focusing on security. The first
 https://www.gnunet.org/
 Daniel Golle <daniel@makrotopia.org>
 @@
-Config:
-config GNUNET_HAS_ICONV_SUPPORT
-	depends on PACKAGE_gnunet && (!USE_UCLIBC || (USE_UCLIBC && BUILD_NLS))
-	bool
-	default y
-@@
 
 Package: gnunet-conversation
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +libgst1app +libgst1audio +libgstreamer1 +glib2 +pulseaudio-daemon +libopus +libogg
 Conflicts: 
 Menu-Depends: 
@@ -60,7 +54,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-datastore
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns
 Conflicts: 
 Menu-Depends: 
@@ -80,7 +74,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-dht-cli
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
 Conflicts: 
 Menu-Depends: 
@@ -100,7 +94,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-experiments
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libglpk
 Conflicts: 
 Menu-Depends: 
@@ -120,7 +114,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-fs
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-datastore +gnunet-peerstore +libextractor
 Conflicts: 
 Menu-Depends: 
@@ -141,7 +135,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-gns
 Default: y if PACKAGE_gnunet
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-vpn +iptables-mod-extra
 Conflicts: 
 Menu-Depends: 
@@ -162,7 +156,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-gns-proxy
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +libgnurl +libmicrohttpd
 Conflicts: 
 Menu-Depends: 
@@ -183,7 +177,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-hostlist
 Default: y if PACKAGE_gnunet
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libmicrohttpd +libgnurl +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -203,7 +197,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-peerstore
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
 Conflicts: 
 Menu-Depends: 
@@ -223,7 +217,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-rest
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +gnunet-social +libmicrohttpd +jansson
 Conflicts: 
 Menu-Depends: 
@@ -244,7 +238,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-rps
 Default: y if PACKAGE_gnunet
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
 Conflicts: 
 Menu-Depends: 
@@ -264,7 +258,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-social
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +libmicrohttpd +jansson
 Conflicts: 
 Menu-Depends: 
@@ -284,7 +278,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-namestore-fcfsd
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +libmicrohttpd
 Conflicts: 
 Menu-Depends: 
@@ -305,7 +299,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-dhtcache-heap
 Default: y if PACKAGE_gnunet
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
 Conflicts: gnunet-dhtcache-pgsql gnunet-dhtcache-sqlite
 Menu-Depends: 
@@ -325,7 +319,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-fs-heap
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-datastore
 Conflicts: gnunet-fs-mysql gnunet-fs-pgsql gnunet-fs-sqlite
 Menu-Depends: 
@@ -346,7 +340,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-gns-flat
 Default: y if PACKAGE_gnunet
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns
 Conflicts: 
 Menu-Depends: 
@@ -366,7 +360,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-peerstore-flat
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-peerstore
 Conflicts: 
 Menu-Depends: 
@@ -386,8 +380,8 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-mysql
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libmysqlclient @GNUNET_HAS_ICONV_SUPPORT
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libmysqlclient
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -406,7 +400,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-fs-mysql
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-mysql +gnunet-datastore
 Conflicts: gnunet-fs-pgsql gnunet-fs-sqlite
 Menu-Depends: 
@@ -426,7 +420,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-social-mysql
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-mysql +gnunet-social
 Conflicts: gnunet-social-sqlite
 Menu-Depends: 
@@ -446,7 +440,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-pgsql
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libpq
 Conflicts: 
 Menu-Depends: 
@@ -466,7 +460,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-dhtcache-pgsql
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-pgsql
 Conflicts: gnunet-dhtcache-sqlite
 Menu-Depends: 
@@ -486,7 +480,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-fs-pgsql
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-pgsql +gnunet-datastore
 Conflicts: gnunet-fs-sqlite
 Menu-Depends: 
@@ -506,7 +500,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-gns-pgsql
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-pgsql +gnunet-gns
 Conflicts: gnunet-gns-sqlite gnunet-gns-flat
 Menu-Depends: 
@@ -526,7 +520,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-social-pgsql
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-pgsql +gnunet-social
 Conflicts: gnunet-social-sqlite gnunet-social-mysql
 Menu-Depends: 
@@ -546,7 +540,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-sqlite
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -566,7 +560,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-dhtcache-sqlite
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-sqlite
 Conflicts: 
 Menu-Depends: 
@@ -586,7 +580,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-fs-sqlite
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-datastore +gnunet-sqlite
 Conflicts: 
 Menu-Depends: 
@@ -606,7 +600,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-gns-sqlite
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-gns +gnunet-sqlite
 Conflicts: gnunet-gns-flat
 Menu-Depends: 
@@ -626,7 +620,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-peerstore-sqlite
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-peerstore +gnunet-sqlite
 Conflicts: gnunet-peerstore-flat
 Menu-Depends: 
@@ -646,7 +640,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-social-sqlite
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +gnunet-social +gnunet-sqlite
 Conflicts: 
 Menu-Depends: 
@@ -666,7 +660,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-transport-bluetooth
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +bluez-libs
 Conflicts: 
 Menu-Depends: 
@@ -687,7 +681,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-transport-http_client
 Default: y if PACKAGE_gnunet
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libgnurl +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -707,7 +701,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-transport-http_server
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +libmicrohttpd
 Conflicts: 
 Menu-Depends: 
@@ -728,7 +722,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-transport-wlan
 Default: y if PACKAGE_gnunet
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet
 Conflicts: 
 Menu-Depends: 
@@ -748,7 +742,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: gnunet-utils
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +certtool +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -769,7 +763,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: gnunet-vpn
 Default: y if PACKAGE_gnunet
-Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-2
+Version: 0.10.2-git-20180607-2b99bddcb6961cfda34087138acdda4b8b9ccb9f-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread gnunet +kmod-tun +iptables +firewall
 Conflicts: 
 Menu-Depends: 

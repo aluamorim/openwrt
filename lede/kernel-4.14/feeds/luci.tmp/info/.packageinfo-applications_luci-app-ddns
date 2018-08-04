@@ -12,12 +12,12 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: LuCI Support for Dynamic DNS Client (ddns-scripts)
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Description: LuCI Support for Dynamic DNS Client (ddns-scripts)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ca
@@ -31,13 +31,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ca translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Català (Catalan)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-cs
@@ -51,13 +51,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - cs translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Čeština (Czech)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-de
@@ -71,13 +71,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - de translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Deutsch (German)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-el
@@ -91,13 +91,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - el translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Ελληνικά (Greek)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-es
@@ -111,13 +111,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - es translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Español (Spanish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-fr
@@ -131,13 +131,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - fr translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Français (French)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-he
@@ -151,13 +151,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - he translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - עִבְרִית (Hebrew)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-hu
@@ -171,13 +171,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - hu translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Magyar (Hungarian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-it
@@ -191,13 +191,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - it translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Italiano (Italian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ja
@@ -211,13 +211,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ja translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 日本語 (Japanese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-no
@@ -231,13 +231,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - no translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Norsk (Norwegian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pl
@@ -251,13 +251,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pl translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Polski (Polish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pt
@@ -271,13 +271,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pt translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Português (Portuguese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pt-br
@@ -291,13 +291,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pt-br translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Português do Brasil (Brazialian Portuguese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ro
@@ -311,13 +311,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ro translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Română (Romanian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ru
@@ -331,13 +331,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ru translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Русский (Russian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-sv
@@ -351,13 +351,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - sv translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Svenska (Swedish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-tr
@@ -371,13 +371,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - tr translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Türkçe (Turkish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-uk
@@ -391,13 +391,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - uk translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Українська (Ukrainian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-vi
@@ -411,13 +411,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - vi translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Tiếng Việt (Vietnamese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-zh-cn
@@ -431,13 +431,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - zh-cn translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 中文 (Chinese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-zh-tw
@@ -451,13 +451,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - zh-tw translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 臺灣華語 (Taiwanese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 

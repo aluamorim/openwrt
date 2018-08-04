@@ -1,11 +1,11 @@
 Source-Makefile: feeds/packages/utils/mariadb/Makefile
-Build-Depends: libevent2 mariadb/host
+Build-Depends: libevent2 mariadb/host !BUILD_NLS:libiconv !BUILD_NLS:gettext
 Build-Depends/host: libxml2/host
 Build-Types: host
 
 Package: libmariadb
-Version: 10.2.16-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +libatomic +libopenssl +libstdcpp +zlib
+Version: 10.2.16-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: libmariadbclient libmysqlclient libmysqlclient-r
@@ -31,8 +31,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-client
 Submenu: database
-Version: 10.2.16-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libncursesw
+Version: 10.2.16-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +libncursesw
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -61,7 +61,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-client-extra
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-client
 Conflicts: 
 Menu-Depends: 
@@ -98,7 +98,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-extra-charsets
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -127,8 +127,8 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 Package: mariadb-server
 Menu: 1
 Submenu: database
-Version: 10.2.16-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_UCLIBC:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +!arc:libaio +liblzma +libpcre +resolveip
+Version: 10.2.16-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +BUILD_NLS:libiconv-full +libatomic +libopenssl +libstdcpp +zlib +!arc:libaio +liblzma +libpcre +resolveip
 Conflicts: 
 Menu-Depends: 
 Provides: mysql-server
@@ -161,7 +161,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-extra
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -211,7 +211,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-adt-null
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -238,7 +238,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-0x0100
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -265,7 +265,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-ed25519
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -292,7 +292,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-socket
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -319,7 +319,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-auth-test-plugin
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -346,7 +346,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-client-ed25519
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -373,7 +373,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-debug-key-management
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -400,7 +400,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-dialog-examples
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -427,7 +427,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-disks
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -454,7 +454,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-example-key-management
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -481,7 +481,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-feedback
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -508,7 +508,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-file-key-management
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -535,7 +535,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-archive
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -562,7 +562,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-blackhole
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -589,7 +589,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-connect
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server +PACKAGE_mariadb-server-plugin-ha-connect:libxml2
 Conflicts: 
 Menu-Depends: 
@@ -616,7 +616,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-example
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -643,7 +643,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-federated
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -670,7 +670,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-federatedx
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -697,7 +697,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-sequence
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -724,7 +724,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-sphinx
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -751,7 +751,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-spider
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -778,7 +778,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-ha-test-sql-discovery
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -805,7 +805,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-handlersocket
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -832,7 +832,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-libdaemon-example
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -859,7 +859,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-locales
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -886,7 +886,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-metadata-lock-info
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -913,7 +913,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-mypluglib
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -940,7 +940,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-qa-auth-client
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -967,7 +967,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-qa-auth-interface
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -994,7 +994,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-qa-auth-server
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1021,7 +1021,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-query-cache-info
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1048,7 +1048,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-query-response-time
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1075,7 +1075,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-semisync-master
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1102,7 +1102,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-semisync-slave
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1129,7 +1129,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-server-audit
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1156,7 +1156,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-simple-password-check
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1183,7 +1183,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-sql-errlog
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 
@@ -1210,7 +1210,7 @@ Sebastian Kemper <sebastian_ml@gmx.net>
 
 Package: mariadb-server-plugin-wsrep-info
 Submenu: database
-Version: 10.2.16-2
+Version: 10.2.16-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread mariadb-server
 Conflicts: 
 Menu-Depends: 

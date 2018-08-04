@@ -15,7 +15,7 @@ Source: softflowd-0.9.9.tar.gz
 License: BSD-3-Clause
 Type: ipkg
 Description: 	Software netflow exporter
-http://code.google.com/p/softflowd/
+https://code.google.com/archive/p/softflowd/
 Ross Vandegrift <ross@kallisti.us>
 @@
 

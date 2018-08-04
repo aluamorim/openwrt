@@ -2,8 +2,8 @@ Source-Makefile: package/feeds/packages/python-hyperlink/Makefile
 
 Package: python-hyperlink
 Submenu: Python
-Version: 17.3.1-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python-hyperlink:python-light
+Version: 18.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python-hyperlink:python-light +PACKAGE_python-hyperlink:python-idna
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Languages
 Repository: packages
 Title: Pure-Python immutable URLs
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: hyperlink-17.3.1.tar.gz
+Source: hyperlink-18.0.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26,7 +26,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python-hyperlink-src
 Submenu: Python
-Version: 17.3.1-1
+Version: 18.0.0-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Category: Languages
 Repository: packages
 Title: Pure-Python immutable URLs (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: hyperlink-17.3.1.tar.gz
+Source: hyperlink-18.0.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -51,8 +51,8 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-hyperlink
 Submenu: Python
-Version: 17.3.1-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python3-hyperlink:python3-light
+Version: 18.0.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python3-hyperlink:python3-light +PACKAGE_python3-hyperlink:python3-idna
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -62,7 +62,7 @@ Category: Languages
 Repository: packages
 Title: Pure-Python immutable URLs
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: hyperlink-17.3.1.tar.gz
+Source: hyperlink-18.0.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -77,7 +77,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-hyperlink-src
 Submenu: Python
-Version: 17.3.1-1
+Version: 18.0.0-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -88,7 +88,7 @@ Category: Languages
 Repository: packages
 Title: Pure-Python immutable URLs (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: hyperlink-17.3.1.tar.gz
+Source: hyperlink-18.0.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/umurmur/Makefile
 
 Package: umurmur-openssl
 Submenu: Instant Messaging
-Version: 0.2.16-20161126-1
+Version: 0.2.17-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libconfig +libprotobuf-c +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: packages
 Title: uMurmur (with OpenSSL support)
 Maintainer: Martin Johansson <martin@fatbob.nu>
-Source: umurmur-0.2.16-20161126.tar.xz
+Source: umurmur-0.2.17.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description:     Minimalistic Mumble server daemon.
@@ -24,7 +24,7 @@ Martin Johansson <martin@fatbob.nu>
 
 Package: umurmur-mbedtls
 Submenu: Instant Messaging
-Version: 0.2.16-20161126-1
+Version: 0.2.17-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libconfig +libprotobuf-c +libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Network
 Repository: packages
 Title: uMurmur (with mbed TLS support)
 Maintainer: Martin Johansson <martin@fatbob.nu>
-Source: umurmur-0.2.16-20161126.tar.xz
+Source: umurmur-0.2.17.tar.xz
 License: BSD-3-Clause
 Type: ipkg
 Description:     Minimalistic Mumble server daemon.

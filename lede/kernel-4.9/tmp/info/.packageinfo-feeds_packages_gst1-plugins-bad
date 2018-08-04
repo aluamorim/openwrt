@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/gst1-plugins-bad/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libgst1adaptivedemux
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1app +libgst1uridownloader
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer adaptivedemux library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -25,7 +25,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1photography
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer photography library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -48,7 +48,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1basecamerabinsrc
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1app
 Conflicts: 
 Menu-Depends: 
@@ -58,7 +58,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer basecamerabinsrc library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -71,7 +71,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: libgst1uridownloader
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -81,7 +81,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer uridownloader library (base)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -93,31 +93,8 @@ http://gstreamer.freedesktop.org/
 W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
-Package: libgst1badbase
-Version: 1.12.4-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: multimedia
-Category: Multimedia
-Repository: packages
-Title: GStreamer badbase library (base)
-Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
-License: LGPLv2 GPLv2
-LicenseFiles: COPYING.LIB COPYING
-Type: ipkg
-Hidden: 1
-Description:     GStreamer open source multimedia framework
-   .
-   This package contains the GStreamer badbase library.
-http://gstreamer.freedesktop.org/
-W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-@@
-
 Package: gst1-mod-adpcmdec
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1audio
 Conflicts: 
 Menu-Depends: 
@@ -127,7 +104,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer adpcm decoding support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -140,7 +117,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-adpcmenc
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1audio
 Conflicts: 
 Menu-Depends: 
@@ -150,7 +127,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer adpcm encoding support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -163,7 +140,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-aiff
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1audio +libgst1tag
 Conflicts: 
 Menu-Depends: 
@@ -173,7 +150,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer aiff support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -186,7 +163,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-asfmux
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1rtp
 Conflicts: 
 Menu-Depends: 
@@ -196,7 +173,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer asf muxing support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -209,7 +186,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-autoconvert
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -219,7 +196,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer autoconvert support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -232,7 +209,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-bayer
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
@@ -242,7 +219,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer bayer support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -255,7 +232,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-camerabin
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1basecamerabinsrc +libgst1photography +libgst1pbutils +libgst1app
 Conflicts: 
 Menu-Depends: 
@@ -265,7 +242,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer camerabin support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -278,7 +255,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-debugutilsbad
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
@@ -288,7 +265,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer debugutils support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -301,7 +278,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-dvdspu
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
@@ -311,7 +288,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer dvdspu support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -324,7 +301,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-fbdevsink
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
@@ -334,7 +311,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer fbdev support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -347,7 +324,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-festival
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1audio
 Conflicts: 
 Menu-Depends: 
@@ -357,7 +334,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer festival support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -370,7 +347,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-hls
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1pbutils +libgst1adaptivedemux +gst1-mod-multifile +libnettle
 Conflicts: 
 Menu-Depends: 
@@ -380,7 +357,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer HLS support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -393,7 +370,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-frei0r
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1controller +libgst1video
 Conflicts: 
 Menu-Depends: 
@@ -403,7 +380,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer frei0r support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -416,7 +393,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-id3tag
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1tag
 Conflicts: 
 Menu-Depends: 
@@ -426,7 +403,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer id3tag support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -439,7 +416,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-jpegformat
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1tag
 Conflicts: 
 Menu-Depends: 
@@ -449,7 +426,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer jpegformat support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -462,7 +439,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-mpegpsdemux
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1pbutils
 Conflicts: 
 Menu-Depends: 
@@ -472,7 +449,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer mpegpsdemux support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -485,7 +462,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-mpegpsmux
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -495,7 +472,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer mpegpsmux support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -508,8 +485,8 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-mxf
-Version: 1.12.4-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1badbase +libgst1audio +libgst1video
+Version: 1.14.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1audio +libgst1video
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -518,7 +495,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer mxf support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -531,7 +508,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-opusparse
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1pbutils +libopus
 Conflicts: 
 Menu-Depends: 
@@ -541,7 +518,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer OPUS streams library plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -554,7 +531,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-pcapparse
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -564,7 +541,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer pcapparse support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -577,7 +554,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-pnm
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
@@ -587,7 +564,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer pnm support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -600,7 +577,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-rfbsrc
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1video
 Conflicts: 
 Menu-Depends: 
@@ -610,7 +587,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer librfb support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -623,7 +600,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-sdpelem
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1rtp +libgst1sdp
 Conflicts: 
 Menu-Depends: 
@@ -633,7 +610,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer sdp support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -646,7 +623,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-segmentclip
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1audio
 Conflicts: 
 Menu-Depends: 
@@ -656,7 +633,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer segmentclip support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -669,7 +646,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-shm
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +librt
 Conflicts: 
 Menu-Depends: 
@@ -679,7 +656,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer POSIX shared memory source and sink plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -692,7 +669,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-siren
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1audio +libgst1rtp
 Conflicts: 
 Menu-Depends: 
@@ -702,7 +679,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer siren support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -715,7 +692,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-speed
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1audio
 Conflicts: 
 Menu-Depends: 
@@ -725,7 +702,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer speed support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -738,7 +715,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gst1-mod-subenc
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1controller
 Conflicts: 
 Menu-Depends: 
@@ -748,7 +725,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer subenc support plugin (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -761,7 +738,7 @@ W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 @@
 
 Package: gstreamer1-plugins-bad
-Version: 1.12.4-1
+Version: 1.14.1-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ALL:gst1-plugins-bad +gstreamer1-plugins-base
 Conflicts: 
 Menu-Depends: 
@@ -771,7 +748,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer plugins collection (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg
@@ -890,9 +867,6 @@ Config:
      config PACKAGE_libgst1uridownloader
       prompt "GStreamer uridownloader library"
 
-     config PACKAGE_libgst1badbase
-      prompt "GStreamer badbase library"
-
    
 
   endmenu
@@ -900,8 +874,8 @@ Config:
 @@
 
 Package: gst1-plugins-bad
-Version: 1.12.4-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1adaptivedemux +libgst1photography +libgst1basecamerabinsrc +libgst1uridownloader +libgst1badbase +gst1-mod-adpcmdec +gst1-mod-adpcmenc +gst1-mod-aiff +gst1-mod-asfmux +gst1-mod-autoconvert +gst1-mod-bayer +gst1-mod-camerabin +gst1-mod-debugutilsbad +gst1-mod-dvdspu +gst1-mod-fbdevsink +gst1-mod-festival +gst1-mod-hls +gst1-mod-frei0r +gst1-mod-id3tag +gst1-mod-jpegformat +gst1-mod-mpegpsdemux +gst1-mod-mpegpsmux +gst1-mod-mxf +gst1-mod-opusparse +gst1-mod-pcapparse +gst1-mod-pnm +gst1-mod-rfbsrc +gst1-mod-sdpelem +gst1-mod-segmentclip +gst1-mod-shm +gst1-mod-siren +gst1-mod-speed +gst1-mod-subenc
+Version: 1.14.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gst1-plugins-base +libgstreamer1 +libgst1pbutils +BUILD_NLS:libiconv-full +libgst1adaptivedemux +libgst1photography +libgst1basecamerabinsrc +libgst1uridownloader +gst1-mod-adpcmdec +gst1-mod-adpcmenc +gst1-mod-aiff +gst1-mod-asfmux +gst1-mod-autoconvert +gst1-mod-bayer +gst1-mod-camerabin +gst1-mod-debugutilsbad +gst1-mod-dvdspu +gst1-mod-fbdevsink +gst1-mod-festival +gst1-mod-hls +gst1-mod-frei0r +gst1-mod-id3tag +gst1-mod-jpegformat +gst1-mod-mpegpsdemux +gst1-mod-mpegpsmux +gst1-mod-mxf +gst1-mod-opusparse +gst1-mod-pcapparse +gst1-mod-pnm +gst1-mod-rfbsrc +gst1-mod-sdpelem +gst1-mod-segmentclip +gst1-mod-shm +gst1-mod-siren +gst1-mod-speed +gst1-mod-subenc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -910,7 +884,7 @@ Category: Multimedia
 Repository: packages
 Title: GStreamer plugins collection (bad)
 Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
-Source: gst-plugins-bad-1.12.4.tar.xz
+Source: gst-plugins-bad-1.14.1.tar.xz
 License: LGPLv2 GPLv2
 LicenseFiles: COPYING.LIB COPYING
 Type: ipkg

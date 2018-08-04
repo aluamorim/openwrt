@@ -158,8 +158,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-advanced-reboot
 Submenu: 3. Applications
-Version: x-27
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci
+Version: x-33
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -177,7 +177,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-advanced-reboot-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: x-27
+Version: x-33
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
 Conflicts: 
 Menu-Depends: 
@@ -197,7 +197,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-advanced-reboot-sv
 Default: LUCI_LANG_sv||(ALL&&m)
-Version: x-27
+Version: x-33
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
 Conflicts: 
 Menu-Depends: 
@@ -2625,12 +2625,12 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: LuCI Support for Dynamic DNS Client (ddns-scripts)
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Description: LuCI Support for Dynamic DNS Client (ddns-scripts)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ca
@@ -2644,13 +2644,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ca translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Català (Catalan)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-cs
@@ -2664,13 +2664,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - cs translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Čeština (Czech)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-de
@@ -2684,13 +2684,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - de translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Deutsch (German)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-el
@@ -2704,13 +2704,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - el translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Ελληνικά (Greek)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-es
@@ -2724,13 +2724,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - es translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Español (Spanish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-fr
@@ -2744,13 +2744,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - fr translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Français (French)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-he
@@ -2764,13 +2764,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - he translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - עִבְרִית (Hebrew)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-hu
@@ -2784,13 +2784,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - hu translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Magyar (Hungarian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-it
@@ -2804,13 +2804,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - it translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Italiano (Italian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ja
@@ -2824,13 +2824,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ja translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 日本語 (Japanese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-no
@@ -2844,13 +2844,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - no translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Norsk (Norwegian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pl
@@ -2864,13 +2864,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pl translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Polski (Polish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pt
@@ -2884,13 +2884,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pt translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Português (Portuguese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-pt-br
@@ -2904,13 +2904,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - pt-br translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Português do Brasil (Brazialian Portuguese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ro
@@ -2924,13 +2924,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ro translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Română (Romanian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-ru
@@ -2944,13 +2944,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - ru translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Русский (Russian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-sv
@@ -2964,13 +2964,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - sv translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Svenska (Swedish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-tr
@@ -2984,13 +2984,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - tr translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Türkçe (Turkish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-uk
@@ -3004,13 +3004,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - uk translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Українська (Ukrainian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-vi
@@ -3024,13 +3024,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - vi translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - Tiếng Việt (Vietnamese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-zh-cn
@@ -3044,13 +3044,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - zh-cn translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 中文 (Chinese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: luci-i18n-ddns-zh-tw
@@ -3064,13 +3064,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-ddns - zh-tw translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-ddns - 臺灣華語 (Taiwanese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>, Ansuel Smith <ansuelsmth@gmail.com>
+Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 
@@ -10100,7 +10100,7 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-radicale
 Submenu: 3. Applications
-Version: 1.1.0-1
+Version: 1.1.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full
 Conflicts: 
 Menu-Depends: 
@@ -10109,12 +10109,12 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: LuCI Support for Radicale CardDAV/CalDAV
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Description: LuCI Support for Radicale CardDAV/CalDAV
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 Config:
 # shown in make menuconfig <Help>
@@ -10124,13 +10124,13 @@ help
 	!!!   Package "radicale-py2" or "radicale-py3" needs to be   !!!
 	!!! installed sepearatly. There is no buildin dependency set !!!
 	.
-	Version: 1.1.0-1
-	Christian Schoenebeck <christian.schoenebeck@gmail.com>
+	Version: 1.1.0-2
+	
 @@
 
 Package: luci-i18n-radicale-de
 Default: LUCI_LANG_de||(ALL&&m)
-Version: 1.1.0-1
+Version: 1.1.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-radicale
 Conflicts: 
 Menu-Depends: 
@@ -10139,18 +10139,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-radicale - de translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-radicale - Deutsch (German)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 Package: luci-i18n-radicale-pt-br
 Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: 1.1.0-1
+Version: 1.1.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-radicale
 Conflicts: 
 Menu-Depends: 
@@ -10159,18 +10159,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-radicale - pt-br translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-radicale - Português do Brasil (Brazialian Portuguese)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 Package: luci-i18n-radicale-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: 1.1.0-1
+Version: 1.1.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-radicale
 Conflicts: 
 Menu-Depends: 
@@ -10179,18 +10179,18 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-radicale - ru translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-radicale - Русский (Russian)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 Package: luci-i18n-radicale-sv
 Default: LUCI_LANG_sv||(ALL&&m)
-Version: 1.1.0-1
+Version: 1.1.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-radicale
 Conflicts: 
 Menu-Depends: 
@@ -10199,13 +10199,13 @@ Section: luci
 Category: LuCI
 Repository: base
 Title: luci-app-radicale - sv translation
-Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Maintainer: 
 Source: 
 License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-radicale - Svenska (Swedish)
-Christian Schoenebeck <christian.schoenebeck@gmail.com>
+
 @@
 
 
@@ -10728,6 +10728,503 @@ Description:     Translation for luci-app-samba - 臺灣華語 (Taiwanese)
 @@
 
 
+Source-Makefile: feeds/luci/applications/luci-app-samba4/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-samba4
+Submenu: 3. Applications
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Network Shares - Samba 4 SMB/CIFS module
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Network Shares - Samba 4 SMB/CIFS module
+
+@@
+
+Package: luci-i18n-samba4-ca
+Default: LUCI_LANG_ca||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - ca translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Català (Catalan)
+
+@@
+
+Package: luci-i18n-samba4-cs
+Default: LUCI_LANG_cs||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - cs translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Čeština (Czech)
+
+@@
+
+Package: luci-i18n-samba4-de
+Default: LUCI_LANG_de||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - de translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Deutsch (German)
+
+@@
+
+Package: luci-i18n-samba4-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - el translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Ελληνικά (Greek)
+
+@@
+
+Package: luci-i18n-samba4-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - en translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - English
+
+@@
+
+Package: luci-i18n-samba4-es
+Default: LUCI_LANG_es||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - es translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Español (Spanish)
+
+@@
+
+Package: luci-i18n-samba4-fr
+Default: LUCI_LANG_fr||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - fr translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Français (French)
+
+@@
+
+Package: luci-i18n-samba4-he
+Default: LUCI_LANG_he||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - he translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - עִבְרִית (Hebrew)
+
+@@
+
+Package: luci-i18n-samba4-hu
+Default: LUCI_LANG_hu||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - hu translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Magyar (Hungarian)
+
+@@
+
+Package: luci-i18n-samba4-it
+Default: LUCI_LANG_it||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - it translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Italiano (Italian)
+
+@@
+
+Package: luci-i18n-samba4-ja
+Default: LUCI_LANG_ja||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - ja translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - 日本語 (Japanese)
+
+@@
+
+Package: luci-i18n-samba4-ms
+Default: LUCI_LANG_ms||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - ms translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Bahasa Melayu (Malay)
+
+@@
+
+Package: luci-i18n-samba4-no
+Default: LUCI_LANG_no||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - no translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Norsk (Norwegian)
+
+@@
+
+Package: luci-i18n-samba4-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Polski (Polish)
+
+@@
+
+Package: luci-i18n-samba4-pt
+Default: LUCI_LANG_pt||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - pt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Português (Portuguese)
+
+@@
+
+Package: luci-i18n-samba4-pt-br
+Default: LUCI_LANG_pt-br||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Português do Brasil (Brazialian Portuguese)
+
+@@
+
+Package: luci-i18n-samba4-ro
+Default: LUCI_LANG_ro||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - ro translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Română (Romanian)
+
+@@
+
+Package: luci-i18n-samba4-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - ru translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Русский (Russian)
+
+@@
+
+Package: luci-i18n-samba4-sk
+Default: LUCI_LANG_sk||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - sk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Slovenčina (Slovak)
+
+@@
+
+Package: luci-i18n-samba4-sv
+Default: LUCI_LANG_sv||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - sv translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Svenska (Swedish)
+
+@@
+
+Package: luci-i18n-samba4-tr
+Default: LUCI_LANG_tr||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - tr translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Türkçe (Turkish)
+
+@@
+
+Package: luci-i18n-samba4-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Українська (Ukrainian)
+
+@@
+
+Package: luci-i18n-samba4-vi
+Default: LUCI_LANG_vi||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - vi translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - Tiếng Việt (Vietnamese)
+
+@@
+
+Package: luci-i18n-samba4-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - 中文 (Chinese)
+
+@@
+
+Package: luci-i18n-samba4-zh-tw
+Default: LUCI_LANG_zh-tw||(ALL&&m)
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-samba4
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-samba4 - zh-tw translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-samba4 - 臺灣華語 (Taiwanese)
+
+@@
+
+
 Source-Makefile: feeds/luci/applications/luci-app-shadowsocks-libev/Makefile
 Build-Depends: lua/host luci-base/host 
 
@@ -10857,8 +11354,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-simple-adblock
 Submenu: 3. Applications
-Version: x-5
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci +simple-adblock
+Version: x-16
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full +simple-adblock
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -10876,7 +11373,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-ja
 Default: LUCI_LANG_ja||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -10896,7 +11393,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-pt
 Default: LUCI_LANG_pt||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -10916,7 +11413,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-pt-br
 Default: LUCI_LANG_pt-br||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -10936,7 +11433,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -10956,7 +11453,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-simple-adblock-sv
 Default: LUCI_LANG_sv||(ALL&&m)
-Version: x-5
+Version: x-16
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-simple-adblock
 Conflicts: 
 Menu-Depends: 
@@ -15542,7 +16039,7 @@ Build-Depends: lua/host luci-base/host
 Package: luci
 Submenu: 1. Collections
 Version: x-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uhttpd +uhttpd-mod-ubus +luci-mod-admin-full +luci-theme-bootstrap +luci-app-firewall +luci-proto-ppp +libiwinfo-lua +IPV6:luci-proto-ipv6 +rpcd-mod-rrdns
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uhttpd +luci-mod-admin-full +luci-theme-bootstrap +luci-app-firewall +luci-proto-ppp +libiwinfo-lua +IPV6:luci-proto-ipv6 +rpcd-mod-rrdns
 Conflicts: 
 Menu-Depends: 
 Provides: 

@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/routing/batctl/Makefile
 
 Package: batctl
-Version: 2018.1-0
+Version: 2018.2-0
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-batman-adv +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -11,13 +11,13 @@ Category: Network
 Repository: routing
 Title: B.A.T.M.A.N. Advanced user space configuration tool batctl
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2018.1.tar.gz
+Source: batctl-2018.2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
 It is an easier method for configuring batman-adv and provides some
 additional tools for debugging as well. This package builds
-version 2018.1 of the user space utility.
+version 2018.2 of the user space utility.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@

@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/ddns-scripts/Makefile
 
 Package: ddns-scripts
 Submenu: IP Addresses and Names
-Version: 2.7.7-6
+Version: 2.7.7-8
 Depends:  
 Conflicts: 
 Menu-Depends: 
@@ -28,13 +28,13 @@ Config:
 		  - Proxy server support
 		  - log file support
 		  - support to run once
-		Version: 2.7.7-6
+		Version: 2.7.7-8
 		Info   : http://wiki.openwrt.org/doc/howto/ddns.client
 @@
 
 Package: ddns-scripts_cloudflare
 Submenu: IP Addresses and Names
-Version: 2.7.7-6
+Version: 2.7.7-8
 Depends:  ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -53,7 +53,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_cloudflare.com-v4
 Submenu: IP Addresses and Names
-Version: 2.7.7-6
+Version: 2.7.7-8
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -61,7 +61,7 @@ Provides:
 Section: net
 Category: Network
 Repository: packages
-Title: CloudFlare.com API v4 (require cURL)
+Title: CloudFlare.com API v4 (requires cURL)
 Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
 Source: 
 License: GPL-2.0
@@ -70,9 +70,28 @@ Description:     Dynamic DNS Client scripts extension for CloudFlare.com API-v4 
 Christian Schoenebeck <christian.schoenebeck@gmail.com>
 @@
 
+Package: ddns-scripts_freedns_42_pl
+Submenu: IP Addresses and Names
+Version: 2.7.7-8
+Depends:  ddns-scripts +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: DDNS extension for FreeDNS.42.pl (requires cURL)
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:     Dynamic DNS Client scripts extension for freedns.42.pl
+Christian Schoenebeck <christian.schoenebeck@gmail.com>
+@@
+
 Package: ddns-scripts_godaddy.com-v1
 Submenu: IP Addresses and Names
-Version: 2.7.7-6
+Version: 2.7.7-8
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -91,7 +110,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_no-ip_com
 Submenu: IP Addresses and Names
-Version: 2.7.7-6
+Version: 2.7.7-8
 Depends:  ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -110,7 +129,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_nsupdate
 Submenu: IP Addresses and Names
-Version: 2.7.7-6
+Version: 2.7.7-8
 Depends:  ddns-scripts +bind-client
 Conflicts: 
 Menu-Depends: 
@@ -138,7 +157,7 @@ Config:
 
 Package: ddns-scripts_route53-v1
 Submenu: IP Addresses and Names
-Version: 2.7.7-6
+Version: 2.7.7-8
 Depends:  ddns-scripts +curl +openssl-util
 Conflicts: 
 Menu-Depends: 

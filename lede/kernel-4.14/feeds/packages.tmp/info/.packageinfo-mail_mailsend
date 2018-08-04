@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/mail/mailsend/Makefile
 
 Package: mailsend
-Version: 1.17b15-2
+Version: 1.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Mail
 Repository: base
 Title: A command-line mail sender (with SSL)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mailsend-1.17b15.tar.gz
+Source: mailsend-1.19.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYRIGHT
 Type: ipkg
@@ -24,7 +24,7 @@ Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mailsend-nossl
-Version: 1.17b15-2
+Version: 1.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Mail
 Repository: base
 Title: A command-line mail sender (without SSL)
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: mailsend-1.17b15.tar.gz
+Source: mailsend-1.19.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYRIGHT
 Type: ipkg

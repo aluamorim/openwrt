@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/ibrcommon/Makefile
 Build-Depends: libtool gettext libiconv
 
 Package: ibrcommon
-Version: 1.0.1-2
+Version: 1.0.1-3
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libpthread +librt +libnl +libopenssl
 Conflicts: 
 Menu-Depends: 

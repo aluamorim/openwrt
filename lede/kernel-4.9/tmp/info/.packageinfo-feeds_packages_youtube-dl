@@ -2,7 +2,7 @@ Source-Makefile: package/feeds/packages/youtube-dl/Makefile
 Build-Depends: python/host zip/host
 
 Package: youtube-dl
-Version: 2018.03.10-1
+Version: 2018.06.04-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python-openssl +python-email +python-xml +python-codecs +python-ctypes +ca-certificates
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Multimedia
 Repository: packages
 Title: utility to download videos from YouTube.com
 Maintainer: Adrian Panella <ianchi74@outlook.com>
-Source: youtube-dl-2018.03.10.tar.gz
+Source: youtube-dl-2018.06.04.tar.gz
 License: Unlicense
 LicenseFiles: LICENSE
 Type: ipkg

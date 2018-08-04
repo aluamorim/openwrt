@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/libmpdclient/Makefile
 
 Package: libmpdclient
-Version: 2.11-1
+Version: 2.14-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: libmpdclient
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: libmpdclient-2.11.tar.xz
+Source: libmpdclient-2.14.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg

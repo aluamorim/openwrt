@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/tmux/Makefile
 
 Package: tmux
 Submenu: Terminal
-Version: 2.7-1
+Version: 2.7-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libevent2 +libpthread +librt
 Conflicts: 
 Menu-Depends: 

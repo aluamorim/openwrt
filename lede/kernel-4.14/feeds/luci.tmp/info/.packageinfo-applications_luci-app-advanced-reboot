@@ -3,8 +3,8 @@ Build-Depends: lua/host luci-base/host
 
 Package: luci-app-advanced-reboot
 Submenu: 3. Applications
-Version: x-27
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci
+Version: x-33
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-mod-admin-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -22,7 +22,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-advanced-reboot-ru
 Default: LUCI_LANG_ru||(ALL&&m)
-Version: x-27
+Version: x-33
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
 Conflicts: 
 Menu-Depends: 
@@ -42,7 +42,7 @@ Stan Grishin <stangri@melmac.net>
 
 Package: luci-i18n-advanced-reboot-sv
 Default: LUCI_LANG_sv||(ALL&&m)
-Version: x-27
+Version: x-33
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
 Conflicts: 
 Menu-Depends: 

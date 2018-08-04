@@ -26,7 +26,7 @@ Gabriel Kerneis <gabriel@kerneis.info>
 Source-Makefile: feeds/routing/alfred/Makefile
 
 Package: alfred
-Version: 2018.1-0
+Version: 2018.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +libnl-tiny +librt +ALFRED_NEEDS_lua:lua +ALFRED_NEEDS_libgps:libgps
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Network
 Repository: base
 Title: A.L.F.R.E.D. - Almighty Lightweight Fact Remote Exchange Daemon
 Maintainer: 
-Source: alfred-2018.1.tar.gz
+Source: alfred-2018.2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: alfred is a user space daemon for distributing arbitrary local information over
@@ -116,7 +116,7 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl
-Version: 2018.1-0
+Version: 2018.2-0
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-batman-adv +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -126,13 +126,13 @@ Category: Network
 Repository: base
 Title: B.A.T.M.A.N. Advanced user space configuration tool batctl
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batctl-2018.1.tar.gz
+Source: batctl-2018.2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
 It is an easier method for configuring batman-adv and provides some
 additional tools for debugging as well. This package builds
-version 2018.1 of the user space utility.
+version 2018.2 of the user space utility.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
@@ -142,7 +142,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2018.1-2
+Version: <LINUX_VERSION>+2018.2-0
 Depends: +KMOD_BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-crypto-crc32c +kmod-lib-crc32c +kmod-cfg80211
 Conflicts: 
 Menu-Depends: 
@@ -151,12 +151,12 @@ Section: kernel
 Category: Kernel modules
 Title: B.A.T.M.A.N. Adv
 Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
-Source: batman-adv-2018.1.tar.gz
+Source: batman-adv-2018.2.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: B.A.T.M.A.N. advanced is a kernel module which allows to
 build layer 2 mesh networks. This package builds
-version 2018.1 of the kernel module.
+version 2018.2 of the kernel module.
 https://www.open-mesh.org/
 Simon Wunderlich <sw@simonwunderlich.de>
 @@
@@ -1289,7 +1289,7 @@ Steven Barth <cyrus@openwrt.org>
 Source-Makefile: feeds/routing/ndppd/Makefile
 
 Package: ndppd
-Version: 0.2.3-1
+Version: 0.2.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -1299,7 +1299,7 @@ Category: Network
 Repository: base
 Title: NDP Proxy Daemon
 Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
-Source: 0.2.3.tar.gz
+Source: ndppd-0.2.5.tar.gz
 License: GPL-3.0+
 Type: ipkg
 Description:  ndppd, or NDP Proxy Daemon, is a daemon that proxies NDP (Neighbor Discovery
@@ -1887,7 +1887,7 @@ Config:
 Source-Makefile: feeds/routing/pimbd/Makefile
 
 Package: pimbd
-Version: 2015-08-18-68f5fc803119e4b33a88b35c096f4d6ac28b6de5-1
+Version: 2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @IPV6 netifd
 Conflicts: 
 Menu-Depends: 
@@ -1897,7 +1897,7 @@ Category: Network
 Repository: base
 Title: PIM BIDIR daemon
 Maintainer: Pierre Pfister <pierre.pfister@darou.fr>
-Source: pimbd-2015-08-18-68f5fc803119e4b33a88b35c096f4d6ac28b6de5.tar.bz2
+Source: pimbd-2018-06-19-dbf4e5913b06e3160f506df15e6a047a403a5f21.tar.bz2
 License: Apache-2.0
 Type: ipkg
 Description: This package provides a daemon which implements the Protocol Independent

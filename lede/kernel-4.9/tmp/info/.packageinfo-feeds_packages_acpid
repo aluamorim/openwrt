@@ -1,8 +1,8 @@
 Source-Makefile: package/feeds/packages/acpid/Makefile
 
 Package: acpid
-Version: 2.0.28-1
-Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86||TARGET_x86_64) +kmod-input-evdev
+Version: 2.0.30-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-input-evdev
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,12 +11,12 @@ Category: Utilities
 Repository: packages
 Title: The ACPI Daemon (acpid) With Netlink Support
 Maintainer: Thomas Heil <heil@terminal-consulting.de>
-Source: acpid-2.0.28.tar.xz
+Source: acpid-2.0.30.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
 Type: ipkg
 Description:   The ACPI Daemon (acpid) With Netlink Support
-http://tedfelix.com/linux/acpid-netlink.html
+https://sourceforge.net/projects/acpid2/
 Thomas Heil <heil@terminal-consulting.de>
 @@
 

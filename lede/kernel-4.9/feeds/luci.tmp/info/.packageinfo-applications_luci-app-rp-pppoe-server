@@ -11,11 +11,11 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: Roaring Penguing PPPoE Server
+Title: Roaring Penguin PPPoE Server
 Maintainer: 
 Source: 
 Type: ipkg
-Description: Roaring Penguing PPPoE Server
+Description: Roaring Penguin PPPoE Server
 
 @@
 

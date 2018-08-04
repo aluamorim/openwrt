@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/noddos/Makefile
 
 Package: noddos
-Version: 0.5.5-1
+Version: 0.5.5-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstdcpp +libnetfilter-conntrack +libcurl +libopenssl +openssl-util +ca-bundle +ca-certificates +wget +bzip2 +libtins +ipset +libpthread +libyaml-cpp
 Conflicts: 
 Menu-Depends: 

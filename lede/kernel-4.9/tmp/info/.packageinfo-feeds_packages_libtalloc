@@ -1,7 +1,7 @@
 Source-Makefile: package/feeds/packages/libtalloc/Makefile
 
 Package: libtalloc
-Version: 2.1.11-1
+Version: 2.1.14-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +USE_GLIBC:libbsd +libattr
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: packages
 Title: Core memory allocator used in Samba
 Maintainer: Lucile Quirion <lucile.quirion@savoirfairelinux.com>
-Source: talloc-2.1.11.tar.gz
+Source: talloc-2.1.14.tar.gz
 License: LGPL-3.0+
 Type: ipkg
 Description:   talloc is a hierarchical, reference counted memory pool system with destructors.
