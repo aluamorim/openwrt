@@ -11,13 +11,13 @@ Section: net
 Category: Network
 Repository: base
 Title: Lightweight UPnP IGD, NAT-PMP & PCP daemon
-Maintainer: Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
+Maintainer: 
 Source: miniupnpd-2.1.tar.gz
 License: BSD-3-Clause
 Type: ipkg
 Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon
 http://miniupnp.free.fr/
-Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
+
 @@
 
 

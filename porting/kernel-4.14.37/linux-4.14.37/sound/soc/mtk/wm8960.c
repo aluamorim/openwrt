@@ -49,7 +49,7 @@
 
 
 static unsigned int OUT2VOL = 0x172;
-static unsigned int INVOL = 0x60;
+static unsigned int INVOL = 0x68;
 
 
 module_param(OUT2VOL, uint, S_IRUGO);
@@ -250,11 +250,11 @@ static int wm8960_init(struct snd_soc_codec *codec)
 	
 	data = snd_soc_read(codec, WM8960_LINVOL);
 	data &= ~LINV_LINMUTE;
-	snd_soc_write(codec, WM8960_LINVOL, data|LINV_IPVU|LINV_LINVOL(96));//LINV(0x00)
+	snd_soc_write(codec, WM8960_LINVOL, data|LINV_IPVU|LINV_LINVOL(INVOL));//LINV(0x00)
 	
 	data = snd_soc_read(codec, WM8960_RINVOL);
 	data &= ~RINV_RINMUTE;
-	snd_soc_write(codec, WM8960_RINVOL, data|RINV_IPVU|RINV_RINVOL(96)); //LINV(0x01)
+	snd_soc_write(codec, WM8960_RINVOL, data|RINV_IPVU|RINV_RINVOL(INVOL)); //LINV(0x01)
 	
 
 	init_mtk = true;
@@ -1022,7 +1022,8 @@ static int wm8960_set_dai_clkdiv(struct snd_soc_dai *codec_dai,
 		snd_soc_write(codec, WM8960_LOUT2, OUT2VOL);//0x28
 		snd_soc_write(codec, WM8960_LOUT2, OUT2VOL);//0x28
 
-		/**
+
+		/**/		
 		data = snd_soc_read(codec, WM8960_LINVOL);
 		data &= ~LINV_LINMUTE;
 		snd_soc_write(codec, WM8960_LINVOL, data|LINV_IPVU|LINV_LINVOL(INVOL));//LINV(0x00)
@@ -1030,8 +1031,7 @@ static int wm8960_set_dai_clkdiv(struct snd_soc_dai *codec_dai,
 		data = snd_soc_read(codec, WM8960_RINVOL);
 		data &= ~RINV_RINMUTE;
 		snd_soc_write(codec, WM8960_RINVOL, data|RINV_IPVU|RINV_RINVOL(INVOL)); //LINV(0x01)
-		**/
-
+		/**/
 		printk("******* ALU: %s - SET CLASS D ******* \n", __func__);
 		break;
 	case WM8960_BCLKDIV: // ALU: BCLKDIV config seems to be missing

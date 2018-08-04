@@ -23291,7 +23291,7 @@ Source-Makefile: feeds/packages/libs/libuhttpd/Makefile
 
 Package: libuhttpd-nossl
 Submenu: Networking
-Version: 2.1.2-2
+Version: 2.2.1-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +liblua
 Conflicts: libuhttpd-openssl libuhttpd-wolfssl libuhttpd-mbedtls
 Menu-Depends: 
@@ -23302,7 +23302,7 @@ Category: Libraries
 Repository: base
 Title: libuhttpd (NO SSL)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuhttpd-2.1.2.tar.xz
+Source: libuhttpd-2.2.1.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23312,7 +23312,7 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuhttpd-mbedtls
 Submenu: Networking
-Version: 2.1.2-2
+Version: 2.2.1-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +liblua +libustream-mbedtls
 Conflicts: 
 Menu-Depends: 
@@ -23323,7 +23323,7 @@ Category: Libraries
 Repository: base
 Title: libuhttpd (mbedtls)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuhttpd-2.1.2.tar.xz
+Source: libuhttpd-2.2.1.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23333,7 +23333,7 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuhttpd-wolfssl
 Submenu: Networking
-Version: 2.1.2-2
+Version: 2.2.1-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +liblua +libustream-wolfssl
 Conflicts: libuhttpd-mbedtls
 Menu-Depends: 
@@ -23344,7 +23344,7 @@ Category: Libraries
 Repository: base
 Title: libuhttpd (wolfssl)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuhttpd-2.1.2.tar.xz
+Source: libuhttpd-2.2.1.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23354,7 +23354,7 @@ Jianhui Zhao <jianhuizhao329@gmail.com>
 
 Package: libuhttpd-openssl
 Submenu: Networking
-Version: 2.1.2-2
+Version: 2.2.1-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +liblua +libustream-openssl
 Conflicts: libuhttpd-wolfssl libuhttpd-mbedtls
 Menu-Depends: 
@@ -23365,7 +23365,7 @@ Category: Libraries
 Repository: base
 Title: libuhttpd (openssl)
 Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
-Source: libuhttpd-2.1.2.tar.xz
+Source: libuhttpd-2.2.1.tar.xz
 License: LGPL-2.1
 LicenseFiles: LICENSE
 Type: ipkg
@@ -37546,7 +37546,7 @@ Source-Makefile: feeds/packages/net/knxd/Makefile
 Build-Depends: argp-standalone
 
 Package: knxd
-Version: 0.14.24-2
+Version: 0.14.25-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0 +libstdcpp +libev +libfmt
 Conflicts: 
 Menu-Depends: 
@@ -37556,7 +37556,7 @@ Category: Network
 Repository: base
 Title: EIB KNX daemon
 Maintainer: Othmar Truniger <github@truniger.ch>
-Source: knxd-d29f7047a8b20a7ac57c3c9ad349c12be60f9fee.tar.gz
+Source: knxd-0.14.25.tar.gz
 License: GPL-2.0+
 LicenseFiles: LICENSE
 Type: ipkg
@@ -38936,13 +38936,13 @@ Section: net
 Category: Network
 Repository: base
 Title: Lightweight UPnP IGD, NAT-PMP & PCP daemon
-Maintainer: Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
+Maintainer: 
 Source: miniupnpd-2.1.tar.gz
 License: BSD-3-Clause
 Type: ipkg
 Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon
 http://miniupnp.free.fr/
-Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
+
 @@
 
 
@@ -47118,7 +47118,7 @@ Source-Makefile: feeds/packages/net/unbound/Makefile
 
 Package: unbound
 Submenu: IP Addresses and Names
-Version: 1.7.3-3
+Version: 1.7.3-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -47128,7 +47128,7 @@ Category: Network
 Repository: base
 Title: Validating Recursive DNS Server (daemon)
 Maintainer: Eric Luehrsen <ericluehrsen@gmail.com>
-Require-User: unbound=553:unbound=553
+Require-User: unbound:unbound
 Source: unbound-1.7.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
@@ -47140,7 +47140,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-anchor
 Submenu: IP Addresses and Names
-Version: 1.7.3-3
+Version: 1.7.3-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -47161,7 +47161,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control
 Submenu: IP Addresses and Names
-Version: 1.7.3-3
+Version: 1.7.3-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound
 Conflicts: 
 Menu-Depends: 
@@ -47182,7 +47182,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control-setup
 Submenu: IP Addresses and Names
-Version: 1.7.3-3
+Version: 1.7.3-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound-control +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -47203,7 +47203,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-host
 Submenu: IP Addresses and Names
-Version: 1.7.3-3
+Version: 1.7.3-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -47223,7 +47223,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 @@
 
 Package: libunbound
-Version: 1.7.3-3
+Version: 1.7.3-4
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -50745,7 +50745,7 @@ Description:   Free portable AirPlay server implementation similar to ShairPort.
 Source-Makefile: feeds/packages/sound/shairport-sync/Makefile
 
 Package: shairport-sync-openssl
-Version: 3.1.6-1
+Version: 3.2.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @AUDIO_SUPPORT +libpthread +libstdcpp +alsa-lib +libconfig +libdaemon +libpopt +libopenssl +libavahi-client +libsoxr
 Conflicts: 
 Menu-Depends: 
@@ -50756,7 +50756,7 @@ Category: Sound
 Repository: base
 Title: AirPlay compatible audio player (openssl)
 Maintainer: Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
-Source: shairport-sync-3.1.6.tar.xz
+Source: shairport-sync-3.2.1.tar.xz
 License: MIT
 LicenseFiles: COPYING LICENSES shairport.c
 Type: ipkg
@@ -50768,12 +50768,12 @@ Description:   Shairport Sync plays audio from iTunes and AirPlay sources, inclu
   Shairport Sync does not support AirPlay video or photo streaming.
   Ensure Kernel Modules > Sound Support > kmod-sound-core is selected.
   Also select kmod-usb-audio if you want to use USB-connected sound cards.
-http://github.com/mikebrady/shairport-sync
+https://github.com/mikebrady/shairport-sync
 Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
 @@
 
 Package: shairport-sync-mbedtls
-Version: 3.1.6-1
+Version: 3.2.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @AUDIO_SUPPORT +libpthread +libstdcpp +alsa-lib +libconfig +libdaemon +libpopt +libmbedtls +libavahi-client +libsoxr
 Conflicts: 
 Menu-Depends: 
@@ -50785,7 +50785,7 @@ Category: Sound
 Repository: base
 Title: AirPlay compatible audio player (mbed TLS)
 Maintainer: Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
-Source: shairport-sync-3.1.6.tar.xz
+Source: shairport-sync-3.2.1.tar.xz
 License: MIT
 LicenseFiles: COPYING LICENSES shairport.c
 Type: ipkg
@@ -50797,12 +50797,12 @@ Description:   Shairport Sync plays audio from iTunes and AirPlay sources, inclu
   Shairport Sync does not support AirPlay video or photo streaming.
   Ensure Kernel Modules > Sound Support > kmod-sound-core is selected.
   Also select kmod-usb-audio if you want to use USB-connected sound cards.
-http://github.com/mikebrady/shairport-sync
+https://github.com/mikebrady/shairport-sync
 Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
 @@
 
 Package: shairport-sync-mini
-Version: 3.1.6-1
+Version: 3.2.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @AUDIO_SUPPORT +libpthread +libstdcpp +alsa-lib +libconfig +libdaemon +libpopt +libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -50813,7 +50813,7 @@ Category: Sound
 Repository: base
 Title: AirPlay compatible audio player (minimal)
 Maintainer: Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
-Source: shairport-sync-3.1.6.tar.xz
+Source: shairport-sync-3.2.1.tar.xz
 License: MIT
 LicenseFiles: COPYING LICENSES shairport.c
 Type: ipkg
@@ -50827,7 +50827,7 @@ Description:     Shairport Sync plays audio from iTunes and AirPlay sources, inc
   Also select kmod-usb-audio if you want to use USB-connected sound cards.
 
   Minimal version uses mbed TLS and does not include libsoxr and avahi support.
-http://github.com/mikebrady/shairport-sync
+https://github.com/mikebrady/shairport-sync
 Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
 @@
 
@@ -51144,7 +51144,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Source-Makefile: feeds/packages/utils/ap51-flash/Makefile
 
 Package: ap51-flash
-Version: 2017-12-07-1
+Version: 2018.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -51154,12 +51154,12 @@ Category: Utilities
 Repository: base
 Title: A tool for flashing (nearly) all ap51/ap61 based routers
 Maintainer: Russell Senior <russell@personaltelco.net>
-Source: ap51-flash-2017-12-07-f94f9c99711d14a3c0186318d822d67d9d0ce391.tar.xz
+Source: ap51-flash-2018.0.tar.gz
 License: GPL-3.0+
 LicenseFiles: LICENSES/preferred/GPL-3.0
 Type: ipkg
 Description: A tool for flashing (nearly) all ap51/ap61 based routers
-http://dev.cloudtrax.com/wiki/ap51-flash-station
+https://ap51-flash.readthedocs.io/en/latest/
 Russell Senior <russell@personaltelco.net>
 @@
 
