@@ -1,11 +1,12 @@
 Source-Makefile: feeds/packages/net/nfs-kernel-server/Makefile
 Build-Depends: nfs-kernel-server/host
+Build-Depends/host: libtirpc/host
 Build-Types: host
 
 Package: nfs-kernel-server
 Submenu: Filesystem
-Version: 2.3.2-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +librpc +kmod-fs-nfsd +kmod-fs-nfs +portmap
+Version: 2.3.2-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +kmod-fs-nfsd +kmod-fs-nfs +rpcbind
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -23,7 +24,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: nfs-kernel-server-utils
 Submenu: Filesystem
-Version: 2.3.2-1
+Version: 2.3.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread nfs-kernel-server
 Conflicts: 
 Menu-Depends: 
@@ -42,8 +43,8 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: nfs-utils
 Submenu: Filesystem
-Version: 2.3.2-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +librpc +libevent2 +USE_UCLIBC:librpc
+Version: 2.3.2-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +libevent2
 Conflicts: 
 Menu-Depends: 
 Provides: 

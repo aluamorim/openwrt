@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/unbound/Makefile
 
 Package: unbound
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -24,7 +24,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-anchor
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -45,7 +45,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound
 Conflicts: 
 Menu-Depends: 
@@ -66,7 +66,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control-setup
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound-control +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -87,7 +87,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-host
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -107,7 +107,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 @@
 
 Package: libunbound
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
 Conflicts: 
 Menu-Depends: 

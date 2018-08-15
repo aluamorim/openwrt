@@ -1,10 +1,10 @@
 Source-Makefile: feeds/packages/utils/mc/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: MC_VFS:libtirpc !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: mc
 Menu: 1
-Version: 4.8.21-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libncurses +libmount +MC_VFS:libssh2 +librpc +BUILD_NLS:libiconv-full
+Version: 4.8.21-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libncurses +libmount +MC_VFS:libssh2 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 

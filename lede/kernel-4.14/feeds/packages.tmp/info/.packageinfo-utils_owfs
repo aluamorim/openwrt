@@ -37,7 +37,7 @@ Jo-Philipp Wich <jo@mein.io>
 Package: owshell
 Submenu: Filesystem
 Version: 3.2p2-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +USE_UCLIBC:librpc
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow
 Conflicts: 
 Menu-Depends: 
 Provides: 

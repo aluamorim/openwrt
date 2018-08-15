@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/utils/lsof/Makefile
 
 Package: lsof
-Version: 4.89-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librpc
+Version: 4.91-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libtirpc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: LiSt Open Files - a diagnostic tool
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: lsof_4.89.tar.bz2
+Source: lsof_4.91.tar.bz2
 License: Unique
 LicenseFiles: 00README
 Type: ipkg

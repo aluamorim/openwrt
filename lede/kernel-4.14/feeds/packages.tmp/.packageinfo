@@ -232,7 +232,7 @@ Toni Uhlig <matzeton@googlemail.com>
 Source-Makefile: feeds/packages/admin/netdata/Makefile
 
 Package: netdata
-Version: 1.10.0-1
+Version: 1.10.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libuuid +libmnl
 Conflicts: 
 Menu-Depends: 
@@ -2569,7 +2569,7 @@ Build-Types: host
 
 Package: luajit
 Submenu: Lua
-Version: 2017-01-17-71ff7ef-1
+Version: 2017-01-17-71ff7ef-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(i386||x86_64||arm||armeb||powerpc||mips||mipsel)
 Conflicts: 
 Menu-Depends: 
@@ -12677,6 +12677,49 @@ https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
+Package: python3-decimal
+Submenu: Python
+Version: 3.7.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.7 decimal module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: Python-3.7.0.tar.xz
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Type: ipkg
+Description: Python 3.7 decimal module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-decimal-src
+Submenu: Python
+Version: 3.7.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.7 decimal module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: Python-3.7.0.tar.xz
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Type: ipkg
+Description:     .
+    (Contains the Python3 sources for this package).
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
 Package: python3-multiprocessing
 Submenu: Python
 Version: 3.7.0-1
@@ -13279,49 +13322,6 @@ https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
-Package: python3-asyncio
-Submenu: Python
-Version: 3.7.0-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.7 asyncio module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: Python-3.7.0.tar.xz
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Type: ipkg
-Description: Python 3.7 asyncio module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-
-Package: python3-asyncio-src
-Submenu: Python
-Version: 3.7.0-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.7 asyncio module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: Python-3.7.0.tar.xz
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Type: ipkg
-Description:     .
-    (Contains the Python3 sources for this package).
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-
 Package: python3-lzma
 Submenu: Python
 Version: 3.7.0-1
@@ -13365,7 +13365,7 @@ https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
-Package: python3-decimal
+Package: python3-asyncio
 Submenu: Python
 Version: 3.7.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
@@ -13375,18 +13375,18 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.7 decimal module
+Title: Python 3.7 asyncio module
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: Python-3.7.0.tar.xz
 License: PSF
 LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
 Type: ipkg
-Description: Python 3.7 decimal module
+Description: Python 3.7 asyncio module
 https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
-Package: python3-decimal-src
+Package: python3-asyncio-src
 Submenu: Python
 Version: 3.7.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -13396,7 +13396,7 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python 3.7 decimal module (sources)
+Title: Python 3.7 asyncio module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: Python-3.7.0.tar.xz
 License: PSF
@@ -13459,7 +13459,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.7.0-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-multiprocessing +python3-codecs +python3-gdbm +python3-sqlite3 +python3-xml +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-asyncio +python3-lzma +python3-decimal
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-codecs +python3-gdbm +python3-sqlite3 +python3-xml +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-lzma +python3-asyncio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13621,11 +13621,11 @@ Gergely Kiss <mail.gery@gmail.com>
 
 
 Source-Makefile: feeds/packages/lang/python/twisted/Makefile
-Build-Depends: USE_MUSL:librpc
+Build-Depends: libtirpc
 
 Package: twisted
 Submenu: Python
-Version: 18.4.0-1
+Version: 18.4.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_twisted:python-light +PACKAGE_twisted:python-automat +PACKAGE_twisted:python-constantly +PACKAGE_twisted:python-incremental +PACKAGE_twisted:python-hyperlink +PACKAGE_twisted:python-zope-interface
 Conflicts: 
 Menu-Depends: 
@@ -13649,7 +13649,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: twisted-src
 Submenu: Python
-Version: 18.4.0-1
+Version: 18.4.0-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -18435,7 +18435,7 @@ Source-Makefile: feeds/packages/libs/intltool/Makefile
 Build-Types: host
 
 Package: intltool
-Version: 0.40.6-3
+Version: 0.51.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -18445,12 +18445,12 @@ Category: Libraries
 Repository: base
 Title: set of tools to centralize translation using GNU gettext
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: intltool-0.40.6.tar.bz2
+Source: intltool-0.51.0.tar.gz
 Type: ipkg
 Build-Only: 1
 Description:   intltool is a set of tools to centralize translation of many different
   file formats using GNU gettext-compatible PO files.
-http://www.freedesktop.org/wiki/Software/intltool
+https://www.freedesktop.org/wiki/Software/intltool
 Ted Hess <thess@kitschensync.net>
 @@
 
@@ -20112,7 +20112,7 @@ Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: libgphoto2
 Menu: 1
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libltdl +libusb-compat +libusb-1.0 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -20120,19 +20120,19 @@ Provides:
 Section: libs
 Category: Libraries
 Repository: base
-Title: The basic library of the gphoto2 program, version 2.5.18.
+Title: The basic library of the gphoto2 program, version 2.5.19.
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
-Description: The basic library of the gphoto2 program, version 2.5.18.
+Description: The basic library of the gphoto2 program, version 2.5.19.
 http://www.gphoto.org/
 Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-port
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread libgphoto2 +libusb-1.0 +libusb-compat
 Conflicts: 
 Menu-Depends: 
@@ -20142,7 +20142,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for connect cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20152,7 +20152,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-adc65
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20162,7 +20162,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for adc65 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20172,7 +20172,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-agfa_cl20
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20182,7 +20182,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for agfa_cl20 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20192,7 +20192,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-aox
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20202,7 +20202,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for aox cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20212,7 +20212,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-ax203
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20222,7 +20222,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for ax203 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20232,7 +20232,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-barbie
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20242,7 +20242,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for barbie cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20252,7 +20252,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-canon
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20262,7 +20262,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for canon cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20272,7 +20272,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-casio_qv
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20282,7 +20282,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for casio_qv cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20292,7 +20292,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-clicksmart310
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20302,7 +20302,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for clicksmart310 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20312,7 +20312,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-digigr8
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20322,7 +20322,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for digigr8 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20332,7 +20332,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-digita
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20342,7 +20342,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for digita cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20352,7 +20352,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-dimera3500
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20362,7 +20362,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for dimera3500 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20372,7 +20372,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-directory
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20382,7 +20382,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for directory cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20392,7 +20392,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-enigma13
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20402,7 +20402,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for enigma13 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20412,7 +20412,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-fuji
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20422,7 +20422,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for fuji cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20432,7 +20432,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-gsmart300
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20442,7 +20442,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for gsmart300 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20452,7 +20452,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-hp215
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20462,7 +20462,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for hp215 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20472,7 +20472,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-iclick
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20482,7 +20482,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for iclick cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20492,7 +20492,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-jamcam
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20502,7 +20502,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for jamcam cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20512,7 +20512,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-jd11
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20522,7 +20522,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for jd11 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20532,7 +20532,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-jl2005a
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20542,7 +20542,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for jl2005a cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20552,7 +20552,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-jl2005c
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20562,7 +20562,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for jl2005c cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20572,7 +20572,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_dc120
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20582,7 +20582,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for kodak_dc120 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20592,7 +20592,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_dc210
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20602,7 +20602,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for kodak_dc210 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20612,7 +20612,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_dc240
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20622,7 +20622,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for kodak_dc240 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20632,7 +20632,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_dc3200
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20642,7 +20642,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for kodak_dc3200 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20652,7 +20652,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-kodak_ez200
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20662,7 +20662,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for kodak_ez200 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20672,7 +20672,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-konica
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20682,7 +20682,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for konica cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20692,7 +20692,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-konica_qm150
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20702,7 +20702,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for konica_qm150 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20712,7 +20712,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-largan
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20722,7 +20722,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for largan cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20732,7 +20732,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-lg_gsm
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20742,7 +20742,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for lg_gsm cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20752,7 +20752,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-mars
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20762,7 +20762,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for mars cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20772,7 +20772,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-dimagev
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20782,7 +20782,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for dimagev cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20792,7 +20792,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-mustek
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20802,7 +20802,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for mustek cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20812,7 +20812,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-panasonic_coolshot
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20822,7 +20822,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for panasonic_coolshot cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20832,7 +20832,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-panasonic_l859
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20842,7 +20842,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for panasonic_l859 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20852,7 +20852,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-panasonic_dc1000
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20862,7 +20862,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for panasonic_dc1000 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20872,7 +20872,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-panasonic_dc1580
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20882,7 +20882,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for panasonic_dc1580 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20892,7 +20892,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-pccam300
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20902,7 +20902,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for pccam300 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20912,7 +20912,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-pccam600
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20922,7 +20922,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for pccam600 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20932,7 +20932,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-pentax
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20942,7 +20942,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for pentax cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20952,7 +20952,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-polaroid_pdc320
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20962,7 +20962,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for polaroid_pdc320 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20972,7 +20972,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-polaroid_pdc640
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -20982,7 +20982,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for polaroid_pdc640 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -20992,7 +20992,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-polaroid_pdc700
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21002,7 +21002,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for polaroid_pdc700 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21012,7 +21012,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-ptp2
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21022,7 +21022,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for ptp2 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21032,7 +21032,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-ricoh
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21042,7 +21042,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for ricoh cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21052,7 +21052,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-ricoh_g3
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21062,7 +21062,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for ricoh_g3 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21072,7 +21072,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-samsung
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21082,7 +21082,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for samsung cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21092,7 +21092,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sierra
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21102,7 +21102,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for sierra cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21112,7 +21112,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sipix_blink2
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21122,7 +21122,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for sipix_blink2 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21132,7 +21132,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sipix_web2
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21142,7 +21142,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for sipix_web2 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21152,7 +21152,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-smal
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21162,7 +21162,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for smal cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21172,7 +21172,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sonix
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21182,7 +21182,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for sonix cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21192,7 +21192,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sony_dscf1
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21202,7 +21202,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for sony_dscf1 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21212,7 +21212,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sony_dscf55
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21222,7 +21222,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for sony_dscf55 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21232,7 +21232,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-soundvision
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21242,7 +21242,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for soundvision cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21252,7 +21252,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-spca50x
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21262,7 +21262,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for spca50x cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21272,7 +21272,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sq905
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21282,7 +21282,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for sq905 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21292,7 +21292,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-st2205
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21302,7 +21302,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for st2205 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21312,7 +21312,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-stv0674
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21322,7 +21322,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for stv0674 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21332,7 +21332,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-stv0680
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21342,7 +21342,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for stv0680 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21352,7 +21352,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-sx330z
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21362,7 +21362,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for sx330z cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21372,7 +21372,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-topfield
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21382,7 +21382,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for topfield cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21392,7 +21392,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-toshiba_pdrm11
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21402,7 +21402,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for toshiba_pdrm11 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -21412,7 +21412,7 @@ Leonardo Medici <leonardo_medici@me.com>
 @@
 
 Package: libgphoto2-drivers-tp6801
-Version: 2.5.18-1
+Version: 2.5.19-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libgphoto2-port
 Conflicts: 
 Menu-Depends: 
@@ -21422,7 +21422,7 @@ Category: Libraries
 Repository: base
 Title: Gphoto2 drivers for tp6801 cameras
 Maintainer: Leonardo Medici <leonardo_medici@me.com>
-Source: libgphoto2-2.5.18.tar.bz2
+Source: libgphoto2-2.5.19.tar.bz2
 License: LGPL-2.1
 LicenseFiles: COPYING
 Type: ipkg
@@ -23152,9 +23152,10 @@ Steven Hessing <steven.hessing@gmail.com>
 
 
 Source-Makefile: feeds/packages/libs/libtirpc/Makefile
+Build-Types: host
 
 Package: libtirpc
-Version: 1.0.3-1
+Version: 1.0.3-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -26238,7 +26239,7 @@ Source-Makefile: feeds/packages/libs/loudmouth/Makefile
 
 Package: loudmouth
 Version: 1.5.3-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libopenssl
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libopenssl +PACKAGE_krb5-libs:krb5-libs
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26526,7 +26527,7 @@ Ted Hess <thess@kitchensync.net>, Ian Leonard <antonlacon@gmail.com>
 Source-Makefile: feeds/packages/libs/p11-kit/Makefile
 
 Package: p11-kit
-Version: 0.23.12-1
+Version: 0.23.13-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libtasn1 +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -26536,7 +26537,7 @@ Category: Libraries
 Repository: base
 Title: A library that provides a way to load and enumerate PKCS11 modules.
 Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
-Source: p11-kit-0.23.12.tar.gz
+Source: p11-kit-0.23.13.tar.gz
 Type: ipkg
 Description:   Provides a way to load and enumerate PKCS11 modules. Provides a
   standard configuration setup for installing PKCS11 modules in such a
@@ -28591,7 +28592,7 @@ Thomas Heil <heil@terminal-consulting.de>
 Source-Makefile: feeds/packages/multimedia/ffmpeg/Makefile
 
 Package: ffmpeg
-Version: 3.2.10-4
+Version: 3.2.12-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -28602,7 +28603,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg program
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-3.2.10.tar.xz
+Source: ffmpeg-3.2.12.tar.xz
 License: LGPL-2.1+ GPL-2+ LGPL-3
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -28619,7 +28620,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffprobe
-Version: 3.2.10-4
+Version: 3.2.12-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -28630,7 +28631,7 @@ Category: Multimedia
 Repository: base
 Title: FFmpeg CLI media identifier
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-3.2.10.tar.xz
+Source: ffmpeg-3.2.12.tar.xz
 License: LGPL-2.1+ GPL-2+ LGPL-3
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -28647,7 +28648,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: ffserver
-Version: 3.2.10-4
+Version: 3.2.12-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libffmpeg-full
 Conflicts: 
 Menu-Depends: 
@@ -28658,7 +28659,7 @@ Category: Multimedia
 Repository: base
 Title:  streaming server
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-3.2.10.tar.xz
+Source: ffmpeg-3.2.12.tar.xz
 License: LGPL-2.1+ GPL-2+ LGPL-3
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -28674,7 +28675,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-audio-dec
-Version: 3.2.10-4
+Version: 3.2.12-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -28685,7 +28686,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (audio)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-3.2.10.tar.xz
+Source: ffmpeg-3.2.12.tar.xz
 License: LGPL-2.1+ GPL-2+ LGPL-3
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -28702,7 +28703,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-full
-Version: 3.2.10-4
+Version: 3.2.12-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 +alsa-lib +PACKAGE_libopus:libopus +PACKAGE_lame-lib:lame-lib +PACKAGE_libx264:libx264 +PACKAGE_fdk-aac:fdk-aac
 Conflicts: 
 Menu-Depends: 
@@ -28713,7 +28714,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (full)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-3.2.10.tar.xz
+Source: ffmpeg-3.2.12.tar.xz
 License: LGPL-2.1+ GPL-2+ LGPL-3
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -28730,7 +28731,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 @@
 
 Package: libffmpeg-mini
-Version: 3.2.10-4
+Version: 3.2.12-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -28741,7 +28742,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (mini)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-3.2.10.tar.xz
+Source: ffmpeg-3.2.12.tar.xz
 License: LGPL-2.1+ GPL-2+ LGPL-3
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -28759,7 +28760,7 @@ Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 
 Package: libffmpeg-custom
 Menu: 1
-Version: 3.2.10-4
+Version: 3.2.12-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libpthread +zlib +libbz2 @!ALL +FFMPEG_CUSTOM_SELECT_libopus:libopus +PACKAGE_libx264:libx264 +PACKAGE_lame-lib:lame-lib +FFMPEG_CUSTOM_SELECT_libshine:shine +PACKAGE_fdk-aac:fdk-aac
 Conflicts: 
 Menu-Depends: 
@@ -28770,7 +28771,7 @@ Category: Libraries
 Repository: base
 Title: FFmpeg libraries (custom)
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
-Source: ffmpeg-3.2.10.tar.xz
+Source: ffmpeg-3.2.12.tar.xz
 License: LGPL-2.1+ GPL-2+ LGPL-3
 LicenseFiles: COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1 COPYING.LGPLv3
 Type: ipkg
@@ -33296,7 +33297,7 @@ Ansuel Smith <ansuelsmth@gmail.com>
 Source-Makefile: feeds/packages/net/arp-scan/Makefile
 
 Package: arp-scan
-Version: 1.9-40-g69b2f70-1
+Version: 1.9.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -33306,7 +33307,7 @@ Category: Network
 Repository: base
 Title: ARP scanner
 Maintainer: Sergey Urushkin <urusha.v1.0@gmail.com>
-Source: arp-scan-1.9-40-g69b2f70.tar.gz
+Source: arp-scan-1.9.5.tar.gz
 License: GPL-3.0
 Type: ipkg
 Description:     ARP scanner
@@ -33917,7 +33918,7 @@ Source-Makefile: feeds/packages/net/coova-chilli/Makefile
 Package: coova-chilli
 Menu: 1
 Submenu: Captive Portals
-Version: 1.3.0+20141128-6
+Version: 1.4-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-tun +librt +COOVACHILLI_CYASSL:libcyassl +COOVACHILLI_OPENSSL:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -33927,7 +33928,7 @@ Category: Network
 Repository: base
 Title: Wireless LAN HotSpot controller (Coova Chilli Version)
 Maintainer: Jaehoon You <teslamint@gmail.com>
-Source: coova-chilli-1.3.0+20141128.tar.gz
+Source: coova-chilli-1.4.tar.gz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -33938,7 +33939,7 @@ Description: 	CoovaChilli is an open source access controller for wireless LAN
 	Protected Access (WPA) which is the standard of the future.
 	Authentication,	authorization and accounting (AAA) is handled by your
 	favorite radius server.
-http://www.coova.org/CoovaChilli
+https://coova.github.io/
 Jaehoon You <teslamint@gmail.com>
 @@
 Config:
@@ -33947,7 +33948,7 @@ Config:
 
 Package: kmod-ipt-coova
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+1.3.0+20141128-6
+Version: <LINUX_VERSION>+1.4-6
 Depends: coova-chilli +kmod-ipt-core +libxtables
 Conflicts: 
 Menu-Depends: 
@@ -33956,7 +33957,7 @@ Section: kernel
 Category: Kernel modules
 Title: Coova netfilter module
 Maintainer: Jaehoon You <teslamint@gmail.com>
-Source: coova-chilli-1.3.0+20141128.tar.gz
+Source: coova-chilli-1.4.tar.gz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -36341,7 +36342,7 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 1.8.12-00
+Version: 1.8.13-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +libopenssl +libncursesw +libreadline +libatomic +@OPENSSL_WITH_DEPRECATED +@OPENSSL_WITH_EC +@OPENSSL_WITH_EC2M +@OPENSSL_WITH_DTLS +@OPENSSL_WITH_COMPRESSION +@OPENSSL_WITH_NPN +@OPENSSL_WITH_PSK +@OPENSSL_WITH_SRP +@OPENSSL_ENGINE_DIGEST +@OPENSSL_ENGINE_CRYPTO
 Conflicts: 
 Menu-Depends: 
@@ -36352,7 +36353,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: 
-Source: haproxy-1.8.12.tar.gz
+Source: haproxy-1.8.13.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:  Open source Reliable, High Performance TCP/HTTP Load Balancer.
@@ -36368,7 +36369,7 @@ Config:
 Package: halog
 Menu: 1
 Submenu: Web Servers/Proxies
-Version: 1.8.12-00
+Version: 1.8.13-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread haproxy
 Conflicts: 
 Menu-Depends: 
@@ -36379,7 +36380,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer halog
 Maintainer: 
-Source: haproxy-1.8.12.tar.gz
+Source: haproxy-1.8.13.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: 	HAProxy Log Analyzer
@@ -36389,7 +36390,7 @@ https://www.haproxy.org/
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 1.8.12-00
+Version: 1.8.13-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libltdl +zlib +libpthread +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -36400,7 +36401,7 @@ Category: Network
 Repository: base
 Title: The Reliable, High Performance TCP/HTTP Load Balancer
 Maintainer: 
-Source: haproxy-1.8.12.tar.gz
+Source: haproxy-1.8.13.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description:  Open source Reliable, High Performance TCP/HTTP Load Balancer.
@@ -38927,7 +38928,7 @@ Source-Makefile: feeds/packages/net/miniupnpd/Makefile
 
 Package: miniupnpd
 Submenu: Firewall
-Version: 2.1-2
+Version: 2.1.20180706-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +libip4tc +IPV6:libip6tc +IPV6:ip6tables +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -38937,11 +38938,11 @@ Category: Network
 Repository: base
 Title: Lightweight UPnP IGD, NAT-PMP & PCP daemon
 Maintainer: 
-Source: miniupnpd-2.1.tar.gz
+Source: miniupnpd-2.1.20180706.tar.gz
 License: BSD-3-Clause
 Type: ipkg
 Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon
-http://miniupnp.free.fr/
+https://miniupnp.tuxfamily.org/
 
 @@
 
@@ -39133,7 +39134,7 @@ Karl Palsson <karlp@etactica.com>
 Source-Makefile: feeds/packages/net/mtr/Makefile
 
 Package: mtr
-Version: 0.92-1
+Version: 0.92-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -39155,7 +39156,7 @@ Description: 	mtr combines the functionality of the 'traceroute' and 'ping' prog
 	it sends a sequence ICMP ECHO requests to each one to determine the
 	quality of the link to each machine. As it does this, it prints
 	running statistics about each machine.
-http://www.bitwizard.nl/mtr/
+https://www.bitwizard.nl/mtr/
 Jonathan McCrohan <jmccrohan@gmail.com>
 @@
 
@@ -39406,8 +39407,8 @@ Source-Makefile: feeds/packages/net/netatalk/Makefile
 
 Package: netatalk
 Submenu: Filesystem
-Version: 3.1.11-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libattr +libdb47 +libgcrypt +libopenssl +librpc
+Version: 3.1.11-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libattr +libdb47 +libgcrypt +libopenssl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -39558,12 +39559,13 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Source-Makefile: feeds/packages/net/nfs-kernel-server/Makefile
 Build-Depends: nfs-kernel-server/host
+Build-Depends/host: libtirpc/host
 Build-Types: host
 
 Package: nfs-kernel-server
 Submenu: Filesystem
-Version: 2.3.2-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +librpc +kmod-fs-nfsd +kmod-fs-nfs +portmap
+Version: 2.3.2-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +kmod-fs-nfsd +kmod-fs-nfs +rpcbind
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -39581,7 +39583,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: nfs-kernel-server-utils
 Submenu: Filesystem
-Version: 2.3.2-1
+Version: 2.3.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread nfs-kernel-server
 Conflicts: 
 Menu-Depends: 
@@ -39600,8 +39602,8 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: nfs-utils
 Submenu: Filesystem
-Version: 2.3.2-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +librpc +libevent2 +USE_UCLIBC:librpc
+Version: 2.3.2-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +libblkid +libuuid +libtirpc +libevent2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -39622,7 +39624,7 @@ Source-Makefile: feeds/packages/net/nginx/Makefile
 
 Package: nginx
 Submenu: Web Servers/Proxies
-Version: 1.15.2-1
+Version: 1.15.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -39646,7 +39648,7 @@ Config:
 
 Package: nginx-ssl
 Submenu: Web Servers/Proxies
-Version: 1.15.2-1
+Version: 1.15.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -39670,7 +39672,7 @@ Config:
 
 Package: nginx-all-module
 Submenu: Web Servers/Proxies
-Version: 1.15.2-1
+Version: 1.15.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libopenssl +zlib +liblua +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -39691,7 +39693,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci
 Submenu: Web Servers/Proxies
-Version: 1.15.2-1
+Version: 1.15.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi +uwsgi-cgi-luci-support +nginx
 Conflicts: 
 Menu-Depends: 
@@ -39711,7 +39713,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci-ssl
 Submenu: Web Servers/Proxies
-Version: 1.15.2-1
+Version: 1.15.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +uwsgi-cgi +uwsgi-cgi-luci-support +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -40061,7 +40063,7 @@ Source-Makefile: feeds/packages/net/ntpclient/Makefile
 
 Package: ntpclient
 Submenu: Time Synchronization
-Version: 2010_365-1
+Version: 2015_365-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -40071,7 +40073,7 @@ Category: Network
 Repository: base
 Title: NTP (Network Time Protocol) client
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: ntpclient_2010_365.tar.gz
+Source: ntpclient_2015_365.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: 	NTP client for setting system time from NTP servers.
@@ -40188,7 +40190,7 @@ Source-Makefile: feeds/packages/net/ntripcaster/Makefile
 
 Package: ntripcaster
 Submenu: NTRIP
-Version: 0.1.5-03878920195cf854b38a1ea424f1cae57353fa87
+Version: 0.1.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -40198,11 +40200,11 @@ Category: Network
 Repository: base
 Title: Standard Ntrip Broadcaster
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: ntripcaster-0.1.5-03878920195cf854b38a1ea424f1cae57353fa87.tar.gz
+Source: ntripcaster-0.1.5.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description:   BKG Standard Ntrip Broadcaster
-http://igs.bkg.bund.de/ntrip/download
+https://igs.bkg.bund.de/ntrip
 Nuno Goncalves <nunojpg@gmail.com>
 @@
 
@@ -40211,7 +40213,7 @@ Source-Makefile: feeds/packages/net/ntripclient/Makefile
 
 Package: ntripclient
 Submenu: NTRIP
-Version: 1.5.0-dcfb2cb3e6f31b7291a94e7f86379c78ffc0d44e
+Version: 1.51-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -40221,7 +40223,7 @@ Category: Network
 Repository: base
 Title: Ntrip Version 2.0 Command Line Client
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: ntripclient-1.5.0-dcfb2cb3e6f31b7291a94e7f86379c78ffc0d44e.tar.gz
+Source: ntripclient-1.51.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description:   Ntrip Version 2.0 Command Line Client, reading from Ntrip Version 1.0 or 2.0 Caster
@@ -40234,7 +40236,7 @@ Source-Makefile: feeds/packages/net/ntripserver/Makefile
 
 Package: ntripserver
 Submenu: NTRIP
-Version: 1.5.1-c3034ab575e8442222eb8c2ee9e224cac99cfa6d
+Version: 1.51-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -40244,7 +40246,7 @@ Category: Network
 Repository: base
 Title: Ntrip Version 2.0 Command Line Server
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: ntripserver-1.5.1-c3034ab575e8442222eb8c2ee9e224cac99cfa6d.tar.gz
+Source: ntripserver-1.51.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description:   Ntrip Version 2.0 Command Line Server, reading from SISNeT Server, TCP/UDP IP
@@ -42538,31 +42540,6 @@ Mike Maraya <mike.maraya@gmail.com>
 @@
 
 
-Source-Makefile: feeds/packages/net/portmap/Makefile
-
-Package: portmap
-Version: 6.0-4
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libwrap +librpc
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: The RPC Portmapper
-Maintainer: Peter Wagner <tripolar@gmx.at>
-Require-User: rpc=65533:rpc=65533
-Source: portmap-6.0.tgz
-License: BSD-4c
-LicenseFiles: portmap.man
-Type: ipkg
-Description:  Portmap is a server that converts RPC (Remote Procedure Call) program
- numbers into DARPA protocol port numbers.
-http://neil.brown.name/portmap/
-Peter Wagner <tripolar@gmx.at>
-@@
-
-
 Source-Makefile: feeds/packages/net/pppossh/Makefile
 
 Package: pppossh
@@ -42969,6 +42946,46 @@ http://roaringpenguin.com/products/pppoe
 @@
 
 
+Source-Makefile: feeds/packages/net/rpcbind/Makefile
+
+Package: rpcbind
+Version: 0.2.4-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libtirpc +RPCBIND_LIBWRAP:libwrap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Universal addresses to RPC mapper 
+Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
+Require-User: rpc=65533:rpc=65533
+Source: rpcbind-0.2.4.tar.bz2
+License: BSD-3-Clause
+Type: ipkg
+Description:   The rpcbind utility is a server that converts RPC program numbers into universal addresses.
+  It must be running on the host to be able to make RPC calls on a server on that machine.
+  
+  Rpcbind replaces portmap for NFS v2/v3. It has more features, like ipv6 support.
+  Note: Nfs4 only configurations can run without it.
+http://libtirpc.sourceforge.net/
+Andy Walsh <andy.walsh44+github@gmail.com>
+@@
+Config:
+if PACKAGE_rpcbind
+	config RPCBIND_LIBWRAP
+		bool "Enable libwrap (TCP wrappers) support."
+		default y
+
+	config RPCBIND_WARMSTARTS
+		bool "Enable warmstarts support"
+		default y
+		help
+		  The warmstart feature saves RPC registrations on termination. 
+endif
+@@
+
+
 Source-Makefile: feeds/packages/net/rsync/Makefile
 
 Package: rsync
@@ -43104,11 +43121,11 @@ Rosen Penev <rosenp@gmail.com>
 
 
 Source-Makefile: feeds/packages/net/samba4/Makefile
-Build-Depends: perl/host python/host qemu-userspace/host SAMBA4_SERVER_AD_DC:python-crypto
+Build-Depends: perl/host python/host SAMBA4_SERVER_AD_DC:python-crypto nfs-kernel-server/host
 
 Package: samba4-libs
-Version: 4.8.3-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libtirpc +krb5-libs +libpopt +PACKAGE_libcap:libcap +PACKAGE_jansson:jansson +PACKAGE_libpthread:libpthread +PACKAGE_libnettle:libnettle +PACKAGE_libarchive:libarchive +PACKAGE_libgcrypt:libgcrypt +PACKAGE_libpam:libpam +SAMBA4_SERVER_ACL:acl +SAMBA4_SERVER_ACL:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python-base +SAMBA4_SERVER_AD_DC:libopenssl +SAMBA4_SERVER_AD_DC:libgnutls +SAMBA4_SERVER_AD_DC:libopenldap
+Version: 4.8.3-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libtirpc +krb5-libs +libpopt +PACKAGE_libcap:libcap +PACKAGE_jansson:jansson +PACKAGE_libpthread:libpthread +PACKAGE_libnettle:libnettle +PACKAGE_libarchive:libarchive +PACKAGE_libgcrypt:libgcrypt +PACKAGE_libpam:libpam +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_ACL:acl +SAMBA4_SERVER_ACL:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python-base +SAMBA4_SERVER_AD_DC:libopenssl +SAMBA4_SERVER_AD_DC:libgnutls +SAMBA4_SERVER_AD_DC:libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -43127,7 +43144,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-server
-Version: 4.8.3-2
+Version: 4.8.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -43154,7 +43171,7 @@ Config:
 @@
 
 Package: samba4-client
-Version: 4.8.3-2
+Version: 4.8.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -43176,7 +43193,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-admin
-Version: 4.8.3-2
+Version: 4.8.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -43198,7 +43215,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-utils
-Version: 4.8.3-2
+Version: 4.8.3-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -43502,7 +43519,7 @@ Source-Makefile: feeds/packages/net/shorewall/Makefile
 
 Package: shorewall
 Submenu: Firewall
-Version: 5.2.0.4-1
+Version: 5.2.0.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +iptables +kmod-ipt-hashlimit +kmod-ipt-raw +iptables-mod-hashlimit +shorewall-core +perl +perlbase-autoloader +perlbase-autouse +perlbase-dynaloader +perlbase-digest +perlbase-findbin +perlbase-getopt +perlbase-hash
 Conflicts: 
 Menu-Depends: 
@@ -43512,7 +43529,7 @@ Category: Network
 Repository: base
 Title: Shorewall Central Administration System
 Maintainer: Willem van den Akker <wvdakker@wilsoft.nl>
-Source: shorewall-5.2.0.4.tar.bz2
+Source: shorewall-5.2.0.5.tar.bz2
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -43533,7 +43550,7 @@ Source-Makefile: feeds/packages/net/shorewall-core/Makefile
 
 Package: shorewall-core
 Submenu: Firewall
-Version: 5.2.0.4-1
+Version: 5.2.0.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -43543,7 +43560,7 @@ Category: Network
 Repository: base
 Title: Shorewall Core
 Maintainer: Willem van den Akker <wvdakker@wilsoft.nl>
-Source: shorewall-core-5.2.0.4.tar.bz2
+Source: shorewall-core-5.2.0.5.tar.bz2
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -43559,7 +43576,7 @@ Source-Makefile: feeds/packages/net/shorewall-lite/Makefile
 
 Package: shorewall-lite
 Submenu: Firewall
-Version: 5.2.0.4-1
+Version: 5.2.0.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +iptables +shorewall-core
 Conflicts: 
 Menu-Depends: 
@@ -43569,7 +43586,7 @@ Category: Network
 Repository: base
 Title: Shorewall Lite
 Maintainer: Willem van den Akker <wvdakker@wilsoft.nl>
-Source: shorewall-lite-5.2.0.4.tar.bz2
+Source: shorewall-lite-5.2.0.5.tar.bz2
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -43591,7 +43608,7 @@ Source-Makefile: feeds/packages/net/shorewall6/Makefile
 
 Package: shorewall6
 Submenu: Firewall
-Version: 5.2.0.4-1
+Version: 5.2.0.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +ip6tables +kmod-ipt-hashlimit +kmod-ipt-raw6 +iptables-mod-hashlimit +shorewall-core +perl +perlbase-autoloader +perlbase-autouse +perlbase-dynaloader +perlbase-digest +perlbase-findbin +perlbase-getopt +perlbase-hash
 Conflicts: 
 Menu-Depends: 
@@ -43601,7 +43618,7 @@ Category: Network
 Repository: base
 Title: Shorewall6 Central Administration System
 Maintainer: Willem van den Akker <wvdakker@wilsoft.nl>
-Source: shorewall6-5.2.0.4.tar.bz2
+Source: shorewall6-5.2.0.5.tar.bz2
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -43622,7 +43639,7 @@ Source-Makefile: feeds/packages/net/shorewall6-lite/Makefile
 
 Package: shorewall6-lite
 Submenu: Firewall
-Version: 5.2.0.4-1
+Version: 5.2.0.5-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +ip6tables +shorewall-core
 Conflicts: 
 Menu-Depends: 
@@ -43632,7 +43649,7 @@ Category: Network
 Repository: base
 Title: Shorewall6 Lite
 Maintainer: Willem van den Akker <wvdakker@wilsoft.nl>
-Source: shorewall6-lite-5.2.0.4.tar.bz2
+Source: shorewall6-lite-5.2.0.5.tar.bz2
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -43721,12 +43738,12 @@ Xiongfei Guo <xfguo@credosemi.com>
 
 
 Source-Makefile: feeds/packages/net/snort/Makefile
-Build-Depends: librpc
+Build-Depends: libtirpc
 
 Package: snort
 Menu: 1
 Submenu: Firewall
-Version: 2.9.11.1-5
+Version: 2.9.11.1-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdaq +libdnet +libnghttp2 +libopenssl +libpcap +libpcre +libpthread +libuuid +zlib +SNORT_LZMA:liblzma
 Conflicts: 
 Menu-Depends: 
@@ -45964,7 +45981,7 @@ Build-Depends: +SYSREPO_BINDINGS:swig/host
 
 Package: libsysrepo
 Menu: 1
-Version: 0.7.4-2
+Version: 0.7.4-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libyang +libprotobuf-c +libev +libredblack +librt +SYSREPO_BINDINGS:libstdcpp +SYSREPO_PYTHON:python-base +SYSREPO_LUA:lua
 Conflicts: 
 Menu-Depends: 
@@ -45974,11 +45991,11 @@ Category: Utilities
 Repository: base
 Title: YANG-based data store library
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: sysrepo-0.7.4-724a62fa830df7fcb2736b1ec41b320abe5064d2.tar.xz
+Source: sysrepo-0.7.4.tar.gz
 License: ASL-2.0
 Type: ipkg
 Description: YANG-based data store library
-https://github.com/sysrepo/sysrepo.git
+https://codeload.github.com/sysrepo/sysrepo/tar.gz/v0.7.4?
 Mislav Novakovic <mislav.novakovic@sartura.hr>
 @@
 Config:
@@ -45986,7 +46003,7 @@ Config:
 @@
 
 Package: sysrepo
-Version: 0.7.4-2
+Version: 0.7.4-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
 Conflicts: 
 Menu-Depends: 
@@ -45996,16 +46013,16 @@ Category: Utilities
 Repository: base
 Title: YANG-based data store daemon and plugin
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: sysrepo-0.7.4-724a62fa830df7fcb2736b1ec41b320abe5064d2.tar.xz
+Source: sysrepo-0.7.4.tar.gz
 License: ASL-2.0
 Type: ipkg
 Description: Sysrepo is an YANG-based configuration and operational state data store for Unix/Linux applications.
-https://github.com/sysrepo/sysrepo.git
+https://codeload.github.com/sysrepo/sysrepo/tar.gz/v0.7.4?
 Mislav Novakovic <mislav.novakovic@sartura.hr>
 @@
 
 Package: sysrepoctl
-Version: 0.7.4-2
+Version: 0.7.4-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
 Conflicts: 
 Menu-Depends: 
@@ -46015,16 +46032,16 @@ Category: Utilities
 Repository: base
 Title: sysrepo cli tool
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: sysrepo-0.7.4-724a62fa830df7fcb2736b1ec41b320abe5064d2.tar.xz
+Source: sysrepo-0.7.4.tar.gz
 License: ASL-2.0
 Type: ipkg
 Description: sysrepo cli tool
-https://github.com/sysrepo/sysrepo.git
+https://codeload.github.com/sysrepo/sysrepo/tar.gz/v0.7.4?
 Mislav Novakovic <mislav.novakovic@sartura.hr>
 @@
 
 Package: sysrepocfg
-Version: 0.7.4-2
+Version: 0.7.4-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsysrepo
 Conflicts: 
 Menu-Depends: 
@@ -46034,11 +46051,11 @@ Category: Utilities
 Repository: base
 Title: sysrepo configuration tool
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: sysrepo-0.7.4-724a62fa830df7fcb2736b1ec41b320abe5064d2.tar.xz
+Source: sysrepo-0.7.4.tar.gz
 License: ASL-2.0
 Type: ipkg
 Description: sysrepo configuration tool
-https://github.com/sysrepo/sysrepo.git
+https://codeload.github.com/sysrepo/sysrepo/tar.gz/v0.7.4?
 Mislav Novakovic <mislav.novakovic@sartura.hr>
 @@
 
@@ -46259,7 +46276,7 @@ Alexandru Ardelean <ardeleanalex@gmail.com>
 Source-Makefile: feeds/packages/net/tgt/Makefile
 
 Package: tgt
-Version: 1.0.73-1
+Version: 1.0.73-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libaio @KERNEL_AIO
 Conflicts: 
 Menu-Depends: 
@@ -46269,7 +46286,7 @@ Category: Network
 Repository: base
 Title: userspace iSCSI target
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: tgt-1.0.73-013223dc886a03719ca02db52162056249d99448.tar.gz
+Source: tgt-1.0.73.tar.gz
 License: GPL-2.0
 Type: ipkg
 Description: Linux SCSI target framework (tgt) aims to simplify various SCSI target driver (iSCSI, Fibre Channel, SRP, etc) creation and maintenance.
@@ -46596,7 +46613,7 @@ Rosen Penev <rosenp@gmail.com>
 Source-Makefile: feeds/packages/net/travelmate/Makefile
 
 Package: travelmate
-Version: 1.2.1-1
+Version: 1.2.2-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iwinfo +jshn +jsonfilter +uclient-fetch
 Conflicts: 
 Menu-Depends: 
@@ -47118,7 +47135,7 @@ Source-Makefile: feeds/packages/net/unbound/Makefile
 
 Package: unbound
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -47140,7 +47157,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-anchor
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -47161,7 +47178,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound
 Conflicts: 
 Menu-Depends: 
@@ -47182,7 +47199,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control-setup
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound-control +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -47203,7 +47220,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-host
 Submenu: IP Addresses and Names
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -47223,7 +47240,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 @@
 
 Package: libunbound
-Version: 1.7.3-4
+Version: 1.7.3-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -47254,6 +47271,7 @@ Menu-Depends:
 Provides: 
 Section: net
 Category: Network
+Repository: base
 Title: USB-over-IP (common)
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
 Source: 
@@ -47272,6 +47290,7 @@ Menu-Depends:
 Provides: 
 Section: net
 Category: Network
+Repository: base
 Title: USB-over-IP (client)
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
 Source: 
@@ -47290,6 +47309,7 @@ Menu-Depends:
 Provides: 
 Section: net
 Category: Network
+Repository: base
 Title: USB-over-IP (server)
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
 Source: 
@@ -47598,7 +47618,7 @@ Source-Makefile: feeds/packages/net/wavemon/Makefile
 
 Package: wavemon
 Submenu: wireless
-Version: 0.8.2-1
+Version: 0.8.2-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libpthread +libnl-genl
 Conflicts: 
 Menu-Depends: 
@@ -47608,7 +47628,7 @@ Category: Network
 Repository: base
 Title: N-curses based wireless network devices monitor
 Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
-Source: wavemon-0.8.2.tar.xz
+Source: wavemon-0.8.2.tar.gz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -51579,7 +51599,7 @@ Source-Makefile: feeds/packages/utils/bluez/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: bluez-examples
-Version: 5.49-2
+Version: 5.50-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
 Conflicts: 
 Menu-Depends: 
@@ -51588,18 +51608,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Bluetooth python example apps
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: bluez-5.49.tar.xz
+Maintainer: 
+Source: bluez-5.50.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:   contains many examples apps for bluetooth, requiring python
 http://www.bluez.org/
-Nicolas Thill <nico@openwrt.org>
+
 @@
 
 Package: bluez-libs
-Version: 5.49-2
+Version: 5.50-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +kmod-bluetooth
 Conflicts: 
 Menu-Depends: 
@@ -51608,18 +51628,18 @@ Section: libs
 Category: Libraries
 Repository: base
 Title: Bluetooth library
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: bluez-5.49.tar.xz
+Maintainer: 
+Source: bluez-5.50.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Bluetooth library
 http://www.bluez.org/
-Nicolas Thill <nico@openwrt.org>
+
 @@
 
 Package: bluez-utils
-Version: 5.49-2
+Version: 5.50-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +libpthread +librt +glib2 +libncurses +libreadline +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full +dbus
 Conflicts: 
 Menu-Depends: 
@@ -51628,18 +51648,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Bluetooth utilities
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: bluez-5.49.tar.xz
+Maintainer: 
+Source: bluez-5.50.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Bluetooth utilities
 http://www.bluez.org/
-Nicolas Thill <nico@openwrt.org>
+
 @@
 
 Package: bluez-daemon
-Version: 5.49-2
+Version: 5.50-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +bluez-utils +dbus +libical +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -51648,14 +51668,14 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Bluetooth daemon
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: bluez-5.49.tar.xz
+Maintainer: 
+Source: bluez-5.50.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Bluetooth daemon
 http://www.bluez.org/
-Nicolas Thill <nico@openwrt.org>
+
 @@
 
 
@@ -55399,7 +55419,7 @@ Source-Makefile: feeds/packages/utils/cryptsetup/Makefile
 
 Package: cryptsetup
 Submenu: Encryption
-Version: 2.0.3-1
+Version: 2.0.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +libgcrypt
 Conflicts: 
 Menu-Depends: 
@@ -55410,19 +55430,19 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.0.3.tar.xz
+Source: cryptsetup-2.0.4.tar.xz
 License: GPL-2.0+ LGPL-2.1+
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
 Description: 	Cryptsetup-luks
 linked against libgcrypt
-http://code.google.com/p/cryptsetup/
+https://gitlab.com/cryptsetup/cryptsetup/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: cryptsetup-openssl
 Submenu: Encryption
-Version: 2.0.3-1
+Version: 2.0.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -55433,13 +55453,13 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup (with openssl support)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.0.3.tar.xz
+Source: cryptsetup-2.0.4.tar.xz
 License: GPL-2.0+ LGPL-2.1+
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
 Description: 	Cryptsetup-luks
 linked against openssl
-http://code.google.com/p/cryptsetup/
+https://gitlab.com/cryptsetup/cryptsetup/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
@@ -55558,7 +55578,7 @@ Bruno Randolf <br1@einfach.org>
 Source-Makefile: feeds/packages/utils/digitemp/Makefile
 
 Package: digitemp
-Version: 3.7.1-1
+Version: 3.7.1-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -55568,19 +55588,19 @@ Category: Utilities
 Repository: base
 Title: DigiTemp is a simple to use program for reading values from 1-wire devices. (serial version)
 Maintainer: Jasper Scholte <NightNL@outlook.com>
-Source: digitemp-3.7.1.tar.bz2
+Source: digitemp-3.7.1.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description: 	DigiTemp is a simple to use program for reading values from 1-wire devices.
 	Its main use is for reading temperature sensors, but it also reads counters,
 	and understands the 1-wire hubs with devices on different branches of the network.
 	This package is built without USB support.
-http://www.digitemp.com
+https://www.digitemp.com
 Jasper Scholte <NightNL@outlook.com>
 @@
 
 Package: digitemp-usb
-Version: 3.7.1-1
+Version: 3.7.1-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-compat
 Conflicts: 
 Menu-Depends: 
@@ -55590,14 +55610,14 @@ Category: Utilities
 Repository: base
 Title: DigiTemp is a simple to use program for reading values from 1-wire devices. (USB version)
 Maintainer: Jasper Scholte <NightNL@outlook.com>
-Source: digitemp-3.7.1.tar.bz2
+Source: digitemp-3.7.1.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description: 	DigiTemp is a simple to use program for reading values from 1-wire devices.
 	Its main use is for reading temperature sensors, but it also reads counters,
 	and understands the 1-wire hubs with devices on different branches of the network.
 	This package is built with USB support.
-http://www.digitemp.com
+https://www.digitemp.com
 Jasper Scholte <NightNL@outlook.com>
 @@
 
@@ -55876,7 +55896,7 @@ Source-Makefile: feeds/packages/utils/fio/Makefile
 
 Package: fio
 Submenu: Disc
-Version: 3.7-1
+Version: 3.8-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libaio +zlib
 Conflicts: 
 Menu-Depends: 
@@ -55886,7 +55906,7 @@ Category: Utilities
 Repository: base
 Title: I/O testing and benchmarking tool
 Maintainer: Dragan Stancevic <ds@codeminutia.com>
-Source: fio-3.7.tar.bz2
+Source: fio-3.8.tar.bz2
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -56044,7 +56064,7 @@ Source-Makefile: feeds/packages/utils/gammu/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: gammu
-Version: 1.38.4-2
+Version: 1.39.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libcurl +glib2 +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +PACKAGE_python:python +PACKAGE_bluez-libs:bluez-libs +PACKAGE_libmariadb:libmariadb +PACKAGE_unixodbc:unixodbc +PACKAGE_libpq:libpq +PACKAGE_libusb-1.0:libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -56054,10 +56074,10 @@ Category: Utilities
 Repository: base
 Title: Cell phone/modem SMS and control tool
 Maintainer: Vitaly Protsko <villy@sft.ru>
-Source: gammu-1.38.4.tar.xz
+Source: gammu-1.39.0.tar.xz
 Type: ipkg
 Description: Cell phone/modem SMS and control tool
-http://dl.cihar.com/gammu/releases/
+https://wammu.eu/gammu/
 Vitaly Protsko <villy@sft.ru>
 @@
 
@@ -56383,7 +56403,7 @@ Source-Makefile: feeds/packages/utils/gzip/Makefile
 
 Package: gzip
 Submenu: Compression
-Version: 1.7-1
+Version: 1.9-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -56393,7 +56413,7 @@ Category: Utilities
 Repository: base
 Title: gzip (GNU zip) is a compression utility.
 Maintainer: Christian Beier <dontmind@freeshell.org>
-Source: gzip-1.7.tar.gz
+Source: gzip-1.9.tar.xz
 License: GPL-3.0+
 Type: ipkg
 Description: 	gzip (GNU zip) is a compression utility designed to be a replacement for compress.
@@ -56840,7 +56860,7 @@ Source-Makefile: feeds/packages/utils/joe/Makefile
 
 Package: joe
 Submenu: Editors
-Version: 4.4-1
+Version: 4.6-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -56850,11 +56870,11 @@ Category: Utilities
 Repository: base
 Title: JOE - Joes own editor
 Maintainer: Vitaly Protsko <villy@sft.ru>
-Source: joe-4.4.tar.gz
+Source: joe-4.6.tar.gz
 Type: ipkg
 Description: Joe is world-famous Wordstar like text editor, that also features
 Emacs and Pico emulation
-http://sourceforge.net/projects/joe-editor/
+https://sourceforge.net/projects/joe-editor/
 Vitaly Protsko <villy@sft.ru>
 @@
 
@@ -57224,7 +57244,7 @@ Jo-Philipp Wich <jo@mein.io>
 Source-Makefile: feeds/packages/utils/logrotate/Makefile
 
 Package: logrotate
-Version: 3.10.0-2
+Version: 3.14.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt
 Conflicts: 
 Menu-Depends: 
@@ -57234,7 +57254,7 @@ Category: Utilities
 Repository: base
 Title: rotates, compresses, and mails system logs
 Maintainer: Christian Beier <cb@shoutrlabs.com>
-Source: logrotate-3.10.0.tar.gz
+Source: logrotate-3.14.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:  logrotate is designed to ease administration of systems that generate large
@@ -57275,8 +57295,8 @@ Hsing-Wang Liao <kuoruan@gmail.com>
 Source-Makefile: feeds/packages/utils/lsof/Makefile
 
 Package: lsof
-Version: 4.89-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librpc
+Version: 4.91-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libtirpc
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -57285,7 +57305,7 @@ Category: Utilities
 Repository: base
 Title: LiSt Open Files - a diagnostic tool
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
-Source: lsof_4.89.tar.bz2
+Source: lsof_4.91.tar.bz2
 License: Unique
 LicenseFiles: 00README
 Type: ipkg
@@ -59306,12 +59326,12 @@ Daniel Golle <daniel@makrotopia.org>
 
 
 Source-Makefile: feeds/packages/utils/mc/Makefile
-Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Build-Depends: MC_VFS:libtirpc !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: mc
 Menu: 1
-Version: 4.8.21-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libncurses +libmount +MC_VFS:libssh2 +librpc +BUILD_NLS:libiconv-full
+Version: 4.8.21-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libncurses +libmount +MC_VFS:libssh2 +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -63076,7 +63096,7 @@ Jo-Philipp Wich <jo@mein.io>
 Package: owshell
 Submenu: Filesystem
 Version: 3.2p2-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow +USE_UCLIBC:librpc
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libow
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -64044,7 +64064,7 @@ Source-Makefile: feeds/packages/utils/qemu/Makefile
 
 Package: virtio-console-helper
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_armvirt||TARGET_arm64||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
@@ -64054,7 +64074,7 @@ Category: Utilities
 Repository: base
 Title: Helper script for vportNpn virtio-console devices
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -64064,7 +64084,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-ga
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +virtio-console-helper +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_armvirt||TARGET_arm64||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
@@ -64074,7 +64094,7 @@ Category: Utilities
 Repository: base
 Title: QEMU Guest Agent
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -64085,7 +64105,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-bridge-helper
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi)
 Conflicts: 
 Menu-Depends: 
@@ -64095,7 +64115,7 @@ Category: Utilities
 Repository: base
 Title: QEMU bridge helper
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -64106,7 +64126,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-img
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi)
 Conflicts: 
 Menu-Depends: 
@@ -64116,7 +64136,7 @@ Category: Utilities
 Repository: base
 Title: QEMU Image utility
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -64127,7 +64147,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-nbd
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi) +kmod-nbd
 Conflicts: 
 Menu-Depends: 
@@ -64137,7 +64157,7 @@ Category: Utilities
 Repository: base
 Title: QEMU Network Block Device Utility
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -64148,7 +64168,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-blobs
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi)
 Conflicts: 
 Menu-Depends: 
@@ -64158,7 +64178,7 @@ Category: Utilities
 Repository: base
 Title: QEMU blobs of BIOS, VGA BIOS and keymaps
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -64169,7 +64189,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-x86_64-softmmu
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi) +libncurses +libfdt +pixman +qemu-blobs
 Conflicts: 
 Menu-Depends: 
@@ -64179,7 +64199,7 @@ Category: Utilities
 Repository: base
 Title: QEMU target x86_64-softmmu
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -64190,7 +64210,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-arm-softmmu
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi) +libncurses +libfdt +pixman +qemu-blobs
 Conflicts: 
 Menu-Depends: 
@@ -64200,39 +64220,13 @@ Category: Utilities
 Repository: base
 Title: QEMU target arm-softmmu
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
 Description:     This package contains the QEMU target arm-softmmu
 http://www.qemu.org
 Yousong Zhou <yszhou4tech@gmail.com>
-@@
-
-
-Source-Makefile: feeds/packages/utils/qemu-userspace/Makefile
-Build-Depends/host: glib2/host
-Build-Types: host
-
-Package: qemu-userspace
-Submenu: Virtualization
-Version: 3.0.0-rc2-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +zlib +libpthread @BROKEN
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: qemu 3.0.0-rc2 (Linux/BSD User space emulation)
-Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: qemu-3.0.0-rc2.tar.xz
-License: GPL-2.0
-Type: ipkg
-Description: 	QEMU is a generic and open source machine emulator and virtualizer. 
-	(This package version is for user space emulation only, not full system.)
-https://www.qemu.org
-Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 
@@ -64505,7 +64499,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Source-Makefile: feeds/packages/utils/rtl-ais/Makefile
 
 Package: rtl-ais
-Version: 20151213-b805be0164475e58a73b57763a8cbbf8a2bd0ded
+Version: 0.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librtlsdr
 Conflicts: 
 Menu-Depends: 
@@ -64515,7 +64509,7 @@ Category: Utilities
 Repository: base
 Title: rtl-sdr AIS dual channel tuner
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: rtl-ais-20151213-b805be0164475e58a73b57763a8cbbf8a2bd0ded.tar.gz
+Source: rtl-ais-0.3.tar.gz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
@@ -64529,7 +64523,7 @@ Nuno Goncalves <nunojpg@gmail.com>
 Source-Makefile: feeds/packages/utils/rtl-sdr/Makefile
 
 Package: rtl-sdr
-Version: 0.5.3-20150608--3
+Version: 0.5.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librt +libpthread +librtlsdr
 Conflicts: 
 Menu-Depends: 
@@ -64539,7 +64533,7 @@ Category: Utilities
 Repository: base
 Title: Software Defined Radio with Realtek RTL2832U
 Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
-Source: rtl-sdr-0.5.3-20150608-.tar.gz
+Source: rtl-sdr-0.5.4.tar.gz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -64552,7 +64546,7 @@ Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
 @@
 
 Package: librtlsdr
-Version: 0.5.3-20150608--3
+Version: 0.5.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -64562,7 +64556,7 @@ Category: Libraries
 Repository: base
 Title: Software Defined Radio with Realtek RTL2832U shared library library
 Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
-Source: rtl-sdr-0.5.3-20150608-.tar.gz
+Source: rtl-sdr-0.5.4.tar.gz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -64578,7 +64572,7 @@ Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
 Source-Makefile: feeds/packages/utils/rtl_433/Makefile
 
 Package: rtl_433
-Version: 6531ea4
+Version: 18.05-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +librtlsdr +rtl-sdr +libtool-bin
 Conflicts: 
 Menu-Depends: 
@@ -64588,7 +64582,7 @@ Category: Utilities
 Repository: base
 Title: Realtek RTL2832 based 433.92MHz generic data receiver
 Maintainer: Jasper Scholte <NightNL@outlook.com>
-Source: rtl_433-6531ea4.tar.gz
+Source: rtl_433-18.05.tar.gz
 License: GPLv2
 LicenseFiles: COPYING
 Type: ipkg
@@ -67967,7 +67961,7 @@ Source-Makefile: feeds/packages/utils/stoken/Makefile
 Package: stoken
 Menu: 1
 Submenu: Encryption
-Version: 0.8-2
+Version: 0.92-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libstoken
 Conflicts: 
 Menu-Depends: 
@@ -67977,16 +67971,16 @@ Category: Utilities
 Repository: base
 Title: tokencode generator compatible with RSA SecurID 128-bit (AES)
 Maintainer: Florian Fainelli <florian@openwrt.org>
-Source: stoken-0.8-c4d79ffbf5053e44be4b64da22b1b7fb6a51daf2.tar.gz
+Source: stoken-0.92.tar.gz
 License: LGPL-2.1
 Type: ipkg
 Description:   stoken is a tokencode generator compatible with RSA SecurID 128-bit (AES). This package contains the cli
-http://sourceforge.net/p/stoken/
+https://sourceforge.net/p/stoken/wiki/Home/
 Florian Fainelli <florian@openwrt.org>
 @@
 
 Package: libstoken
-Version: 0.8-2
+Version: 0.92-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libxml2 +libnettle
 Conflicts: 
 Menu-Depends: 
@@ -67996,11 +67990,11 @@ Category: Libraries
 Repository: base
 Title: tokencode generator compatible with RSA SecurID 128-bit (AES)
 Maintainer: Florian Fainelli <florian@openwrt.org>
-Source: stoken-0.8-c4d79ffbf5053e44be4b64da22b1b7fb6a51daf2.tar.gz
+Source: stoken-0.92.tar.gz
 License: LGPL-2.1
 Type: ipkg
 Description: tokencode generator compatible with RSA SecurID 128-bit (AES)
-http://sourceforge.net/p/stoken/
+https://sourceforge.net/p/stoken/wiki/Home/
 Florian Fainelli <florian@openwrt.org>
 @@
 

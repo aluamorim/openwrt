@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/qemu/Makefile
 
 Package: virtio-console-helper
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_armvirt||TARGET_arm64||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Helper script for vportNpn virtio-console devices
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -22,7 +22,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-ga
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +virtio-console-helper +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_armvirt||TARGET_arm64||TARGET_malta)
 Conflicts: 
 Menu-Depends: 
@@ -32,7 +32,7 @@ Category: Utilities
 Repository: base
 Title: QEMU Guest Agent
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -43,7 +43,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-bridge-helper
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi)
 Conflicts: 
 Menu-Depends: 
@@ -53,7 +53,7 @@ Category: Utilities
 Repository: base
 Title: QEMU bridge helper
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -64,7 +64,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-img
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi)
 Conflicts: 
 Menu-Depends: 
@@ -74,7 +74,7 @@ Category: Utilities
 Repository: base
 Title: QEMU Image utility
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -85,7 +85,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-nbd
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi) +kmod-nbd
 Conflicts: 
 Menu-Depends: 
@@ -95,7 +95,7 @@ Category: Utilities
 Repository: base
 Title: QEMU Network Block Device Utility
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -106,7 +106,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-blobs
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_x86_64||TARGET_sunxi)
 Conflicts: 
 Menu-Depends: 
@@ -116,7 +116,7 @@ Category: Utilities
 Repository: base
 Title: QEMU blobs of BIOS, VGA BIOS and keymaps
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -127,7 +127,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-x86_64-softmmu
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi) +libncurses +libfdt +pixman +qemu-blobs
 Conflicts: 
 Menu-Depends: 
@@ -137,7 +137,7 @@ Category: Utilities
 Repository: base
 Title: QEMU target x86_64-softmmu
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg
@@ -148,7 +148,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: qemu-arm-softmmu
 Submenu: Virtualization
-Version: 2.11.1-1
+Version: 2.12.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +libpthread +zlib +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp @(TARGET_x86_64||TARGET_sunxi) +libncurses +libfdt +pixman +qemu-blobs
 Conflicts: 
 Menu-Depends: 
@@ -158,7 +158,7 @@ Category: Utilities
 Repository: base
 Title: QEMU target arm-softmmu
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: qemu-2.11.1.tar.bz2
+Source: qemu-2.12.1.tar.bz2
 License: GPL-2.0
 LicenseFiles: LICENSE tcg/LICENSE
 Type: ipkg

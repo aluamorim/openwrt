@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/logrotate/Makefile
 
 Package: logrotate
-Version: 3.10.0-2
+Version: 3.14.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: rotates, compresses, and mails system logs
 Maintainer: Christian Beier <cb@shoutrlabs.com>
-Source: logrotate-3.10.0.tar.gz
+Source: logrotate-3.14.0.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:  logrotate is designed to ease administration of systems that generate large

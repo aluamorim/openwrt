@@ -215,6 +215,46 @@ Description:     Translation for luci-app-advanced-reboot - Svenska (Swedish)
 Stan Grishin <stangri@melmac.net>
 @@
 
+Package: luci-i18n-advanced-reboot-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x-33
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-advanced-reboot - zh-cn translation
+Maintainer: Stan Grishin <stangri@melmac.net>
+Source: 
+License: GPL-3.0+
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-advanced-reboot - 中文 (Chinese)
+Stan Grishin <stangri@melmac.net>
+@@
+
+Package: luci-i18n-advanced-reboot-zh-tw
+Default: LUCI_LANG_zh-tw||(ALL&&m)
+Version: x-33
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-advanced-reboot
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-advanced-reboot - zh-tw translation
+Maintainer: Stan Grishin <stangri@melmac.net>
+Source: 
+License: GPL-3.0+
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-advanced-reboot - 臺灣華語 (Taiwanese)
+Stan Grishin <stangri@melmac.net>
+@@
+
 
 Source-Makefile: feeds/luci/applications/luci-app-ahcp/Makefile
 Build-Depends: lua/host luci-base/host 

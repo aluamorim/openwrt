@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/ntripcaster/Makefile
 
 Package: ntripcaster
 Submenu: NTRIP
-Version: 0.1.5-03878920195cf854b38a1ea424f1cae57353fa87
+Version: 0.1.5-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -12,11 +12,11 @@ Category: Network
 Repository: base
 Title: Standard Ntrip Broadcaster
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
-Source: ntripcaster-0.1.5-03878920195cf854b38a1ea424f1cae57353fa87.tar.gz
+Source: ntripcaster-0.1.5.tar.gz
 License: GPL-2.0+
 Type: ipkg
 Description:   BKG Standard Ntrip Broadcaster
-http://igs.bkg.bund.de/ntrip/download
+https://igs.bkg.bund.de/ntrip
 Nuno Goncalves <nunojpg@gmail.com>
 @@
 

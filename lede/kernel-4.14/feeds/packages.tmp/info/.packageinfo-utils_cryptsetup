@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/cryptsetup/Makefile
 
 Package: cryptsetup
 Submenu: Encryption
-Version: 2.0.3-1
+Version: 2.0.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +libgcrypt
 Conflicts: 
 Menu-Depends: 
@@ -13,19 +13,19 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.0.3.tar.xz
+Source: cryptsetup-2.0.4.tar.xz
 License: GPL-2.0+ LGPL-2.1+
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
 Description: 	Cryptsetup-luks
 linked against libgcrypt
-http://code.google.com/p/cryptsetup/
+https://gitlab.com/cryptsetup/cryptsetup/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: cryptsetup-openssl
 Submenu: Encryption
-Version: 2.0.3-1
+Version: 2.0.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -36,13 +36,13 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup (with openssl support)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.0.3.tar.xz
+Source: cryptsetup-2.0.4.tar.xz
 License: GPL-2.0+ LGPL-2.1+
 LicenseFiles: COPYING COPYING.LGPL
 Type: ipkg
 Description: 	Cryptsetup-luks
 linked against openssl
-http://code.google.com/p/cryptsetup/
+https://gitlab.com/cryptsetup/cryptsetup/
 Daniel Golle <daniel@makrotopia.org>
 @@
 

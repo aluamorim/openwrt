@@ -9,6 +9,7 @@ Menu-Depends:
 Provides: 
 Section: net
 Category: Network
+Repository: base
 Title: USB-over-IP (common)
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
 Source: 
@@ -27,6 +28,7 @@ Menu-Depends:
 Provides: 
 Section: net
 Category: Network
+Repository: base
 Title: USB-over-IP (client)
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
 Source: 
@@ -45,6 +47,7 @@ Menu-Depends:
 Provides: 
 Section: net
 Category: Network
+Repository: base
 Title: USB-over-IP (server)
 Maintainer: Nuno Goncalves <nunojpg@gmail.com>
 Source: 

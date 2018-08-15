@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/intltool/Makefile
 Build-Types: host
 
 Package: intltool
-Version: 0.40.6-3
+Version: 0.51.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -12,12 +12,12 @@ Category: Libraries
 Repository: base
 Title: set of tools to centralize translation using GNU gettext
 Maintainer: Ted Hess <thess@kitschensync.net>
-Source: intltool-0.40.6.tar.bz2
+Source: intltool-0.51.0.tar.gz
 Type: ipkg
 Build-Only: 1
 Description:   intltool is a set of tools to centralize translation of many different
   file formats using GNU gettext-compatible PO files.
-http://www.freedesktop.org/wiki/Software/intltool
+https://www.freedesktop.org/wiki/Software/intltool
 Ted Hess <thess@kitschensync.net>
 @@
 

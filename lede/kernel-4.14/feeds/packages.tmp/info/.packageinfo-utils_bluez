@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/bluez/Makefile
 Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
 
 Package: bluez-examples
-Version: 5.49-2
+Version: 5.50-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
 Conflicts: 
 Menu-Depends: 
@@ -11,18 +11,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Bluetooth python example apps
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: bluez-5.49.tar.xz
+Maintainer: 
+Source: bluez-5.50.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description:   contains many examples apps for bluetooth, requiring python
 http://www.bluez.org/
-Nicolas Thill <nico@openwrt.org>
+
 @@
 
 Package: bluez-libs
-Version: 5.49-2
+Version: 5.50-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +kmod-bluetooth
 Conflicts: 
 Menu-Depends: 
@@ -31,18 +31,18 @@ Section: libs
 Category: Libraries
 Repository: base
 Title: Bluetooth library
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: bluez-5.49.tar.xz
+Maintainer: 
+Source: bluez-5.50.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Bluetooth library
 http://www.bluez.org/
-Nicolas Thill <nico@openwrt.org>
+
 @@
 
 Package: bluez-utils
-Version: 5.49-2
+Version: 5.50-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +libpthread +librt +glib2 +libncurses +libreadline +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full +dbus
 Conflicts: 
 Menu-Depends: 
@@ -51,18 +51,18 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Bluetooth utilities
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: bluez-5.49.tar.xz
+Maintainer: 
+Source: bluez-5.50.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Bluetooth utilities
 http://www.bluez.org/
-Nicolas Thill <nico@openwrt.org>
+
 @@
 
 Package: bluez-daemon
-Version: 5.49-2
+Version: 5.50-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +bluez-libs +bluez-utils +dbus +libical +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -71,14 +71,14 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Bluetooth daemon
-Maintainer: Nicolas Thill <nico@openwrt.org>
-Source: bluez-5.49.tar.xz
+Maintainer: 
+Source: bluez-5.50.tar.xz
 License: GPL-2.0+
 LicenseFiles: COPYING
 Type: ipkg
 Description: Bluetooth daemon
 http://www.bluez.org/
-Nicolas Thill <nico@openwrt.org>
+
 @@
 
 
