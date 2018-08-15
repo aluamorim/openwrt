@@ -4,10 +4,10 @@ Depends: libc, kmod-sound-core, libpthread, librt
 License: LGPLv2.1 GPLv2
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 309542
+Installed-Size: 309548
 Filename: alsa-lib_1.1.6-1_mipsel_24kc.ipk
-Size: 307695
-SHA256sum: f4d4150d40a05b011d864a4a36af93a006870b0725ed2cadc7dc9e23cdb15e25
+Size: 307739
+SHA256sum: a5dec3f443c2bf06c11ac0df507317fc7fad988cb481c37c7707e9fad25329b3
 Description:  This is the library package for alsa, needed by some userspace programs.
  You must have enabled the ALSA support in the kernel.
 
@@ -16,10 +16,10 @@ Version: 1.1.6-2
 Depends: libc, alsa-lib, libncursesw, libpthread
 Section: sound
 Architecture: mipsel_24kc
-Installed-Size: 114409
+Installed-Size: 114399
 Filename: alsa-utils_1.1.6-2_mipsel_24kc.ipk
-Size: 113856
-SHA256sum: 521f9aa303755bf4b3fdf0f09fe81ecb4d33d146f563d30e5399ec54691180bc
+Size: 113004
+SHA256sum: 5200dfb74d446c0c4272800ff78fbe80fee40db0869f321330537c924d7a3ca1
 Description:  ALSA (Advanced Linux Sound Architecture) utilities
 
 Package: libcap
@@ -28,10 +28,10 @@ Depends: libc
 License: GPL-2.0
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 5774
+Installed-Size: 5776
 Filename: libcap_2.25-2_mipsel_24kc.ipk
-Size: 6486
-SHA256sum: 31e23c00afdfceafd57591532afe4d0ed6dabcffeb9d841790645ca7e2d1db37
+Size: 6490
+SHA256sum: f56f7664beaaf92bb26b65a731113219c38cdb47faaa243b9fa6d4d01770ed20
 Description:  Linux capabilities library
 
 Package: libjpeg
@@ -40,10 +40,10 @@ Depends: libc
 License: IJG
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 90086
+Installed-Size: 90088
 Filename: libjpeg_9a-1_mipsel_24kc.ipk
-Size: 90951
-SHA256sum: e522ca9a4a17c73d19da159820d141793061e9aa2b04dc4649fced746ba5c3be
+Size: 90950
+SHA256sum: 93a131d2f4af7ebb21e5bf0bff22eb465e529a4fb3f6b9d43203f9384c6f4069
 Description:  The Independent JPEG Group's JPEG runtime library
 
 Package: libopus
@@ -52,10 +52,10 @@ Depends: libc
 License: BSD-3-Clause
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 154917
+Installed-Size: 154916
 Filename: libopus_1.2.1-1_mipsel_24kc.ipk
 Size: 155853
-SHA256sum: 797bd33437213a4a479344a24126b3571c556e346a91df222f3e4dc1e55c9e6c
+SHA256sum: a505481baa403a847eb5415299354918f410ce96fa8bbe2cb6719910938a9252
 Description:  Opus is a totally open, royalty-free, highly versatile audio codec. Opus is
  unmatched for interactive speech and music transmission over the Internet, but
  is also intended for storage and streaming applications.
@@ -68,8 +68,8 @@ Section: libs
 Architecture: mipsel_24kc
 Installed-Size: 160203
 Filename: libsndfile_1.0.28-1_mipsel_24kc.ipk
-Size: 159434
-SHA256sum: 56659cef51ab9929e85d8c956455318ae6693c072c771c1de5f1fd16e2f4ac61
+Size: 159477
+SHA256sum: 227f9236da7a5cfd838c5756c3a10b1a0fcc2b8b7c54f86fb802e9dd68e99390
 Description:  libsndfile is a library of C routines for reading and writing files
  containing sampled audio data.
 
@@ -78,10 +78,10 @@ Version: 1.2.0-1
 Depends: libc
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 41348
+Installed-Size: 41346
 Filename: libspeex_1.2.0-1_mipsel_24kc.ipk
-Size: 42373
-SHA256sum: 2abcd5b1004dba2de71a4b5d30a05fd3c01ed0fe9fd4d3d864e7e0411164261e
+Size: 42370
+SHA256sum: cbbd3abd7616fa28940811e422fa4ff1760a4ffcfd1cec8804ee6e44ff2dd751
 Description:  Open source patent-free speech compression codec library.
  Speex is an Open Source/Free Software patent-free audio compression
  format designed for speech. The Speex Project aims to lower the
@@ -97,10 +97,10 @@ Version: 1.2rc3-1
 Depends: libc
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 32661
+Installed-Size: 32660
 Filename: libspeexdsp_1.2rc3-1_mipsel_24kc.ipk
-Size: 33710
-SHA256sum: f4acec29d0a5264e2e0eea484d314169843319f9e5d433f5d24120097360837c
+Size: 33705
+SHA256sum: 0cdfd99556dc29f3ac4d956cd493cb555131befa7a8ce1bc1609062630109f14
 Description:  Open source patent-free speech compression codec library.
  Speex is an Open Source/Free Software patent-free audio compression
  format designed for speech. The Speex Project aims to lower the
@@ -117,10 +117,10 @@ Depends: libc, zlib, libjpeg
 License: BSD
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 125610
+Installed-Size: 125613
 Filename: libtiff_4.0.9-3_mipsel_24kc.ipk
-Size: 125860
-SHA256sum: f5b000c8bba21230ab46822fc805348cbe57043687656372e1b8879a6f9acdfe
+Size: 125851
+SHA256sum: 7dfa555d8ebdc490a187cfc033547e06e18b0a466fd48765a5efa332a1aed128
 Description:  TIFF library
 
 Package: libv4l
@@ -129,10 +129,10 @@ Depends: libc, libpthread, librt
 License: GPL-2.0 LGPL-2.1
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 79087
+Installed-Size: 79089
 Filename: libv4l_1.10.0-1_mipsel_24kc.ipk
-Size: 80048
-SHA256sum: 3f0259e5f967b94b04cb24a415c42b2009c4001157a7fcb906c4f14aa7a12be5
+Size: 80033
+SHA256sum: 1ba429038469896987fa460a8d2cd5420f9bb00451abc7106d7c59a5b91bf035
 Description:  libv4l is a collection of libraries which adds a thin abstraction layer on
  top of video4linux2 devices. The purpose of this (thin) layer is to make it
  easy for application writers to support a wide variety of devices without
@@ -152,10 +152,10 @@ Depends: libc
 License: BSD
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 10267
+Installed-Size: 10270
 Filename: libwrap_7.6-1_mipsel_24kc.ipk
-Size: 11002
-SHA256sum: 95010cecd67a06d5d781a44046085869d2f7b1fd14ca0f8107a1351fb7fc297f
+Size: 11001
+SHA256sum: 00ea3af53b80802b91d36130ef522620a1e90f45ab3ea0a0570ae38270e2ebd3
 Description:  Security wrapper library for TCP services
 
 Package: portaudio
@@ -164,10 +164,10 @@ Depends: libc, alsa-lib, libpthread, librt
 License: MIT
 Section: sound
 Architecture: mipsel_24kc
-Installed-Size: 45818
+Installed-Size: 45816
 Filename: portaudio_19_20140130-2_mipsel_24kc.ipk
 Size: 46872
-SHA256sum: 92bf8e374a11929e8fc8e5e4aa6aa1985263357ac20b038352aafb1c5f4730a5
+SHA256sum: 6401a463ffb79afd9b60d7c27a041763998a94ceb1a26e9f2ade92bd24f74d64
 Description:  PortAudio is a free, cross-platform, open-source, audio I/O library.  It lets
  you write simple audio programs in 'C' or C++ that will compile and run on many
  platforms including Windows, Macintosh OS X, and Unix (OSS/ALSA). It is
@@ -181,9 +181,9 @@ Provides: pulseaudio
 License: LGPL-2.1+
 Section: sound
 Architecture: mipsel_24kc
-Installed-Size: 932438
+Installed-Size: 932450
 Filename: pulseaudio-daemon_12.2-1_mipsel_24kc.ipk
-Size: 931239
-SHA256sum: c5dfe124a5e8b85db04fd0ca5a0abf95fac0abc7dad732db59c737d0916c6954
+Size: 931485
+SHA256sum: d69714a89f4244a7106b1d3b55b5c7216792f1d5b23580699f80e2f8d71fccaf
 Description:  PulseAudio (formerly Polypaudio) is a cross-platform, networked sound server.
 
