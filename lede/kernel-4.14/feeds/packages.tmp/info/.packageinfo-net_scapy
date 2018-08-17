@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/scapy/Makefile
 
 Package: scapy
-Version: 2.3.1-1
+Version: 2.4.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: Interactive packet manipulation tool and network scanner
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: scapy-2.3.1.zip
+Source: scapy-2.4.0.tar.gz
 License: GPL-2.0
 LicenseFiles: PKG-INFO
 Type: ipkg
@@ -19,7 +19,7 @@ Description:   Scapy is a powerful interactive packet manipulation program built
   of the Python interpreter. It can be used to forge or decode packets of
   a wide number of protocols, send them over the wire, capture them, match
   requests and replies, and much more.
-http://www.secdev.org/projects/scapy/
+https://scapy.net/
 W. Michael Petullo <mike@flyn.org>
 @@
 

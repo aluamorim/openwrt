@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-gnupg/Makefile
 
 Package: python-gnupg
 Submenu: Python
-Version: 0.4.1-1
+Version: 0.4.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gnupg +PACKAGE_python-gnupg:python-light
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Languages
 Repository: base
 Title: python-pyodbc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: python-gnupg-0.4.1.tar.gz
+Source: python-gnupg-0.4.3.tar.gz
 License: GPL-3.0+
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26,13 +26,13 @@ and sanitised, and therefore this module should be safe to use in
 networked applications requiring direct user input. It is intended for
 use on Windows, MacOS X, BSD, or Linux, with Python 2.6, Python 2.7,
 Python 3.3, Python 3.4, or PyPy.
-https://github.com/isislovecruft/python-gnupg
+https://gnupg.readthedocs.io/en/latest/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: python3-gnupg
 Submenu: Python
-Version: 0.4.1-1
+Version: 0.4.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gnupg +PACKAGE_python3-gnupg:python3-light
 Conflicts: 
 Menu-Depends: 
@@ -43,7 +43,7 @@ Category: Languages
 Repository: base
 Title: python3-gnupg
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: python-gnupg-0.4.1.tar.gz
+Source: python-gnupg-0.4.3.tar.gz
 License: GPL-3.0+
 LicenseFiles: LICENSE
 Type: ipkg
@@ -58,7 +58,7 @@ use on Windows, MacOS X, BSD, or Linux, with Python 2.6, Python 2.7,
 Python 3.3, Python 3.4, or PyPy.
 
 (Variant for Python3)
-https://github.com/isislovecruft/python-gnupg
+https://gnupg.readthedocs.io/en/latest/
 Daniel Golle <daniel@makrotopia.org>
 @@
 

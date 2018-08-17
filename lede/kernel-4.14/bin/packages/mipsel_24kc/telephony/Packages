@@ -4,10 +4,10 @@ Depends: libc, baresip, alsa-lib
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 3860
+Installed-Size: 3861
 Filename: baresip-mod-alsa_0.5.9-1_mipsel_24kc.ipk
-Size: 4602
-SHA256sum: 694bbf9af498095b01224120ca231bdac53c4ccdf1b26d3479f9ced57e3aa8ed
+Size: 4603
+SHA256sum: 2418083ce0cd77eff522bcdb696958f4395ed3ff13559271c41dda18fdb9aa8c
 Description:  ALSA audio driver
 
 Package: baresip-mod-aubridge
@@ -16,10 +16,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2989
+Installed-Size: 2988
 Filename: baresip-mod-aubridge_0.5.9-1_mipsel_24kc.ipk
-Size: 3734
-SHA256sum: 6affff650f0c50c83262cce49b93ea3b722cb0e0658aafb31ba8655c358619ef
+Size: 3727
+SHA256sum: 7c8ff0e06e91886cd9c11f84e4163603b0ce58e6601f9df38f8b4b140481d9a6
 Description:  Audio bridge module
 
 Package: baresip-mod-aufile
@@ -30,8 +30,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 2813
 Filename: baresip-mod-aufile_0.5.9-1_mipsel_24kc.ipk
-Size: 3572
-SHA256sum: 77307233330e472f664babbe202f243053784f274f86feb546230525ee449b25
+Size: 3570
+SHA256sum: aa4bc9f915243bf747daf2b5c05d6720b6b233a8fa2d769dc59ce1ee64fc74e5
 Description:  Audio module for using a WAV-file as audio input
 
 Package: baresip-mod-cons
@@ -40,10 +40,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2626
+Installed-Size: 2627
 Filename: baresip-mod-cons_0.5.9-1_mipsel_24kc.ipk
-Size: 3368
-SHA256sum: 595f050f944b8a3345bbe20739e1765723e45dd621baab0a188bf29c704df104
+Size: 3370
+SHA256sum: 089213f332cec7c21c1d663d4f10d869e105aad6e0f19e83e38fb494c7b3dc9c
 Description:  UDP/TCP console UI driver
 
 Package: baresip-mod-ctrl-tcp
@@ -52,10 +52,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 4801
+Installed-Size: 4802
 Filename: baresip-mod-ctrl-tcp_0.5.9-1_mipsel_24kc.ipk
-Size: 5543
-SHA256sum: 0d39044276aafaa43e75b8742093306006aa3b1b87cc07a6732907a8653b18dd
+Size: 5551
+SHA256sum: 2552b16bd549c0999ab0b93e3cbbfaa1b08f19d6bb9d30d1d8cced50439d8881
 Description:  TCP control interface
 
 Package: baresip-mod-debug-cmd
@@ -64,10 +64,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2805
+Installed-Size: 2809
 Filename: baresip-mod-debug-cmd_0.5.9-1_mipsel_24kc.ipk
-Size: 3545
-SHA256sum: f7b5bea892717f8e635a523f6dff2e4441b1cdb048faaa65fc48cb251b6c8354
+Size: 3560
+SHA256sum: e64329233e5ac8a997bffb84e52af9671bdb8f062199aae44081b2407cff718c
 Description:  Debug commands
 
 Package: baresip-mod-dtls-srtp
@@ -76,10 +76,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 5068
+Installed-Size: 5070
 Filename: baresip-mod-dtls-srtp_0.5.9-1_mipsel_24kc.ipk
-Size: 5833
-SHA256sum: ac9f4d1ff9692680448acff59644d40f51cc21a7f011ffe0d42221c24358846c
+Size: 5829
+SHA256sum: 5f89333ed6a2ec8acf62d0d638b8da5110b2f60acd991d8ef20f216b475e8acd
 Description:  DTLS-SRTP end-to-end encryption
 
 Package: baresip-mod-dtmfio
@@ -91,7 +91,7 @@ Architecture: mipsel_24kc
 Installed-Size: 1763
 Filename: baresip-mod-dtmfio_0.5.9-1_mipsel_24kc.ipk
 Size: 2528
-SHA256sum: a00b0a065de3290c3c80a13774898ca1f36da0078986dbf479250de2b929feac
+SHA256sum: 6e71fdc58581f912fd2a78b78c55102802da1fae6d7b408816da4e709b4eb734
 Description:  DTMF input/output
 
 Package: baresip-mod-evdev
@@ -100,10 +100,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 6503
+Installed-Size: 6502
 Filename: baresip-mod-evdev_0.5.9-1_mipsel_24kc.ipk
 Size: 7251
-SHA256sum: f001531c761c05b9d319dd8d75315e2af8f9120cfa88ca22a297f386b5e5db94
+SHA256sum: d437d63dd967362777cb57e9b39b4b2299b9ef29c24c606b284e6bd2ce82eb55
 Description:  Linux input driver
 
 Package: baresip-mod-fakevideo
@@ -112,10 +112,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2213
+Installed-Size: 2214
 Filename: baresip-mod-fakevideo_0.5.9-1_mipsel_24kc.ipk
-Size: 2992
-SHA256sum: 084ff82e5b2792c9c008067d505e6e8763b852b9c93c2dccf336d6af6f68ffac
+Size: 2994
+SHA256sum: 336fe3fcbec2b2513cbbb1cc3c85f801b76f9168893543e80088b2af378a6aef
 Description:  Fake video input/output driver
 
 Package: baresip-mod-g711
@@ -124,10 +124,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 1698
+Installed-Size: 1699
 Filename: baresip-mod-g711_0.5.9-1_mipsel_24kc.ipk
-Size: 2464
-SHA256sum: 538ee0e3c284d0ca6edc827c9113b3c46b1ca54abe6384e8e18ccc84ef13e11f
+Size: 2472
+SHA256sum: 2a4810e4bc434c26d2aff6fb8425edf7a5f01372e21c3b86c97e3dcd1560198a
 Description:  G.711 audio codec
 
 Package: baresip-mod-g722
@@ -138,8 +138,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 1666
 Filename: baresip-mod-g722_0.5.9-1_mipsel_24kc.ipk
-Size: 2435
-SHA256sum: 268ef931d316c59dc5f13234f90001ad0e10470b62a82042c63fa6fd67a15ef1
+Size: 2442
+SHA256sum: c1b861fc1b02aff9495ea2c6bb8f661207b1de706465d86c32d42dc4d5f88d7b
 Description:  G.722 audio codec
 
 Package: baresip-mod-g726
@@ -148,10 +148,10 @@ Depends: libc, baresip, libspandsp
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 1841
+Installed-Size: 1840
 Filename: baresip-mod-g726_0.5.9-1_mipsel_24kc.ipk
-Size: 2616
-SHA256sum: e988a64af855ae71d1e6f32d32df317ed10f64debe4146a3bd2a4941e607faa2
+Size: 2615
+SHA256sum: b6c2801c223c8269603ba83b679983b985c6461458ff88de237a50cfedceed94
 Description:  G.726 audio codec
 
 Package: baresip-mod-httpd
@@ -162,8 +162,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 2292
 Filename: baresip-mod-httpd_0.5.9-1_mipsel_24kc.ipk
-Size: 3072
-SHA256sum: 943e701313fb235969558eeaf3c78e2efca74dc6c0e0bd514c9f7a69b0c7ba78
+Size: 3071
+SHA256sum: 4180cd5bf13690308de4c4f8b5424f6f5d60b247cdecd81a086bd0f00fd71013
 Description:  HTTP webserver UI-module
 
 Package: baresip-mod-mwi
@@ -174,8 +174,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 2803
 Filename: baresip-mod-mwi_0.5.9-1_mipsel_24kc.ipk
-Size: 3546
-SHA256sum: 8261f23fde506805d593c92193f9d881a94f69ff3d56dfd3d892fb4a563d265f
+Size: 3547
+SHA256sum: 409c1677268653c24c5dcb7cd1692a0724148b064be290a27b566d320e754da8
 Description:  Message Waiting Indication
 
 Package: baresip-mod-natbd
@@ -184,10 +184,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 4552
+Installed-Size: 4550
 Filename: baresip-mod-natbd_0.5.9-1_mipsel_24kc.ipk
-Size: 5307
-SHA256sum: c72013f9473b3826c3aed7470b44e5b189eeee3a1c689c5540b262f37d0e7cc9
+Size: 5302
+SHA256sum: 6346275c7ce5dfca629a8f3e7749275742672f02ae34b612910491259823275c
 Description:  NAT Behavior Discovery Module
 
 Package: baresip-mod-natpmp
@@ -196,10 +196,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 4396
+Installed-Size: 4397
 Filename: baresip-mod-natpmp_0.5.9-1_mipsel_24kc.ipk
-Size: 5142
-SHA256sum: 448205e494fbf54cbdc6f09a76939c6e622382d91ba8ea096ab87f233c2069cd
+Size: 5145
+SHA256sum: daf32273790a94de803b0aadacab6e6bf82825b11bd099dff599bdff15aad5c1
 Description:  NAT Port Mapping Protocol module
 
 Package: baresip-mod-opus
@@ -210,8 +210,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 3668
 Filename: baresip-mod-opus_0.5.9-1_mipsel_24kc.ipk
-Size: 4414
-SHA256sum: 8aa8e1346dd525ca779864c0b84c2344511b7b8ba495f03560e8c3b620afe265
+Size: 4415
+SHA256sum: 1b7e4263ade031189c46bad8902dd713f93829a5214ac07f43a65b5dfa9abb14
 Description:  OPUS Interactive audio codec
 
 Package: baresip-mod-oss
@@ -222,8 +222,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 2503
 Filename: baresip-mod-oss_0.5.9-1_mipsel_24kc.ipk
-Size: 3233
-SHA256sum: 38c694182f5890b64af42c2e94d2df3fb682611bf50ce96a01cdd514532d2fef
+Size: 3234
+SHA256sum: 64a07f3e85aa766621c27d5a0a80124535150b29a6bcfeb20cc8908f9546500c
 Description:  OSS audio driver
 
 Package: baresip-mod-plc
@@ -232,10 +232,10 @@ Depends: libc, baresip, libspandsp
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 1708
+Installed-Size: 1704
 Filename: baresip-mod-plc_0.5.9-1_mipsel_24kc.ipk
-Size: 2495
-SHA256sum: bdd58cad6ef2327eabfadb9596a394b66c0bd54969f38eaf52d32ac4f1b208a2
+Size: 2485
+SHA256sum: 914d70cc825fcc61a935c644ba23e974cc8b76ec5391a356157eb75fe8fd1fd0
 Description:  Packet Loss Concealment
 
 Package: baresip-mod-portaudio
@@ -244,10 +244,10 @@ Depends: libc, baresip, portaudio
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2517
+Installed-Size: 2514
 Filename: baresip-mod-portaudio_0.5.9-1_mipsel_24kc.ipk
-Size: 3255
-SHA256sum: b95344fa25e98b50b4968c9ff75c3db0dbde16ed070769af6ce7355f5f0b85f6
+Size: 3257
+SHA256sum: e3881d90bc19eb9defa7771180f5ec68d6d1a22ca19f4e0d09c84eeac8818ac4
 Description:  Portaudio audio driver
 
 Package: baresip-mod-presence
@@ -256,10 +256,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 6744
+Installed-Size: 6741
 Filename: baresip-mod-presence_0.5.9-1_mipsel_24kc.ipk
-Size: 7515
-SHA256sum: 453440b3ad5016bd381cf40dc74cb97d641073b2e992dd8f1571bd56521530d7
+Size: 7509
+SHA256sum: 0d251b16aea0dc7700b0d57155e8b1213a65a4a38d5420ab8503851189565315
 Description:  Presence module
 
 Package: baresip-mod-pulse
@@ -270,8 +270,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 3045
 Filename: baresip-mod-pulse_0.5.9-1_mipsel_24kc.ipk
-Size: 3784
-SHA256sum: ae5deedbc3e9d744d53c6cfbbe145065cefed7f2e0ee5400dd0a697d98012fdb
+Size: 3796
+SHA256sum: bff0b55c0d91395d5899ac6c4cddffccd0f665e456513c21865b452b316b1439
 Description:  Pulseaudio audio driver
 
 Package: baresip-mod-selfview
@@ -280,10 +280,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2531
+Installed-Size: 2530
 Filename: baresip-mod-selfview_0.5.9-1_mipsel_24kc.ipk
-Size: 3265
-SHA256sum: b91f023ffb40a9a29aa345bace79e9c29fe6fd2d24f88157c11efa7abd797c28
+Size: 3267
+SHA256sum: 4639a20a2f6956f1fec78ab9ad3c90980eb86f47500f2d4848b1fd7376db20c3
 Description:  Video selfview module
 
 Package: baresip-mod-sndfile
@@ -292,10 +292,10 @@ Depends: libc, baresip, libsndfile
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2360
+Installed-Size: 2359
 Filename: baresip-mod-sndfile_0.5.9-1_mipsel_24kc.ipk
-Size: 3097
-SHA256sum: e42493bb683bfbc0059687ff7e8ad23f773cd4c288ececc6d0abf4d7e55ea104
+Size: 3101
+SHA256sum: e3d48edf84cc6162c9195876f0674b7265a79de22c633de4411a3cc14ef48d86
 Description:  Audio dumper using libsndfile
 
 Package: baresip-mod-speex-aec
@@ -304,10 +304,10 @@ Depends: libc, baresip, libspeex, libspeexdsp
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2165
+Installed-Size: 2163
 Filename: baresip-mod-speex-aec_0.5.9-1_mipsel_24kc.ipk
-Size: 2948
-SHA256sum: 75e6adb2e401f60bdf25942d6da31a58859b6a53dafea4aa701a798b92d54aa4
+Size: 2947
+SHA256sum: b0f954f6b1f03510de5a22b113005776f3d37a3b5d9d20021d3d64c22cbca47f
 Description:  Speex Acoustic Echo Canceller
 
 Package: baresip-mod-speex-pp
@@ -316,10 +316,10 @@ Depends: libc, baresip, libspeex, libspeexdsp
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 1915
+Installed-Size: 1912
 Filename: baresip-mod-speex-pp_0.5.9-1_mipsel_24kc.ipk
-Size: 2693
-SHA256sum: 98d1a708bcec34c08dbfb993d5df9212086b51462aa634febbc4cd6f1ad5440b
+Size: 2697
+SHA256sum: 210beedbaecaab838c9f291b969ef600b24343ae581900efcc289b4c51723a6d
 Description:  Speex preprocessor
 
 Package: baresip-mod-speex
@@ -328,10 +328,10 @@ Depends: libc, baresip, libspeex
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 3859
+Installed-Size: 3858
 Filename: baresip-mod-speex_0.5.9-1_mipsel_24kc.ipk
-Size: 4595
-SHA256sum: 51c0b50ad11d2fcda25471e0f650cb13e7d8f73dfce7d35358e9ee8b9076ff24
+Size: 4604
+SHA256sum: 7d933359c2ee3c4b8fcf5b75c2ce6c43df491406327d67eff4a88402306edd12
 Description:  Speex audio codec
 
 Package: baresip-mod-srtp
@@ -340,10 +340,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 3675
+Installed-Size: 3672
 Filename: baresip-mod-srtp_0.5.9-1_mipsel_24kc.ipk
-Size: 4408
-SHA256sum: d2f8c09dbea25a3d63b5a1c9bd794d3cc9db308d1a401166749ae29e1a71b69d
+Size: 4410
+SHA256sum: fef56315b12ba8122ef6a649e0b5526fa3964b73fe2d4794eac2f1b6c129113e
 Description:  Secure RTP module using libre
 
 Package: baresip-mod-stdio
@@ -352,10 +352,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2160
+Installed-Size: 2159
 Filename: baresip-mod-stdio_0.5.9-1_mipsel_24kc.ipk
-Size: 2931
-SHA256sum: ac302b4248cca8f3d82dc709f242af6620beb282ff604a758d74ebd3d229ecaf
+Size: 2937
+SHA256sum: bfb12369aff355966af5b54ee06ccad89c02b43bde11dde417a8c567d5abbd0a
 Description:  Standard input/output UI driver
 
 Package: baresip-mod-uuid
@@ -366,8 +366,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 1920
 Filename: baresip-mod-uuid_0.5.9-1_mipsel_24kc.ipk
-Size: 2693
-SHA256sum: b89e402d57747e21b354b095c996a5839505504db0562d76aa50ae00ea118d96
+Size: 2698
+SHA256sum: aa04820ebdd776b149d288162df603b4ff935a1ef02af1afab2f84400dbe711c
 Description:  UUID generator and loader
 
 Package: baresip-mod-v4l2-codec
@@ -376,10 +376,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 4177
+Installed-Size: 4176
 Filename: baresip-mod-v4l2-codec_0.5.9-1_mipsel_24kc.ipk
-Size: 4920
-SHA256sum: 6d049df722e3fc14bdc26953b0ff71b7265ecf22896958fa1b11d07f2c61f7b6
+Size: 4924
+SHA256sum: 2e38ae79b2f8b80f785c3f2f9dda3c6c778e770d66576e295ae96b3a0899e385
 Description:  Video4Linux2 video codec module
 
 Package: baresip-mod-v4l2
@@ -388,10 +388,10 @@ Depends: libc, baresip, libv4l
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 3828
+Installed-Size: 3827
 Filename: baresip-mod-v4l2_0.5.9-1_mipsel_24kc.ipk
-Size: 4568
-SHA256sum: 2f38c0a3eaac2778920ac33bb5ce37fd1d54be522f2fdaf224ed2d2373b60e24
+Size: 4566
+SHA256sum: 36536e9ce655ab454c55f254623b1b85171ab071f4542af93a3bf38799b4dcd2
 Description:  Video4Linux2 video source
 
 Package: baresip-mod-v4l
@@ -400,10 +400,10 @@ Depends: libc, baresip, libv4l
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2669
+Installed-Size: 2666
 Filename: baresip-mod-v4l_0.5.9-1_mipsel_24kc.ipk
-Size: 3401
-SHA256sum: 30fe6ee523bd4c2d71364881da9ed58156d6f534f40d452ba5a94230cac5674c
+Size: 3402
+SHA256sum: f9210cb32f6317d909e04d099291e6d6fc53e03eb43ec5ab3ab68fb90c8b8345
 Description:  Video4Linux video source
 
 Package: baresip-mod-vidbridge
@@ -412,10 +412,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2594
+Installed-Size: 2591
 Filename: baresip-mod-vidbridge_0.5.9-1_mipsel_24kc.ipk
-Size: 3329
-SHA256sum: a855266cc818463c444b4f9f4aa41f5917c0bdff274e0a68ac9f09cf5038b427
+Size: 3327
+SHA256sum: 369451d054026ebe60eafa934f3e7bab59213ffdddbc755973a470160ac621be
 Description:  Video bridge module
 
 Package: baresip-mod-vidloop
@@ -424,10 +424,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 5638
+Installed-Size: 5639
 Filename: baresip-mod-vidloop_0.5.9-1_mipsel_24kc.ipk
 Size: 6394
-SHA256sum: 30a0af0904b218b0bc42c2edf50a5c265c8566c497617f98be92e21871a0f13c
+SHA256sum: 4503dd36353c2f488185598605ca507c519d17e6a4c14658158e6d500f89ffed
 Description:  Video-loop test module
 
 Package: baresip-mod-vumeter
@@ -436,10 +436,10 @@ Depends: libc, baresip
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 2198
+Installed-Size: 2200
 Filename: baresip-mod-vumeter_0.5.9-1_mipsel_24kc.ipk
-Size: 2973
-SHA256sum: ed4403675cb778c7a18fc686a5bcd6e1ece9c785b64051d1b33cea50fe0b2470
+Size: 2976
+SHA256sum: 4631d56c31498f3f8e2137b8dc64764eb01b6f0e1f3b8b0a2c1d5442b6e34ee6
 Description:  Display audio levels in console
 
 Package: baresip
@@ -448,10 +448,10 @@ Depends: libc, libre, librem
 License: BSD-3-Clause
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 280259
+Installed-Size: 280269
 Filename: baresip_0.5.9-1_mipsel_24kc.ipk
-Size: 281218
-SHA256sum: ae1a8796c9da6d0abed88f5c6f800d3b50628751980a253840c83fad0fd2e3b0
+Size: 281216
+SHA256sum: ac2343557ee0a8b0771984e1d4eed2868ea3c25594af74ad0e190b556984051e
 Description:  Portable and modular SIP User-Agent with A/V support
 
 Package: libre
@@ -460,10 +460,10 @@ Depends: libc, libopenssl, zlib
 License: BSD-3-Clause
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 146972
+Installed-Size: 146968
 Filename: libre_0.5.8-1_mipsel_24kc.ipk
-Size: 147841
-SHA256sum: ce851d0a6c40972e2894e09e43e1e6f5e7dc9ad917526051af9ba66cc483179f
+Size: 147835
+SHA256sum: f0208254bbe43045c92f0a89abedb572e75c8f003ad5ee1058b656c79752afe0
 Description:  Generic library for real-time communications with async IO support
 
 Package: librem
@@ -472,10 +472,10 @@ Depends: libc, libre
 License: BSD-3-Clause
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 23016
+Installed-Size: 23017
 Filename: librem_0.5.3-1_mipsel_24kc.ipk
-Size: 23730
-SHA256sum: 211ce526f4e72087f40be0788f35817eacc69ea2b1a15b5c57e70d0c47938170
+Size: 23735
+SHA256sum: 9773080f6d4a18d44e78e4d51ea124bcbb38f2a99621afd60676b8140fe8c35a
 Description:  Audio and video processing media library
 
 Package: libspandsp
@@ -484,9 +484,9 @@ Depends: libc, libtiff
 License: LGPL-2.1 GPL-2.0
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 272858
+Installed-Size: 272854
 Filename: libspandsp_0.0.6-4_mipsel_24kc.ipk
-Size: 272432
-SHA256sum: 19a339de4c87818533d98b3cd7f6d77c37344e8f8ca75696bf325ac7dbbea545
+Size: 272402
+SHA256sum: 613d646dfe1089c9be8c0ec585fb2bf73e3e9b992009b77af4f90df24b37d9c1
 Description:  spandsp library
 

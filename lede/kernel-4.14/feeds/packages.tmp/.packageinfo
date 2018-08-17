@@ -10459,7 +10459,7 @@ Source-Makefile: feeds/packages/lang/python/python-gnupg/Makefile
 
 Package: python-gnupg
 Submenu: Python
-Version: 0.4.1-1
+Version: 0.4.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gnupg +PACKAGE_python-gnupg:python-light
 Conflicts: 
 Menu-Depends: 
@@ -10470,7 +10470,7 @@ Category: Languages
 Repository: base
 Title: python-pyodbc
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: python-gnupg-0.4.1.tar.gz
+Source: python-gnupg-0.4.3.tar.gz
 License: GPL-3.0+
 LicenseFiles: LICENSE
 Type: ipkg
@@ -10483,13 +10483,13 @@ and sanitised, and therefore this module should be safe to use in
 networked applications requiring direct user input. It is intended for
 use on Windows, MacOS X, BSD, or Linux, with Python 2.6, Python 2.7,
 Python 3.3, Python 3.4, or PyPy.
-https://github.com/isislovecruft/python-gnupg
+https://gnupg.readthedocs.io/en/latest/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: python3-gnupg
 Submenu: Python
-Version: 0.4.1-1
+Version: 0.4.3-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gnupg +PACKAGE_python3-gnupg:python3-light
 Conflicts: 
 Menu-Depends: 
@@ -10500,7 +10500,7 @@ Category: Languages
 Repository: base
 Title: python3-gnupg
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: python-gnupg-0.4.1.tar.gz
+Source: python-gnupg-0.4.3.tar.gz
 License: GPL-3.0+
 LicenseFiles: LICENSE
 Type: ipkg
@@ -10515,7 +10515,7 @@ use on Windows, MacOS X, BSD, or Linux, with Python 2.6, Python 2.7,
 Python 3.3, Python 3.4, or PyPy.
 
 (Variant for Python3)
-https://github.com/isislovecruft/python-gnupg
+https://gnupg.readthedocs.io/en/latest/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
@@ -13021,49 +13021,6 @@ https://www.python.org/
 Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
-Package: python3-distutils
-Submenu: Python
-Version: 3.7.0-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.7 distutils module
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: Python-3.7.0.tar.xz
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Type: ipkg
-Description: Python 3.7 distutils module
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-
-Package: python3-distutils-src
-Submenu: Python
-Version: 3.7.0-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: lang
-Category: Languages
-Repository: base
-Title: Python 3.7 distutils module (sources)
-Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: Python-3.7.0.tar.xz
-License: PSF
-LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
-Type: ipkg
-Description:     .
-    (Contains the Python3 sources for this package).
-https://www.python.org/
-Alexandru Ardelean <ardeleanalex@gmail.com>
-@@
-
 Package: python3-email
 Submenu: Python
 Version: 3.7.0-1
@@ -13096,6 +13053,49 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Python 3.7 email module (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: Python-3.7.0.tar.xz
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Type: ipkg
+Description:     .
+    (Contains the Python3 sources for this package).
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-distutils
+Submenu: Python
+Version: 3.7.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.7 distutils module
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: Python-3.7.0.tar.xz
+License: PSF
+LicenseFiles: LICENSE Modules/_ctypes/libffi_msvc/LICENSE Modules/_ctypes/darwin/LICENSE Modules/_ctypes/libffi/LICENSE Modules/_ctypes/libffi_osx/LICENSE Tools/pybench/LICENSE
+Type: ipkg
+Description: Python 3.7 distutils module
+https://www.python.org/
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-distutils-src
+Submenu: Python
+Version: 3.7.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Python 3.7 distutils module (sources)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: Python-3.7.0.tar.xz
 License: PSF
@@ -13459,7 +13459,7 @@ Config:
 Package: python3
 Submenu: Python
 Version: 3.7.0-1
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-codecs +python3-gdbm +python3-sqlite3 +python3-xml +python3-distutils +python3-email +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-lzma +python3-asyncio
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python3-light +python3-unittest +python3-ncurses +python3-ctypes +python3-pydoc +python3-logging +python3-decimal +python3-multiprocessing +python3-codecs +python3-gdbm +python3-sqlite3 +python3-xml +python3-email +python3-distutils +python3-openssl +python3-cgi +python3-cgitb +python3-dbm +python3-lzma +python3-asyncio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -26729,7 +26729,7 @@ Build-Types: host
 
 Package: libpq
 Submenu: database
-Version: 9.6.8-1
+Version: 9.6.10-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -26739,7 +26739,7 @@ Category: Libraries
 Repository: base
 Title: PostgreSQL client library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-9.6.8.tar.bz2
+Source: postgresql-9.6.10.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: PostgreSQL client library.
@@ -26749,7 +26749,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-cli
 Submenu: database
-Version: 9.6.8-1
+Version: 9.6.10-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libpq +libreadline +librt +zlib
 Conflicts: 
 Menu-Depends: 
@@ -26759,7 +26759,7 @@ Category: Utilities
 Repository: base
 Title: Command Line Interface (CLI) to PostgreSQL databases
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-9.6.8.tar.bz2
+Source: postgresql-9.6.10.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: Command Line Interface (CLI) to PostgreSQL databases.
@@ -26769,7 +26769,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-cli-extra
 Submenu: database
-Version: 9.6.8-1
+Version: 9.6.10-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libncursesw +libpq +libreadline +librt +zlib
 Conflicts: 
 Menu-Depends: 
@@ -26779,7 +26779,7 @@ Category: Utilities
 Repository: base
 Title: Command Line extras for PostgreSQL databases
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: postgresql-9.6.8.tar.bz2
+Source: postgresql-9.6.10.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: Command Line extras for PostgreSQL databases.
@@ -26789,7 +26789,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: pgsql-server
 Submenu: database
-Version: 9.6.8-1
+Version: 9.6.10-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +pgsql-cli
 Conflicts: 
 Menu-Depends: 
@@ -26800,7 +26800,7 @@ Repository: base
 Title: PostgreSQL databases Server
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Require-User: postgres=5432:postgres=5432
-Source: postgresql-9.6.8.tar.bz2
+Source: postgresql-9.6.10.tar.bz2
 License: PostgreSQL
 Type: ipkg
 Description: PostgreSQL databases Server.
@@ -35394,7 +35394,7 @@ Source-Makefile: feeds/packages/net/geth/Makefile
 Build-Depends: golang/host
 
 Package: geth
-Version: 1.8.12-1
+Version: 1.8.13-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -35404,7 +35404,7 @@ Category: Network
 Repository: base
 Title: Ethereum Go client
 Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
-Source: go-ethereum-1.8.12.tar.gz
+Source: go-ethereum-1.8.13.tar.gz
 License: ASL-2.0
 Type: ipkg
 Description: Ethereum is a decentralized platform that runs smart contracts, applications
@@ -35488,7 +35488,7 @@ Source-Makefile: feeds/packages/net/gitolite/Makefile
 
 Package: gitolite
 Submenu: Version Control Systems
-Version: 3.6.6-1
+Version: 3.6.8-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +perlbase-essential +perlbase-sys +perlbase-data +perlbase-digest +perlbase-env +perlbase-time +git +perlbase-findbin +perlbase-storable +perlbase-text +perlbase-getopt +perlbase-utf8 +openssh-keygen +openssh-server +openssh-moduli perl
 Conflicts: 
 Menu-Depends: 
@@ -35499,11 +35499,12 @@ Repository: base
 Title: Easy administration of git repositories
 Maintainer: Daniel Dickinson <cshored@thecshore.com>
 Require-User: git=382:git=382
-Source: gitolite-v3.6.6.tar.xz
+Source: gitolite-v3.6.8.tar.xz
 Type: ipkg
 Description:   Gitolite is a system for managing access to git repositories.  Note you will need to make
   sure dropbear does not interfere with OpenSSH as gitolite depends on feature not in
   dropbear (to my knowledge).
+  See https://openwrt.org/docs/guide-user/services/gitolite for a guide on installation.
 http://gitolite.com/gitlolite
 Daniel Dickinson <cshored@thecshore.com>
 @@
@@ -42949,7 +42950,7 @@ http://roaringpenguin.com/products/pppoe
 Source-Makefile: feeds/packages/net/rpcbind/Makefile
 
 Package: rpcbind
-Version: 0.2.4-1
+Version: 0.2.4-2
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libtirpc +RPCBIND_LIBWRAP:libwrap
 Conflicts: 
 Menu-Depends: 
@@ -42957,7 +42958,7 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Universal addresses to RPC mapper 
+Title: Universal addresses to RPC mapper
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
 Require-User: rpc=65533:rpc=65533
 Source: rpcbind-0.2.4.tar.bz2
@@ -42965,7 +42966,7 @@ License: BSD-3-Clause
 Type: ipkg
 Description:   The rpcbind utility is a server that converts RPC program numbers into universal addresses.
   It must be running on the host to be able to make RPC calls on a server on that machine.
-  
+
   Rpcbind replaces portmap for NFS v2/v3. It has more features, like ipv6 support.
   Note: Nfs4 only configurations can run without it.
 http://libtirpc.sourceforge.net/
@@ -42981,7 +42982,7 @@ if PACKAGE_rpcbind
 		bool "Enable warmstarts support"
 		default y
 		help
-		  The warmstart feature saves RPC registrations on termination. 
+		  The warmstart feature saves RPC registrations on termination.
 endif
 @@
 
@@ -43121,30 +43122,30 @@ Rosen Penev <rosenp@gmail.com>
 
 
 Source-Makefile: feeds/packages/net/samba4/Makefile
-Build-Depends: perl/host python/host SAMBA4_SERVER_AD_DC:python-crypto nfs-kernel-server/host
+Build-Depends: SAMBA4_SERVER_AD_DC:python-crypto nfs-kernel-server/host
 
 Package: samba4-libs
-Version: 4.8.3-3
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libtirpc +krb5-libs +libpopt +PACKAGE_libcap:libcap +PACKAGE_jansson:jansson +PACKAGE_libpthread:libpthread +PACKAGE_libnettle:libnettle +PACKAGE_libarchive:libarchive +PACKAGE_libgcrypt:libgcrypt +PACKAGE_libpam:libpam +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_ACL:acl +SAMBA4_SERVER_ACL:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python-base +SAMBA4_SERVER_AD_DC:libopenssl +SAMBA4_SERVER_AD_DC:libgnutls +SAMBA4_SERVER_AD_DC:libopenldap
+Version: 4.8.4-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libtirpc +krb5-libs +libpopt +PACKAGE_libcap:libcap +PACKAGE_jansson:jansson +PACKAGE_libpthread:libpthread +PACKAGE_libnettle:libnettle +PACKAGE_libarchive:libarchive +PACKAGE_libgcrypt:libgcrypt +PACKAGE_libpam:libpam +PACKAGE_dbus:dbus +PACKAGE_libavahi-client:libavahi-client +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_ACL:acl +SAMBA4_SERVER_ACL:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python-base +SAMBA4_SERVER_AD_DC:libopenssl +SAMBA4_SERVER_AD_DC:libgnutls +SAMBA4_SERVER_AD_DC:libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 libs
+Title: Samba 4.8.4 libs
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
-Description: Samba 4.8.3 libs
+Description: Samba 4.8.4 libs
 http://www.samba.org/
 Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-server
-Version: 4.8.3-3
+Version: 4.8.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -43152,9 +43153,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 server
+Title: Samba 4.8.4 server
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -43171,7 +43172,7 @@ Config:
 @@
 
 Package: samba4-client
-Version: 4.8.3-3
+Version: 4.8.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -43179,9 +43180,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 client
+Title: Samba 4.8.4 client
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -43193,7 +43194,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-admin
-Version: 4.8.3-3
+Version: 4.8.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -43201,9 +43202,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 admin tools
+Title: Samba 4.8.4 admin tools
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -43215,7 +43216,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-utils
-Version: 4.8.3-3
+Version: 4.8.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -43223,9 +43224,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 utils
+Title: Samba 4.8.4 utils
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -43240,7 +43241,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 Source-Makefile: feeds/packages/net/scapy/Makefile
 
 Package: scapy
-Version: 2.3.1-1
+Version: 2.4.0-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
 Conflicts: 
 Menu-Depends: 
@@ -43250,7 +43251,7 @@ Category: Network
 Repository: base
 Title: Interactive packet manipulation tool and network scanner
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: scapy-2.3.1.zip
+Source: scapy-2.4.0.tar.gz
 License: GPL-2.0
 LicenseFiles: PKG-INFO
 Type: ipkg
@@ -43258,7 +43259,7 @@ Description:   Scapy is a powerful interactive packet manipulation program built
   of the Python interpreter. It can be used to forge or decode packets of
   a wide number of protocols, send them over the wire, capture them, match
   requests and replies, and much more.
-http://www.secdev.org/projects/scapy/
+https://scapy.net/
 W. Michael Petullo <mike@flyn.org>
 @@
 
@@ -47135,7 +47136,7 @@ Source-Makefile: feeds/packages/net/unbound/Makefile
 
 Package: unbound
 Submenu: IP Addresses and Names
-Version: 1.7.3-5
+Version: 1.7.3-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -47157,7 +47158,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-anchor
 Submenu: IP Addresses and Names
-Version: 1.7.3-5
+Version: 1.7.3-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound +libexpat
 Conflicts: 
 Menu-Depends: 
@@ -47178,7 +47179,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control
 Submenu: IP Addresses and Names
-Version: 1.7.3-5
+Version: 1.7.3-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound
 Conflicts: 
 Menu-Depends: 
@@ -47199,7 +47200,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-control-setup
 Submenu: IP Addresses and Names
-Version: 1.7.3-5
+Version: 1.7.3-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +unbound-control +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -47220,7 +47221,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 
 Package: unbound-host
 Submenu: IP Addresses and Names
-Version: 1.7.3-5
+Version: 1.7.3-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libunbound
 Conflicts: 
 Menu-Depends: 
@@ -47240,7 +47241,7 @@ Eric Luehrsen <ericluehrsen@gmail.com>
 @@
 
 Package: libunbound
-Version: 1.7.3-5
+Version: 1.7.3-6
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -47995,7 +47996,7 @@ Build-Depends: iptables
 
 Package: kmod-ipt-compat-xtables
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +IPV6:kmod-ip6tables
 Conflicts: 
 Menu-Depends: 
@@ -48013,7 +48014,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-nathelper-rtsp
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-conntrack-extra +kmod-ipt-nat
 Conflicts: 
 Menu-Depends: 
@@ -48031,7 +48032,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-account
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-account
 Conflicts: 
 Menu-Depends: 
@@ -48051,7 +48052,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-account
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -48069,7 +48070,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-chaos
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-chaos
 Conflicts: 
 Menu-Depends: 
@@ -48089,7 +48090,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-chaos
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables +kmod-ipt-delude +kmod-ipt-tarpit
 Conflicts: 
 Menu-Depends: 
@@ -48107,7 +48108,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-condition
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-condition
 Conflicts: 
 Menu-Depends: 
@@ -48127,7 +48128,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-condition
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -48145,7 +48146,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-delude
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-delude
 Conflicts: 
 Menu-Depends: 
@@ -48165,7 +48166,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-delude
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -48183,7 +48184,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-dhcpmac
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-dhcpmac
 Conflicts: 
 Menu-Depends: 
@@ -48203,7 +48204,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-dhcpmac
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -48221,7 +48222,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-dnetmap
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-dnetmap
 Conflicts: 
 Menu-Depends: 
@@ -48241,7 +48242,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-dnetmap
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables +kmod-ipt-nat
 Conflicts: 
 Menu-Depends: 
@@ -48259,7 +48260,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-fuzzy
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-fuzzy
 Conflicts: 
 Menu-Depends: 
@@ -48279,7 +48280,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-fuzzy
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -48297,7 +48298,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-geoip
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-geoip
 Conflicts: 
 Menu-Depends: 
@@ -48317,7 +48318,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-geoip
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -48335,7 +48336,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-iface
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-iface
 Conflicts: 
 Menu-Depends: 
@@ -48355,7 +48356,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-iface
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -48373,7 +48374,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-ipmark
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-ipmark
 Conflicts: 
 Menu-Depends: 
@@ -48393,7 +48394,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-ipmark
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -48411,7 +48412,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-ipp2p
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-ipp2p
 Conflicts: 
 Menu-Depends: 
@@ -48431,7 +48432,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-ipp2p
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -48449,7 +48450,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-ipv4options
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-ipv4options
 Conflicts: 
 Menu-Depends: 
@@ -48469,7 +48470,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-ipv4options
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -48487,7 +48488,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-length2
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-length2
 Conflicts: 
 Menu-Depends: 
@@ -48507,7 +48508,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-length2
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -48525,7 +48526,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-logmark
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-logmark
 Conflicts: 
 Menu-Depends: 
@@ -48545,7 +48546,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-logmark
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -48563,7 +48564,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-lscan
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-lscan
 Conflicts: 
 Menu-Depends: 
@@ -48583,7 +48584,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-lscan
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -48601,7 +48602,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-lua
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-lua
 Conflicts: 
 Menu-Depends: 
@@ -48621,7 +48622,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-lua
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-conntrack-extra
 Conflicts: 
 Menu-Depends: 
@@ -48639,7 +48640,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-psd
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-psd
 Conflicts: 
 Menu-Depends: 
@@ -48659,7 +48660,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-psd
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -48677,7 +48678,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-quota2
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-quota2
 Conflicts: 
 Menu-Depends: 
@@ -48697,7 +48698,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-quota2
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core 
 Conflicts: 
 Menu-Depends: 
@@ -48715,7 +48716,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-sysrq
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-sysrq
 Conflicts: 
 Menu-Depends: 
@@ -48735,7 +48736,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-sysrq
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables +kmod-crypto-hash
 Conflicts: 
 Menu-Depends: 
@@ -48753,7 +48754,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptables-mod-tarpit
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +kmod-ipt-tarpit
 Conflicts: 
 Menu-Depends: 
@@ -48773,7 +48774,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: kmod-ipt-tarpit
 Submenu: Netfilter Extensions
-Version: <LINUX_VERSION>+2.14-4
+Version: <LINUX_VERSION>+2.14-5
 Depends: +kmod-ipt-core +kmod-ipt-compat-xtables
 Conflicts: 
 Menu-Depends: 
@@ -48791,7 +48792,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptaccount
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +iptables-mod-account
 Conflicts: 
 Menu-Depends: 
@@ -48811,7 +48812,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: iptgeoip
 Submenu: Firewall
-Version: 2.14-4
+Version: 2.14-5
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread iptables +iptables-mod-geoip +perl +perlbase-getopt +perlbase-io +perl-text-csv_xs +!BUSYBOX_CONFIG_WGET:wget +!BUSYBOX_CONFIG_GZIP:gzip +!BUSYBOX_CONFIG_UNZIP:unzip
 Conflicts: 
 Menu-Depends: 
@@ -55525,6 +55526,28 @@ Steven Barth <cyrus@openwrt.org>
 @@
 
 
+Source-Makefile: feeds/packages/utils/device-observatory/Makefile
+
+Package: device-observatory
+Version: 1.2.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iw +libpcap +libmicrohttpd-no-ssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: device-observatory
+Maintainer: Moritz Warning <moritzwarning@web.de>
+Source: device-observatory-1.2.0.tar.gz
+License: GPL-3.0+
+Type: ipkg
+Description: 	Show information about connected devices and connections to increase security awareness.
+https://github.com/mwarning/device-observatory/
+Moritz Warning <moritzwarning@web.de>
+@@
+
+
 Source-Makefile: feeds/packages/utils/dfu-programmer/Makefile
 
 Package: dfu-programmer
@@ -56377,7 +56400,7 @@ Alif M. Ahmad <alive4ever@live.com>
 Source-Makefile: feeds/packages/utils/grep/Makefile
 
 Package: grep
-Version: 2.26-1
+Version: 3.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre
 Conflicts: 
 Menu-Depends: 
@@ -56387,14 +56410,14 @@ Category: Utilities
 Repository: base
 Title: grep search utility - full version
 Maintainer: Julen Landa Alustiza <julen@zokormazo.info>
-Source: grep-2.26.tar.xz
+Source: grep-3.1.tar.xz
 License: GPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: The grep command searches one or more input files for lines
 containing a match to a specified pattern. By default, grep
 prints the matching lines.
-http://www.gnu.org/software/grep/
+https://www.gnu.org/software/grep/
 Julen Landa Alustiza <julen@zokormazo.info>
 @@
 
@@ -57318,7 +57341,7 @@ Maxim Storchak <m.storchak@gmail.com>
 Source-Makefile: feeds/packages/utils/lvm2/Makefile
 
 Package: libdevmapper
-Version: 2.02.177-2
+Version: 2.02.181-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt
 Conflicts: 
 Menu-Depends: 
@@ -57328,19 +57351,19 @@ Category: Libraries
 Repository: base
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.02.177.tgz
+Source: LVM2.2.02.181.tgz
 License: GPL-2.0 LGPL-2.1
 Type: ipkg
 Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
  volume management. It is required by LVM2 and EVMS.
-http://sourceware.org/dm/
+https://sourceware.org/dm/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: lvm2
 Submenu: Disc
-Version: 2.02.177-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdevmapper +libblkid +libreadline +libncurses
+Version: 2.02.181-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdevmapper +libblkid +libreadline +libncurses +libaio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -57349,13 +57372,13 @@ Category: Utilities
 Repository: base
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.02.177.tgz
+Source: LVM2.2.02.181.tgz
 License: GPL-2.0 LGPL-2.1
 Type: ipkg
 Description:  LVM2 refers to a new userspace toolset that provide logical volume management
  facilities on linux. It is reasonably backwards-compatible with the original
  LVM toolset.
-http://sourceware.org/lvm2/
+https://sourceware.org/lvm2/
 Daniel Golle <daniel@makrotopia.org>
 @@
 

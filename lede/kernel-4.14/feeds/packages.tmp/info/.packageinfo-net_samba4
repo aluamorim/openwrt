@@ -1,28 +1,28 @@
 Source-Makefile: feeds/packages/net/samba4/Makefile
-Build-Depends: perl/host python/host SAMBA4_SERVER_AD_DC:python-crypto nfs-kernel-server/host
+Build-Depends: SAMBA4_SERVER_AD_DC:python-crypto nfs-kernel-server/host
 
 Package: samba4-libs
-Version: 4.8.3-3
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libtirpc +krb5-libs +libpopt +PACKAGE_libcap:libcap +PACKAGE_jansson:jansson +PACKAGE_libpthread:libpthread +PACKAGE_libnettle:libnettle +PACKAGE_libarchive:libarchive +PACKAGE_libgcrypt:libgcrypt +PACKAGE_libpam:libpam +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_ACL:acl +SAMBA4_SERVER_ACL:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python-base +SAMBA4_SERVER_AD_DC:libopenssl +SAMBA4_SERVER_AD_DC:libgnutls +SAMBA4_SERVER_AD_DC:libopenldap
+Version: 4.8.4-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libtirpc +krb5-libs +libpopt +PACKAGE_libcap:libcap +PACKAGE_jansson:jansson +PACKAGE_libpthread:libpthread +PACKAGE_libnettle:libnettle +PACKAGE_libarchive:libarchive +PACKAGE_libgcrypt:libgcrypt +PACKAGE_libpam:libpam +PACKAGE_dbus:dbus +PACKAGE_libavahi-client:libavahi-client +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_ACL:acl +SAMBA4_SERVER_ACL:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python-base +SAMBA4_SERVER_AD_DC:libopenssl +SAMBA4_SERVER_AD_DC:libgnutls +SAMBA4_SERVER_AD_DC:libopenldap
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 libs
+Title: Samba 4.8.4 libs
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
-Description: Samba 4.8.3 libs
+Description: Samba 4.8.4 libs
 http://www.samba.org/
 Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-server
-Version: 4.8.3-3
+Version: 4.8.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -30,9 +30,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 server
+Title: Samba 4.8.4 server
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -49,7 +49,7 @@ Config:
 @@
 
 Package: samba4-client
-Version: 4.8.3-3
+Version: 4.8.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -57,9 +57,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 client
+Title: Samba 4.8.4 client
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -71,7 +71,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-admin
-Version: 4.8.3-3
+Version: 4.8.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -79,9 +79,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 admin tools
+Title: Samba 4.8.4 admin tools
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg
@@ -93,7 +93,7 @@ Andy Walsh <andy.walsh44+github@gmail.com>
 @@
 
 Package: samba4-utils
-Version: 4.8.3-3
+Version: 4.8.4-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -101,9 +101,9 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.8.3 utils
+Title: Samba 4.8.4 utils
 Maintainer: Andy Walsh <andy.walsh44+github@gmail.com>
-Source: samba-4.8.3.tar.gz
+Source: samba-4.8.4.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg

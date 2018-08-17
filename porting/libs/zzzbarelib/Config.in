@@ -1,4 +1,7 @@
-menu "zzzBarelib"
+menu "zzzbarelib"
+	select PACKAGE_zlib
+	select PACKAGE_libopenssl
+	select PACKAGE_baresip
 	tristate "Baresip userspace lib"
 	default y
 

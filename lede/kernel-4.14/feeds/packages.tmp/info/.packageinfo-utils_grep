@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/grep/Makefile
 
 Package: grep
-Version: 2.26-1
+Version: 3.1-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre
 Conflicts: 
 Menu-Depends: 
@@ -11,14 +11,14 @@ Category: Utilities
 Repository: base
 Title: grep search utility - full version
 Maintainer: Julen Landa Alustiza <julen@zokormazo.info>
-Source: grep-2.26.tar.xz
+Source: grep-3.1.tar.xz
 License: GPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
 Description: The grep command searches one or more input files for lines
 containing a match to a specified pattern. By default, grep
 prints the matching lines.
-http://www.gnu.org/software/grep/
+https://www.gnu.org/software/grep/
 Julen Landa Alustiza <julen@zokormazo.info>
 @@
 

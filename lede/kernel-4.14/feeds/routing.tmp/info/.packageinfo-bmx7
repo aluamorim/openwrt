@@ -3,7 +3,7 @@ Source-Makefile: feeds/routing/bmx7/Makefile
 Package: bmx7
 Menu: 1
 Submenu: Routing and Redirection
-Version: r2018042501-2
+Version: r2018042501-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libmbedtls +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -23,7 +23,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-uci-config
 Submenu: Routing and Redirection
-Version: r2018042501-2
+Version: r2018042501-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libuci
 Conflicts: 
 Menu-Depends: 
@@ -43,7 +43,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-iwinfo
 Submenu: Routing and Redirection
-Version: r2018042501-2
+Version: r2018042501-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -63,7 +63,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-topology
 Submenu: Routing and Redirection
-Version: r2018042501-2
+Version: r2018042501-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7
 Conflicts: 
 Menu-Depends: 
@@ -83,7 +83,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-json
 Submenu: Routing and Redirection
-Version: r2018042501-2
+Version: r2018042501-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -103,7 +103,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-sms
 Submenu: Routing and Redirection
-Version: r2018042501-2
+Version: r2018042501-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7
 Conflicts: 
 Menu-Depends: 
@@ -123,7 +123,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-table
 Submenu: Routing and Redirection
-Version: r2018042501-2
+Version: r2018042501-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +bmx7-tun
 Conflicts: 
 Menu-Depends: 
@@ -143,7 +143,7 @@ Axel Neumann <neumann@cgws.de>
 
 Package: bmx7-tun
 Submenu: Routing and Redirection
-Version: r2018042501-2
+Version: r2018042501-3
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread bmx7 +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
 Conflicts: 
 Menu-Depends: 

@@ -1,4 +1,4 @@
-menu "zzzBarelib"
+menu "zzzbarelib"
 	tristate "Baresip userspace lib"
 	default y
 

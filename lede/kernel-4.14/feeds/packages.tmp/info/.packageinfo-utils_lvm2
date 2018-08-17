@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/lvm2/Makefile
 
 Package: libdevmapper
-Version: 2.02.177-2
+Version: 2.02.181-1
 Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-dm +libpthread +libuuid +librt
 Conflicts: 
 Menu-Depends: 
@@ -11,19 +11,19 @@ Category: Libraries
 Repository: base
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.02.177.tgz
+Source: LVM2.2.02.181.tgz
 License: GPL-2.0 LGPL-2.1
 Type: ipkg
 Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
  volume management. It is required by LVM2 and EVMS.
-http://sourceware.org/dm/
+https://sourceware.org/dm/
 Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: lvm2
 Submenu: Disc
-Version: 2.02.177-2
-Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdevmapper +libblkid +libreadline +libncurses
+Version: 2.02.181-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libdevmapper +libblkid +libreadline +libncurses +libaio
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -32,13 +32,13 @@ Category: Utilities
 Repository: base
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.02.177.tgz
+Source: LVM2.2.02.181.tgz
 License: GPL-2.0 LGPL-2.1
 Type: ipkg
 Description:  LVM2 refers to a new userspace toolset that provide logical volume management
  facilities on linux. It is reasonably backwards-compatible with the original
  LVM toolset.
-http://sourceware.org/lvm2/
+https://sourceware.org/lvm2/
 Daniel Golle <daniel@makrotopia.org>
 @@
 

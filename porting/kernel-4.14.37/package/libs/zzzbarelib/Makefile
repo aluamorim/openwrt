@@ -12,9 +12,9 @@ PKG_VERSION:=1.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://www.dropbox.com/s/qi2129ky0kbctyh/zzzbarelib-1.0.tar.gz?dl=0
+PKG_SOURCE_URL:=https://www.dropbox.com/s/3p8kfg8sqkmsuq0/zzzbarelib-1.0.tar.gz?dl=0
 
-PKG_HASH:=051cfe2b0070c5404a12be7c890d8f1a
+PKG_HASH:=8c0887458476a92fd3a643c68bd2a7cc
 
 PKG_INSTALL:=1
 PKG_BUILD_PARALLEL:=0
@@ -22,7 +22,7 @@ PKG_LICENSE:=LGPL-2.1
 
 PKG_MAINTAINER := Anderson Amorim <amorim.an@gmail.com>
 
-PKG_DEPENDENCIES := libssl libcrypto libre librem libz
+PKG_DEPENDENCIES := ""
 
 include $(INCLUDE_DIR)/package.mk
 
