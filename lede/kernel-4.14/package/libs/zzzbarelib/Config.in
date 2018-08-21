@@ -1,7 +1,4 @@
 menu "zzzbarelib"
-	select PACKAGE_zlib
-	select PACKAGE_libopenssl
-	select PACKAGE_baresip
 	tristate "Baresip userspace lib"
 	default y
 
@@ -11,8 +8,6 @@ config ZZZBARELIB
 	help
 		The barelib package installs the necessary
         .so libraries to run baresip-based applications
-        on /usr/lib directory of the image. (ALU)
+        on /root directory of the image. (ALU)
 endmenu
 
-
-         

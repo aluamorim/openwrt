@@ -6,10 +6,10 @@ License: GPL-2.0
 Section: base
 Essential: yes
 Architecture: mipsel_24kc
-Installed-Size: 212565
+Installed-Size: 212574
 Filename: busybox_1.28.3-2_mipsel_24kc.ipk
-Size: 213264
-SHA256sum: d779ed0765dfec1cfbc24dfbd5d7e1747823a081548be1a24e0a338395612d08
+Size: 213282
+SHA256sum: 15a0bf13f26056a1a8ec9519034c2db69abb4cc3e1bef5934bd9881ce45ed810
 Description:  The Swiss Army Knife of embedded Linux.
  It slices, it dices, it makes Julian Fries.
 
@@ -67,10 +67,10 @@ Depends: libc, kmod-ip6tables, iptables
 License: GPL-2.0
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 210
+Installed-Size: 211
 Filename: ip6tables_1.6.2-1_mipsel_24kc.ipk
-Size: 906
-SHA256sum: 5dc9e27498efab0b3b40ce43b66e30f28df8471030f149e0b7b3d930876b9cb7
+Size: 911
+SHA256sum: cf23886fa4a59d82e1897649462a0a279859e7f812f7d6a834d8d2da1ebcc681
 Description:  IPv6 firewall administration tool
 
 Package: iptables
@@ -81,8 +81,8 @@ Section: net
 Architecture: mipsel_24kc
 Installed-Size: 22175
 Filename: iptables_1.6.2-1_mipsel_24kc.ipk
-Size: 23031
-SHA256sum: 524a84a9c70945ac16f5bc86bb4b5376e64668c5ad391ae25494be52a4f2cacc
+Size: 23037
+SHA256sum: bd3e4c8ddb7ceeb11e80e40191513eb207a1cb1f5c69bf685093529875a9155e
 Description:  IP firewall administration tool.
  
  Matches:
@@ -138,10 +138,10 @@ Depends: libc, libjson-c, libubox, libblobmsg-json
 License: ISC
 Section: utils
 Architecture: mipsel_24kc
-Installed-Size: 5765
+Installed-Size: 5767
 Filename: jshn_2018-04-12-6eff829d-1_mipsel_24kc.ipk
-Size: 6538
-SHA256sum: a31958eed784f0283d3eb65dbc5206fda369d946174769939cfd22b3f0d3eb5a
+Size: 6543
+SHA256sum: e7e1acdf3e2ced428623ed95c4a6e2d5baf0af3b6c27e1ac1cbe67243d6c7c49
 Description:  Library for parsing and generating JSON from shell scripts
 
 Package: jsonfilter
@@ -174,10 +174,10 @@ Depends: libc, libjson-c, libubox
 License: ISC
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 3960
+Installed-Size: 3959
 Filename: libblobmsg-json_2018-04-12-6eff829d-1_mipsel_24kc.ipk
-Size: 4679
-SHA256sum: 99606a99676fc4f50186c4355a88815a715ce41aa539c599bdddf15c8b2d174f
+Size: 4676
+SHA256sum: 36d1414dd0b5b80121a904c0630e4535d8ba414680dc362c5362f42f09936faf
 Description:  blobmsg <-> json conversion library
 
 Package: libip4tc
@@ -186,10 +186,10 @@ Depends: libc, libxtables
 License: GPL-2.0
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 17815
+Installed-Size: 17812
 Filename: libip4tc_1.6.2-1_mipsel_24kc.ipk
-Size: 18528
-SHA256sum: 5edf90b80dcff1efea9b0de1940c29aa2f3e6065664c1b08c8dbdfa2f6eca027
+Size: 18522
+SHA256sum: b28da108432ba3e9f15d495414ba389b5f822959dbaf3c890c47f24dd7de929b
 Description:  IPv4 firewall - shared libiptc library
 
 Package: libip6tc
@@ -198,10 +198,10 @@ Depends: libc, libxtables
 License: GPL-2.0
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 17721
+Installed-Size: 17718
 Filename: libip6tc_1.6.2-1_mipsel_24kc.ipk
-Size: 18449
-SHA256sum: 849307ec1f24e0ca14b648c2cbd15a0c9e1a70dba8bc1f104c07ea49e00f28ae
+Size: 18454
+SHA256sum: 2e56cf026e3a88e8f9c6738bc9483570902154e73d6ac14652d8a9d02adadd9f
 Description:  IPv6 firewall - shared libiptc library
 
 Package: libjson-c
@@ -222,10 +222,10 @@ Depends: libc, libubox
 License: ISC
 Section: utils
 Architecture: mipsel_24kc
-Installed-Size: 4848
+Installed-Size: 4847
 Filename: libjson-script_2018-04-12-6eff829d-1_mipsel_24kc.ipk
-Size: 5568
-SHA256sum: 6f92c10fb5ec01454f934cf3a7547ffe52b5f29116720c0b40e76adc031ac7bb
+Size: 5571
+SHA256sum: c6ed84289a2bb3a953ce358aafa8975485230966f5ef5b7a20326e273bfec535
 Description:  Minimalistic JSON based scripting engine
 
 Package: libltdl
@@ -262,10 +262,10 @@ Provides: libncursesw
 License: MIT
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 147692
+Installed-Size: 148159
 Filename: libncurses_6.1-1_mipsel_24kc.ipk
-Size: 146085
-SHA256sum: 4362e768eb4f90f16263a6092a888717814b9aa258ba016514fb4dc38642778f
+Size: 147028
+SHA256sum: e77c4d586a70d99db876b5bf97c231939c20ae5b399f5034510ecc14b5a7a4f6
 Description:  Terminal handling library (Unicode)
 
 Package: libnl-tiny
@@ -608,10 +608,10 @@ Depends: libc, libubox, libblobmsg-json, libjson-script
 License: ISC
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 21386
+Installed-Size: 21384
 Filename: uhttpd_2017-11-04-a235636a-1_mipsel_24kc.ipk
-Size: 22181
-SHA256sum: d4b858ab34a086bb67eac47526b27d07971a551765ae93cee89d862c817bb76b
+Size: 22178
+SHA256sum: a240973525f75bfe10054bfb55d6f0e0e11ad3ead16661dd3d29f2099da472ca
 Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
  support. It is intended as a drop-in replacement for the Busybox
  HTTP daemon.
@@ -670,9 +670,9 @@ Depends: libc
 License: LGPL-2.1
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 4548173
+Installed-Size: 4547881
 Filename: zzzbarelib-1.0_1.0-1_mipsel_24kc.ipk
-Size: 4537738
-SHA256sum: d0518b5c11250dd9867d3fda769a1229caee928b0168009beaca647e56838953
+Size: 4537621
+SHA256sum: 1f89d56c13f7cc816f3b105544b09e6937c6f23a19ffcf35bbeaaa1c0aa71315
 Description:  zzzbarelib-1.0 is a C library that gives applications easy access to baresip functionalites
 

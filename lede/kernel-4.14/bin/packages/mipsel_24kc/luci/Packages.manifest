@@ -29,6 +29,19 @@ SHA256sum: 97623051e901792e42f9146e69da8dcc42f69b7844da2b212f5d2b295a6ec149
 Description:  LuCI HTTP utility library
 
 Package: luci-app-firewall
+Version: git-18.225.48207-809d3b9-1
+Depends: libc, firewall
+Source: feeds/luci/applications/luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 11165
+Filename: luci-app-firewall_git-18.225.48207-809d3b9-1_all.ipk
+Size: 11901
+SHA256sum: 1e36b10aa5c23a37a231fafe794063ab579f681fb4e112a736e66f8301d19677
+Description:  Firewall and Portforwarding application
+
+Package: luci-app-firewall
 Version: git-18.229.51087-6fa1267-1
 Depends: libc, firewall
 Source: feeds/luci/applications/luci-app-firewall
@@ -40,6 +53,19 @@ Filename: luci-app-firewall_git-18.229.51087-6fa1267-1_all.ipk
 Size: 11906
 SHA256sum: 0c9778dd695d294060c1dae8da708d1e4888a2ca24040fc8bad1ddb158574622
 Description:  Firewall and Portforwarding application
+
+Package: luci-base
+Version: git-18.225.48207-809d3b9-1
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc, liblucihttp-lua
+Source: feeds/luci/modules/luci-base
+License: MIT
+Section: luci
+Architecture: mipsel_24kc
+Installed-Size: 124289
+Filename: luci-base_git-18.225.48207-809d3b9-1_mipsel_24kc.ipk
+Size: 125236
+SHA256sum: 63e16511272e6945bfcd89b07ef1aadf0381a71af81dd6ba0f26a941533cd333
+Description:  LuCI core libraries
 
 Package: luci-base
 Version: git-18.229.51087-6fa1267-1
@@ -55,42 +81,55 @@ SHA256sum: cb6f237a42d8878ae8ec656c26209838f6f48ced3e6ae5f0b11bd0e9962daa6a
 Description:  LuCI core libraries
 
 Package: luci-lib-ip
-Version: git-18.229.51087-6fa1267-1
+Version: git-18.225.48207-809d3b9-1
 Depends: libc, liblua, libnl-tiny
 Source: feeds/luci/libs/luci-lib-ip
 License: Apache-2.0
 Section: luci
 Architecture: mipsel_24kc
-Installed-Size: 10470
-Filename: luci-lib-ip_git-18.229.51087-6fa1267-1_mipsel_24kc.ipk
-Size: 11217
-SHA256sum: 748e575a83e72006e90c04a773c2b0651347d28abe97e7af72a8e6b977eca138
+Installed-Size: 10465
+Filename: luci-lib-ip_git-18.225.48207-809d3b9-1_mipsel_24kc.ipk
+Size: 11208
+SHA256sum: 6c3224d1866c2c032cf7ccffc6bc31110c0a63fc8a9f1caa1bc9dbc230fbe6ed
 Description:  Lua library for IP calculation and routing information
 
 Package: luci-lib-jsonc
-Version: git-18.229.51087-6fa1267-1
+Version: git-18.225.48207-809d3b9-1
 Depends: libc, liblua, libjson-c
 Source: feeds/luci/libs/luci-lib-jsonc
 Section: luci
 Architecture: mipsel_24kc
-Installed-Size: 4007
-Filename: luci-lib-jsonc_git-18.229.51087-6fa1267-1_mipsel_24kc.ipk
-Size: 4710
-SHA256sum: 5c7d9e85c825ad6ecbb5f5a1792ffb0697970dde81748d682c8bffc2402c7950
+Installed-Size: 4006
+Filename: luci-lib-jsonc_git-18.225.48207-809d3b9-1_mipsel_24kc.ipk
+Size: 4698
+SHA256sum: e08eef1bddb3c4934d08385a1a72e4d6e60efe7c97821e1a49614bca90dc2de1
 Description:  Lua binding for JSON-C
 
 Package: luci-lib-nixio
-Version: git-18.229.51087-6fa1267-1
+Version: git-18.225.48207-809d3b9-1
 Depends: libc, liblua
 Source: feeds/luci/libs/luci-lib-nixio
 License: Apache-2.0
 Section: luci
 Architecture: mipsel_24kc
-Installed-Size: 27937
-Filename: luci-lib-nixio_git-18.229.51087-6fa1267-1_mipsel_24kc.ipk
-Size: 28507
-SHA256sum: 7fa2686088acfb6d57e7d0d1c647cdd7886e43cffbef0c5d74b48fe204ade466
+Installed-Size: 27926
+Filename: luci-lib-nixio_git-18.225.48207-809d3b9-1_mipsel_24kc.ipk
+Size: 28488
+SHA256sum: 5b678e6134269d9bc23e69104e1bfe88cea9927bfa44a3972e450672965785bd
 Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-18.225.48207-809d3b9-1
+Depends: libc, luci-base
+Source: feeds/luci/modules/luci-mod-admin-full
+License: Apache-2.0
+Section: luci
+Architecture: mipsel_24kc
+Installed-Size: 79289
+Filename: luci-mod-admin-full_git-18.225.48207-809d3b9-1_mipsel_24kc.ipk
+Size: 80224
+SHA256sum: 1e4349fbd9465d42f082a7232ee12e1e530414f3e90d718b5eecc6e867440559
+Description:  LuCI Administration - full-featured for full control
 
 Package: luci-mod-admin-full
 Version: git-18.229.51087-6fa1267-1
@@ -106,6 +145,19 @@ SHA256sum: 0ff30f54561f10d8c278aa556b1030e166c32002471c8d673b2e771241734040
 Description:  LuCI Administration - full-featured for full control
 
 Package: luci-proto-ipv6
+Version: git-18.225.48207-809d3b9-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ipv6
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 3705
+Filename: luci-proto-ipv6_git-18.225.48207-809d3b9-1_all.ipk
+Size: 4421
+SHA256sum: 4345a7e4917108cf8568eff834e293fe790eb3c6da7848dbec9a1b7cf9568f45
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+
+Package: luci-proto-ipv6
 Version: git-18.229.51087-6fa1267-1
 Depends: libc
 Source: feeds/luci/protocols/luci-proto-ipv6
@@ -117,6 +169,19 @@ Filename: luci-proto-ipv6_git-18.229.51087-6fa1267-1_all.ipk
 Size: 4418
 SHA256sum: 6d93ec2daca5c10d02d84c34543c6f30308dca85f97989e697d2cba37cee6d98
 Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+
+Package: luci-proto-ppp
+Version: git-18.225.48207-809d3b9-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ppp
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 3145
+Filename: luci-proto-ppp_git-18.225.48207-809d3b9-1_all.ipk
+Size: 3851
+SHA256sum: 4e930ac939105a14a9b68252a81c981e1e24452d998781cd4f38948374e2ab70
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
 
 Package: luci-proto-ppp
 Version: git-18.229.51087-6fa1267-1
@@ -132,6 +197,19 @@ SHA256sum: 141459476bf3ba7418e2455c2bf86276ae91341e1fa4a9502cf4b15aca59a6f0
 Description:  Support for PPP/PPPoE/PPPoA/PPtP
 
 Package: luci-theme-bootstrap
+Version: git-18.225.48207-809d3b9-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-bootstrap
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 11251
+Filename: luci-theme-bootstrap_git-18.225.48207-809d3b9-1_all.ipk
+Size: 12038
+SHA256sum: 04bc049a851fef5bae1f5cb1568d59a012bb6ebfa0892431027057e64e60b8d8
+Description:  Bootstrap Theme (default)
+
+Package: luci-theme-bootstrap
 Version: git-18.229.51087-6fa1267-1
 Depends: libc
 Source: feeds/luci/themes/luci-theme-bootstrap
@@ -143,6 +221,19 @@ Filename: luci-theme-bootstrap_git-18.229.51087-6fa1267-1_all.ipk
 Size: 12045
 SHA256sum: c3e9b150dec20537bcba4f7cc30c422227847b0beb194cce928602fcaa0fe532
 Description:  Bootstrap Theme (default)
+
+Package: luci
+Version: git-18.225.48207-809d3b9-1
+Depends: libc, uhttpd, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6, rpcd-mod-rrdns
+Source: feeds/luci/collections/luci
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 105
+Filename: luci_git-18.225.48207-809d3b9-1_all.ipk
+Size: 898
+SHA256sum: f99c392e67abc961018b1388c70d949245974449dea093512a7bbf83926b9d96
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
 
 Package: luci
 Version: git-18.229.51087-6fa1267-1

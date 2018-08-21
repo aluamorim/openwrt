@@ -46,16 +46,17 @@ define Package/zzzbarelib-1.0/install
 	$(INSTALL_DIR) $(1)/usr/lib
 	$(INSTALL_DIR) $(1)/root
 	$(CP) $(PKG_INSTALL_DIR)/libbaresip.a $(1)/root/
-	$(CP) $(PKG_INSTALL_DIR)/libstdc++.so* $(1)/root/
+	$(CP) $(PKG_INSTALL_DIR)/libstdc++.so $(1)/root/
+	$(CP) $(PKG_INSTALL_DIR)/libstdc++.so.6 $(1)/root/
 	$(CP) $(PKG_INSTALL_DIR)/accounts $(1)/root/
 	$(CP) $(PKG_INSTALL_DIR)/config $(1)/root/
 	$(CP) $(PKG_INSTALL_DIR)/.asoundrc $(1)/root/
 	$(CP) $(PKG_INSTALL_DIR)/vrau.wav $(1)/root/
-	$(CP) $(PKG_INSTALL_DIR)/libre* $(1)/root/
-	$(CP) $(PKG_INSTALL_DIR)/libre* $(1)/root/
-	$(CP) $(PKG_INSTALL_DIR)/libcrypto* $(1)/root/
-	$(CP) $(PKG_INSTALL_DIR)/libz* $(1)/root/
-	$(CP) $(PKG_INSTALL_DIR)/libssl* $(1)/root/
+	$(CP) $(PKG_INSTALL_DIR)/libre.so $(1)/root/
+	$(CP) $(PKG_INSTALL_DIR)/librem.so $(1)/root/
+	$(CP) $(PKG_INSTALL_DIR)/libcrypto.so.1.0.0 $(1)/root/
+	$(CP) $(PKG_INSTALL_DIR)/libz.so.1 $(1)/root/
+	$(CP) $(PKG_INSTALL_DIR)/libssl.so.1.0.0 $(1)/root/
 	$(CP) $(PKG_INSTALL_DIR)/libbaresip.so $(1)/root/
 
 endef
